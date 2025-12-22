@@ -70,7 +70,7 @@ async function main() {
         frequencyHeadway: () => 300, // 5 minutes
         vehicleSpeed: () => 24,
         skipStopsWithinDistance: 100, // 100 meters between stops
-        fakeStops: (routeFeature: any) => true, // Generate synthetic stops for all routes
+        fakeStops: (routeFeature: any) => false, // Generate synthetic stops for all routes
         stopNameBuilder: (stops: any) => {
           if (!stops || stops.length === 0) {
             stops = ['Sin nombre'];
