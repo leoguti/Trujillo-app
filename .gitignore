@@ -7,8 +7,9 @@ dist/
 build/
 *.tsbuildinfo
 
-# GTFS outputs
-GTFS/out/
+# GTFS outputs (exclude other cities, keep Trujillo)
+GTFS/out/*/
+!GTFS/out/trujillo/
 
 # Logs
 *.log
@@ -22,6 +23,7 @@ Thumbs.db
 # IDE
 .vscode/
 .idea/
+.claude/
 *.swp
 *.swo
 *~
