@@ -1,24 +1,17 @@
-# GTFS Mexico
+# GTFS Trujillo
 
-Proyecto consolidado para generar archivos GTFS de ciudades mexicanas usando OpenStreetMap.
+Proyecto para generar archivos GTFS del sistema de transporte público de Trujillo, Perú usando OpenStreetMap.
 
 ## Estructura
 
 ```
 GTFS/
-├── src/                    # Scripts TypeScript por ciudad
-│   ├── jilotepec.ts
-│   ├── oaxaca.ts
-│   ├── toluca.ts
-│   ├── puerto-escondido.ts
-│   ├── salina-cruz.ts
-│   ├── uruapan.ts
-│   ├── zamora.ts
-│   └── zitacuaro.ts
-├── trufi-gtfs-builder/     # Submodulo del generador GTFS
-├── out/                    # Archivos GTFS generados (por ciudad)
-├── .vscode/                # Configuración de debug
-│   └── launch.json
+├── src/                    # Scripts TypeScript
+│   └── trujillo.ts        # Script principal de generación
+├── trufi-gtfs-builder/     # Submódulo del generador GTFS
+├── out/                    # Archivos GTFS generados
+│   └── trujillo/
+├── ignored_routes.txt      # Rutas excluidas del GTFS
 ├── package.json
 └── tsconfig.json
 ```
@@ -32,56 +25,69 @@ npm install
 
 ## Uso
 
-### Ejecutar script individual
+### Generar GTFS
 
 ```bash
-npm run start:jilotepec
-npm run start:oaxaca
-npm run start:toluca
-npm run start:puerto-escondido
-npm run start:salina-cruz
-npm run start:uruapan
-npm run start:zamora
-npm run start:zitacuaro
+npm start
 ```
 
-### Debug en VS Code
+### Rutas ignoradas
 
-1. Abre la carpeta raíz del proyecto en VS Code
-2. Ve a la pestaña "Run and Debug" (Ctrl+Shift+D)
-3. Selecciona la ciudad que quieres ejecutar del dropdown
-4. Presiona F5 o click en "Start Debugging"
+Para excluir rutas específicas del GTFS, añade sus IDs de relación OSM al archivo `ignored_routes.txt`:
+
+```txt
+# Rutas ignoradas del GTFS de Trujillo
+# Una ID de relación OSM por línea
+# Las líneas que comienzan con # son comentarios
+
+19962318
+19962323
+19972501
+19972495
+```
+
+Las rutas en este archivo serán excluidas automáticamente durante la generación del GTFS.
 
 ## Salida
 
 Los archivos GTFS se generan en:
 ```
-GTFS/out/[ciudad]/
-├── gtfs/              # Archivos GTFS estándar
-├── trufi-tp-data/     # Datos específicos de Trufi
-├── routes.json        # Información de rutas
-├── stops.json         # Información de paradas
-├── readme.md          # Documentación generada
-└── log.txt            # Log de ejecución
+GTFS/out/trujillo/
+├── gtfs/                  # Archivos GTFS estándar
+│   ├── agency.txt
+│   ├── routes.txt
+│   ├── trips.txt
+│   ├── stops.txt
+│   ├── stop_times.txt
+│   ├── shapes.txt
+│   ├── calendar.txt
+│   ├── frequencies.txt
+│   ├── fare_attributes.txt
+│   ├── fare_rules.txt
+│   └── feed_info.txt
+├── routes/                # GeoJSON por ruta individual
+├── trujillo.gtfs.zip      # GTFS comprimido
+├── stops.json             # Información de paradas
+├── log.json               # Log de procesamiento
+└── README.md              # Documentación generada
 ```
 
-## Ciudades incluidas
+## Configuración
 
-- **Jilotepec** - Con cálculo personalizado de velocidad
-- **Oaxaca**
-- **Toluca** - Con lista extensa de rutas
-- **Puerto Escondido**
-- **Salina Cruz**
-- **Uruapan**
-- **Zamora**
-- **Zitacuaro**
+El sistema de transporte de Trujillo está configurado con:
+- **Zona horaria:** `America/Lima`
+- **Moneda:** `PEN` (Soles peruanos)
+- **Horario:** Lunes-Domingo, 05:00-23:00
+- **Frecuencia:** 5 minutos (300 segundos)
+- **Velocidad promedio:** 24 km/h
+- **Distancia entre paradas sintéticas:** 100 metros
+- **Filtro:** Solo rutas con tag `hash=*` en OSM
+- **Rutas activas:** ~210 rutas (excluyendo las ignoradas)
+- **Paradas sintéticas:** ~6,400 paradas generadas automáticamente
 
-## Configuración común
+## Fuente de datos
 
-Todas las ciudades comparten:
-- Zona horaria: `America/Mexico_City`
-- Moneda: `MXN`
-- Horario por defecto: `Mo-Su 06:00-22:00`
-- Frecuencia: 5 minutos (300 segundos)
-- Velocidad base: 24 km/h
-- Distancia mínima entre paradas: 100 metros
+Los datos provienen de OpenStreetMap:
+- **Archivo PBF:** `rutas_trujillo.pbf` (ubicado en la raíz del proyecto)
+- **Área:** Trujillo, Perú
+- **Tipos de transporte:** bus, share_taxi, minibus
