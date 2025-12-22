@@ -45,9 +45,7 @@ route_id,agency_id,route_short_name,route_long_name,route_color,route_type
 19962303,7,M-23 B,Via Evitamiento Milagro → Ca. Pedro Ruiz Gallo,,3
 19962313,7,M-23 B,Ca. Pedro Ruiz Gallo → Via Evitamiento Milagro,,3
 19962315,7,M-23 B,Via Evitamiento Milagro → Ca. Pedro Ruiz Gallo,,3
-19962318,7,M-24 A,Av. Libertad → Av. América Sur,,3
 19962320,6,M-28 A,Av. los Pajuiles → A.H. Primavera III,,3
-19962323,7,M-24 A,Av. América Sur → Av. Libertad,,3
 19962362,8,M-25 A,Ca. Liverpool → Ca. F,,3
 19962394,8,M-25 A,Ca. F → Ca. Liverpool,,3
 19962432,8,M-26 B,Futuro Barrio 5C → Ca. Alfonso Ugarte,,3
@@ -168,9 +166,7 @@ route_id,agency_id,route_short_name,route_long_name,route_color,route_type
 19972475,31,C-39 S,Av. San José → Ca. Ascencio Vergara,,3
 19972478,33,C-38 S4,Av. Luis Condemarín → Av. Luis Condemarín,,3
 19972479,32,C-31 P,Av. Prolongación Santa → Sector Huangabal,,3
-19972495,34,C-37 R,Urb. Rosas del Valle 1ra Etapa → Av. Julian Arce,,3
 19972496,32,C-32 S,Mucha → Urb. Palermo,,3
-19972501,34,C-37 R,Av. Julian Arce → Urb. Rosas del Valle 1ra Etapa,,3
 19972502,32,C-32 S,Urb. Palermo → Mucha,,3
 19972504,34,C-36 Y,Urb. San Andrés 5ta Etapa → A.H. Víctor Raúl Haya de La Torre,,3
 19972505,34,C-36 Y,A.H. Víctor Raúl Haya de La Torre → Urb. San Andrés 5ta Etapa,,3

@@ -6,6 +6,32 @@
 
 import { osmToGtfs, OSMPBFReader } from '../trufi-gtfs-builder';
 import * as path from 'path';
+import * as fs from 'fs';
+
+// Load ignored routes from file
+function loadIgnoredRoutes(): Set<number> {
+  const ignoredRoutesPath = path.join(__dirname, '..', 'ignored_routes.txt');
+  const ignoredRoutes = new Set<number>();
+  
+  if (fs.existsSync(ignoredRoutesPath)) {
+    const content = fs.readFileSync(ignoredRoutesPath, 'utf-8');
+    const lines = content.split('\n');
+    
+    for (const line of lines) {
+      const trimmed = line.trim();
+      // Skip empty lines and comments
+      if (trimmed && !trimmed.startsWith('#')) {
+        const routeId = parseInt(trimmed, 10);
+        if (!isNaN(routeId)) {
+          ignoredRoutes.add(routeId);
+        }
+      }
+    }
+    console.log(`Loaded ${ignoredRoutes.size} ignored routes from ${ignoredRoutesPath}`);
+  }
+  
+  return ignoredRoutes;
+}
 
 async function main() {
   console.log('Starting GTFS generation for Trujillo, Peru...');
@@ -13,6 +39,7 @@ async function main() {
   console.log('Filtering routes with hash=* tag only');
 
   const pbfPath = '/home/leonardo-gutierrez/GTFSTRUJILLO/rutas_trujillo.pbf';
+  const ignoredRoutes = loadIgnoredRoutes();
 
   // Check if PBF file exists
   if (!require('fs').existsSync(pbfPath)) {
@@ -55,6 +82,12 @@ async function main() {
         osmDataGetter: new OSMPBFReader(pbfPath),
         transformTypes: ['bus', 'share_taxi', 'minibus'],
         skipRoute: (route: any) => {
+          // Skip routes in the ignored list
+          if (ignoredRoutes.has(route.id)) {
+            console.log(`Skipping ignored route: ${route.id} - ${route.tags?.name || 'unnamed'}`);
+            return false; // Return false to skip this route
+          }
+          
           // The code does: if (!skipRoute(route)) continue;
           // So: skipRoute=true → process route, skipRoute=false → skip route
           // We want to process routes WITH hash tag

@@ -1,5 +1,5 @@
 ### Count
-**Total**: 214  **Correct**: 214  **With error**: 0
+**Total**: 210  **Correct**: 210  **With error**: 0
 
 
 | Id | Name | Ref | From | To | State |
@@ -101,8 +101,6 @@
 [19972510](https://www.openstreetmap.org/relation/19972510) | A.H. Víctor Raúl Haya de La Torre → Urb. Buganvillas del Golf | C-35 S3 | A.H. Víctor Raúl Haya de La Torre | Urb. Buganvillas del Golf | ✅
 [19972504](https://www.openstreetmap.org/relation/19972504) | Urb. San Andrés 5ta Etapa → A.H. Víctor Raúl Haya de La Torre | C-36 Y | Urb. San Andrés 5ta Etapa | A.H. Víctor Raúl Haya de La Torre | ✅
 [19972505](https://www.openstreetmap.org/relation/19972505) | A.H. Víctor Raúl Haya de La Torre → Urb. San Andrés 5ta Etapa | C-36 Y | A.H. Víctor Raúl Haya de La Torre | Urb. San Andrés 5ta Etapa | ✅
-[19972495](https://www.openstreetmap.org/relation/19972495) | Urb. Rosas del Valle 1ra Etapa → Av. Julian Arce | C-37 R | Urb. Rosas del Valle 1ra Etapa | Av. Julian Arce | ✅
-[19972501](https://www.openstreetmap.org/relation/19972501) | Av. Julian Arce → Urb. Rosas del Valle 1ra Etapa | C-37 R | Av. Julian Arce | Urb. Rosas del Valle 1ra Etapa | ✅
 [19972478](https://www.openstreetmap.org/relation/19972478) | Av. Luis Condemarín → Av. Luis Condemarín | C-38 S4 | Av. Luis Condemarín | Av. Luis Condemarín | ✅
 [19988589](https://www.openstreetmap.org/relation/19988589) | Av. Luis Condemarín → Av. Luis Condemarín | C-38 S4 | Av. Luis Condemarín | Av. Luis Condemarín | ✅
 [19968040](https://www.openstreetmap.org/relation/19968040) | Ca. Jirón Santa Isabel → Ca. Inca Roca | C-39 S | Ca. Jirón Santa Isabel | Ca. Inca Roca | ✅
@@ -182,8 +180,6 @@
 [19962303](https://www.openstreetmap.org/relation/19962303) | Via Evitamiento Milagro → Ca. Pedro Ruiz Gallo | M-23 B | Via Evitamiento Milagro | Ca. Pedro Ruiz Gallo | ✅
 [19962313](https://www.openstreetmap.org/relation/19962313) | Ca. Pedro Ruiz Gallo → Via Evitamiento Milagro | M-23 B | Ca. Pedro Ruiz Gallo | Via Evitamiento Milagro | ✅
 [19962315](https://www.openstreetmap.org/relation/19962315) | Via Evitamiento Milagro → Ca. Pedro Ruiz Gallo | M-23 B | Via Evitamiento Milagro | Ca. Pedro Ruiz Gallo | ✅
-[19962318](https://www.openstreetmap.org/relation/19962318) | Av. Libertad → Av. América Sur | M-24 A | Av. Libertad | Av. América Sur | ✅
-[19962323](https://www.openstreetmap.org/relation/19962323) | Av. América Sur → Av. Libertad | M-24 A | Av. América Sur | Av. Libertad | ✅
 [19962362](https://www.openstreetmap.org/relation/19962362) | Ca. Liverpool → Ca. F | M-25 A | Ca. Liverpool | Ca. F | ✅
 [19962394](https://www.openstreetmap.org/relation/19962394) | Ca. F → Ca. Liverpool | M-25 A | Ca. F | Ca. Liverpool | ✅
 [19962432](https://www.openstreetmap.org/relation/19962432) | Futuro Barrio 5C → Ca. Alfonso Ugarte | M-26 B | Futuro Barrio 5C | Ca. Alfonso Ugarte | ✅
