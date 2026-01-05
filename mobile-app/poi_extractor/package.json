@@ -1,7 +1,7 @@
 {
-  "name": "kigali-poi-extractor",
+  "name": "trujillo-poi-extractor",
   "version": "1.0.0",
-  "description": "POI extractor for Kigali Mobility app",
+  "description": "POI extractor for Trujillo Mobility app",
   "type": "module",
   "scripts": {
     "build-extractor": "cd node_modules/trufi-server-poi_extractor && npm install --include=dev && npm run build",

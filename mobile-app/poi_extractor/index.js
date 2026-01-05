@@ -5,10 +5,10 @@ import { dirname, join } from 'path';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-const inputFile = join(__dirname, 'kigali.osm.pbf');
+const inputFile = join(__dirname, 'trujillo.osm.pbf');
 const outputDir = join(__dirname, '..', 'assets', 'pois');
 
-console.log('🚀 Extracting POIs from Kigali OSM data...');
+console.log('🚀 Extracting POIs from Trujillo OSM data...');
 console.log(`📂 Input: ${inputFile}`);
 console.log(`📂 Output: ${outputDir}`);
 

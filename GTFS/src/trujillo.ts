@@ -4,7 +4,7 @@
  * Filters routes with hash=* tag
  */
 
-import { osmToGtfs, OSMPBFReader } from '../trufi-gtfs-builder';
+import { osmToGtfs, OSMPBFReader } from 'trufi-gtfs-builder';
 import * as path from 'path';
 import * as fs from 'fs';
 
@@ -35,10 +35,11 @@ function loadIgnoredRoutes(): Set<number> {
 
 async function main() {
   console.log('Starting GTFS generation for Trujillo, Peru...');
-  console.log('Using PBF file: /home/leonardo-gutierrez/GTFSTRUJILLO/rutas_trujillo.pbf');
+  
+  const pbfPath = path.join(__dirname, '..', 'trujillo.osm.pbf');
+  console.log(`Using PBF file: ${pbfPath}`);
   console.log('Filtering routes with hash=* tag only');
 
-  const pbfPath = '/home/leonardo-gutierrez/GTFSTRUJILLO/rutas_trujillo.pbf';
   const ignoredRoutes = loadIgnoredRoutes();
 
   // Check if PBF file exists
@@ -88,11 +89,10 @@ async function main() {
             return false; // Return false to skip this route
           }
           
-          // The code does: if (!skipRoute(route)) continue;
-          // So: skipRoute=true → process route, skipRoute=false → skip route
+          // skipRoute returns true to INCLUDE the route, false to SKIP it
           // We want to process routes WITH hash tag
           const hasHash = route.tags && route.tags.hash !== undefined;
-          return hasHash; // Return true when hash exists, so route gets processed
+          return hasHash; // Return true when hash exists to process the route
         },
       },
       gtfsOptions: {
