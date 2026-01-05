@@ -1,0 +1,640 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": 5834448092,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.044559000000003,
+          -1.9401546
+        ]
+      },
+      "properties": {
+        "id": 5834448092,
+        "name": "Nyabugogo Police Post",
+        "type": "police",
+        "category": "emergency",
+        "subcategory": "police",
+        "osmType": "node",
+        "amenity": "police",
+        "check_date": "2023-04-14",
+        "operator": "Rwanda National Police"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6918845186,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.152949800000002,
+          -1.9534651
+        ]
+      },
+      "properties": {
+        "id": 6918845186,
+        "name": "Police Station Checkins",
+        "type": "police",
+        "category": "emergency",
+        "subcategory": "police",
+        "osmType": "node",
+        "amenity": "police",
+        "name:fr": "Enregistrement au Poste de Police"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10799714405,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.0829665,
+          -1.9691056000000002
+        ]
+      },
+      "properties": {
+        "id": 10799714405,
+        "name": "RIB",
+        "type": "police",
+        "category": "emergency",
+        "subcategory": "police",
+        "osmType": "node",
+        "amenity": "police",
+        "check_date": "2023-06-10"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10799780105,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.082966400000004,
+          -1.9691056000000002
+        ]
+      },
+      "properties": {
+        "id": 10799780105,
+        "name": "RIB",
+        "type": "police",
+        "category": "emergency",
+        "subcategory": "police",
+        "osmType": "node",
+        "amenity": "police",
+        "check_date": "2023-06-10"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10938955652,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.144731000000004,
+          -2.0004223000000003
+        ]
+      },
+      "properties": {
+        "id": 10938955652,
+        "name": "Traffic Police office",
+        "type": "police",
+        "category": "emergency",
+        "subcategory": "police",
+        "osmType": "node",
+        "amenity": "police",
+        "check_date": "2023-05-30",
+        "name:fr": "Bureau de la police de la circulation"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10989001961,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.0517168,
+          -1.9523594000000002
+        ]
+      },
+      "properties": {
+        "id": 10989001961,
+        "name": "Kimisagara Police Station",
+        "type": "police",
+        "category": "emergency",
+        "subcategory": "police",
+        "osmType": "node",
+        "amenity": "police",
+        "check_date": "2023-06-19",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name:en": "Police Station",
+        "name:rw": "Police",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11002856173,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.051716700000004,
+          -1.9523594000000002
+        ]
+      },
+      "properties": {
+        "id": 11002856173,
+        "name": "Kimisagara Police Station",
+        "type": "police",
+        "category": "emergency",
+        "subcategory": "police",
+        "osmType": "node",
+        "amenity": "police",
+        "check_date": "2023-06-19",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name:en": "Police Station",
+        "name:rw": "Police",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 13195411087,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.102897400000003,
+          -1.9716980000000002
+        ]
+      },
+      "properties": {
+        "id": 13195411087,
+        "name": "",
+        "type": "police",
+        "category": "emergency",
+        "subcategory": "police",
+        "osmType": "node",
+        "amenity": "police"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 130444174,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              30.051341300000004,
+              -1.9394431
+            ],
+            [
+              30.051126900000003,
+              -1.9395041000000002
+            ],
+            [
+              30.051085300000004,
+              -1.9393585000000002
+            ],
+            [
+              30.0511678,
+              -1.9393350000000003
+            ],
+            [
+              30.051123900000004,
+              -1.9391812000000002
+            ],
+            [
+              30.051272500000003,
+              -1.9391389
+            ],
+            [
+              30.051308300000002,
+              -1.9392644
+            ],
+            [
+              30.051451500000002,
+              -1.9392236000000003
+            ],
+            [
+              30.051439300000002,
+              -1.9391811
+            ],
+            [
+              30.051586300000004,
+              -1.9391393000000001
+            ],
+            [
+              30.051594400000003,
+              -1.9391680000000002
+            ],
+            [
+              30.0517721,
+              -1.9391174000000002
+            ],
+            [
+              30.051761100000004,
+              -1.9390790000000002
+            ],
+            [
+              30.0519032,
+              -1.9390385
+            ],
+            [
+              30.051967700000002,
+              -1.9392646000000002
+            ],
+            [
+              30.051502300000003,
+              -1.9393972000000002
+            ],
+            [
+              30.0514447,
+              -1.9394136000000002
+            ],
+            [
+              30.051341300000004,
+              -1.9394431
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 130444174,
+        "name": "Rwanda National Police",
+        "type": "police",
+        "category": "emergency",
+        "subcategory": "police",
+        "osmType": "way",
+        "amenity": "police",
+        "building": "yes",
+        "check_date": "2023-04-16",
+        "name:fr": "Police Nationale du Rwanda"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 173164298,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              30.0727988,
+              -1.9340738000000002
+            ],
+            [
+              30.072519900000003,
+              -1.9348351000000001
+            ],
+            [
+              30.072198000000004,
+              -1.9357680000000002
+            ],
+            [
+              30.0742803,
+              -1.9366806
+            ],
+            [
+              30.0744587,
+              -1.9367435000000002
+            ],
+            [
+              30.075245700000004,
+              -1.9370340000000001
+            ],
+            [
+              30.076809600000004,
+              -1.9376201000000002
+            ],
+            [
+              30.0770766,
+              -1.9368459000000002
+            ],
+            [
+              30.0772076,
+              -1.9364211000000002
+            ],
+            [
+              30.077276400000002,
+              -1.9363063000000003
+            ],
+            [
+              30.077605300000002,
+              -1.9352755000000001
+            ],
+            [
+              30.077583600000004,
+              -1.935264
+            ],
+            [
+              30.077738500000002,
+              -1.9347685000000001
+            ],
+            [
+              30.0776971,
+              -1.9347139000000002
+            ],
+            [
+              30.076687800000002,
+              -1.9343794
+            ],
+            [
+              30.075196800000004,
+              -1.9338679
+            ],
+            [
+              30.0743435,
+              -1.9335591
+            ],
+            [
+              30.073199400000004,
+              -1.9331215000000002
+            ],
+            [
+              30.0727988,
+              -1.9340738000000002
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 173164298,
+        "name": "Rwanda National Police Headquarters",
+        "type": "police",
+        "category": "emergency",
+        "subcategory": "police",
+        "osmType": "way",
+        "amenity": "police",
+        "check_date": "2023-05-21",
+        "name:fr": "Siège de la Police nationale du Rwanda",
+        "operator": "RNP"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 173269223,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              30.0560377,
+              -1.9710561000000002
+            ],
+            [
+              30.0560219,
+              -1.9710929000000001
+            ],
+            [
+              30.056402800000004,
+              -1.9712564000000001
+            ],
+            [
+              30.056418600000004,
+              -1.9712196000000002
+            ],
+            [
+              30.056547300000002,
+              -1.9710588000000002
+            ],
+            [
+              30.056694900000004,
+              -1.9707612
+            ],
+            [
+              30.056822000000004,
+              -1.9705315
+            ],
+            [
+              30.0567324,
+              -1.9703993000000002
+            ],
+            [
+              30.0565795,
+              -1.9704369000000002
+            ],
+            [
+              30.056319400000003,
+              -1.9706379000000003
+            ],
+            [
+              30.056206700000004,
+              -1.9707505
+            ],
+            [
+              30.0560377,
+              -1.9710561000000002
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 173269223,
+        "name": "Nyamirambo Police Station",
+        "type": "police",
+        "category": "emergency",
+        "subcategory": "police",
+        "osmType": "way",
+        "amenity": "police",
+        "check_date": "2023-04-14",
+        "designation": "Nyamirambo Police station",
+        "name:fr": "Commissariat de Nyamirambo"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 214217164,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              30.077772700000004,
+              -1.9698250000000002
+            ],
+            [
+              30.077575600000003,
+              -1.9697275
+            ],
+            [
+              30.077550100000003,
+              -1.969154
+            ],
+            [
+              30.077928900000003,
+              -1.9692705000000001
+            ],
+            [
+              30.077772700000004,
+              -1.9698250000000002
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 214217164,
+        "name": "Gikondo Police Station",
+        "type": "police",
+        "category": "emergency",
+        "subcategory": "police",
+        "osmType": "way",
+        "amenity": "police",
+        "check_date": "2023-06-10",
+        "name:fr": "Commissariat de Gikondo"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 681845843,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              30.097427600000003,
+              -1.9568228
+            ],
+            [
+              30.0974563,
+              -1.9569623000000003
+            ],
+            [
+              30.097549400000002,
+              -1.9569431000000002
+            ],
+            [
+              30.097537300000003,
+              -1.9568844
+            ],
+            [
+              30.0976238,
+              -1.9568666000000001
+            ],
+            [
+              30.0976071,
+              -1.9567858000000002
+            ],
+            [
+              30.097427600000003,
+              -1.9568228
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 681845843,
+        "name": "Kimihurura Police Station",
+        "type": "police",
+        "category": "emergency",
+        "subcategory": "police",
+        "osmType": "way",
+        "addr:street": "KG 624 Street",
+        "amenity": "police",
+        "building": "yes",
+        "check_date": "2023-04-08",
+        "roof:shape": "hipped"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1222024547,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              30.145209,
+              -2.0003699000000004
+            ],
+            [
+              30.144787900000004,
+              -2.0000656
+            ],
+            [
+              30.143879100000003,
+              -1.9999473
+            ],
+            [
+              30.143437400000003,
+              -1.9999407000000002
+            ],
+            [
+              30.1434308,
+              -2.0006654000000004
+            ],
+            [
+              30.143351700000004,
+              -2.0009916000000003
+            ],
+            [
+              30.1433399,
+              -2.0013113000000002
+            ],
+            [
+              30.143391800000003,
+              -2.0018455000000004
+            ],
+            [
+              30.143560800000003,
+              -2.0023548
+            ],
+            [
+              30.1436184,
+              -2.0023816
+            ],
+            [
+              30.143682800000004,
+              -2.0023682000000003
+            ],
+            [
+              30.144067700000004,
+              -2.0020452
+            ],
+            [
+              30.1441374,
+              -2.0020466000000003
+            ],
+            [
+              30.1444861,
+              -2.002324
+            ],
+            [
+              30.1446092,
+              -2.0021238
+            ],
+            [
+              30.144727500000002,
+              -2.0019313000000003
+            ],
+            [
+              30.144794800000003,
+              -2.0017395000000002
+            ],
+            [
+              30.145209,
+              -2.0003699000000004
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 1222024547,
+        "name": "Busanza Automatised Driving Testing Centre",
+        "type": "police",
+        "category": "emergency",
+        "subcategory": "police",
+        "osmType": "way",
+        "amenity": "police",
+        "building": "yes",
+        "name:fr": "Centre d'examen de conduite automatisé de Busanza",
+        "operator": "Rwanda National Police",
+        "operator:fr": "Police Nationale du Rwanda",
+        "wheelchair": "yes"
+      }
+    }
+  ]
+}

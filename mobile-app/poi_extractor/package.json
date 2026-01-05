@@ -1,0 +1,13 @@
+{
+  "name": "kigali-poi-extractor",
+  "version": "1.0.0",
+  "description": "POI extractor for Kigali Mobility app",
+  "type": "module",
+  "scripts": {
+    "build-extractor": "cd node_modules/trufi-server-poi_extractor && npm install --include=dev && npm run build",
+    "extract": "node index.js"
+  },
+  "dependencies": {
+    "trufi-server-poi_extractor": "github:trufi-association/trufi-server-poi_extractor#main"
+  }
+}

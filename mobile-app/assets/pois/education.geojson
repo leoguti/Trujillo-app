@@ -1,0 +1,6576 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": 279245665,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.059835700000004,
+          -1.9512745000000002
+        ]
+      },
+      "properties": {
+        "id": 279245665,
+        "name": "École Belge",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "node",
+        "addr:city": "Kigali",
+        "addr:street": "Rue KN 78",
+        "addr:street_1": "KN 80 Street",
+        "amenity": "school",
+        "check_date": "2023-04-19",
+        "name:fr": "École Belge"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 317706497,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.145105600000004,
+          -1.9565223000000003
+        ]
+      },
+      "properties": {
+        "id": 317706497,
+        "name": "KIM",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "node",
+        "amenity": "school",
+        "name:fr": "KIM"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 710268452,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.100602500000004,
+          -1.9876921
+        ]
+      },
+      "properties": {
+        "id": 710268452,
+        "name": "CGFK School",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "node",
+        "amenity": "school",
+        "check_date": "2023-04-09",
+        "name:fr": "École CGFK"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 710685653,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.087139500000003,
+          -1.9130329000000001
+        ]
+      },
+      "properties": {
+        "id": 710685653,
+        "name": "Headmaster's Office",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "node",
+        "amenity": "school",
+        "name:fr": "Bureau du Directeur"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 710685775,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.087071100000003,
+          -1.9129694000000002
+        ]
+      },
+      "properties": {
+        "id": 710685775,
+        "name": "Computer Lab",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "node",
+        "amenity": "school",
+        "name:fr": "Salle informatique"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 718927008,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.0943405,
+          -1.9576255000000002
+        ]
+      },
+      "properties": {
+        "id": 718927008,
+        "name": "Kacyiru Secondary School",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "node",
+        "amenity": "school",
+        "check_date": "2023-04-08",
+        "name:fr": "École Secondaire de Kacyiru"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1882697776,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.051264700000004,
+          -1.9766974000000002
+        ]
+      },
+      "properties": {
+        "id": 1882697776,
+        "name": "École Saint-Joseph",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "node",
+        "amenity": "school",
+        "check_date": "2023-04-14",
+        "name:fr": "École Saint-Joseph"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1882704830,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.082583300000003,
+          -1.9499744
+        ]
+      },
+      "properties": {
+        "id": 1882704830,
+        "name": "Don Bosco",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "node",
+        "amenity": "school",
+        "name:etymology": "Jean Bosco",
+        "name:etymology:wikidata": "Q146183",
+        "name:etymology:wikipedia": "fr:Jean Bosco",
+        "name:fr": "Jean Bosco"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2168876405,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.0604818,
+          -1.9612047000000001
+        ]
+      },
+      "properties": {
+        "id": 2168876405,
+        "name": "Mount Kenya University Campus / Gitega",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "node",
+        "amenity": "school",
+        "check_date": "2023-04-19"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2168880747,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.134870300000003,
+          -1.9323445000000001
+        ]
+      },
+      "properties": {
+        "id": 2168880747,
+        "name": "",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "node",
+        "amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2655482031,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.074521800000003,
+          -1.9138618
+        ]
+      },
+      "properties": {
+        "id": 2655482031,
+        "name": "Fawe Girls School",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "node",
+        "amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3094431536,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.0895946,
+          -1.9445849000000002
+        ]
+      },
+      "properties": {
+        "id": 3094431536,
+        "name": "Carnegie Mellon University in Rwanda",
+        "type": "university",
+        "category": "education",
+        "subcategory": "university",
+        "osmType": "node",
+        "amenity": "university",
+        "check_date": "2023-04-08",
+        "internet_access": "yes",
+        "internet_access:fee": "no",
+        "name:en": "Carnegie Mellon University in Rwanda",
+        "name:fr": "Université Carnegie Mellon au Rwanda",
+        "operator:type": "public"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4121704502,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.0677884,
+          -1.9325038
+        ]
+      },
+      "properties": {
+        "id": 4121704502,
+        "name": "",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "node",
+        "amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4292801947,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.092070300000003,
+          -1.9442354000000002
+        ]
+      },
+      "properties": {
+        "id": 4292801947,
+        "name": "Blooming Buds",
+        "type": "kindergarten",
+        "category": "education",
+        "subcategory": "kindergarten",
+        "osmType": "node",
+        "amenity": "kindergarten"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4805720521,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.134723200000003,
+          -1.9471704
+        ]
+      },
+      "properties": {
+        "id": 4805720521,
+        "name": "excella school",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "node",
+        "amenity": "school",
+        "name:fr": "École Excella"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4815252221,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.049441500000004,
+          -1.9843162
+        ]
+      },
+      "properties": {
+        "id": 4815252221,
+        "name": "École Saint-André",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "node",
+        "amenity": "school",
+        "name:fr": "École Saint-André"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5087148621,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.103327200000003,
+          -1.9663828
+        ]
+      },
+      "properties": {
+        "id": 5087148621,
+        "name": "University of Tourism, Technology and Business Studies",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "node",
+        "amenity": "school",
+        "check_date": "2023-06-10",
+        "email": "info@utb.ac.rw",
+        "name:fr": "Université du tourisme, de la technologie et des études commerciales",
+        "short_name": "UTB",
+        "short_name:fr": "UTB",
+        "website": "https://www.utb.ac.rw/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5796585806,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.0628835,
+          -1.9581797
+        ]
+      },
+      "properties": {
+        "id": 5796585806,
+        "name": "Central Library",
+        "type": "library",
+        "category": "education",
+        "subcategory": "library",
+        "osmType": "node",
+        "amenity": "library",
+        "check_date": "2023-04-19",
+        "name:fr": "Bibliothèque Centrale"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6264064585,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.141354000000003,
+          -1.9552924000000003
+        ]
+      },
+      "properties": {
+        "id": 6264064585,
+        "name": "Kim University",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "node",
+        "amenity": "school",
+        "name:fr": "Université Kim"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6264070688,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.120762100000004,
+          -1.9574246000000002
+        ]
+      },
+      "properties": {
+        "id": 6264070688,
+        "name": "GR La Kermesse",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "node",
+        "amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6480899085,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.0600872,
+          -1.9545042000000001
+        ]
+      },
+      "properties": {
+        "id": 6480899085,
+        "name": "Lycée Notre Dame de Citeaux",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "node",
+        "amenity": "school",
+        "check_date": "2023-04-19",
+        "denomination": "catholic",
+        "name:fr": "Lycée Notre Dame de Citeaux",
+        "operator:type": "private",
+        "religion": "christian"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6918845488,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.142730200000003,
+          -1.9453964000000001
+        ]
+      },
+      "properties": {
+        "id": 6918845488,
+        "name": "Auca Masoro",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "node",
+        "amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 7205123285,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.139645,
+          -1.9562562000000001
+        ]
+      },
+      "properties": {
+        "id": 7205123285,
+        "name": "Kid's 'Parent School",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "node",
+        "amenity": "school",
+        "name:fr": "École des parents de Kigali"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 7205123385,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.139643600000003,
+          -1.9564234000000003
+        ]
+      },
+      "properties": {
+        "id": 7205123385,
+        "name": "Kigali Parent's School",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "node",
+        "amenity": "school",
+        "name:fr": "École des parents de Kigali"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 7551942507,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.1177026,
+          -1.9963069000000002
+        ]
+      },
+      "properties": {
+        "id": 7551942507,
+        "name": "Muyange Secondary School",
+        "type": "college",
+        "category": "education",
+        "subcategory": "university",
+        "osmType": "node",
+        "amenity": "college",
+        "name:fr": "Lycée de Muyange"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 8533132211,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.158634700000004,
+          -1.935394
+        ]
+      },
+      "properties": {
+        "id": 8533132211,
+        "name": "Carnegie Mellon University Africa",
+        "type": "university",
+        "category": "education",
+        "subcategory": "university",
+        "osmType": "node",
+        "amenity": "university",
+        "wikidata": "Q97041887",
+        "wikipedia": "en:Carnegie Mellon University Africa"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 8712369224,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.033850700000002,
+          -2.0610036000000003
+        ]
+      },
+      "properties": {
+        "id": 8712369224,
+        "name": "Primary School",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "node",
+        "amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 8951500463,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.088255300000004,
+          -1.9427200000000002
+        ]
+      },
+      "properties": {
+        "id": 8951500463,
+        "name": "Centre de Documentation et de Pastorale",
+        "type": "library",
+        "category": "education",
+        "subcategory": "library",
+        "osmType": "node",
+        "amenity": "library",
+        "check_date": "2023-04-08",
+        "name:fr": "Centre de Documentation et de Pastorale",
+        "short_name": "CEDOREP",
+        "short_name:fr": "CEDOREP"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 9189854986,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.092983900000004,
+          -1.9527955000000001
+        ]
+      },
+      "properties": {
+        "id": 9189854986,
+        "name": "University of Global Health Equity",
+        "type": "university",
+        "category": "education",
+        "subcategory": "university",
+        "osmType": "node",
+        "amenity": "university"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10827037416,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.069450200000002,
+          -1.9557366000000003
+        ]
+      },
+      "properties": {
+        "id": 10827037416,
+        "name": "Ecole Privèe Marie Axiliatrice",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "node",
+        "amenity": "school",
+        "check_date": "2023-04-20",
+        "name:fr": "Ecole Privèe Marie Axiliatrice",
+        "operator:type": "private",
+        "religion": "christian"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10836975068,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.170800900000003,
+          -1.9774285000000003
+        ]
+      },
+      "properties": {
+        "id": 10836975068,
+        "name": "Gs. Camp Kanombe",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "node",
+        "amenity": "school",
+        "check_date": "2023-04-24"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10861684798,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.085651100000003,
+          -1.9462373000000002
+        ]
+      },
+      "properties": {
+        "id": 10861684798,
+        "name": "Faith and Hope Nursery School.",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "node",
+        "amenity": "school",
+        "check_date": "2023-10-29",
+        "grades": "0-6",
+        "internet_access": "no",
+        "operator": "Church of Faith in Rwanda",
+        "operator:type": "private",
+        "source": "local knowledge",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10865400376,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.134345800000002,
+          -1.9619578000000002
+        ]
+      },
+      "properties": {
+        "id": 10865400376,
+        "name": "Trinity Nursery school",
+        "type": "kindergarten",
+        "category": "education",
+        "subcategory": "kindergarten",
+        "osmType": "node",
+        "addr:street": "KN 5 Road",
+        "addr:street:fr": "Route KN 5",
+        "amenity": "kindergarten",
+        "check_date": "2023-05-17",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name:fr": "École maternelle de la Trinité",
+        "operator:type": "public",
+        "phone": "+250 783 071 866",
+        "preschool": "yes",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10905531280,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.135258300000004,
+          -1.9601734000000002
+        ]
+      },
+      "properties": {
+        "id": 10905531280,
+        "name": "Rwiza Primary School",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "node",
+        "amenity": "school",
+        "check_date": "2023-05-17",
+        "grades": "0-6",
+        "operator": "School District No. 43",
+        "operator:type": "government"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10924395880,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.1314619,
+          -1.9850582
+        ]
+      },
+      "properties": {
+        "id": 10924395880,
+        "name": "ARISE AND SHINE SCHOOL",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "node",
+        "amenity": "school",
+        "check_date": "2023-05-24",
+        "fax": "+250788634079",
+        "operator:type": "private",
+        "religion": "christian"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10924686077,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.131739400000004,
+          -1.9879321
+        ]
+      },
+      "properties": {
+        "id": 10924686077,
+        "name": "Ineza School",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "node",
+        "amenity": "school",
+        "check_date": "2023-05-24"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10931537083,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.090121600000003,
+          -2.0058704
+        ]
+      },
+      "properties": {
+        "id": 10931537083,
+        "name": "Primary school Nyanza",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "node",
+        "amenity": "school",
+        "check_date": "2023-05-27",
+        "grades": "0-6",
+        "operator": "School District No. 43",
+        "operator:type": "private"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10931576679,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.086064800000003,
+          -2.0221384000000002
+        ]
+      },
+      "properties": {
+        "id": 10931576679,
+        "name": "G.S Karembure",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "node",
+        "amenity": "school",
+        "check_date": "2023-05-27",
+        "denomination": "catholic",
+        "grades": "1-6",
+        "operator": "School District No. 43",
+        "operator:type": "public",
+        "religion": "christian"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10965370443,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.125859900000002,
+          -1.9738804
+        ]
+      },
+      "properties": {
+        "id": 10965370443,
+        "name": "CENTRE SCOLAIRE de KABEZA",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "node",
+        "amenity": "school",
+        "check_date": "2023-06-09",
+        "grades": "0-6",
+        "operator": "School District No. 43"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10965567118,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.1235393,
+          -1.9690147000000002
+        ]
+      },
+      "properties": {
+        "id": 10965567118,
+        "name": "Primary School",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "node",
+        "amenity": "school",
+        "check_date": "2023-06-09",
+        "operator": "School District No. 43"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10968272008,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.098761900000003,
+          -1.9669668000000002
+        ]
+      },
+      "properties": {
+        "id": 10968272008,
+        "name": "APADE",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "node",
+        "amenity": "school",
+        "check_date": "2023-06-10",
+        "operator": "School District No. 43",
+        "operator:type": "private",
+        "religion": "christian"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10970872269,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.080341900000004,
+          -1.9479135
+        ]
+      },
+      "properties": {
+        "id": 10970872269,
+        "name": "Institut de Formation Apostolique de Kimihurura",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "node",
+        "amenity": "school",
+        "denomination": "roman_catholic",
+        "entrance": "yes",
+        "fixme": "Please merge me into a nearby building",
+        "operator": "The Salesians of Don Bosco",
+        "operator:type": "religious",
+        "religion": "christian",
+        "website": "https://ifakdonbosco.org/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10989111294,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.056027500000003,
+          -1.9596934000000001
+        ]
+      },
+      "properties": {
+        "id": 10989111294,
+        "name": "GITEGA Primary School",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "node",
+        "amenity": "school",
+        "check_date": "2023-06-19",
+        "operator": "School District No. 43"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11003000283,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.051312300000003,
+          -1.9493411000000003
+        ]
+      },
+      "properties": {
+        "id": 11003000283,
+        "name": "Group Scolaire Kimisagara",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "node",
+        "amenity": "school",
+        "check_date": "2023-06-24",
+        "operator": "School District No. 43"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11658226986,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.152374800000004,
+          -1.9819592000000001
+        ]
+      },
+      "properties": {
+        "id": 11658226986,
+        "name": "Karama Primary School",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "node",
+        "amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12070331020,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.093439500000002,
+          -2.0014099
+        ]
+      },
+      "properties": {
+        "id": 12070331020,
+        "name": "Nyanza Primary School",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "node",
+        "amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12093065556,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.097160900000002,
+          -1.9660228000000002
+        ]
+      },
+      "properties": {
+        "id": 12093065556,
+        "name": "University Of Lay Adventists of Kigali",
+        "type": "university",
+        "category": "education",
+        "subcategory": "university",
+        "osmType": "node",
+        "amenity": "university",
+        "check_date": "2024-08-05",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12108387233,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.089097700000003,
+          -1.9166373
+        ]
+      },
+      "properties": {
+        "id": 12108387233,
+        "name": "World Mission High School(WMHS)",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "node",
+        "addr:city": "Gisozi",
+        "addr:street": "KG 14 Avenue",
+        "amenity": "school",
+        "denomination": "evangelical",
+        "grades": "10-12",
+        "religion": "christian",
+        "website": "https://worldmissionhighschool.org/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12176128095,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.077768300000002,
+          -1.9405762000000002
+        ]
+      },
+      "properties": {
+        "id": 12176128095,
+        "name": "SIT Study Abroad Education",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "node",
+        "amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 56820074,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              30.086214000000002,
+              -1.9122384000000001
+            ],
+            [
+              30.0866432,
+              -1.9117652000000003
+            ],
+            [
+              30.086821000000004,
+              -1.9115933000000003
+            ],
+            [
+              30.086833600000002,
+              -1.9115696000000002
+            ],
+            [
+              30.0869287,
+              -1.9116283
+            ],
+            [
+              30.0872488,
+              -1.9112243000000002
+            ],
+            [
+              30.0873449,
+              -1.9113604000000002
+            ],
+            [
+              30.087432000000003,
+              -1.9115039000000003
+            ],
+            [
+              30.087558200000004,
+              -1.9117585000000001
+            ],
+            [
+              30.0875686,
+              -1.9117857000000003
+            ],
+            [
+              30.087675200000003,
+              -1.9120645
+            ],
+            [
+              30.0876878,
+              -1.9123832
+            ],
+            [
+              30.087723600000004,
+              -1.9125633000000002
+            ],
+            [
+              30.087735300000002,
+              -1.9126223000000002
+            ],
+            [
+              30.087710200000004,
+              -1.9127047000000001
+            ],
+            [
+              30.087622100000004,
+              -1.9128515000000001
+            ],
+            [
+              30.087517200000004,
+              -1.9130794000000002
+            ],
+            [
+              30.087389700000003,
+              -1.9132674
+            ],
+            [
+              30.087298000000004,
+              -1.9134646000000002
+            ],
+            [
+              30.087204600000003,
+              -1.9132934000000001
+            ],
+            [
+              30.087171500000004,
+              -1.9132245
+            ],
+            [
+              30.087099000000002,
+              -1.9131172
+            ],
+            [
+              30.086940600000002,
+              -1.9129588000000002
+            ],
+            [
+              30.086842200000003,
+              -1.9128747000000001
+            ],
+            [
+              30.0866812,
+              -1.9127441
+            ],
+            [
+              30.086499500000002,
+              -1.9126269000000002
+            ],
+            [
+              30.086392200000002,
+              -1.9125678000000002
+            ],
+            [
+              30.086312600000003,
+              -1.9124497000000003
+            ],
+            [
+              30.086260700000004,
+              -1.9123423000000002
+            ],
+            [
+              30.086214000000002,
+              -1.9122384000000001
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 56820074,
+        "name": "Kagugu Primary School",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "way",
+        "amenity": "school",
+        "name:fr": "École primaire de Kagugu"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 126067274,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              30.113203400000003,
+              -1.9741763
+            ],
+            [
+              30.113777400000004,
+              -1.9751628
+            ],
+            [
+              30.1144533,
+              -1.9745784000000002
+            ],
+            [
+              30.114132800000004,
+              -1.9740064000000002
+            ],
+            [
+              30.1141636,
+              -1.9739351000000003
+            ],
+            [
+              30.1138806,
+              -1.9734971000000001
+            ],
+            [
+              30.113611100000004,
+              -1.9737796
+            ],
+            [
+              30.113203400000003,
+              -1.9741763
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 126067274,
+        "name": "NUR SCHOOL OF PUBLIC HEALTH",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "way",
+        "amenity": "school",
+        "name:fr": "École de santé publique Nur"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 129209672,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              30.104312000000004,
+              -1.9428065
+            ],
+            [
+              30.104475000000004,
+              -1.9432108000000001
+            ],
+            [
+              30.104693100000002,
+              -1.9431229
+            ],
+            [
+              30.1045301,
+              -1.9427186
+            ],
+            [
+              30.104312000000004,
+              -1.9428065
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 129209672,
+        "name": "ADB High School",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "way",
+        "amenity": "school",
+        "building": "school",
+        "designation": "School",
+        "source": "School"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 133951762,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              30.068888400000002,
+              -1.9624389000000002
+            ],
+            [
+              30.068828300000003,
+              -1.9621560000000002
+            ],
+            [
+              30.0686247,
+              -1.9621991
+            ],
+            [
+              30.068684800000003,
+              -1.9624820000000003
+            ],
+            [
+              30.068888400000002,
+              -1.9624389000000002
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 133951762,
+        "name": "Lycee de Kigali Gymnasium",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "way",
+        "amenity": "school",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 173162152,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              30.0568604,
+              -1.9694136000000002
+            ],
+            [
+              30.056880200000002,
+              -1.9693478000000002
+            ],
+            [
+              30.0570939,
+              -1.9694123000000001
+            ],
+            [
+              30.0570978,
+              -1.9693992000000002
+            ],
+            [
+              30.057252300000002,
+              -1.9694458000000001
+            ],
+            [
+              30.057228500000004,
+              -1.9695247000000002
+            ],
+            [
+              30.0568604,
+              -1.9694136000000002
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 173162152,
+        "name": "Intwali Primary School",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "way",
+        "amenity": "school",
+        "building": "yes",
+        "check_date": "2023-04-14",
+        "name:fr": "École primaire Intwali"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 173163227,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              30.078238400000004,
+              -1.9347344000000002
+            ],
+            [
+              30.078638400000003,
+              -1.9340367000000003
+            ],
+            [
+              30.078730600000004,
+              -1.9338284000000001
+            ],
+            [
+              30.078782600000004,
+              -1.9338076000000002
+            ],
+            [
+              30.078842,
+              -1.9338365000000002
+            ],
+            [
+              30.079005300000002,
+              -1.9340216000000001
+            ],
+            [
+              30.079106000000003,
+              -1.9342073000000002
+            ],
+            [
+              30.079023300000003,
+              -1.9343332000000002
+            ],
+            [
+              30.0791858,
+              -1.9344494
+            ],
+            [
+              30.079442300000004,
+              -1.9346368000000003
+            ],
+            [
+              30.079329800000004,
+              -1.9348088
+            ],
+            [
+              30.0792296,
+              -1.9349704
+            ],
+            [
+              30.079141200000002,
+              -1.9351138
+            ],
+            [
+              30.078776100000002,
+              -1.9349461000000001
+            ],
+            [
+              30.078238400000004,
+              -1.9347344000000002
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 173163227,
+        "name": "Rotary Library",
+        "type": "library",
+        "category": "education",
+        "subcategory": "library",
+        "osmType": "way",
+        "amenity": "library",
+        "designation": "Rotary club Library",
+        "name:fr": "Bibliothèque Rotary"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 173164235,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              30.055128000000003,
+              -1.9778327000000002
+            ],
+            [
+              30.0551816,
+              -1.9779936000000002
+            ],
+            [
+              30.054892300000002,
+              -1.9785375000000003
+            ],
+            [
+              30.054742100000002,
+              -1.9787764
+            ],
+            [
+              30.0545727,
+              -1.9790464
+            ],
+            [
+              30.053722500000003,
+              -1.9801595
+            ],
+            [
+              30.053207500000003,
+              -1.9804275000000002
+            ],
+            [
+              30.052581900000003,
+              -1.9805331000000002
+            ],
+            [
+              30.0522497,
+              -1.9804156000000002
+            ],
+            [
+              30.0520874,
+              -1.9803593000000002
+            ],
+            [
+              30.0519643,
+              -1.9802722000000001
+            ],
+            [
+              30.051247500000002,
+              -1.979996
+            ],
+            [
+              30.051040300000004,
+              -1.9798700000000002
+            ],
+            [
+              30.050675500000004,
+              -1.9796984000000002
+            ],
+            [
+              30.050589700000003,
+              -1.9795483000000003
+            ],
+            [
+              30.050847100000002,
+              -1.9793446000000001
+            ],
+            [
+              30.050909900000004,
+              -1.9794684000000002
+            ],
+            [
+              30.0509759,
+              -1.9795269000000002
+            ],
+            [
+              30.051169,
+              -1.9793767000000002
+            ],
+            [
+              30.051329900000002,
+              -1.9791516000000002
+            ],
+            [
+              30.051544500000002,
+              -1.9789050000000001
+            ],
+            [
+              30.051694700000002,
+              -1.9787227000000003
+            ],
+            [
+              30.051802000000002,
+              -1.9785404000000002
+            ],
+            [
+              30.051962900000003,
+              -1.9783474
+            ],
+            [
+              30.052102400000003,
+              -1.9781115000000002
+            ],
+            [
+              30.0523063,
+              -1.9778542000000001
+            ],
+            [
+              30.0524565,
+              -1.9777040000000001
+            ],
+            [
+              30.052510100000003,
+              -1.9775539000000002
+            ],
+            [
+              30.052370600000003,
+              -1.9774467000000002
+            ],
+            [
+              30.0521239,
+              -1.9772859000000003
+            ],
+            [
+              30.052209700000002,
+              -1.9771143000000002
+            ],
+            [
+              30.0525407,
+              -1.9773990000000001
+            ],
+            [
+              30.052660300000003,
+              -1.9773288000000002
+            ],
+            [
+              30.052789100000002,
+              -1.9772859000000003
+            ],
+            [
+              30.052907100000002,
+              -1.9771572000000002
+            ],
+            [
+              30.053003600000004,
+              -1.9770929000000002
+            ],
+            [
+              30.053175300000003,
+              -1.9772215000000002
+            ],
+            [
+              30.053304000000004,
+              -1.9773824000000002
+            ],
+            [
+              30.053475700000003,
+              -1.9772108000000002
+            ],
+            [
+              30.053699400000003,
+              -1.9773668000000002
+            ],
+            [
+              30.053967600000004,
+              -1.9774419
+            ],
+            [
+              30.054332400000003,
+              -1.9775705000000001
+            ],
+            [
+              30.054570100000003,
+              -1.977629
+            ],
+            [
+              30.055128000000003,
+              -1.9778327000000002
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 173164235,
+        "name": "Collège Saint-André",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "way",
+        "amenity": "school",
+        "name:fr": "Collège Saint-André"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 173269214,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              30.054978200000004,
+              -1.9753773000000001
+            ],
+            [
+              30.055048000000003,
+              -1.9753800000000001
+            ],
+            [
+              30.055024900000003,
+              -1.9756837000000003
+            ],
+            [
+              30.054936400000003,
+              -1.9756756000000002
+            ],
+            [
+              30.054978200000004,
+              -1.9753773000000001
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 173269214,
+        "name": "Escaf Primary School",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "way",
+        "amenity": "school",
+        "check_date": "2023-04-14",
+        "name:fr": "École Primaire Escaf"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 173269215,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              30.056706000000002,
+              -1.9698137000000002
+            ],
+            [
+              30.0568832,
+              -1.9694664000000002
+            ],
+            [
+              30.0569686,
+              -1.9695099000000003
+            ],
+            [
+              30.056791500000003,
+              -1.9698572
+            ],
+            [
+              30.056706000000002,
+              -1.9698137000000002
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 173269215,
+        "name": "Intwali Primary School",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "way",
+        "amenity": "school",
+        "building": "yes",
+        "check_date": "2023-04-14",
+        "name:fr": "École primaire Intwali"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 173269216,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              30.056849900000003,
+              -1.9700409
+            ],
+            [
+              30.0570753,
+              -1.9695516000000002
+            ],
+            [
+              30.057182100000002,
+              -1.9696008000000003
+            ],
+            [
+              30.057060600000003,
+              -1.9698646000000002
+            ],
+            [
+              30.057049700000004,
+              -1.9698596000000002
+            ],
+            [
+              30.057024900000002,
+              -1.9699134000000003
+            ],
+            [
+              30.0570358,
+              -1.9699184
+            ],
+            [
+              30.056956700000004,
+              -1.9700901000000002
+            ],
+            [
+              30.056849900000003,
+              -1.9700409
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 173269216,
+        "name": "Intwali Primary School",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "way",
+        "amenity": "school",
+        "building": "yes",
+        "check_date": "2023-04-14",
+        "name:fr": "École primaire Intwali"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 173269221,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              30.056669900000003,
+              -1.9701562000000001
+            ],
+            [
+              30.0567111,
+              -1.9700702
+            ],
+            [
+              30.056847,
+              -1.9701352
+            ],
+            [
+              30.056841700000003,
+              -1.9701463000000001
+            ],
+            [
+              30.056903300000002,
+              -1.9701757000000002
+            ],
+            [
+              30.0568674,
+              -1.9702507000000002
+            ],
+            [
+              30.056669900000003,
+              -1.9701562000000001
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 173269221,
+        "name": "Intwali Primary School",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "way",
+        "amenity": "school",
+        "building": "yes",
+        "check_date": "2023-04-14",
+        "name:fr": "École primaire Intwali"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 173269222,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              30.0550947,
+              -1.9754213000000003
+            ],
+            [
+              30.055164700000002,
+              -1.9754388000000003
+            ],
+            [
+              30.0550971,
+              -1.9757092000000003
+            ],
+            [
+              30.055027100000004,
+              -1.9756917000000003
+            ],
+            [
+              30.0550947,
+              -1.9754213000000003
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 173269222,
+        "name": "Escaf Primary School",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "way",
+        "amenity": "school",
+        "check_date": "2023-04-14",
+        "name:fr": "École Primaire Escaf"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 173269224,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              30.056542500000003,
+              -1.9701233000000002
+            ],
+            [
+              30.056689400000003,
+              -1.9698472000000002
+            ],
+            [
+              30.056776900000003,
+              -1.9698937
+            ],
+            [
+              30.0566187,
+              -1.9701672000000001
+            ],
+            [
+              30.056542500000003,
+              -1.9701233000000002
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 173269224,
+        "name": "Intwali Primary School",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "way",
+        "amenity": "school",
+        "building": "yes",
+        "check_date": "2023-04-14",
+        "name:fr": "École primaire Intwali"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 173269225,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              30.0547831,
+              -1.9755749000000002
+            ],
+            [
+              30.054927900000003,
+              -1.9755964000000001
+            ],
+            [
+              30.0549199,
+              -1.9756580000000001
+            ],
+            [
+              30.054775100000004,
+              -1.9756393
+            ],
+            [
+              30.0547831,
+              -1.9755749000000002
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 173269225,
+        "name": "Escaf Primary School",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "way",
+        "amenity": "school",
+        "check_date": "2023-04-14",
+        "name:fr": "École Primaire Escaf"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 173305583,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              30.104317500000004,
+              -1.9562322
+            ],
+            [
+              30.104607200000004,
+              -1.9559882000000002
+            ],
+            [
+              30.104786900000004,
+              -1.9558462
+            ],
+            [
+              30.1047882,
+              -1.9556383000000002
+            ],
+            [
+              30.104630000000004,
+              -1.9553220000000002
+            ],
+            [
+              30.1041485,
+              -1.9548838000000002
+            ],
+            [
+              30.103697900000004,
+              -1.955243
+            ],
+            [
+              30.104081500000003,
+              -1.9559051
+            ],
+            [
+              30.104317500000004,
+              -1.9562322
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 173305583,
+        "name": "AUCA Masters Program",
+        "type": "university",
+        "category": "education",
+        "subcategory": "university",
+        "osmType": "way",
+        "amenity": "university",
+        "check_date": "2023-04-07",
+        "designation": "Adventist University of Central Africa",
+        "source": "www.auca.ac.rw/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 173306039,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              30.073470500000003,
+              -1.9232613
+            ],
+            [
+              30.072708100000003,
+              -1.9236387000000001
+            ],
+            [
+              30.072640300000003,
+              -1.9235454
+            ],
+            [
+              30.072461300000004,
+              -1.9236494000000002
+            ],
+            [
+              30.0723668,
+              -1.9235534
+            ],
+            [
+              30.072307700000003,
+              -1.9234596000000002
+            ],
+            [
+              30.072224600000002,
+              -1.9234998
+            ],
+            [
+              30.072173600000003,
+              -1.9233980000000002
+            ],
+            [
+              30.07223,
+              -1.9233497000000002
+            ],
+            [
+              30.072192400000002,
+              -1.9232961000000002
+            ],
+            [
+              30.0726511,
+              -1.9229422000000003
+            ],
+            [
+              30.072857600000003,
+              -1.9227412000000002
+            ],
+            [
+              30.072747700000004,
+              -1.9225054000000001
+            ],
+            [
+              30.072959300000004,
+              -1.9223541000000002
+            ],
+            [
+              30.073474500000003,
+              -1.9232394000000002
+            ],
+            [
+              30.0734576,
+              -1.9232313
+            ],
+            [
+              30.073470500000003,
+              -1.9232613
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 173306039,
+        "name": "Gasave Primary School",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "way",
+        "amenity": "school",
+        "designation": "Public Primary School"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 173307638,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              30.0731208,
+              -1.9202630000000003
+            ],
+            [
+              30.073173200000003,
+              -1.9204896000000002
+            ],
+            [
+              30.0732229,
+              -1.9207044000000002
+            ],
+            [
+              30.0732886,
+              -1.9207669000000003
+            ],
+            [
+              30.073343700000002,
+              -1.921148
+            ],
+            [
+              30.073359500000002,
+              -1.9212571000000003
+            ],
+            [
+              30.0737802,
+              -1.9213566000000002
+            ],
+            [
+              30.0741833,
+              -1.9204768
+            ],
+            [
+              30.074299300000003,
+              -1.9200541000000002
+            ],
+            [
+              30.073391400000002,
+              -1.9195566000000002
+            ],
+            [
+              30.0732071,
+              -1.9197763
+            ],
+            [
+              30.0731208,
+              -1.9202630000000003
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 173307638,
+        "name": "APPAPEC Irebero School",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "way",
+        "amenity": "school",
+        "designation": "Private Primary School"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 173311214,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              30.074048700000002,
+              -1.9418534
+            ],
+            [
+              30.0741775,
+              -1.9429739000000001
+            ],
+            [
+              30.0749017,
+              -1.9432205000000002
+            ],
+            [
+              30.076173000000004,
+              -1.9430704
+            ],
+            [
+              30.076258900000003,
+              -1.9425450000000002
+            ],
+            [
+              30.0753255,
+              -1.9424324000000002
+            ],
+            [
+              30.0746442,
+              -1.9422501
+            ],
+            [
+              30.074048700000002,
+              -1.9418534
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 173311214,
+        "name": "La Colombière Secondary School",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "way",
+        "addr:street": "Rue KG 690",
+        "amenity": "school",
+        "name:fr": "École Secondaire La Colombière"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 177860018,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              30.103574300000002,
+              -1.9401832
+            ],
+            [
+              30.103754000000002,
+              -1.9405451000000002
+            ],
+            [
+              30.1037165,
+              -1.9406041000000003
+            ],
+            [
+              30.104011500000002,
+              -1.9413278000000003
+            ],
+            [
+              30.104389700000002,
+              -1.9413226000000001
+            ],
+            [
+              30.104492200000003,
+              -1.9413642000000002
+            ],
+            [
+              30.104770600000002,
+              -1.9424431000000002
+            ],
+            [
+              30.1052968,
+              -1.9442003
+            ],
+            [
+              30.1058556,
+              -1.9442015000000001
+            ],
+            [
+              30.105941400000003,
+              -1.9441472000000002
+            ],
+            [
+              30.106356700000003,
+              -1.9439521000000002
+            ],
+            [
+              30.106438900000004,
+              -1.9439113000000001
+            ],
+            [
+              30.106412300000002,
+              -1.9438670000000002
+            ],
+            [
+              30.1065043,
+              -1.9438262000000002
+            ],
+            [
+              30.1065809,
+              -1.9437486000000002
+            ],
+            [
+              30.106590800000003,
+              -1.9437385000000003
+            ],
+            [
+              30.1066451,
+              -1.9436711000000002
+            ],
+            [
+              30.106754000000002,
+              -1.9435888000000001
+            ],
+            [
+              30.106892900000002,
+              -1.9435588000000001
+            ],
+            [
+              30.1069901,
+              -1.9435378
+            ],
+            [
+              30.107079000000002,
+              -1.9435045000000002
+            ],
+            [
+              30.107211500000002,
+              -1.9434536000000002
+            ],
+            [
+              30.107420700000002,
+              -1.9432854000000002
+            ],
+            [
+              30.107339600000003,
+              -1.9428558000000002
+            ],
+            [
+              30.107049900000003,
+              -1.9421052
+            ],
+            [
+              30.1067904,
+              -1.9418130000000002
+            ],
+            [
+              30.1062459,
+              -1.9420060000000001
+            ],
+            [
+              30.106037200000003,
+              -1.9412033000000002
+            ],
+            [
+              30.1059665,
+              -1.9411629000000001
+            ],
+            [
+              30.105881000000004,
+              -1.9412368000000002
+            ],
+            [
+              30.105720700000003,
+              -1.9411300000000002
+            ],
+            [
+              30.1055959,
+              -1.9410609
+            ],
+            [
+              30.105446500000003,
+              -1.9409688000000003
+            ],
+            [
+              30.105216400000003,
+              -1.9408924
+            ],
+            [
+              30.105135900000004,
+              -1.9406565000000002
+            ],
+            [
+              30.104990500000003,
+              -1.9406792000000002
+            ],
+            [
+              30.104572100000002,
+              -1.9396499000000003
+            ],
+            [
+              30.1043629,
+              -1.9399662000000002
+            ],
+            [
+              30.104159100000004,
+              -1.9401485000000003
+            ],
+            [
+              30.103574300000002,
+              -1.9401832
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 177860018,
+        "name": "Green Hills Academy",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "way",
+        "amenity": "school",
+        "education": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 177861024,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              30.082182800000002,
+              -1.9496788000000003
+            ],
+            [
+              30.082474,
+              -1.9493844000000002
+            ],
+            [
+              30.082773200000002,
+              -1.9491521000000003
+            ],
+            [
+              30.082733,
+              -1.9491067000000002
+            ],
+            [
+              30.081338900000002,
+              -1.9475313
+            ],
+            [
+              30.080824200000002,
+              -1.9470410000000002
+            ],
+            [
+              30.080172200000003,
+              -1.9468056000000002
+            ],
+            [
+              30.079460500000003,
+              -1.9470866000000002
+            ],
+            [
+              30.079294700000002,
+              -1.9471616000000003
+            ],
+            [
+              30.079145600000004,
+              -1.9474943000000002
+            ],
+            [
+              30.079023400000004,
+              -1.947901
+            ],
+            [
+              30.0799057,
+              -1.9479536000000002
+            ],
+            [
+              30.079868700000002,
+              -1.9482068000000001
+            ],
+            [
+              30.080752800000003,
+              -1.9484696000000001
+            ],
+            [
+              30.081552100000003,
+              -1.9492322000000002
+            ],
+            [
+              30.081538500000004,
+              -1.9492881000000002
+            ],
+            [
+              30.0813969,
+              -1.9494335000000003
+            ],
+            [
+              30.0820192,
+              -1.9499400000000002
+            ],
+            [
+              30.0822016,
+              -1.9497217000000002
+            ],
+            [
+              30.082182800000002,
+              -1.9496788000000003
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 177861024,
+        "name": "",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "way",
+        "addr:housename": "Don Bosco IFAK High School",
+        "addr:street": "Kimihurura",
+        "amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 187925344,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              30.080604,
+              -1.9343658000000001
+            ],
+            [
+              30.080341100000002,
+              -1.9346984000000003
+            ],
+            [
+              30.080654900000003,
+              -1.9349236
+            ],
+            [
+              30.080908300000004,
+              -1.9350905000000003
+            ],
+            [
+              30.0809813,
+              -1.9351385
+            ],
+            [
+              30.081012400000002,
+              -1.935159
+            ],
+            [
+              30.0811193,
+              -1.9352308000000003
+            ],
+            [
+              30.0812163,
+              -1.9352950000000002
+            ],
+            [
+              30.081325400000004,
+              -1.9351541
+            ],
+            [
+              30.081454200000003,
+              -1.9350281000000003
+            ],
+            [
+              30.081545400000003,
+              -1.9349316
+            ],
+            [
+              30.081461600000004,
+              -1.9348616
+            ],
+            [
+              30.0814513,
+              -1.9348062000000001
+            ],
+            [
+              30.081394300000003,
+              -1.9347785000000002
+            ],
+            [
+              30.0813808,
+              -1.9348002000000002
+            ],
+            [
+              30.0810518,
+              -1.9346153000000001
+            ],
+            [
+              30.080604,
+              -1.9343658000000001
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 187925344,
+        "name": "ECOLE ISLAMIQUE - KACYIRU",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "way",
+        "amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 187925915,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              30.0837192,
+              -1.9380117000000001
+            ],
+            [
+              30.083714000000004,
+              -1.9377357000000002
+            ],
+            [
+              30.083779500000002,
+              -1.9375319000000002
+            ],
+            [
+              30.0838077,
+              -1.9374582000000002
+            ],
+            [
+              30.0846915,
+              -1.9376874000000002
+            ],
+            [
+              30.084803,
+              -1.9377297000000002
+            ],
+            [
+              30.084846000000002,
+              -1.9378798000000002
+            ],
+            [
+              30.084847000000003,
+              -1.9380519000000003
+            ],
+            [
+              30.084804100000003,
+              -1.9381109
+            ],
+            [
+              30.0847827,
+              -1.9382074000000002
+            ],
+            [
+              30.0846316,
+              -1.9380832000000001
+            ],
+            [
+              30.084428600000003,
+              -1.9381645
+            ],
+            [
+              30.084385700000002,
+              -1.9382074000000002
+            ],
+            [
+              30.084090600000003,
+              -1.9382450000000002
+            ],
+            [
+              30.0837192,
+              -1.9380117000000001
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 187925915,
+        "name": "Kacyiru Primary School",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "way",
+        "amenity": "school",
+        "name:fr": "École primaire de Kacyiru"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 206833904,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              30.119008600000004,
+              -1.9493706000000002
+            ],
+            [
+              30.1209613,
+              -1.9482019000000002
+            ],
+            [
+              30.121605000000002,
+              -1.9482555000000001
+            ],
+            [
+              30.122859700000003,
+              -1.9484699
+            ],
+            [
+              30.123374700000003,
+              -1.9486630000000003
+            ],
+            [
+              30.123771700000002,
+              -1.9489739000000001
+            ],
+            [
+              30.124275900000004,
+              -1.9497245
+            ],
+            [
+              30.120843200000003,
+              -1.9522765000000002
+            ],
+            [
+              30.120800300000003,
+              -1.9517189000000001
+            ],
+            [
+              30.120759000000003,
+              -1.9513994000000001
+            ],
+            [
+              30.120619500000004,
+              -1.9510777000000001
+            ],
+            [
+              30.120431800000002,
+              -1.9508311000000003
+            ],
+            [
+              30.120346,
+              -1.9506005000000002
+            ],
+            [
+              30.120349400000002,
+              -1.9501529000000002
+            ],
+            [
+              30.120383600000004,
+              -1.9501100000000002
+            ],
+            [
+              30.120408200000004,
+              -1.9500671000000003
+            ],
+            [
+              30.120578700000003,
+              -1.9500515000000003
+            ],
+            [
+              30.120601300000004,
+              -1.9500456000000002
+            ],
+            [
+              30.1207354,
+              -1.9499170000000001
+            ],
+            [
+              30.120676400000004,
+              -1.9495149000000003
+            ],
+            [
+              30.120646400000002,
+              -1.9494532000000002
+            ],
+            [
+              30.120269000000004,
+              -1.9494184
+            ],
+            [
+              30.120043700000004,
+              -1.9494237
+            ],
+            [
+              30.1198559,
+              -1.9494505000000002
+            ],
+            [
+              30.119611000000003,
+              -1.9495444000000002
+            ],
+            [
+              30.119460800000002,
+              -1.9496623000000002
+            ],
+            [
+              30.1191695,
+              -1.9496816000000001
+            ],
+            [
+              30.119008600000004,
+              -1.9493706000000002
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 206833904,
+        "name": "College Of medicine And Health Science",
+        "type": "university",
+        "category": "education",
+        "subcategory": "university",
+        "osmType": "way",
+        "amenity": "university",
+        "check_date": "2025-05-26",
+        "name:en": "College of Medicine and Health Science",
+        "short_name": "KIE"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 206836847,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              30.1195495,
+              -1.9534818000000003
+            ],
+            [
+              30.120574400000002,
+              -1.9527583000000002
+            ],
+            [
+              30.121126900000004,
+              -1.9532516000000002
+            ],
+            [
+              30.120499000000002,
+              -1.9541091000000002
+            ],
+            [
+              30.1195495,
+              -1.9534818000000003
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 206836847,
+        "name": "École Catholique Remera 1",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "way",
+        "amenity": "school",
+        "check_date": "2023-04-07",
+        "denomination": "catholic",
+        "name:fr": "École Catholique Remera 1",
+        "religion": "christian"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 206839979,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              30.075890200000003,
+              -1.9774347
+            ],
+            [
+              30.075648500000003,
+              -1.9773692000000003
+            ],
+            [
+              30.075407300000002,
+              -1.9780375000000001
+            ],
+            [
+              30.075421300000002,
+              -1.9780421000000001
+            ],
+            [
+              30.075405200000002,
+              -1.9781605000000002
+            ],
+            [
+              30.0754322,
+              -1.9782173
+            ],
+            [
+              30.075992000000003,
+              -1.9784177000000003
+            ],
+            [
+              30.075949,
+              -1.9775138
+            ],
+            [
+              30.075890200000003,
+              -1.9774347
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 206839979,
+        "name": "APPAPE College",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "way",
+        "amenity": "school",
+        "check_date": "2023-06-10",
+        "name:fr": "Collège APPAPE"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 206841450,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              30.134017300000004,
+              -1.9324603000000002
+            ],
+            [
+              30.134516200000004,
+              -1.9328624
+            ],
+            [
+              30.134773700000004,
+              -1.9330875
+            ],
+            [
+              30.135047300000004,
+              -1.9326661000000003
+            ],
+            [
+              30.1351277,
+              -1.9322211000000002
+            ],
+            [
+              30.134870300000003,
+              -1.9321386000000003
+            ],
+            [
+              30.1347522,
+              -1.9320850000000003
+            ],
+            [
+              30.134704000000003,
+              -1.9320153000000002
+            ],
+            [
+              30.1347522,
+              -1.9317815000000003
+            ],
+            [
+              30.134199700000003,
+              -1.9317955000000002
+            ],
+            [
+              30.134017300000004,
+              -1.9324603000000002
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 206841450,
+        "name": "La Fontaine Primary School",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "way",
+        "amenity": "school",
+        "name:fr": "École primaire La Fontaine"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 206841530,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              30.076724100000003,
+              -1.9786838000000002
+            ],
+            [
+              30.077145200000004,
+              -1.9783595000000003
+            ],
+            [
+              30.0778184,
+              -1.9790337000000002
+            ],
+            [
+              30.077915,
+              -1.9792414000000003
+            ],
+            [
+              30.078105400000002,
+              -1.9802453000000002
+            ],
+            [
+              30.076737400000003,
+              -1.9803230000000003
+            ],
+            [
+              30.076647700000002,
+              -1.9802936000000002
+            ],
+            [
+              30.076595400000002,
+              -1.9802172000000002
+            ],
+            [
+              30.076289600000003,
+              -1.9789653000000003
+            ],
+            [
+              30.076724100000003,
+              -1.9786838000000002
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 206841530,
+        "name": "Gikondo Primary school",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "way",
+        "amenity": "school",
+        "check_date": "2023-06-10"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 206843738,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              30.133494400000004,
+              -1.9286564000000002
+            ],
+            [
+              30.133172500000004,
+              -1.9286215000000002
+            ],
+            [
+              30.132880000000004,
+              -1.9284736000000002
+            ],
+            [
+              30.132601100000002,
+              -1.9281948000000002
+            ],
+            [
+              30.132408100000003,
+              -1.9281658000000002
+            ],
+            [
+              30.132316900000003,
+              -1.9281578000000001
+            ],
+            [
+              30.132306200000002,
+              -1.9280103000000002
+            ],
+            [
+              30.132279500000003,
+              -1.9280029
+            ],
+            [
+              30.1321319,
+              -1.9279621000000002
+            ],
+            [
+              30.1321909,
+              -1.9276618
+            ],
+            [
+              30.132330300000003,
+              -1.9275171000000002
+            ],
+            [
+              30.1325691,
+              -1.9274286000000003
+            ],
+            [
+              30.1326898,
+              -1.9273562000000002
+            ],
+            [
+              30.132826500000004,
+              -1.9272356000000002
+            ],
+            [
+              30.132821200000002,
+              -1.9270051000000001
+            ],
+            [
+              30.132955300000003,
+              -1.9269783000000003
+            ],
+            [
+              30.133277000000003,
+              -1.9270233
+            ],
+            [
+              30.133365700000002,
+              -1.9270801000000002
+            ],
+            [
+              30.133379100000003,
+              -1.9272383000000002
+            ],
+            [
+              30.133832200000004,
+              -1.9274174000000002
+            ],
+            [
+              30.133985100000004,
+              -1.9274710000000002
+            ],
+            [
+              30.133749100000003,
+              -1.9281063000000003
+            ],
+            [
+              30.133494400000004,
+              -1.9286564000000002
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 206843738,
+        "name": "G.S Kimironko I",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "way",
+        "amenity": "school",
+        "name:fr": "École supérieure Kimironko I"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 206844221,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              30.0474628,
+              -1.9784813
+            ],
+            [
+              30.047574900000004,
+              -1.9786473000000002
+            ],
+            [
+              30.0477203,
+              -1.9791354
+            ],
+            [
+              30.047795400000002,
+              -1.9793766000000002
+            ],
+            [
+              30.0479021,
+              -1.9797570000000002
+            ],
+            [
+              30.047967000000003,
+              -1.9800522000000003
+            ],
+            [
+              30.047634400000003,
+              -1.9802398
+            ],
+            [
+              30.047382300000002,
+              -1.9803577
+            ],
+            [
+              30.047060400000003,
+              -1.9804596
+            ],
+            [
+              30.0467386,
+              -1.9805347000000002
+            ],
+            [
+              30.0463899,
+              -1.9806419000000002
+            ],
+            [
+              30.0460157,
+              -1.9807773000000002
+            ],
+            [
+              30.0458722,
+              -1.9808282000000001
+            ],
+            [
+              30.045745600000004,
+              -1.9803253
+            ],
+            [
+              30.0456442,
+              -1.9799825000000002
+            ],
+            [
+              30.045519600000002,
+              -1.9796819
+            ],
+            [
+              30.0454189,
+              -1.9793713000000002
+            ],
+            [
+              30.045413600000003,
+              -1.9791515000000002
+            ],
+            [
+              30.045482800000002,
+              -1.9790601
+            ],
+            [
+              30.0459071,
+              -1.9789263000000001
+            ],
+            [
+              30.0463899,
+              -1.9787547
+            ],
+            [
+              30.0467815,
+              -1.9786582000000001
+            ],
+            [
+              30.047124300000004,
+              -1.9785668
+            ],
+            [
+              30.047413900000002,
+              -1.9784757000000002
+            ],
+            [
+              30.0474628,
+              -1.9784813
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 206844221,
+        "name": "École secondaire islamique",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "way",
+        "amenity": "school",
+        "check_date": "2023-04-14",
+        "name:fr": "École secondaire islamique",
+        "religion": "muslim",
+        "source": "Bing"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 206844901,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              30.1112767,
+              -1.9781055
+            ],
+            [
+              30.111384700000002,
+              -1.9782181
+            ],
+            [
+              30.111630800000004,
+              -1.9789687000000002
+            ],
+            [
+              30.108695400000002,
+              -1.9824417
+            ],
+            [
+              30.1084175,
+              -1.9826251000000001
+            ],
+            [
+              30.107317800000004,
+              -1.9827698000000002
+            ],
+            [
+              30.106596900000003,
+              -1.9843567000000002
+            ],
+            [
+              30.105248800000002,
+              -1.9841717
+            ],
+            [
+              30.104514400000003,
+              -1.9841524000000001
+            ],
+            [
+              30.1038777,
+              -1.9835998000000001
+            ],
+            [
+              30.104352100000003,
+              -1.9825711000000001
+            ],
+            [
+              30.104413800000003,
+              -1.9824316000000002
+            ],
+            [
+              30.104650400000004,
+              -1.9823503000000002
+            ],
+            [
+              30.1046766,
+              -1.9817513000000002
+            ],
+            [
+              30.1050709,
+              -1.9808484000000002
+            ],
+            [
+              30.105175600000003,
+              -1.9806493000000003
+            ],
+            [
+              30.105256900000004,
+              -1.9803685000000002
+            ],
+            [
+              30.105335300000004,
+              -1.9800076000000002
+            ],
+            [
+              30.105436900000004,
+              -1.9795774000000002
+            ],
+            [
+              30.105290800000002,
+              -1.9786158000000003
+            ],
+            [
+              30.105054100000004,
+              -1.9773641000000002
+            ],
+            [
+              30.1050344,
+              -1.9772740000000002
+            ],
+            [
+              30.1048435,
+              -1.9764003
+            ],
+            [
+              30.105349200000003,
+              -1.9763358000000002
+            ],
+            [
+              30.107671800000002,
+              -1.9766401000000002
+            ],
+            [
+              30.107994,
+              -1.9768009000000002
+            ],
+            [
+              30.1104024,
+              -1.9780466
+            ],
+            [
+              30.1112767,
+              -1.9781055
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 206844901,
+        "name": "Integrated Polytechnic Regional College (IPRC) Kigali",
+        "type": "university",
+        "category": "education",
+        "subcategory": "university",
+        "osmType": "way",
+        "amenity": "university",
+        "name:es": "College Regional Politécnico Integrado",
+        "name:fr": "College Régional Polytechnique Intégré de Kigali",
+        "website": "https://www.iprckigali.rp.ac.rw/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 206846422,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              30.0742152,
+              -1.9639847000000001
+            ],
+            [
+              30.0744724,
+              -1.963915
+            ],
+            [
+              30.074520700000004,
+              -1.9640222000000003
+            ],
+            [
+              30.0744566,
+              -1.9640276
+            ],
+            [
+              30.074478100000004,
+              -1.9640651000000002
+            ],
+            [
+              30.074740600000002,
+              -1.9640169
+            ],
+            [
+              30.074757,
+              -1.9640705000000003
+            ],
+            [
+              30.0745156,
+              -1.9641616000000002
+            ],
+            [
+              30.074526300000002,
+              -1.9641938
+            ],
+            [
+              30.074778200000004,
+              -1.9641026000000001
+            ],
+            [
+              30.0748053,
+              -1.9641991
+            ],
+            [
+              30.074470800000004,
+              -1.9642938
+            ],
+            [
+              30.074467100000003,
+              -1.9643439000000003
+            ],
+            [
+              30.0744137,
+              -1.9643493
+            ],
+            [
+              30.074354700000004,
+              -1.9642152000000002
+            ],
+            [
+              30.074429500000004,
+              -1.9641616000000002
+            ],
+            [
+              30.074376100000002,
+              -1.9641455
+            ],
+            [
+              30.074316900000003,
+              -1.9640490000000002
+            ],
+            [
+              30.0742313,
+              -1.9640329
+            ],
+            [
+              30.0742152,
+              -1.9639847000000001
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 206846422,
+        "name": "Ecole Primaire de Mburabuturo",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "way",
+        "amenity": "school",
+        "check_date": "2023-04-10"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 206847447,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              30.064089700000004,
+              -1.9424801000000003
+            ],
+            [
+              30.0648729,
+              -1.9428661000000003
+            ],
+            [
+              30.065202900000003,
+              -1.9425450000000002
+            ],
+            [
+              30.065227000000004,
+              -1.9422871000000002
+            ],
+            [
+              30.065087500000004,
+              -1.9420405
+            ],
+            [
+              30.064969500000004,
+              -1.9417509000000002
+            ],
+            [
+              30.064443800000003,
+              -1.9418046000000002
+            ],
+            [
+              30.063564000000003,
+              -1.9423836
+            ],
+            [
+              30.064089700000004,
+              -1.9424801000000003
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 206847447,
+        "name": "École Primaire Sainte-Famille",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "way",
+        "amenity": "school",
+        "check_date": "2023-04-10",
+        "isced:level": "1",
+        "name:fr": "École Primaire Sainte-Famille",
+        "wikidata": "Q22981403"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 335440487,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              30.0501317,
+              -1.9386878
+            ],
+            [
+              30.050215800000004,
+              -1.9388229000000001
+            ],
+            [
+              30.050281500000004,
+              -1.9387820000000002
+            ],
+            [
+              30.050600300000003,
+              -1.9392945000000001
+            ],
+            [
+              30.049618000000002,
+              -1.9399057000000002
+            ],
+            [
+              30.0492151,
+              -1.9392581000000002
+            ],
+            [
+              30.0501317,
+              -1.9386878
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 335440487,
+        "name": "Muhima Primary School",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "way",
+        "amenity": "school",
+        "check_date": "2023-04-16",
+        "name:fr": "École Primaire de Muhima"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 352846349,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              30.087984400000003,
+              -1.9415528000000002
+            ],
+            [
+              30.088346500000004,
+              -1.9421533000000002
+            ],
+            [
+              30.0888266,
+              -1.9418825000000002
+            ],
+            [
+              30.088542300000004,
+              -1.9413625
+            ],
+            [
+              30.088317000000004,
+              -1.9414804
+            ],
+            [
+              30.0882338,
+              -1.9413705
+            ],
+            [
+              30.087968300000004,
+              -1.941534
+            ],
+            [
+              30.087984400000003,
+              -1.9415528000000002
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 352846349,
+        "name": "White Dove School",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "way",
+        "amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 375859247,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              30.0820022,
+              -1.9554206
+            ],
+            [
+              30.082128500000003,
+              -1.9558693000000003
+            ],
+            [
+              30.082287600000004,
+              -1.9563366000000002
+            ],
+            [
+              30.0821463,
+              -1.9563899000000002
+            ],
+            [
+              30.081666200000004,
+              -1.9565516000000003
+            ],
+            [
+              30.081577300000003,
+              -1.9562753000000002
+            ],
+            [
+              30.081450200000003,
+              -1.9558853000000003
+            ],
+            [
+              30.0814306,
+              -1.9558035000000003
+            ],
+            [
+              30.081386200000004,
+              -1.9555130000000003
+            ],
+            [
+              30.0820022,
+              -1.9554206
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 375859247,
+        "name": "École Primaire de Kimihurura",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "way",
+        "amenity": "school",
+        "name:fr": "École Primaire de Kimihurura"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 375910869,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              30.058085900000002,
+              -1.9181155
+            ],
+            [
+              30.058482800000004,
+              -1.9184527000000002
+            ],
+            [
+              30.058519600000004,
+              -1.9184130000000001
+            ],
+            [
+              30.058644400000002,
+              -1.9185575000000001
+            ],
+            [
+              30.058706800000003,
+              -1.9186369
+            ],
+            [
+              30.0588258,
+              -1.9187531000000002
+            ],
+            [
+              30.058908000000002,
+              -1.9188041000000002
+            ],
+            [
+              30.058971200000002,
+              -1.9187244
+            ],
+            [
+              30.059033600000003,
+              -1.9186536
+            ],
+            [
+              30.059297200000003,
+              -1.9188491
+            ],
+            [
+              30.059158300000004,
+              -1.9190333000000002
+            ],
+            [
+              30.059356800000003,
+              -1.9191778000000002
+            ],
+            [
+              30.059470200000003,
+              -1.9192968000000001
+            ],
+            [
+              30.059575100000004,
+              -1.9193932000000002
+            ],
+            [
+              30.059677100000002,
+              -1.9195377000000002
+            ],
+            [
+              30.0597962,
+              -1.9197615000000001
+            ],
+            [
+              30.0599096,
+              -1.9199485
+            ],
+            [
+              30.059989,
+              -1.9201072000000001
+            ],
+            [
+              30.060098900000003,
+              -1.9203836
+            ],
+            [
+              30.060209200000003,
+              -1.9205600000000003
+            ],
+            [
+              30.060330500000003,
+              -1.9208301
+            ],
+            [
+              30.060663100000003,
+              -1.9215442000000003
+            ],
+            [
+              30.060456100000003,
+              -1.9214819
+            ],
+            [
+              30.0601358,
+              -1.9214819
+            ],
+            [
+              30.059960000000004,
+              -1.9215726000000002
+            ],
+            [
+              30.059307900000004,
+              -1.9223376
+            ],
+            [
+              30.0591803,
+              -1.9224991000000002
+            ],
+            [
+              30.058996000000004,
+              -1.9226550000000002
+            ],
+            [
+              30.058794700000004,
+              -1.9228165000000002
+            ],
+            [
+              30.0586246,
+              -1.9229270000000003
+            ],
+            [
+              30.058250400000002,
+              -1.9231877000000002
+            ],
+            [
+              30.058026400000003,
+              -1.9233350000000002
+            ],
+            [
+              30.057853500000004,
+              -1.9234427
+            ],
+            [
+              30.0577089,
+              -1.9235107000000002
+            ],
+            [
+              30.0575189,
+              -1.9235815000000003
+            ],
+            [
+              30.0573261,
+              -1.9236410000000002
+            ],
+            [
+              30.0571617,
+              -1.9236694
+            ],
+            [
+              30.0569349,
+              -1.9236495000000002
+            ],
+            [
+              30.056736400000002,
+              -1.9236269000000001
+            ],
+            [
+              30.056566300000004,
+              -1.9235759000000001
+            ],
+            [
+              30.056407500000002,
+              -1.9235164000000002
+            ],
+            [
+              30.0562545,
+              -1.9234852000000002
+            ],
+            [
+              30.056124000000004,
+              -1.9234767000000002
+            ],
+            [
+              30.055908600000002,
+              -1.9234767000000002
+            ],
+            [
+              30.055755500000004,
+              -1.9234710000000002
+            ],
+            [
+              30.055557000000004,
+              -1.9234852000000002
+            ],
+            [
+              30.055310300000002,
+              -1.9235135
+            ],
+            [
+              30.055083500000002,
+              -1.9235617000000003
+            ],
+            [
+              30.054842500000003,
+              -1.9236439
+            ],
+            [
+              30.0546356,
+              -1.9237204
+            ],
+            [
+              30.0544967,
+              -1.9237742000000002
+            ],
+            [
+              30.0544456,
+              -1.9237941
+            ],
+            [
+              30.0544003,
+              -1.9237912000000001
+            ],
+            [
+              30.054357700000004,
+              -1.9237714000000001
+            ],
+            [
+              30.054320900000004,
+              -1.9237544000000002
+            ],
+            [
+              30.054303900000004,
+              -1.9237346000000002
+            ],
+            [
+              30.054296700000002,
+              -1.9237149000000002
+            ],
+            [
+              30.054330200000003,
+              -1.9232661000000002
+            ],
+            [
+              30.054333000000003,
+              -1.9231612000000002
+            ],
+            [
+              30.054327400000002,
+              -1.9230564
+            ],
+            [
+              30.054304700000003,
+              -1.9228665000000003
+            ],
+            [
+              30.054245100000003,
+              -1.9222800000000002
+            ],
+            [
+              30.054205400000004,
+              -1.9215914
+            ],
+            [
+              30.054233800000002,
+              -1.9213194000000002
+            ],
+            [
+              30.054299000000004,
+              -1.9211097000000001
+            ],
+            [
+              30.054347000000003,
+              -1.9210277000000002
+            ],
+            [
+              30.0544046,
+              -1.9209293
+            ],
+            [
+              30.0545201,
+              -1.9207697000000001
+            ],
+            [
+              30.054642100000002,
+              -1.9206507000000002
+            ],
+            [
+              30.054766800000003,
+              -1.9205345000000003
+            ],
+            [
+              30.054820700000004,
+              -1.9204807000000002
+            ],
+            [
+              30.054922700000002,
+              -1.9204325000000002
+            ],
+            [
+              30.0550503,
+              -1.9203815000000002
+            ],
+            [
+              30.0551892,
+              -1.9203418
+            ],
+            [
+              30.055333800000003,
+              -1.9202852000000001
+            ],
+            [
+              30.055506800000003,
+              -1.9202200000000003
+            ],
+            [
+              30.055657000000004,
+              -1.9201633000000002
+            ],
+            [
+              30.055742100000003,
+              -1.9201293000000001
+            ],
+            [
+              30.055861200000002,
+              -1.9200160000000002
+            ],
+            [
+              30.056008600000002,
+              -1.9199026000000001
+            ],
+            [
+              30.056036900000002,
+              -1.9198743000000003
+            ],
+            [
+              30.0560681,
+              -1.9198375
+            ],
+            [
+              30.0560949,
+              -1.9198022000000001
+            ],
+            [
+              30.056137600000003,
+              -1.9197554000000001
+            ],
+            [
+              30.056540100000003,
+              -1.9199342000000001
+            ],
+            [
+              30.056619400000002,
+              -1.9199119000000002
+            ],
+            [
+              30.056658000000002,
+              -1.9198042000000002
+            ],
+            [
+              30.056861400000003,
+              -1.9197291
+            ],
+            [
+              30.0570972,
+              -1.9194304000000002
+            ],
+            [
+              30.057459700000003,
+              -1.9191157
+            ],
+            [
+              30.0573015,
+              -1.9188192000000002
+            ],
+            [
+              30.0578037,
+              -1.9184991000000002
+            ],
+            [
+              30.058085900000002,
+              -1.9181155
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 375910869,
+        "name": "Kigali Independent University (ULK)",
+        "type": "university",
+        "category": "education",
+        "subcategory": "university",
+        "osmType": "way",
+        "amenity": "university",
+        "contact:email": "info@ulk.ac.rw",
+        "contact:phone": "(+250) 788303667",
+        "name:fr": "Université Libre de Kigali ULK",
+        "operator": "Prof. Rwigamba Balinda"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 400397986,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              30.142534,
+              -1.9475958000000002
+            ],
+            [
+              30.142385700000002,
+              -1.9474434000000003
+            ],
+            [
+              30.141948600000003,
+              -1.9468766000000002
+            ],
+            [
+              30.141812400000003,
+              -1.9465942000000003
+            ],
+            [
+              30.141597,
+              -1.9459909000000002
+            ],
+            [
+              30.141552200000003,
+              -1.945804
+            ],
+            [
+              30.141548200000003,
+              -1.9457308000000002
+            ],
+            [
+              30.141586800000002,
+              -1.9455175000000002
+            ],
+            [
+              30.141631500000003,
+              -1.9453692000000002
+            ],
+            [
+              30.1417901,
+              -1.9450645000000002
+            ],
+            [
+              30.1418348,
+              -1.9448349000000003
+            ],
+            [
+              30.141871400000003,
+              -1.9442254
+            ],
+            [
+              30.1418998,
+              -1.9439674000000002
+            ],
+            [
+              30.142036,
+              -1.9434555000000002
+            ],
+            [
+              30.142168100000003,
+              -1.9429740000000002
+            ],
+            [
+              30.142286000000002,
+              -1.9426550000000002
+            ],
+            [
+              30.142385700000002,
+              -1.9424844
+            ],
+            [
+              30.142649900000002,
+              -1.9422203000000002
+            ],
+            [
+              30.1431378,
+              -1.9419115000000002
+            ],
+            [
+              30.143418300000004,
+              -1.9420963000000002
+            ],
+            [
+              30.1436947,
+              -1.9421431000000002
+            ],
+            [
+              30.143863400000004,
+              -1.9422243000000001
+            ],
+            [
+              30.144204900000002,
+              -1.9425128000000003
+            ],
+            [
+              30.1443167,
+              -1.9425636000000002
+            ],
+            [
+              30.1449591,
+              -1.9424478000000003
+            ],
+            [
+              30.1456279,
+              -1.9425108000000002
+            ],
+            [
+              30.145739700000004,
+              -1.9428622000000002
+            ],
+            [
+              30.145680700000003,
+              -1.9435002000000001
+            ],
+            [
+              30.145534400000003,
+              -1.9441056
+            ],
+            [
+              30.145467300000004,
+              -1.9443940000000002
+            ],
+            [
+              30.145150400000002,
+              -1.9450408000000001
+            ],
+            [
+              30.1450524,
+              -1.9452870000000002
+            ],
+            [
+              30.144943800000004,
+              -1.9457911
+            ],
+            [
+              30.144827000000003,
+              -1.9462030000000001
+            ],
+            [
+              30.144567800000004,
+              -1.9465752
+            ],
+            [
+              30.143876700000003,
+              -1.9471259
+            ],
+            [
+              30.143324500000002,
+              -1.9476160000000002
+            ],
+            [
+              30.1431575,
+              -1.9477583000000003
+            ],
+            [
+              30.143080500000003,
+              -1.947812
+            ],
+            [
+              30.143012700000003,
+              -1.9478435
+            ],
+            [
+              30.1429368,
+              -1.9478458
+            ],
+            [
+              30.142841100000002,
+              -1.9478307000000001
+            ],
+            [
+              30.1427465,
+              -1.9477793
+            ],
+            [
+              30.142645,
+              -1.9477058000000003
+            ],
+            [
+              30.142534,
+              -1.9475958000000002
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 400397986,
+        "name": "Adventist University of Central Africa…",
+        "type": "university",
+        "category": "education",
+        "subcategory": "university",
+        "osmType": "way",
+        "amenity": "university",
+        "name:fr": "AUCA Masoro"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 400397987,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              30.133154800000003,
+              -1.9437645000000001
+            ],
+            [
+              30.133744300000004,
+              -1.9445913000000001
+            ],
+            [
+              30.133939500000004,
+              -1.9449123000000001
+            ],
+            [
+              30.133978100000004,
+              -1.9448798000000003
+            ],
+            [
+              30.1340004,
+              -1.9448127000000002
+            ],
+            [
+              30.134335800000002,
+              -1.9432342000000002
+            ],
+            [
+              30.133815500000004,
+              -1.9427812000000002
+            ],
+            [
+              30.1332951,
+              -1.9423058000000002
+            ],
+            [
+              30.133154800000003,
+              -1.9437645000000001
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 400397987,
+        "name": "Kimironko II Primary School",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "way",
+        "amenity": "school",
+        "name:fr": "École Primaire Kimironko II"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 405831294,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              30.073876500000004,
+              -1.9633265000000002
+            ],
+            [
+              30.073576100000004,
+              -1.9628976000000002
+            ],
+            [
+              30.073525300000004,
+              -1.9627314000000002
+            ],
+            [
+              30.073456600000004,
+              -1.9625177000000003
+            ],
+            [
+              30.072997100000002,
+              -1.9610888000000002
+            ],
+            [
+              30.072938000000004,
+              -1.9602122000000002
+            ],
+            [
+              30.073211600000004,
+              -1.9585368
+            ],
+            [
+              30.073292100000003,
+              -1.9580570000000002
+            ],
+            [
+              30.0734047,
+              -1.9579164000000002
+            ],
+            [
+              30.073533500000003,
+              -1.9577889000000002
+            ],
+            [
+              30.0736908,
+              -1.9577079000000002
+            ],
+            [
+              30.0741906,
+              -1.9577943000000002
+            ],
+            [
+              30.0744481,
+              -1.9579551000000002
+            ],
+            [
+              30.0746171,
+              -1.9581588
+            ],
+            [
+              30.074702600000002,
+              -1.9585335000000001
+            ],
+            [
+              30.074835300000004,
+              -1.9591760000000003
+            ],
+            [
+              30.0751026,
+              -1.9604615
+            ],
+            [
+              30.075148600000002,
+              -1.9610992000000003
+            ],
+            [
+              30.075201800000002,
+              -1.9618367
+            ],
+            [
+              30.075067400000002,
+              -1.9625357
+            ],
+            [
+              30.0749923,
+              -1.9629244000000001
+            ],
+            [
+              30.074885000000002,
+              -1.9631790000000002
+            ],
+            [
+              30.074627500000002,
+              -1.9632836000000002
+            ],
+            [
+              30.073876500000004,
+              -1.9633265000000002
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 405831294,
+        "name": "University of Rwanda - College of Business and Economics",
+        "type": "university",
+        "category": "education",
+        "subcategory": "university",
+        "osmType": "way",
+        "amenity": "university",
+        "name:fr": "Université du Rwanda - Collège de Commerce et d'Économie"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 436869547,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              30.049633200000002,
+              -1.9579251000000002
+            ],
+            [
+              30.049767600000003,
+              -1.9577433000000002
+            ],
+            [
+              30.0502515,
+              -1.9577178000000002
+            ],
+            [
+              30.0505506,
+              -1.9576643000000002
+            ],
+            [
+              30.050724400000004,
+              -1.9580385000000002
+            ],
+            [
+              30.050891200000002,
+              -1.9584742000000002
+            ],
+            [
+              30.050667300000004,
+              -1.9585985000000001
+            ],
+            [
+              30.049633200000002,
+              -1.9579251000000002
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 436869547,
+        "name": "Ecole Primaire Kamuhoza",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "way",
+        "amenity": "school",
+        "check_date": "2023-06-24",
+        "denomination": "protestant",
+        "email": "epkamuhoza@yahoo.fe",
+        "grades": "1-6",
+        "name:en": "Kamuhoza Primary School",
+        "operator": "School District No. 43",
+        "operator:type": "public",
+        "religion": "christian"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 494358331,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              30.0630601,
+              -1.9325682000000002
+            ],
+            [
+              30.063182100000002,
+              -1.9323432000000003
+            ],
+            [
+              30.0632249,
+              -1.9320852000000002
+            ],
+            [
+              30.063447000000004,
+              -1.9317863000000002
+            ],
+            [
+              30.0637815,
+              -1.9315792000000003
+            ],
+            [
+              30.0641427,
+              -1.9314519
+            ],
+            [
+              30.064400300000003,
+              -1.9314845000000003
+            ],
+            [
+              30.064501000000003,
+              -1.931591
+            ],
+            [
+              30.064297600000003,
+              -1.9317608000000002
+            ],
+            [
+              30.064586400000003,
+              -1.9320449000000002
+            ],
+            [
+              30.064360300000004,
+              -1.9322750000000002
+            ],
+            [
+              30.064116800000004,
+              -1.9325698000000002
+            ],
+            [
+              30.063899100000004,
+              -1.9328973000000003
+            ],
+            [
+              30.063452100000003,
+              -1.9327831000000002
+            ],
+            [
+              30.063304300000002,
+              -1.9326901
+            ],
+            [
+              30.063286400000003,
+              -1.9326585000000003
+            ],
+            [
+              30.0630601,
+              -1.9325682000000002
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 494358331,
+        "name": "",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "way",
+        "amenity": "school",
+        "check_date": "2023-04-17"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 719450817,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              30.0628418,
+              -1.9605689000000002
+            ],
+            [
+              30.062952300000003,
+              -1.9604717000000003
+            ],
+            [
+              30.063134700000003,
+              -1.9605213000000001
+            ],
+            [
+              30.063292900000004,
+              -1.9605193
+            ],
+            [
+              30.063353300000003,
+              -1.9605616000000001
+            ],
+            [
+              30.063435000000002,
+              -1.9605580000000002
+            ],
+            [
+              30.0637502,
+              -1.9605441000000001
+            ],
+            [
+              30.063771400000004,
+              -1.9609715
+            ],
+            [
+              30.063773100000002,
+              -1.9610637000000002
+            ],
+            [
+              30.063777200000004,
+              -1.9611553000000002
+            ],
+            [
+              30.063737600000003,
+              -1.9612023
+            ],
+            [
+              30.063675200000002,
+              -1.9612319000000003
+            ],
+            [
+              30.063574600000003,
+              -1.9612495
+            ],
+            [
+              30.0632741,
+              -1.9612329000000002
+            ],
+            [
+              30.0629479,
+              -1.9612149
+            ],
+            [
+              30.062806500000004,
+              -1.9612071000000002
+            ],
+            [
+              30.0628418,
+              -1.9605689000000002
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 719450817,
+        "name": "School of Architectur and Built Environment",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "way",
+        "addr:city": "Kigali",
+        "addr:postcode": "250",
+        "addr:street": "KN 7 Avenue",
+        "amenity": "school",
+        "grades": "0-3",
+        "short_name": "SABE"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 765165567,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              30.063403,
+              -1.9584949000000003
+            ],
+            [
+              30.063423900000004,
+              -1.9586133000000001
+            ],
+            [
+              30.063026400000002,
+              -1.9586831000000002
+            ],
+            [
+              30.063036300000004,
+              -1.9587395
+            ],
+            [
+              30.063026500000003,
+              -1.9587572000000002
+            ],
+            [
+              30.062965500000004,
+              -1.9587775
+            ],
+            [
+              30.062901800000002,
+              -1.9587094000000003
+            ],
+            [
+              30.062818600000003,
+              -1.9587236000000001
+            ],
+            [
+              30.062810600000002,
+              -1.9587094000000003
+            ],
+            [
+              30.062714200000002,
+              -1.9587227000000003
+            ],
+            [
+              30.062737200000004,
+              -1.9585962000000001
+            ],
+            [
+              30.062790800000002,
+              -1.9585913000000001
+            ],
+            [
+              30.0627898,
+              -1.9585807000000002
+            ],
+            [
+              30.062814200000002,
+              -1.9585785000000002
+            ],
+            [
+              30.062841600000002,
+              -1.9585246
+            ],
+            [
+              30.062971700000002,
+              -1.9585157000000002
+            ],
+            [
+              30.0629911,
+              -1.9585025000000003
+            ],
+            [
+              30.0631708,
+              -1.9584928000000001
+            ],
+            [
+              30.063216300000004,
+              -1.9584848000000001
+            ],
+            [
+              30.063223600000004,
+              -1.9585264000000002
+            ],
+            [
+              30.063403,
+              -1.9584949000000003
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 765165567,
+        "name": "CST Library",
+        "type": "library",
+        "category": "education",
+        "subcategory": "library",
+        "osmType": "way",
+        "addr:city": "Kigali",
+        "addr:housenumber": "CST",
+        "addr:postcode": "250",
+        "addr:street": "KN 3 Avenue",
+        "amenity": "library",
+        "building": "yes",
+        "check_date": "2023-04-19",
+        "internet_access": "yes",
+        "internet_access:ssid": "UR-CST Library",
+        "operator": "College Of science and Technology",
+        "operator:type": "public"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 781338549,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              30.118580800000004,
+              -1.9636479000000002
+            ],
+            [
+              30.119506200000004,
+              -1.963278
+            ],
+            [
+              30.119046400000002,
+              -1.962444
+            ],
+            [
+              30.118521800000003,
+              -1.9628035000000001
+            ],
+            [
+              30.1185192,
+              -1.9632217
+            ],
+            [
+              30.118580800000004,
+              -1.9636479000000002
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 781338549,
+        "name": "Martyrs Secondary School",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "way",
+        "amenity": "school",
+        "name:fr": "École Secondaire des Martyrs"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 802947629,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              30.098814,
+              -1.9880305000000003
+            ],
+            [
+              30.0988408,
+              -1.9883709000000003
+            ],
+            [
+              30.098875700000004,
+              -1.9883951000000002
+            ],
+            [
+              30.0988891,
+              -1.9884701000000002
+            ],
+            [
+              30.0989186,
+              -1.9885666000000002
+            ],
+            [
+              30.098926600000002,
+              -1.9886846000000002
+            ],
+            [
+              30.0989347,
+              -1.9888213000000001
+            ],
+            [
+              30.098937300000003,
+              -1.9888990000000002
+            ],
+            [
+              30.098921300000004,
+              -1.9890196000000002
+            ],
+            [
+              30.098897100000002,
+              -1.9891617000000001
+            ],
+            [
+              30.098468000000004,
+              -1.9890062000000002
+            ],
+            [
+              30.097995900000004,
+              -1.9888615000000003
+            ],
+            [
+              30.0980093,
+              -1.9885988
+            ],
+            [
+              30.0981166,
+              -1.9882449000000002
+            ],
+            [
+              30.0982024,
+              -1.9882530000000003
+            ],
+            [
+              30.098256100000004,
+              -1.9880680000000002
+            ],
+            [
+              30.098543100000004,
+              -1.9881458
+            ],
+            [
+              30.098607400000002,
+              -1.9879769000000003
+            ],
+            [
+              30.098814,
+              -1.9880305000000003
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 802947629,
+        "name": "Mount Kenya University Rwanda",
+        "type": "university",
+        "category": "education",
+        "subcategory": "university",
+        "osmType": "way",
+        "amenity": "university",
+        "internet_access": "yes",
+        "internet_access:fee": "yes",
+        "name:fr": "Université du Mont Kenya au Rwanda",
+        "note": "There is a very beautiful Library for the university community",
+        "operator": "MKUR",
+        "operator:type": "private",
+        "website": "https://www.mku.ac.ke/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 847588549,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              30.069529600000003,
+              -1.9609519000000002
+            ],
+            [
+              30.068689000000003,
+              -1.9609356000000002
+            ],
+            [
+              30.068805800000003,
+              -1.9605482
+            ],
+            [
+              30.068609600000002,
+              -1.9604455
+            ],
+            [
+              30.068649300000004,
+              -1.9602612000000001
+            ],
+            [
+              30.068705400000002,
+              -1.9600605000000002
+            ],
+            [
+              30.068859500000002,
+              -1.9596661000000002
+            ],
+            [
+              30.068980900000003,
+              -1.9593954000000002
+            ],
+            [
+              30.069081300000004,
+              -1.9591737000000002
+            ],
+            [
+              30.069144400000003,
+              -1.9589847000000002
+            ],
+            [
+              30.069254100000002,
+              -1.9589637000000002
+            ],
+            [
+              30.0693218,
+              -1.9590244
+            ],
+            [
+              30.0691771,
+              -1.9597315000000002
+            ],
+            [
+              30.069118700000004,
+              -1.9601025
+            ],
+            [
+              30.069173300000003,
+              -1.9601397000000003
+            ],
+            [
+              30.069255700000003,
+              -1.9601485
+            ],
+            [
+              30.069303100000003,
+              -1.9601888
+            ],
+            [
+              30.069351400000002,
+              -1.9601946000000001
+            ],
+            [
+              30.069506500000003,
+              -1.9602081000000002
+            ],
+            [
+              30.069493800000004,
+              -1.9603536000000001
+            ],
+            [
+              30.069511000000002,
+              -1.9603779000000001
+            ],
+            [
+              30.069492300000004,
+              -1.9605156000000001
+            ],
+            [
+              30.069539000000002,
+              -1.9605226000000002
+            ],
+            [
+              30.069532000000002,
+              -1.9606182
+            ],
+            [
+              30.069574000000003,
+              -1.9606322000000003
+            ],
+            [
+              30.069568800000003,
+              -1.9606694000000002
+            ],
+            [
+              30.069529600000003,
+              -1.9609519000000002
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 847588549,
+        "name": "École Francophone Antoine de Sainte-Exupéry",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "way",
+        "addr:city": "Kigali",
+        "addr:postcode": "1335",
+        "addr:street": "KN 41 Street",
+        "amenity": "school",
+        "fixme": "Description incomplete",
+        "grades": "0-12",
+        "phone": "+250 789 576 468",
+        "religion": "none",
+        "website": "http://www.efase.rw/",
+        "wikidata": "Q6351548",
+        "wikipedia": "en:École Francophone Antoine de Saint-Exupéry"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 891369684,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              30.1513859,
+              -1.9302588000000003
+            ],
+            [
+              30.151469100000003,
+              -1.9302293000000001
+            ],
+            [
+              30.151567000000004,
+              -1.9301743000000002
+            ],
+            [
+              30.151671600000004,
+              -1.9300845000000002
+            ],
+            [
+              30.1516942,
+              -1.9300499000000002
+            ],
+            [
+              30.151782900000004,
+              -1.9299143
+            ],
+            [
+              30.1520739,
+              -1.9297856000000002
+            ],
+            [
+              30.1520605,
+              -1.9297347000000002
+            ],
+            [
+              30.152249500000003,
+              -1.9296704000000002
+            ],
+            [
+              30.152410400000004,
+              -1.9296556000000002
+            ],
+            [
+              30.152563300000004,
+              -1.929661
+            ],
+            [
+              30.1527242,
+              -1.9297079000000001
+            ],
+            [
+              30.153024600000002,
+              -1.9298969000000001
+            ],
+            [
+              30.153224400000003,
+              -1.9300055000000003
+            ],
+            [
+              30.153508700000003,
+              -1.9300577
+            ],
+            [
+              30.1537153,
+              -1.9301355000000002
+            ],
+            [
+              30.153832,
+              -1.9301918000000002
+            ],
+            [
+              30.1539232,
+              -1.9302199000000002
+            ],
+            [
+              30.1539138,
+              -1.9302749000000001
+            ],
+            [
+              30.153885600000002,
+              -1.9303379000000003
+            ],
+            [
+              30.153857400000003,
+              -1.9303674000000002
+            ],
+            [
+              30.153837300000003,
+              -1.9303848000000001
+            ],
+            [
+              30.153772300000004,
+              -1.9305811000000002
+            ],
+            [
+              30.153758300000003,
+              -1.9307002000000002
+            ],
+            [
+              30.153758300000003,
+              -1.9309079000000002
+            ],
+            [
+              30.153755900000004,
+              -1.9310689
+            ],
+            [
+              30.153780500000003,
+              -1.9312024
+            ],
+            [
+              30.153809600000002,
+              -1.9313131000000001
+            ],
+            [
+              30.153854000000003,
+              -1.9314819
+            ],
+            [
+              30.1539147,
+              -1.9316313000000003
+            ],
+            [
+              30.154038500000002,
+              -1.9317970000000002
+            ],
+            [
+              30.1541272,
+              -1.9318833000000002
+            ],
+            [
+              30.153858700000004,
+              -1.9326371000000002
+            ],
+            [
+              30.153384700000004,
+              -1.9325788000000002
+            ],
+            [
+              30.152997300000003,
+              -1.9325590000000001
+            ],
+            [
+              30.152815200000003,
+              -1.9325777000000002
+            ],
+            [
+              30.152703100000004,
+              -1.9326104000000002
+            ],
+            [
+              30.152521000000004,
+              -1.9326781000000002
+            ],
+            [
+              30.151535600000003,
+              -1.9329744000000002
+            ],
+            [
+              30.151400100000004,
+              -1.9305171
+            ],
+            [
+              30.1513859,
+              -1.9302588000000003
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 891369684,
+        "name": "African Leadership University",
+        "type": "university",
+        "category": "education",
+        "subcategory": "university",
+        "osmType": "way",
+        "amenity": "university"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1106524326,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              30.214171900000004,
+              -1.9915930000000002
+            ],
+            [
+              30.213713200000004,
+              -1.9907567000000002
+            ],
+            [
+              30.2148718,
+              -1.9899264
+            ],
+            [
+              30.215097200000002,
+              -1.9897649000000002
+            ],
+            [
+              30.2154969,
+              -1.9894485000000002
+            ],
+            [
+              30.216306900000003,
+              -1.9903197000000001
+            ],
+            [
+              30.216317600000004,
+              -1.9903707000000002
+            ],
+            [
+              30.216154000000003,
+              -1.9905101000000003
+            ],
+            [
+              30.216006500000002,
+              -1.9906494000000001
+            ],
+            [
+              30.215644400000002,
+              -1.9909309000000002
+            ],
+            [
+              30.215054300000002,
+              -1.9912982000000001
+            ],
+            [
+              30.214542,
+              -1.9915340000000001
+            ],
+            [
+              30.214171900000004,
+              -1.9915930000000002
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 1106524326,
+        "name": "staint manuel complex school",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "way",
+        "addr:city": "kigali",
+        "addr:street": "Kabuga-Masaka",
+        "amenity": "school",
+        "landuse": "education"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1163559182,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              30.207383800000002,
+              -1.9643230000000003
+            ],
+            [
+              30.208208000000003,
+              -1.9644242
+            ],
+            [
+              30.208203500000003,
+              -1.96446
+            ],
+            [
+              30.208211300000002,
+              -1.9644610000000002
+            ],
+            [
+              30.208169100000003,
+              -1.9648038
+            ],
+            [
+              30.2081614,
+              -1.9648028000000002
+            ],
+            [
+              30.208158700000002,
+              -1.9648248000000001
+            ],
+            [
+              30.207334600000003,
+              -1.9647236000000001
+            ],
+            [
+              30.2073375,
+              -1.9647001000000002
+            ],
+            [
+              30.207313100000004,
+              -1.9646971000000002
+            ],
+            [
+              30.207355600000003,
+              -1.9643514000000002
+            ],
+            [
+              30.207380000000004,
+              -1.9643544000000002
+            ],
+            [
+              30.207383800000002,
+              -1.9643230000000003
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 1163559182,
+        "name": "Hope Haven Christian Secondary School",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "way",
+        "addr:housenumber": "secondary school",
+        "amenity": "school",
+        "building": "construction",
+        "building:levels": "4",
+        "building:material": "brick",
+        "description": "Hope Haven Rwanda is transforming Rwandan families through a holistic approach to education and discipleship, actively demonstrating the love, hope and truth of Jesus Christ.",
+        "image": "https://hopehavenrwanda.org/wp-content/uploads/2023/10/Page-4-campus_updated.jpeg",
+        "roof:shape": "skillion",
+        "start_date": "2012"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1183900402,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              30.095433000000003,
+              -1.9916813000000002
+            ],
+            [
+              30.095658900000004,
+              -1.9919134000000003
+            ],
+            [
+              30.0963382,
+              -1.992363
+            ],
+            [
+              30.096470000000004,
+              -1.9917992000000002
+            ],
+            [
+              30.095830400000004,
+              -1.9913422000000003
+            ],
+            [
+              30.095433000000003,
+              -1.9916813000000002
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 1183900402,
+        "name": "Lycée Kagarama",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "way",
+        "amenity": "school",
+        "name:fr": "Lycée Kagarama"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1253434793,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              30.118482000000004,
+              -1.9356124000000001
+            ],
+            [
+              30.118472300000004,
+              -1.9358816
+            ],
+            [
+              30.118371300000003,
+              -1.9358720000000003
+            ],
+            [
+              30.118293800000004,
+              -1.9363296
+            ],
+            [
+              30.118994400000002,
+              -1.9366259000000001
+            ],
+            [
+              30.1190877,
+              -1.9367130000000001
+            ],
+            [
+              30.1192184,
+              -1.9369449
+            ],
+            [
+              30.119292100000003,
+              -1.9370803
+            ],
+            [
+              30.119357700000002,
+              -1.9372389
+            ],
+            [
+              30.1194698,
+              -1.9376676000000002
+            ],
+            [
+              30.119994700000003,
+              -1.9375665000000002
+            ],
+            [
+              30.120537000000002,
+              -1.9374541
+            ],
+            [
+              30.119856700000003,
+              -1.9360925000000002
+            ],
+            [
+              30.119517500000004,
+              -1.9357359
+            ],
+            [
+              30.119128900000003,
+              -1.9354623000000002
+            ],
+            [
+              30.118692700000004,
+              -1.9351835000000002
+            ],
+            [
+              30.118573200000004,
+              -1.9356418000000002
+            ],
+            [
+              30.118482000000004,
+              -1.9356124000000001
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 1253434793,
+        "name": "Saint Ignatius High School",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "way",
+        "amenity": "school",
+        "denomination": "roman_catholic",
+        "grades": "7-12",
+        "operator": "Jesuit Society of Rwanda",
+        "operator:type": "religious",
+        "religion": "christian",
+        "wikidata": "Q28136900",
+        "wikipedia": "en:St. Ignatius School, Kigali"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1253434795,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              30.1194698,
+              -1.9376676000000002
+            ],
+            [
+              30.120537000000002,
+              -1.9374541
+            ],
+            [
+              30.121006100000002,
+              -1.9383818000000002
+            ],
+            [
+              30.121322300000003,
+              -1.9392089000000001
+            ],
+            [
+              30.1205597,
+              -1.9390593000000003
+            ],
+            [
+              30.1204931,
+              -1.9390278
+            ],
+            [
+              30.119765500000003,
+              -1.9384314000000002
+            ],
+            [
+              30.119718000000002,
+              -1.9383697000000002
+            ],
+            [
+              30.1194698,
+              -1.9376676000000002
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 1253434795,
+        "name": "Ecole Primaire Saint Ignace",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "way",
+        "amenity": "school",
+        "denomination": "roman_catholic",
+        "grades": "1-6",
+        "name:en": "Saint Ignatius High School",
+        "operator": "Jesuit Society of Rwanda",
+        "operator:type": "religious",
+        "religion": "christian"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1253434796,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              30.117708900000004,
+              -1.9345082000000002
+            ],
+            [
+              30.117232100000003,
+              -1.9351086000000002
+            ],
+            [
+              30.117437100000004,
+              -1.9352536000000002
+            ],
+            [
+              30.117728800000002,
+              -1.9354006000000001
+            ],
+            [
+              30.118162500000004,
+              -1.9355819
+            ],
+            [
+              30.118468500000002,
+              -1.9350402000000002
+            ],
+            [
+              30.117708900000004,
+              -1.9345082000000002
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 1253434796,
+        "name": "Ecole Maternelle Saint Ignace",
+        "type": "kindergarten",
+        "category": "education",
+        "subcategory": "kindergarten",
+        "osmType": "way",
+        "amenity": "kindergarten",
+        "denomination": "roman_catholic",
+        "name:en": "Saint Ignatius Nursery School",
+        "operator": "Jesuit Society of Rwanda",
+        "operator:type": "religious",
+        "preschool": "yes",
+        "religion": "christian"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1253437058,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              30.114486600000003,
+              -1.9316138000000003
+            ],
+            [
+              30.116752200000004,
+              -1.9336645000000001
+            ],
+            [
+              30.1171338,
+              -1.9332057000000002
+            ],
+            [
+              30.118168100000002,
+              -1.9323303000000003
+            ],
+            [
+              30.118096800000004,
+              -1.9321373000000002
+            ],
+            [
+              30.117799,
+              -1.9314715000000002
+            ],
+            [
+              30.117410400000004,
+              -1.9310186000000003
+            ],
+            [
+              30.117353500000004,
+              -1.9309695000000002
+            ],
+            [
+              30.1171727,
+              -1.9308441
+            ],
+            [
+              30.1170061,
+              -1.9309058000000001
+            ],
+            [
+              30.116517400000003,
+              -1.9312873000000002
+            ],
+            [
+              30.1163549,
+              -1.9313954000000002
+            ],
+            [
+              30.1162397,
+              -1.9314423000000003
+            ],
+            [
+              30.116088200000004,
+              -1.9314471000000002
+            ],
+            [
+              30.116000700000004,
+              -1.9314051
+            ],
+            [
+              30.1154344,
+              -1.9308703000000003
+            ],
+            [
+              30.114486600000003,
+              -1.9316138000000003
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 1253437058,
+        "name": "Kigali Christian School",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "way",
+        "amenity": "school",
+        "denomination": "roman_catholic",
+        "grades": "1-12",
+        "religion": "christian"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1253439619,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              30.117947500000003,
+              -1.9369490000000003
+            ],
+            [
+              30.117487800000003,
+              -1.9375581000000002
+            ],
+            [
+              30.117315700000002,
+              -1.9378654000000002
+            ],
+            [
+              30.117703400000003,
+              -1.9380624000000002
+            ],
+            [
+              30.118699400000004,
+              -1.9372988000000002
+            ],
+            [
+              30.118554500000002,
+              -1.9371420000000001
+            ],
+            [
+              30.118282900000004,
+              -1.9370265000000002
+            ],
+            [
+              30.117947500000003,
+              -1.9369490000000003
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 1253439619,
+        "name": "Mother Mary School Complex",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "way",
+        "amenity": "school",
+        "grades": "1-12"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1303325670,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              30.1080025,
+              -2.0166851
+            ],
+            [
+              30.1085041,
+              -2.0163902
+            ],
+            [
+              30.109163900000002,
+              -2.0163754000000003
+            ],
+            [
+              30.109075400000002,
+              -2.0171314000000002
+            ],
+            [
+              30.108687800000002,
+              -2.0181071000000004
+            ],
+            [
+              30.107987800000004,
+              -2.0176903000000004
+            ],
+            [
+              30.1080025,
+              -2.0166851
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 1303325670,
+        "name": "Groupe Scholaire Saint Joseph Gahanga I",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "way",
+        "amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1416370827,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              30.147900600000003,
+              -1.9883314
+            ],
+            [
+              30.1490499,
+              -1.9885123000000002
+            ],
+            [
+              30.1495287,
+              -1.9868718
+            ],
+            [
+              30.1483297,
+              -1.9870165000000002
+            ],
+            [
+              30.148226500000003,
+              -1.9870675000000002
+            ],
+            [
+              30.1481661,
+              -1.9871465000000001
+            ],
+            [
+              30.148136600000004,
+              -1.9872069
+            ],
+            [
+              30.147900600000003,
+              -1.9883314
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 1416370827,
+        "name": "Groupe Scolaire Busanza",
+        "type": "school",
+        "category": "education",
+        "subcategory": "school",
+        "osmType": "way",
+        "amenity": "school"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 13529968,
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                30.0628193,
+                -1.9577275
+              ],
+              [
+                30.062956000000003,
+                -1.9577105000000001
+              ],
+              [
+                30.063147600000004,
+                -1.9576822000000003
+              ],
+              [
+                30.063278200000003,
+                -1.9576503
+              ],
+              [
+                30.063425700000003,
+                -1.9575445000000002
+              ],
+              [
+                30.063467300000003,
+                -1.9574868
+              ],
+              [
+                30.063591400000004,
+                -1.957464
+              ],
+              [
+                30.063560300000002,
+                -1.9571298000000001
+              ],
+              [
+                30.063488300000003,
+                -1.9566053
+              ],
+              [
+                30.063486800000003,
+                -1.9565834000000002
+              ],
+              [
+                30.0634459,
+                -1.9565781000000002
+              ],
+              [
+                30.0628193,
+                -1.9577275
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                30.0634328,
+                -1.9564430000000002
+              ],
+              [
+                30.0634161,
+                -1.9562962000000002
+              ],
+              [
+                30.0634851,
+                -1.9562902000000002
+              ],
+              [
+                30.063492800000002,
+                -1.9562631000000001
+              ],
+              [
+                30.063428400000003,
+                -1.9557779000000002
+              ],
+              [
+                30.0632997,
+                -1.9551828000000002
+              ],
+              [
+                30.063212500000002,
+                -1.9549214000000001
+              ],
+              [
+                30.063170900000003,
+                -1.9544550000000003
+              ],
+              [
+                30.063465300000004,
+                -1.9544202000000002
+              ],
+              [
+                30.063477400000004,
+                -1.9544242000000003
+              ],
+              [
+                30.0634821,
+                -1.9544383
+              ],
+              [
+                30.063484100000004,
+                -1.9544691
+              ],
+              [
+                30.063536400000004,
+                -1.9544637000000002
+              ],
+              [
+                30.063542400000003,
+                -1.9544322
+              ],
+              [
+                30.063551800000003,
+                -1.9544148000000001
+              ],
+              [
+                30.063568600000004,
+                -1.9544041
+              ],
+              [
+                30.0640451,
+                -1.9543363000000002
+              ],
+              [
+                30.064143200000004,
+                -1.9551225
+              ],
+              [
+                30.064306900000002,
+                -1.9562484000000002
+              ],
+              [
+                30.064296100000004,
+                -1.956306
+              ],
+              [
+                30.064372600000002,
+                -1.9562939000000001
+              ],
+              [
+                30.064379300000002,
+                -1.9563489000000003
+              ],
+              [
+                30.064411500000002,
+                -1.9565834000000002
+              ],
+              [
+                30.064516100000002,
+                -1.9573354000000003
+              ],
+              [
+                30.064585800000003,
+                -1.9578005000000003
+              ],
+              [
+                30.064638100000003,
+                -1.9582763
+              ],
+              [
+                30.064687700000004,
+                -1.9587199000000002
+              ],
+              [
+                30.064671600000004,
+                -1.9587843000000003
+              ],
+              [
+                30.064542900000003,
+                -1.9588674000000001
+              ],
+              [
+                30.064542900000003,
+                -1.9589317000000002
+              ],
+              [
+                30.064597900000003,
+                -1.9590255
+              ],
+              [
+                30.064674300000004,
+                -1.9595952
+              ],
+              [
+                30.064744100000002,
+                -1.9600522000000002
+              ],
+              [
+                30.064816500000003,
+                -1.9605320000000002
+              ],
+              [
+                30.064879500000004,
+                -1.9609851000000003
+              ],
+              [
+                30.0649036,
+                -1.9611338000000003
+              ],
+              [
+                30.064961300000004,
+                -1.9612933000000001
+              ],
+              [
+                30.065027000000004,
+                -1.9618563000000002
+              ],
+              [
+                30.065083400000002,
+                -1.9623616000000002
+              ],
+              [
+                30.065134300000004,
+                -1.9626605000000001
+              ],
+              [
+                30.065205100000004,
+                -1.9631308
+              ],
+              [
+                30.065217500000003,
+                -1.9632127000000001
+              ],
+              [
+                30.065221500000003,
+                -1.9632515000000001
+              ],
+              [
+                30.065289900000003,
+                -1.9632609
+              ],
+              [
+                30.0653408,
+                -1.9632790000000002
+              ],
+              [
+                30.0653724,
+                -1.9633842000000001
+              ],
+              [
+                30.0654025,
+                -1.9635102000000002
+              ],
+              [
+                30.064663600000003,
+                -1.9635920000000002
+              ],
+              [
+                30.064662200000004,
+                -1.9635719000000003
+              ],
+              [
+                30.064585800000003,
+                -1.9635826
+              ],
+              [
+                30.064591200000002,
+                -1.9636188
+              ],
+              [
+                30.064410100000003,
+                -1.9636483000000002
+              ],
+              [
+                30.064400700000004,
+                -1.9636121000000002
+              ],
+              [
+                30.064176800000002,
+                -1.9636235000000002
+              ],
+              [
+                30.064178800000004,
+                -1.9636556000000003
+              ],
+              [
+                30.064147900000002,
+                -1.9636617
+              ],
+              [
+                30.064123100000003,
+                -1.9636355
+              ],
+              [
+                30.063679200000003,
+                -1.9636697
+              ],
+              [
+                30.063679200000003,
+                -1.9636925
+              ],
+              [
+                30.063379800000003,
+                -1.9637016000000003
+              ],
+              [
+                30.0633775,
+                -1.9636747
+              ],
+              [
+                30.062669400000004,
+                -1.9637394000000001
+              ],
+              [
+                30.062667400000002,
+                -1.9637247000000002
+              ],
+              [
+                30.061902300000003,
+                -1.9637944000000003
+              ],
+              [
+                30.061880100000003,
+                -1.9630739000000001
+              ],
+              [
+                30.0614355,
+                -1.9628267000000001
+              ],
+              [
+                30.061434700000003,
+                -1.9625789000000002
+              ],
+              [
+                30.061412100000002,
+                -1.9621947000000002
+              ],
+              [
+                30.061410700000003,
+                -1.9619668000000001
+              ],
+              [
+                30.0614972,
+                -1.9619668000000001
+              ],
+              [
+                30.061452300000003,
+                -1.9615627000000002
+              ],
+              [
+                30.061280000000004,
+                -1.9615802000000002
+              ],
+              [
+                30.061277300000004,
+                -1.9614488
+              ],
+              [
+                30.0617614,
+                -1.9613389
+              ],
+              [
+                30.061765500000003,
+                -1.9613697
+              ],
+              [
+                30.061851300000004,
+                -1.9613402000000002
+              ],
+              [
+                30.062118200000004,
+                -1.9613242000000002
+              ],
+              [
+                30.062150400000004,
+                -1.9613671000000001
+              ],
+              [
+                30.0621517,
+                -1.9612588000000002
+              ],
+              [
+                30.062230800000002,
+                -1.9612773000000001
+              ],
+              [
+                30.062043100000004,
+                -1.9607090000000003
+              ],
+              [
+                30.061872700000002,
+                -1.9603739000000002
+              ],
+              [
+                30.061813700000002,
+                -1.9603873000000003
+              ],
+              [
+                30.0617954,
+                -1.9604052
+              ],
+              [
+                30.061783100000003,
+                -1.9604052
+              ],
+              [
+                30.061751500000003,
+                -1.9604187000000002
+              ],
+              [
+                30.061733300000004,
+                -1.9604343000000002
+              ],
+              [
+                30.061716800000003,
+                -1.9604482
+              ],
+              [
+                30.0616437,
+                -1.9604985000000001
+              ],
+              [
+                30.0616072,
+                -1.9604235
+              ],
+              [
+                30.0617842,
+                -1.9603323000000001
+              ],
+              [
+                30.0618687,
+                -1.9602760000000001
+              ],
+              [
+                30.061899600000004,
+                -1.9602506000000002
+              ],
+              [
+                30.061929100000004,
+                -1.9602171000000002
+              ],
+              [
+                30.061683700000003,
+                -1.9600348
+              ],
+              [
+                30.061539200000002,
+                -1.9593462000000001
+              ],
+              [
+                30.061534400000003,
+                -1.9593085000000001
+              ],
+              [
+                30.061489200000004,
+                -1.959
+              ],
+              [
+                30.0615616,
+                -1.9589840000000003
+              ],
+              [
+                30.061396700000003,
+                -1.9579693000000002
+              ],
+              [
+                30.0634328,
+                -1.9564430000000002
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                30.062698100000002,
+                -1.9577430000000002
+              ],
+              [
+                30.062335900000004,
+                -1.9577950000000002
+              ],
+              [
+                30.061571900000004,
+                -1.9579342000000002
+              ],
+              [
+                30.062698100000002,
+                -1.9577430000000002
+              ]
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 13529968,
+        "name": "College of Science and Technology",
+        "type": "multipolygon",
+        "category": "education",
+        "subcategory": "university",
+        "osmType": "relation",
+        "amenity": "university",
+        "check_date": "2023-04-19",
+        "name:fr": "Collège des Sciences et de la Technologie",
+        "old_name": "Kigali Institute of Science and Technology",
+        "old_name:fr": "Institut des Sciences et Technologies de Kigali",
+        "operator": "University of Rwanda",
+        "operator:fr": "Université du Rwanda"
+      }
+    }
+  ]
+}
