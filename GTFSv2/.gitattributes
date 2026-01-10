@@ -1,0 +1,4 @@
+# Large files - use LFS if needed
+*.zip filter=lfs diff=lfs merge=lfs -text
+*.html linguist-generated=true
+*.geojson linguist-generated=true

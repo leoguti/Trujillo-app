@@ -1,0 +1,430 @@
+{
+  "trip_id": "19965855",
+  "route_id": "C-01 B",
+  "total_stops": 47,
+  "stops": [
+    {
+      "stop_id": "SYNTH_START_19965855",
+      "nombre": "INICIO RUTA 19965855",
+      "lat": -8.103047,
+      "lon": -79.0022986,
+      "distrito": "Generado",
+      "synthetic": true,
+      "stop_sequence": 1
+    },
+    {
+      "stop_id": "CTC-477",
+      "nombre": "CTC-477",
+      "lat": -8.102780064104909,
+      "lon": -79.00312877829212,
+      "distrito": "Trujillo (Base)",
+      "synthetic": false,
+      "stop_sequence": 2
+    },
+    {
+      "stop_id": "SR-528",
+      "nombre": "SR-528",
+      "lat": -8.102860064585597,
+      "lon": -79.00463819831081,
+      "distrito": "Trujillo (Base)",
+      "synthetic": false,
+      "stop_sequence": 3
+    },
+    {
+      "stop_id": "RASAN-474",
+      "nombre": "RASAN-474",
+      "lat": -8.103484425070768,
+      "lon": -79.00572248151727,
+      "distrito": "Trujillo (Base)",
+      "synthetic": false,
+      "stop_sequence": 4
+    },
+    {
+      "stop_id": "RASAN-472",
+      "nombre": "RASAN-472",
+      "lat": -8.10618000315583,
+      "lon": -79.00681179240516,
+      "distrito": "Trujillo (Base)",
+      "synthetic": false,
+      "stop_sequence": 5
+    },
+    {
+      "stop_id": "RIP-324",
+      "nombre": "RIP-324",
+      "lat": -8.112613725290245,
+      "lon": -79.00824374957806,
+      "distrito": "Trujillo (Base)",
+      "synthetic": false,
+      "stop_sequence": 6
+    },
+    {
+      "stop_id": "AMS-62",
+      "nombre": "AMS-62",
+      "lat": -8.113926007836605,
+      "lon": -79.01474596313889,
+      "distrito": "Trujillo (Base)",
+      "synthetic": false,
+      "stop_sequence": 7
+    },
+    {
+      "stop_id": "AMS-40",
+      "nombre": "AMS-40",
+      "lat": -8.116403861714803,
+      "lon": -79.01644863111991,
+      "distrito": "Trujillo (Base)",
+      "synthetic": false,
+      "stop_sequence": 8
+    },
+    {
+      "stop_id": "AMS-55",
+      "nombre": "AMS-55",
+      "lat": -8.118928105237815,
+      "lon": -79.01857962799266,
+      "distrito": "Trujillo (Base)",
+      "synthetic": false,
+      "stop_sequence": 9
+    },
+    {
+      "stop_id": "AMS-53",
+      "nombre": "AMS-53",
+      "lat": -8.121137642326863,
+      "lon": -79.02073479946799,
+      "distrito": "Trujillo (Base)",
+      "synthetic": false,
+      "stop_sequence": 10
+    },
+    {
+      "stop_id": "AMS-57",
+      "nombre": "AMS-57",
+      "lat": -8.122784002997976,
+      "lon": -79.02249837350901,
+      "distrito": "Trujillo (Base)",
+      "synthetic": false,
+      "stop_sequence": 11
+    },
+    {
+      "stop_id": "AMS-37",
+      "nombre": "AMS-37",
+      "lat": -8.124507006523599,
+      "lon": -79.02463674315543,
+      "distrito": "Trujillo (Base)",
+      "synthetic": false,
+      "stop_sequence": 12
+    },
+    {
+      "stop_id": "AMS-36",
+      "nombre": "AMS-36",
+      "lat": -8.126091761999596,
+      "lon": -79.02796469578601,
+      "distrito": "Trujillo (Base)",
+      "synthetic": false,
+      "stop_sequence": 13
+    },
+    {
+      "stop_id": "COSR-335",
+      "nombre": "COSR-335",
+      "lat": -8.126125776538728,
+      "lon": -79.03032128859451,
+      "distrito": "Trujillo (Base)",
+      "synthetic": false,
+      "stop_sequence": 14
+    },
+    {
+      "stop_id": "COSR-332",
+      "nombre": "COSR-332",
+      "lat": -8.122104992505026,
+      "lon": -79.02814440177877,
+      "distrito": "Trujillo (Base)",
+      "synthetic": false,
+      "stop_sequence": 15
+    },
+    {
+      "stop_id": "ESP-6",
+      "nombre": "ESP-6",
+      "lat": -8.116416807992143,
+      "lon": -79.02883808777436,
+      "distrito": "Trujillo (Base)",
+      "synthetic": false,
+      "stop_sequence": 16
+    },
+    {
+      "stop_id": "ESP-3",
+      "nombre": "ESP-3",
+      "lat": -8.115472165379344,
+      "lon": -79.03130605863205,
+      "distrito": "Trujillo (Base)",
+      "synthetic": false,
+      "stop_sequence": 17
+    },
+    {
+      "stop_id": "ESP-2",
+      "nombre": "ESP-2",
+      "lat": -8.112958605291801,
+      "lon": -79.03269950781224,
+      "distrito": "Trujillo (Base)",
+      "synthetic": false,
+      "stop_sequence": 18
+    },
+    {
+      "stop_id": "ESP-1",
+      "nombre": "ESP-1",
+      "lat": -8.111157540903863,
+      "lon": -79.03279300754362,
+      "distrito": "Trujillo (Base)",
+      "synthetic": false,
+      "stop_sequence": 19
+    },
+    {
+      "stop_id": "PEMU-341",
+      "nombre": "PEMU-341",
+      "lat": -8.108725203844793,
+      "lon": -79.03541553435835,
+      "distrito": "Trujillo (Base)",
+      "synthetic": false,
+      "stop_sequence": 20
+    },
+    {
+      "stop_id": "NA-527",
+      "nombre": "NA-527",
+      "lat": -8.106955385739901,
+      "lon": -79.03486352236465,
+      "distrito": "Trujillo (Base)",
+      "synthetic": false,
+      "stop_sequence": 21
+    },
+    {
+      "stop_id": "NPT-196",
+      "nombre": "NPT-196",
+      "lat": -8.103076676058759,
+      "lon": -79.03520966350197,
+      "distrito": "Trujillo (Base)",
+      "synthetic": false,
+      "stop_sequence": 22
+    },
+    {
+      "stop_id": "NPT-198",
+      "nombre": "NPT-198",
+      "lat": -8.101716423037482,
+      "lon": -79.03585458523476,
+      "distrito": "Trujillo (Base)",
+      "synthetic": false,
+      "stop_sequence": 23
+    },
+    {
+      "stop_id": "NPT-207",
+      "nombre": "NPT-207",
+      "lat": -8.09848382275919,
+      "lon": -79.03741592820246,
+      "distrito": "Trujillo (Base)",
+      "synthetic": false,
+      "stop_sequence": 24
+    },
+    {
+      "stop_id": "NPT-206",
+      "nombre": "NPT-206",
+      "lat": -8.095983808802067,
+      "lon": -79.03850545465879,
+      "distrito": "Trujillo (Base)",
+      "synthetic": false,
+      "stop_sequence": 25
+    },
+    {
+      "stop_id": "NPT-203",
+      "nombre": "NPT-203",
+      "lat": -8.093748573101315,
+      "lon": -79.03953861160487,
+      "distrito": "Trujillo (Base)",
+      "synthetic": false,
+      "stop_sequence": 26
+    },
+    {
+      "stop_id": "NPT-205",
+      "nombre": "NPT-205",
+      "lat": -8.09124951557719,
+      "lon": -79.04069812382775,
+      "distrito": "Trujillo (Base)",
+      "synthetic": false,
+      "stop_sequence": 27
+    },
+    {
+      "stop_id": "NPT-209",
+      "nombre": "NPT-209",
+      "lat": -8.089316448761043,
+      "lon": -79.04154943647494,
+      "distrito": "Trujillo (Base)",
+      "synthetic": false,
+      "stop_sequence": 28
+    },
+    {
+      "stop_id": "NPT-208",
+      "nombre": "NPT-208",
+      "lat": -8.086861494662067,
+      "lon": -79.04269160623366,
+      "distrito": "Trujillo (Base)",
+      "synthetic": false,
+      "stop_sequence": 29
+    },
+    {
+      "stop_id": "PE-304",
+      "nombre": "PE-304",
+      "lat": -8.083958706999965,
+      "lon": -79.04400182699999,
+      "distrito": "Pendientes de Visitar",
+      "synthetic": false,
+      "stop_sequence": 30
+    },
+    {
+      "stop_id": "PE-305",
+      "nombre": "PE-305",
+      "lat": -8.081488203999982,
+      "lon": -79.04511672499996,
+      "distrito": "Pendientes de Visitar",
+      "synthetic": false,
+      "stop_sequence": 31
+    },
+    {
+      "stop_id": "PE-225",
+      "nombre": "PE-225",
+      "lat": -8.078827312999977,
+      "lon": -79.04632484399997,
+      "distrito": "Pendientes de Visitar",
+      "synthetic": false,
+      "stop_sequence": 32
+    },
+    {
+      "stop_id": "PE-189",
+      "nombre": "PE-189",
+      "lat": -8.067539130999933,
+      "lon": -79.05060939399993,
+      "distrito": "Pendientes de Visitar",
+      "synthetic": false,
+      "stop_sequence": 33
+    },
+    {
+      "stop_id": "PE-188",
+      "nombre": "PE-188",
+      "lat": -8.06353073899993,
+      "lon": -79.05178851399995,
+      "distrito": "Pendientes de Visitar",
+      "synthetic": false,
+      "stop_sequence": 34
+    },
+    {
+      "stop_id": "PE-272",
+      "nombre": "PE-272",
+      "lat": -8.059543876999953,
+      "lon": -79.05317247999994,
+      "distrito": "Pendientes de Visitar",
+      "synthetic": false,
+      "stop_sequence": 35
+    },
+    {
+      "stop_id": "PE-274",
+      "nombre": "PE-274",
+      "lat": -8.05619471999995,
+      "lon": -79.05427857699993,
+      "distrito": "Pendientes de Visitar",
+      "synthetic": false,
+      "stop_sequence": 36
+    },
+    {
+      "stop_id": "PE-275",
+      "nombre": "PE-275",
+      "lat": -8.053390276999949,
+      "lon": -79.05520040799996,
+      "distrito": "Pendientes de Visitar",
+      "synthetic": false,
+      "stop_sequence": 37
+    },
+    {
+      "stop_id": "PE-237_1",
+      "nombre": "PE-237_1",
+      "lat": -8.049601165999945,
+      "lon": -79.05634030399995,
+      "distrito": "Pendientes de Visitar",
+      "synthetic": false,
+      "stop_sequence": 38
+    },
+    {
+      "stop_id": "PH-135",
+      "nombre": "PH-135",
+      "lat": -8.04214701099994,
+      "lon": -79.05865699499998,
+      "distrito": "Pendientes de Visitar",
+      "synthetic": false,
+      "stop_sequence": 39
+    },
+    {
+      "stop_id": "PH-115",
+      "nombre": "PH-115",
+      "lat": -8.03765066699998,
+      "lon": -79.06020413399995,
+      "distrito": "Pendientes de Visitar",
+      "synthetic": false,
+      "stop_sequence": 40
+    },
+    {
+      "stop_id": "PH-133",
+      "nombre": "PH-133",
+      "lat": -8.03448865699994,
+      "lon": -79.06114030499998,
+      "distrito": "Pendientes de Visitar",
+      "synthetic": false,
+      "stop_sequence": 41
+    },
+    {
+      "stop_id": "PH-132",
+      "nombre": "PH-132",
+      "lat": -8.030471451999972,
+      "lon": -79.06247924799999,
+      "distrito": "Pendientes de Visitar",
+      "synthetic": false,
+      "stop_sequence": 42
+    },
+    {
+      "stop_id": "PH-131",
+      "nombre": "PH-131",
+      "lat": -8.026962580999964,
+      "lon": -79.06360599699997,
+      "distrito": "Pendientes de Visitar",
+      "synthetic": false,
+      "stop_sequence": 43
+    },
+    {
+      "stop_id": "PH-130",
+      "nombre": "PH-130",
+      "lat": -8.022955933999981,
+      "lon": -79.06492241799998,
+      "distrito": "Pendientes de Visitar",
+      "synthetic": false,
+      "stop_sequence": 44
+    },
+    {
+      "stop_id": "PH-129",
+      "nombre": "PH-129",
+      "lat": -8.019157980999978,
+      "lon": -79.06613360799997,
+      "distrito": "Pendientes de Visitar",
+      "synthetic": false,
+      "stop_sequence": 45
+    },
+    {
+      "stop_id": "PH-128",
+      "nombre": "PH-128",
+      "lat": -8.015553343999954,
+      "lon": -79.06737390899997,
+      "distrito": "Pendientes de Visitar",
+      "synthetic": false,
+      "stop_sequence": 46
+    },
+    {
+      "stop_id": "SYNTH_END_19965855",
+      "nombre": "FIN RUTA 19965855",
+      "lat": -8.013133300000002,
+      "lon": -79.0682182,
+      "distrito": "Generado",
+      "synthetic": true,
+      "stop_sequence": 47
+    }
+  ]
+}

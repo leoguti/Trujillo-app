@@ -1,0 +1,67 @@
+# Generated trip files (210 files, regenerable from scripts)
+trip_*_stops.json
+
+# Large generated files
+trips_visualizer.html
+routes_hierarchy_viewer.html
+stops_to_trips_index.json
+paradas_GTFSv2_viewer.html
+paradas_para_GTFSv2.geojson
+paraderos_consolidados.geojson
+
+# Generated GTFS feed (final output, regenerable)
+gtfs_trujillo.zip
+
+# Test/development files
+route_test.geojson
+route_viewer.html
+index.html
+process_all_trips.log
+test_popup.html
+separator_stops*.html
+separator_stops*.json
+stops_trip_19965855.json
+
+# Intermediate/temporary files (in root, not in gtfs_feed/)
+/stop_times.txt
+/stops.txt
+/stops_with_ids.json
+/stops_with_ids_clean.json
+
+# Old/deprecated scripts
+detect_separator_stops.py
+detect_separator_stops_osm.py
+generate_stops_for_trip.py
+routes_viewer.py
+assign_stops_to_route.py
+generate_kml_review.py
+
+# Review files (already processed)
+Paradas_Separadores_REVISAR.kml
+EMAIL_PARA_OSCAR.txt
+
+# Downloaded velocities (regenerable from Google Sheet)
+velocidades.csv
+
+# Python virtual environment
+venv/
+env/
+ENV/
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.py[cod]
+*$py.class
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
