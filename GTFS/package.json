@@ -4,11 +4,11 @@
   "description": "GTFS generation for Trujillo, Peru",
   "main": "index.ts",
   "scripts": {
-    "start": "NODE_OPTIONS='--max-old-space-size=8192' ts-node src/trujillo.ts",
+    "start": "NODE_OPTIONS='--max-old-space-size=8192' ts-node index.ts",
     "build": "tsc"
   },
   "dependencies": {
-    "trufi-gtfs-builder": "github:trufi-association/trufi-gtfs-builder#v2.2.0"
+    "trufi-gtfs-builder": "github:trufi-association/trufi-gtfs-builder#v2.3.0"
   },
   "devDependencies": {
     "@types/node": "^20.0.0",
