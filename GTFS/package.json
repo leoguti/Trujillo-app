@@ -8,7 +8,7 @@
     "build": "tsc"
   },
   "dependencies": {
-    "trufi-gtfs-builder": "github:trufi-association/trufi-gtfs-builder#v2.3.0"
+    "trufi-gtfs-builder": "github:trufi-association/trufi-gtfs-builder#v2.3.2"
   },
   "devDependencies": {
     "@types/node": "^20.0.0",
