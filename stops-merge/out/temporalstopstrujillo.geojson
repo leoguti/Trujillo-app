@@ -129,7 +129,7 @@
     {
       "type": "Feature",
       "properties": {
-        "stop_id": "BUS_STOP",
+        "stop_id": "BUS_STOP_2",
         "stop_name": "Bus Stop",
         "advertising": "no",
         "bench": "no",
@@ -836,7 +836,7 @@
     {
       "type": "Feature",
       "properties": {
-        "stop_id": "BUS_A_TRUJILLO",
+        "stop_id": "BUS_A_TRUJILLO_2",
         "stop_name": "Bus a Trujillo",
         "advertising": "no",
         "bench": "no",
@@ -1086,7 +1086,7 @@
     {
       "type": "Feature",
       "properties": {
-        "stop_id": "JIRON_UNION",
+        "stop_id": "JIRON_UNION_2",
         "stop_name": "Jirón Unión",
         "advertising": "no",
         "bench": "no",
@@ -1118,7 +1118,7 @@
     {
       "type": "Feature",
       "properties": {
-        "stop_id": "AVENIDA_PERU",
+        "stop_id": "AVENIDA_PERU_2",
         "stop_name": "Avenida Perú",
         "advertising": "no",
         "bench": "no",
@@ -1214,7 +1214,7 @@
     {
       "type": "Feature",
       "properties": {
-        "stop_id": "AVENIDA_MIRAFLORES",
+        "stop_id": "AVENIDA_MIRAFLORES_2",
         "stop_name": "Avenida Miraflores",
         "advertising": "no",
         "bench": "no",
@@ -1246,7 +1246,7 @@
     {
       "type": "Feature",
       "properties": {
-        "stop_id": "AVENIDA_DEL_EJERCITO",
+        "stop_id": "AVENIDA_DEL_EJERCITO_2",
         "stop_name": "Avenida del Ejército",
         "advertising": "no",
         "bench": "no",
@@ -1374,7 +1374,7 @@
     {
       "type": "Feature",
       "properties": {
-        "stop_id": "JOSE_MARIA_EGUREN",
+        "stop_id": "JOSE_MARIA_EGUREN_2",
         "stop_name": "José Maria Eguren",
         "advertising": "no",
         "bench": "yes",
@@ -1533,7 +1533,7 @@
     {
       "type": "Feature",
       "properties": {
-        "stop_id": "AVENIDA_LOS_COLIBRIES",
+        "stop_id": "AVENIDA_LOS_COLIBRIES_2",
         "stop_name": "Avenida los Colibries",
         "advertising": "no",
         "bench": "no",
@@ -1725,7 +1725,7 @@
     {
       "type": "Feature",
       "properties": {
-        "stop_id": "AVENIDA_VICTOR_LARCO_HERRERA",
+        "stop_id": "AVENIDA_VICTOR_LARCO_HERRERA_2",
         "stop_name": "Avenida Victor Larco Herrera",
         "advertising": "yes",
         "bench": "yes",
@@ -1787,7 +1787,7 @@
     {
       "type": "Feature",
       "properties": {
-        "stop_id": "AVENIDA_JESUS_DE_NAZARETH",
+        "stop_id": "AVENIDA_JESUS_DE_NAZARETH_2",
         "stop_name": "Avenida Jesús de Nazareth",
         "advertising": "yes",
         "bench": "yes",
@@ -2136,7 +2136,7 @@
     {
       "type": "Feature",
       "properties": {
-        "stop_id": "AVENIDA_CARLOS_VALDERRAMA",
+        "stop_id": "AVENIDA_CARLOS_VALDERRAMA_2",
         "stop_name": "Avenida Carlos Valderrama",
         "advertising": "no",
         "bench": "no",
@@ -2200,7 +2200,7 @@
     {
       "type": "Feature",
       "properties": {
-        "stop_id": "AVENIDA_AMERICA_NORTE",
+        "stop_id": "AVENIDA_AMERICA_NORTE_2",
         "stop_name": "Avenida America Norte",
         "advertising": "no",
         "bench": "no",
@@ -2232,7 +2232,7 @@
     {
       "type": "Feature",
       "properties": {
-        "stop_id": "AVENIDA_TUPAC_AMARU",
+        "stop_id": "AVENIDA_TUPAC_AMARU_2",
         "stop_name": "Avenida Túpac Amaru",
         "advertising": "no",
         "bench": "no",
@@ -2328,7 +2328,7 @@
     {
       "type": "Feature",
       "properties": {
-        "stop_id": "AVENIDA_DEL_EJERCITO",
+        "stop_id": "AVENIDA_DEL_EJERCITO_3",
         "stop_name": "Avenida del Ejército",
         "advertising": "no",
         "bench": "no",
@@ -2360,7 +2360,7 @@
     {
       "type": "Feature",
       "properties": {
-        "stop_id": "AVENIDA_DEL_EJERCITO",
+        "stop_id": "AVENIDA_DEL_EJERCITO_4",
         "stop_name": "Avenida del Ejército",
         "advertising": "no",
         "bench": "no",
@@ -2552,7 +2552,7 @@
     {
       "type": "Feature",
       "properties": {
-        "stop_id": "AVENIDA_ANTENOR_ORREGO",
+        "stop_id": "AVENIDA_ANTENOR_ORREGO_2",
         "stop_name": "Avenida Antenor Orrego",
         "advertising": "no",
         "bench": "no",
@@ -2807,7 +2807,7 @@
     {
       "type": "Feature",
       "properties": {
-        "stop_id": "AVENIDA_CHAN_CHAN",
+        "stop_id": "AVENIDA_CHAN_CHAN_2",
         "stop_name": "Avenida Chan Chan",
         "advertising": "no",
         "bench": "yes",
@@ -2903,7 +2903,7 @@
     {
       "type": "Feature",
       "properties": {
-        "stop_id": "CALLE_PROLONGACION_UNION",
+        "stop_id": "CALLE_PROLONGACION_UNION_2",
         "stop_name": "Calle Prolongación Unión",
         "advertising": "no",
         "bench": "no",
@@ -2935,7 +2935,7 @@
     {
       "type": "Feature",
       "properties": {
-        "stop_id": "PANAMERICANA_NORTE",
+        "stop_id": "PANAMERICANA_NORTE_2",
         "stop_name": "Panamericana Norte",
         "advertising": "no",
         "bench": "yes",
@@ -2999,7 +2999,7 @@
     {
       "type": "Feature",
       "properties": {
-        "stop_id": "AVENIDA_DEL_EJERCITO",
+        "stop_id": "AVENIDA_DEL_EJERCITO_5",
         "stop_name": "Avenida del Ejército",
         "advertising": "yes",
         "bench": "yes",
@@ -3095,7 +3095,7 @@
     {
       "type": "Feature",
       "properties": {
-        "stop_id": "AVENIDA_LA_RIVERA",
+        "stop_id": "AVENIDA_LA_RIVERA_2",
         "stop_name": "Avenida la Rivera",
         "advertising": "no",
         "bench": "yes",
@@ -3127,7 +3127,7 @@
     {
       "type": "Feature",
       "properties": {
-        "stop_id": "AVENIDA_LA_RIVERA",
+        "stop_id": "AVENIDA_LA_RIVERA_3",
         "stop_name": "Avenida la Rivera",
         "advertising": "no",
         "bench": "yes",
@@ -3191,7 +3191,7 @@
     {
       "type": "Feature",
       "properties": {
-        "stop_id": "AVENIDA_LA_RIVERA",
+        "stop_id": "AVENIDA_LA_RIVERA_4",
         "stop_name": "Avenida la Rivera",
         "advertising": "no",
         "bench": "yes",
@@ -3319,7 +3319,7 @@
     {
       "type": "Feature",
       "properties": {
-        "stop_id": "AVENIDA_RAMON_CASTILLA",
+        "stop_id": "AVENIDA_RAMON_CASTILLA_2",
         "stop_name": "Avenida Ramón Castilla",
         "advertising": "no",
         "bench": "yes",
@@ -3351,7 +3351,7 @@
     {
       "type": "Feature",
       "properties": {
-        "stop_id": "AVENIDA_RAMON_CASTILLA",
+        "stop_id": "AVENIDA_RAMON_CASTILLA_3",
         "stop_name": "Avenida Ramón Castilla",
         "advertising": "yes",
         "bench": "yes",
@@ -3383,7 +3383,7 @@
     {
       "type": "Feature",
       "properties": {
-        "stop_id": "AVENIDA_RAMON_CASTILLA",
+        "stop_id": "AVENIDA_RAMON_CASTILLA_4",
         "stop_name": "Avenida Ramón Castilla",
         "advertising": "no",
         "bench": "yes",
@@ -3415,7 +3415,7 @@
     {
       "type": "Feature",
       "properties": {
-        "stop_id": "AVENIDA_RAMON_CASTILLA",
+        "stop_id": "AVENIDA_RAMON_CASTILLA_5",
         "stop_name": "Avenida Ramón Castilla",
         "bench": "yes",
         "bicycleparking": "no",
@@ -3478,7 +3478,7 @@
     {
       "type": "Feature",
       "properties": {
-        "stop_id": "PANAMERICANA_NORTE",
+        "stop_id": "PANAMERICANA_NORTE_3",
         "stop_name": "Panamericana Norte",
         "advertising": "no",
         "bench": "yes",
@@ -3702,7 +3702,7 @@
     {
       "type": "Feature",
       "properties": {
-        "stop_id": "PASAJE_EL_ALTARITO",
+        "stop_id": "PASAJE_EL_ALTARITO_2",
         "stop_name": "Pasaje el Altarito",
         "advertising": "no",
         "bench": "yes",
@@ -3734,7 +3734,7 @@
     {
       "type": "Feature",
       "properties": {
-        "stop_id": "PASAJE_EL_ALTARITO",
+        "stop_id": "PASAJE_EL_ALTARITO_3",
         "stop_name": "Pasaje el Altarito",
         "advertising": "no",
         "bench": "yes",
@@ -3766,7 +3766,7 @@
     {
       "type": "Feature",
       "properties": {
-        "stop_id": "PANAMERICANA_NORTE",
+        "stop_id": "PANAMERICANA_NORTE_4",
         "stop_name": "Panamericana Norte",
         "advertising": "no",
         "bench": "yes",

@@ -42,6 +42,7 @@ export {
   convertKmzDirectory,
   // Utilities
   combineFeatureCollections,
+  ensureUniqueStopIds,
   generateStopId,
   parseCoordinates,
   extractKmlFromKmz,

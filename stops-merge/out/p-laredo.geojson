@@ -3280,7 +3280,7 @@
     {
       "type": "Feature",
       "properties": {
-        "stop_id": "PL53",
+        "stop_id": "PL53_2",
         "stop_name": "PL-53",
         "fid": "52",
         "latitud": "9106029.141",
@@ -6797,7 +6797,7 @@
     {
       "type": "Feature",
       "properties": {
-        "stop_id": "PLEXISTENTE",
+        "stop_id": "PLEXISTENTE_2",
         "stop_name": "PL-Existente",
         "fid": "108",
         "latitud": "9104888.54",

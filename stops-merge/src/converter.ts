@@ -300,6 +300,59 @@ function getFileType(filePath: string): 'kmz' | 'kml' | null {
 }
 
 /**
+ * Ensures all stop_ids in a FeatureCollection are unique
+ * Adds numeric suffixes (_2, _3, etc.) to duplicate IDs
+ *
+ * @param features - Array of StopFeatures to process
+ * @returns Object with deduplicated features and count of duplicates found
+ */
+export function ensureUniqueStopIds(features: StopFeature[]): {
+  features: StopFeature[];
+  duplicatesFound: number;
+} {
+  const idCounts = new Map<string, number>();
+  const idNextSuffix = new Map<string, number>();
+  let duplicatesFound = 0;
+
+  // First pass: count occurrences of each ID
+  for (const feature of features) {
+    const id = feature.properties.stop_id;
+    idCounts.set(id, (idCounts.get(id) || 0) + 1);
+  }
+
+  // Second pass: assign unique IDs
+  const result: StopFeature[] = features.map(feature => {
+    const originalId = feature.properties.stop_id;
+    const count = idCounts.get(originalId) || 1;
+
+    if (count === 1) {
+      // ID is already unique
+      return feature;
+    }
+
+    // ID has duplicates - assign suffix
+    const currentSuffix = idNextSuffix.get(originalId) || 1;
+    idNextSuffix.set(originalId, currentSuffix + 1);
+
+    // First occurrence keeps original ID, subsequent get _2, _3, etc.
+    if (currentSuffix === 1) {
+      return feature;
+    }
+
+    duplicatesFound++;
+    return {
+      ...feature,
+      properties: {
+        ...feature.properties,
+        stop_id: `${originalId}_${currentSuffix}`
+      }
+    };
+  });
+
+  return { features: result, duplicatesFound };
+}
+
+/**
  * Converts a KMZ or KML file to GeoJSON
  *
  * @param filePath - Path to the KMZ or KML file
@@ -395,14 +448,20 @@ export async function convertToGeoJson(
     errors.push(`Error processing ${filePath}: ${error}`);
   }
 
+  // Ensure unique stop_ids within this file
+  const { features: uniqueFeatures, duplicatesFound } = ensureUniqueStopIds(features);
+  if (duplicatesFound > 0) {
+    errors.push(`${duplicatesFound} duplicate stop_id(s) were renamed`);
+  }
+
   const featureCollection: StopsFeatureCollection = {
     type: 'FeatureCollection',
-    features
+    features: uniqueFeatures
   };
 
   return {
     fileName,
-    stopsCount: features.length,
+    stopsCount: uniqueFeatures.length,
     featureCollection,
     errors: errors.length > 0 ? errors : undefined
   };
@@ -492,9 +551,12 @@ export async function convertDirectory(
 
   // Generate combined file if requested
   if (combineOutput && allFeatures.length > 0) {
+    // Ensure unique stop_ids across all combined features
+    const { features: uniqueFeatures, duplicatesFound } = ensureUniqueStopIds(allFeatures);
+
     const combinedCollection: StopsFeatureCollection = {
       type: 'FeatureCollection',
-      features: allFeatures
+      features: uniqueFeatures
     };
 
     const combinedPath = path.join(outputDir, combinedFileName || 'all_stops.geojson');
@@ -504,7 +566,10 @@ export async function convertDirectory(
       'utf8'
     );
 
-    console.log(`\n📦 Combined file: ${combinedFileName || 'all_stops.geojson'} (${allFeatures.length} stops total)`);
+    console.log(`\n📦 Combined file: ${combinedFileName || 'all_stops.geojson'} (${uniqueFeatures.length} stops total)`);
+    if (duplicatesFound > 0) {
+      console.log(`   ⚠️  ${duplicatesFound} duplicate stop_id(s) were renamed for uniqueness`);
+    }
   }
 
   return results;

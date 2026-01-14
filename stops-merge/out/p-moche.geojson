@@ -1104,7 +1104,7 @@
     {
       "type": "Feature",
       "properties": {
-        "stop_id": "PM79",
+        "stop_id": "PM79_2",
         "stop_name": "PM-79",
         "fid": "56",
         "latitud": "9100565.88",
@@ -1924,7 +1924,7 @@
     {
       "type": "Feature",
       "properties": {
-        "stop_id": "PM49",
+        "stop_id": "PM49_2",
         "stop_name": "PM-49",
         "fid": "97",
         "latitud": "9095880.309",
