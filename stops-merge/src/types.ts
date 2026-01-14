@@ -65,6 +65,18 @@ export interface KmlPlacemark {
   Point?: {
     coordinates?: string;
   };
+  /** ExtendedData from OSM/overpass-turbo style KML */
+  ExtendedData?: {
+    Data?: Array<{
+      '@_name'?: string;
+      name?: string;
+      value?: string;
+    }> | {
+      '@_name'?: string;
+      name?: string;
+      value?: string;
+    };
+  };
 }
 
 /** Conversion result for a single file */

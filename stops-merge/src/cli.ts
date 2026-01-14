@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /**
- * CLI for converting KMZ files to GeoJSON
+ * CLI for converting KMZ and KML files to GeoJSON
  *
  * Usage:
  *   npx ts-node src/cli.ts [options]
@@ -15,21 +15,26 @@
  */
 
 import * as path from 'path';
-import { convertKmzDirectory } from './converter';
+import { convertDirectory } from './converter';
 import { ConversionOptions } from './types';
 
 function printHelp(): void {
   console.log(`
 ╔═══════════════════════════════════════════════════════════════╗
-║              KMZ to GeoJSON Converter                         ║
+║           KMZ/KML to GeoJSON Converter                        ║
 ╚═══════════════════════════════════════════════════════════════╝
 
 Usage:
   npx ts-node src/cli.ts [options]
   npm run convert -- [options]
 
+Supported formats:
+  - KMZ files (zipped KML, typically from ESRI/ArcGIS)
+  - KML files with HTML descriptions (ESRI format)
+  - KML files with ExtendedData (OSM/overpass-turbo format)
+
 Options:
-  --input, -i <dir>     Input directory containing KMZ files
+  --input, -i <dir>     Input directory containing KMZ/KML files
                         (default: ./input)
 
   --output, -o <dir>    Output directory for GeoJSON files
@@ -49,11 +54,11 @@ Options:
   --help, -h            Show this help
 
 Examples:
-  # Basic conversion
+  # Basic conversion (processes both .kmz and .kml files)
   npm run convert
 
   # Specify directories
-  npm run convert -- -i ./my_kmz -o ./result
+  npm run convert -- -i ./my_data -o ./result
 
   # With custom prefix
   npm run convert -- --prefix TRUJILLO
@@ -121,7 +126,7 @@ function parseArgs(args: string[]): ConversionOptions {
 async function main(): Promise<void> {
   console.log(`
 ╔═══════════════════════════════════════════════════════════════╗
-║              KMZ to GeoJSON Converter v1.0.0                  ║
+║           KMZ/KML to GeoJSON Converter v1.1.0                 ║
 ╚═══════════════════════════════════════════════════════════════╝
 `);
 
@@ -138,7 +143,7 @@ async function main(): Promise<void> {
   console.log('');
 
   try {
-    const results = await convertKmzDirectory(options);
+    const results = await convertDirectory(options);
 
     if (results.length === 0) {
       console.log('\n❌ No files processed');
