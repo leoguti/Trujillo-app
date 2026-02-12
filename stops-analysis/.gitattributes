@@ -1,0 +1,4 @@
+# Large generated files - exclude from language statistics
+*.osm linguist-generated=true
+*.html linguist-generated=true
+*.json linguist-generated=true

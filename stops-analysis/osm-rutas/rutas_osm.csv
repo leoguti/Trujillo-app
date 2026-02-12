@@ -1,0 +1,215 @@
+relation_id,type,route,ref,name,from,to,operator,network,colour,public_transport_version
+19965855,route,bus,C-01 B,Calle Diego Quispe Tito → Calle José la Rivera,Calle Diego Quispe Tito,Calle José la Rivera,NUEVOS GIRASOLES S.A.,Transporte Público Urbano Trujillo,#00cc00,2
+19972060,route,bus,C-01 B,Calle José la Rivera → Calle Diego Quispe Tito,Calle José la Rivera,Calle Diego Quispe Tito,NUEVOS GIRASOLES S.A.,Transporte Público Urbano Trujillo,#00cc00,2
+19966163,route,bus,C-02 H,Avenida Alan García → Avenida Federico Villarreal,Avenida Alan García,Avenida Federico Villarreal,NUEVOS GIRASOLES S.A.,Transporte Público Urbano Trujillo,#00cc00,2
+19966210,route,bus,C-02 H,Avenida Federico Villarreal → Avenida Alan García,Avenida Federico Villarreal,Avenida Alan García,NUEVOS GIRASOLES S.A.,Transporte Público Urbano Trujillo,#00cc00,2
+19966215,route,bus,C-03 JJ,Calle Santa Rosa → Calle de los Jasmines,Calle Santa Rosa,Calle de los Jasmines,NUEVOS GIRASOLES S.A.,Transporte Público Urbano Trujillo,#00cc00,2
+19966201,route,bus,C-03 JJ,Calle de los Jasmines → Calle Santa Rosa,Calle de los Jasmines,Calle Santa Rosa,NUEVOS GIRASOLES S.A.,Transporte Público Urbano Trujillo,#00cc00,2
+19966224,route,bus,C-04 XS,Avenida Federico Villarreal → Calle de los Jasmines,Avenida Federico Villarreal,Calle de los Jasmines,MODERNO GIRASOLES EXPRESS S.A,Transporte Público Urbano Trujillo,#FFFF00,2
+19966218,route,bus,C-04 XS,Calle de los Jasmines → Avenida Federico Villarreal,Calle de los Jasmines,Avenida Federico Villarreal,MODERNO GIRASOLES EXPRESS S.A,Transporte Público Urbano Trujillo,#FFFF00,2
+19966253,route,bus,C-05 B1,Avenida Federico Villarreal → Calle Jirón Cuba,Avenida Federico Villarreal,Calle Jirón Cuba,MODERNO GIRASOLES EXPRESS S.A,Transporte Público Urbano Trujillo,#FFFF00,2
+19966226,route,bus,C-05 B1,Calle Jirón Cuba → Avenida Federico Villarreal,Calle Jirón Cuba,Avenida Federico Villarreal,MODERNO GIRASOLES EXPRESS S.A,Transporte Público Urbano Trujillo,#FFFF00,2
+19966270,route,bus,C-06 K,Calle Señor de Los Milagros → El Reposo,Calle Señor de Los Milagros,El Reposo,TITANIC EXPRESS S.A.,Transporte Público Urbano Trujillo,#9999FF,2
+19966264,route,bus,C-06 K,El Reposo → Calle Señor de Los Milagros,El Reposo,Calle Señor de Los Milagros,TITANIC EXPRESS S.A.,Transporte Público Urbano Trujillo,#9999FF,2
+19966297,route,bus,C-07 Z1,Calle 9 de Octubre → El Reposo,Calle 9 de Octubre,El Reposo,TITANIC EXPRESS S.A.,Transporte Público Urbano Trujillo,#9999FF,2
+19966288,route,bus,C-07 Z1,El Reposo → Calle 9 de Octubre,El Reposo,Calle 9 de Octubre,TITANIC EXPRESS S.A.,Transporte Público Urbano Trujillo,#9999FF,2
+19967351,route,bus,C-08 O,Calle Jirón los Algarobos → Calle San Martín,Calle Jirón los Algarobos,Calle San Martín,TITANIC EXPRESS S.A.,Transporte Público Urbano Trujillo,#9999FF,2
+19972065,route,bus,C-08 O,Calle San Martín → Calle Jirón los Algarobos,Calle San Martín,Calle Jirón los Algarobos,TITANIC EXPRESS S.A.,Transporte Público Urbano Trujillo,#9999FF,2
+19967536,route,bus,C-09 E,Calle San Gabriel → Distrito Huanchaco,Calle San Gabriel,Distrito Huanchaco,ARCO IRIS EXPRESS S.A.,Transporte Público Urbano Trujillo,#3366FF,2
+19967529,route,bus,C-09 E,Distrito Huanchaco → Calle San Gabriel,Distrito Huanchaco,Calle San Gabriel,ARCO IRIS EXPRESS S.A.,Transporte Público Urbano Trujillo,#3366FF,2
+19967562,route,bus,C-10 M,Avenida Los Incas → Campiña de Moche,Avenida Los Incas,Campiña de Moche,MOCHICA CHIMÚ S.R.L,Transporte Público Urbano Trujillo,#CC9900,2
+19967551,route,bus,C-10 M,Campiña de Moche → Avenida Los Incas,Campiña de Moche,Avenida Los Incas,MOCHICA CHIMÚ S.R.L,Transporte Público Urbano Trujillo,#CC9900,2
+19967604,route,bus,C-11 T1,Alto Porvenir → Calle Jirón Santa Isabel,Alto Porvenir,Calle Jirón Santa Isabel,SAN ISIDRO LABRADOR S.A.,Transporte Público Urbano Trujillo,#FF0000,2
+19967670,route,bus,C-11 T1,Alto Porvenir → Calle Jirón Santa Isabel,Alto Porvenir,Calle Jirón Santa Isabel,SAN ISIDRO LABRADOR S.A.,Transporte Público Urbano Trujillo,#FF0000,2
+19967678,route,bus,C-11 T1,Alto Porvenir → Panamericana Norte,Alto Porvenir,Panamericana Norte,SAN ISIDRO LABRADOR S.A.,Transporte Público Urbano Trujillo,#FF0000,2
+19967679,route,bus,C-11 T1,Alto Porvenir → Panamericana Norte,Alto Porvenir,Panamericana Norte,SAN ISIDRO LABRADOR S.A.,Transporte Público Urbano Trujillo,#FF0000,2
+19990115,route,bus,C-11 T1,Alto Porvenir → Panamericana Norte,Alto Porvenir,Panamericana Norte,SAN ISIDRO LABRADOR S.A.,Transporte Público Urbano Trujillo,#FF0000,2
+19967583,route,bus,C-11 T1,Calle Jirón Santa Isabel → Alto Porvenir,Calle Jirón Santa Isabel,Alto Porvenir,SAN ISIDRO LABRADOR S.A.,Transporte Público Urbano Trujillo,#FF0000,2
+19967639,route,bus,C-11 T1,Calle Jirón Santa Isabel → Alto Porvenir,Calle Jirón Santa Isabel,Alto Porvenir,SAN ISIDRO LABRADOR S.A.,Transporte Público Urbano Trujillo,#FF0000,2
+19967674,route,bus,C-11 T1,Panamericana Norte → Alto Porvenir,Panamericana Norte,Alto Porvenir,SAN ISIDRO LABRADOR S.A.,Transporte Público Urbano Trujillo,#FF0000,2
+19990111,route,bus,C-11 T1,Panamericana Norte → Alto Porvenir,Panamericana Norte,Alto Porvenir,SAN ISIDRO LABRADOR S.A.,Transporte Público Urbano Trujillo,#FF0000,2
+19968109,route,bus,C-12 B,Carlos García Ronceros → Sector Taquila,Carlos García Ronceros,Sector Taquila,SANTA LUCIA DE MOCHE S.R.L.,Transporte Público Urbano Trujillo,#ff6633,2
+19968101,route,bus,C-12 B,Sector Taquila → Carlos García Ronceros,Sector Taquila,Carlos García Ronceros,SANTA LUCIA DE MOCHE S.R.L.,Transporte Público Urbano Trujillo,#ff6633,2
+19972195,route,bus,C-13 D,Alto Trujillo → Sector Taquila,Alto Trujillo,Sector Taquila,NUEVO DIAMANTE S.A.,Transporte Público Urbano Trujillo,#FF6633,2
+19968121,route,bus,C-13 D,Avenida 12 de Noviembre → Calle Miguiel Graú,Avenida 12 de Noviembre,Calle Miguiel Graú,MOCHICA S.A.,Transporte Público Urbano Trujillo,#006600,2
+19968127,route,bus,C-13 D,Calle Miguiel Graú → Avenida 12 de Noviembre,Calle Miguiel Graú,Avenida 12 de Noviembre,MOCHICA S.A.,Transporte Público Urbano Trujillo,#006600,2
+19972191,route,bus,C-13 D,Sector Taquila → Alto Trujillo,Sector Taquila,Alto Trujillo,NUEVO DIAMANTE S.A.,Transporte Público Urbano Trujillo,#FF6633,2
+19968169,route,bus,C-14 S,Calle José Galvez → Campiña de Moche,Calle José Galvez,Campiña de Moche,LOS GIRASOLES SERVICE S.R.L.,Transporte Público Urbano Trujillo,#e69138,2
+19972103,route,bus,C-14 S,Campiña de Moche → Calle José Galvez,Campiña de Moche,Calle José Galvez,LOS GIRASOLES SERVICE S.R.L.,Transporte Público Urbano Trujillo,#e69138,2
+19973958,route,bus,C-15 P1,Avenida America del Sur → Sector Huayabito,Avenida America del Sur,Sector Huayabito,SANTA ROSA S.R.L.,Transporte Público Urbano Trujillo,#c90076,2
+19988688,route,bus,C-15 P1,Avenida America del Sur → Sector Huayabito,Avenida America del Sur,Sector Huayabito,POROTO S.A.,Transporte Público Urbano Trujillo,#808080,2
+19973946,route,bus,C-15 P1,Avenida America del Sur → Sector Tres Cruces,Avenida America del Sur,Sector Tres Cruces,SANTA ROSA S.R.L.,Transporte Público Urbano Trujillo,#c90076,2
+19988606,route,bus,C-15 P1,Avenida America del Sur → Sector Tres Cruces,Avenida America del Sur,Sector Tres Cruces,POROTO S.A.,Transporte Público Urbano Trujillo,#808080,2
+19973949,route,bus,C-15 P1,Sector Huayabito → Avenida America del Sur,Sector Huayabito,Avenida America del Sur,SANTA ROSA S.R.L.,Transporte Público Urbano Trujillo,#c90076,2
+19988678,route,bus,C-15 P1,Sector Huayabito → Avenida America del Sur,Sector Huayabito,Avenida America del Sur,POROTO S.A.,Transporte Público Urbano Trujillo,#808080,2
+19972508,route,bus,C-15 P1,Sector Tres Cruces → Avenida America del Sur,Sector Tres Cruces,Avenida America del Sur,SANTA ROSA S.R.L.,Transporte Público Urbano Trujillo,#c90076,2
+19988601,route,bus,C-15 P1,Sector Tres Cruces → Avenida América Sur,Sector Tres Cruces,Avenida América Sur,POROTO S.A.,Transporte Público Urbano Trujillo,#808080,2
+19968195,route,bus,C-16 I,Avenida Antenor Orrego → Ciudad de Dios,Avenida Antenor Orrego,Ciudad de Dios,VIRGEN DEL ARCO S.A.,Transporte Público Urbano Trujillo,#cc3333,2
+19968183,route,bus,C-16 I,Ciudad de Dios → Avenida Antenor Orrego,Ciudad de Dios,Avenida Antenor Orrego,VIRGEN DEL ARCO S.A.,Transporte Público Urbano Trujillo,#cc3333,2
+19968338,route,bus,C-17 F,Avenida Juan Pablo II → Ciudad de Dios,Avenida Juan Pablo II,Ciudad de Dios,VIRGEN DEL ARCO S.A.,Transporte Público Urbano Trujillo,#cc3333,2
+19968210,route,bus,C-17 F,Ciudad de Dios → Avenida Juan Pablo II,Ciudad de Dios,Avenida Juan Pablo II,VIRGEN DEL ARCO S.A.,Transporte Público Urbano Trujillo,#cc3333,2
+19988569,route,bus,C-18 P,Avenida Cesar Vallejo → Cruce Vial S/N,Avenida Cesar Vallejo,Cruce Vial S/N,VIRGEN DEL ARCO S.A.,Transporte Público Urbano Trujillo,#cc3333,2
+19968352,route,bus,C-18 P,Cruce Vial S/N → Avenida Cesar Vallejo,Cruce Vial S/N,Avenida Cesar Vallejo,VIRGEN DEL ARCO S.A.,Transporte Público Urbano Trujillo,#cc3333,2
+19968383,route,bus,C-19 NN,Avenida Victor Raul Haya de la Torre → Barrio 5C,Avenida Victor Raul Haya de la Torre,Barrio 5C,MENSAJEROS DEL SEÑOR S.A.,Transporte Público Urbano Trujillo,#0b5394,2
+19968388,route,bus,C-19 NN,Barrio 5C → Avenida Victor Raul Haya de la Torre,Barrio 5C,Avenida Victor Raul Haya de la Torre,MENSAJEROS DEL SEÑOR S.A.,Transporte Público Urbano Trujillo,#0b5394,2
+19971440,route,bus,C-20 UI,Alto Trujillo → Valle Sol,Alto Trujillo,Valle Sol,LUZ DIVINA S.A.,Transporte Público Urbano Trujillo,#00FF00,2
+19971427,route,bus,C-20 UI,Valle Sol → Alto Trujillo,Valle Sol,Alto Trujillo,LUZ DIVINA S.A.,Transporte Público Urbano Trujillo,#00FF00,2
+19972128,route,bus,C-21 R,Alto Trujillo → Valle Sol,Alto Trujillo,Valle Sol,LUZ DIVINA S.A.,Transporte Público Urbano Trujillo,#00FF00,2
+19972121,route,bus,C-21 R,Valle Sol → Alto Trujillo,Valle Sol,Alto Trujillo,LUZ DIVINA S.A.,Transporte Público Urbano Trujillo,#00FF00,2
+19972157,route,bus,C-22 M,Alto Trujillo → Valle So,Alto Trujillo,Valle So,LUZ DIVINA S.A.,Transporte Público Urbano Trujillo,#00FF00,2
+19972155,route,bus,C-22 M,Valle So → Alto Trujillo,Valle So,Alto Trujillo,LUZ DIVINA S.A.,Transporte Público Urbano Trujillo,#00FF00,2
+19970891,route,bus,C-23 S1,Calle José Joaquín Inclán → Calle Venezuela,Calle José Joaquín Inclán,Calle Venezuela,SANTA CATALINA S.A.,Transporte Público Urbano Trujillo,#cc0099,2
+19970882,route,bus,C-23 S1,Calle Venezuela → Calle José Joaquín Inclán,Calle Venezuela,Calle José Joaquín Inclán,SANTA CATALINA S.A.,Transporte Público Urbano Trujillo,#cc0099,2
+19972158,route,bus,"C-24 H1, H2",Avenida Larco → Calle 01,Avenida Larco,Calle 01,SANTA CATALINA S.A.,Transporte Público Urbano Trujillo,#cc0099,2
+19970967,route,bus,"C-24 H1, H2",Calle 01 → Avenida Larco,Calle 01,Avenida Larco,SANTA CATALINA S.A.,Transporte Público Urbano Trujillo,#cc0099,2
+19972081,route,bus,C-25 S2,Avenida Julian Arce → Calle Manuel Romero,Avenida Julian Arce,Calle Manuel Romero,EL AGUILA S.A.,Transporte Público Urbano Trujillo,#0000FF,2
+19972086,route,bus,C-25 S2,Calle Manuel Romero → Avenida Julian Arce,Calle Manuel Romero,Avenida Julian Arce,EL AGUILA S.A.,Transporte Público Urbano Trujillo,#0000FF,2
+19972095,route,bus,C-26 U,Avenida Julian Arce → Óvalo Grau,Avenida Julian Arce,Óvalo Grau,EL AGUILA S.A.,Transporte Público Urbano Trujillo,#0000FF,2
+19972123,route,bus,C-26 U,Óvalo Grau → Avenida Julian Arce,Óvalo Grau,Avenida Julian Arce,EL AGUILA S.A.,Transporte Público Urbano Trujillo,#0000FF,2
+19972130,route,bus,C-27 B,Avenida Circunvalación → Avenida José María Eguren,Avenida Circunvalación,Avenida José María Eguren,CABALLITO DE TOTORA S.A.,Transporte Público Urbano Trujillo,#000099,2
+19972154,route,bus,C-27 B,Avenida José María Eguren → Avenida Circunvalación,Avenida José María Eguren,Avenida Circunvalación,CABALLITO DE TOTORA S.A.,Transporte Público Urbano Trujillo,#000099,2
+19972163,route,bus,C-28 C,Sector Cerrito La Virgen → Óvalo Los Sauces,Sector Cerrito La Virgen,Óvalo Los Sauces,CABALLITO DE TOTORA S.A.,Transporte Público Urbano Trujillo,#000099,2
+19972190,route,bus,C-28 C,Sector Cerrito La Virgen → Óvalo Los Sauces,Sector Cerrito La Virgen,Óvalo Los Sauces,CABALLITO DE TOTORA S.A.,Transporte Público Urbano Trujillo,#000099,2
+19988797,route,bus,C-28 C,Sector Cerrito La Virgen → Óvalo Los Sauces,Sector Cerrito La Virgen,Óvalo Los Sauces,CABALLITO DE TOTORA S.A.,Transporte Público Urbano Trujillo,#000099,2
+19972176,route,bus,C-28 C,Óvalo Los Sauces → Sector Cerrito La Virgen,Óvalo Los Sauces,Sector Cerrito La Virgen,CABALLITO DE TOTORA S.A.,Transporte Público Urbano Trujillo,#000099,2
+19972196,route,bus,C-28 C,Óvalo Los Sauces → Sector Cerrito La Virgen,Óvalo Los Sauces,Sector Cerrito La Virgen,CABALLITO DE TOTORA S.A.,Transporte Público Urbano Trujillo,#000099,2
+19988815,route,bus,C-28 C,Óvalo Los Sauces → Sector Cerrito La Virgen,Óvalo Los Sauces,Sector Cerrito La Virgen,CABALLITO DE TOTORA S.A.,Transporte Público Urbano Trujillo,#000099,2
+19972187,route,bus,C-29 A,Los Sauces de Barraza → Sector Las Lomas,Los Sauces de Barraza,Sector Las Lomas,CABALLITO DE TOTORA S.A.,Transporte Público Urbano Trujillo,#000099,2
+19972433,route,bus,C-29 A,Los Sauces de Barraza → Sector Las Lomas,Los Sauces de Barraza,Sector Las Lomas,CABALLITO DE TOTORA S.A.,Transporte Público Urbano Trujillo,#000099,2
+19972175,route,bus,C-29 A,Sector Las Lomas → Los Sauces de Barraza,Sector Las Lomas,Los Sauces de Barraza,CABALLITO DE TOTORA S.A.,Transporte Público Urbano Trujillo,#000099,2
+19972422,route,bus,C-29 A,Sector Las Lomas → Los Sauces de Barraza,Sector Las Lomas,Los Sauces de Barraza,CABALLITO DE TOTORA S.A.,Transporte Público Urbano Trujillo,#000099,2
+19972470,route,bus,C-30 C,Avenida Los Laureles → Sector Cushmun,Avenida Los Laureles,Sector Cushmun,BELLO HORIZONTE S.A.,Transporte Público Urbano Trujillo,#ffd966,2
+19972461,route,bus,C-30 C,Sector Cushmun → Avenida Los Laureles,Sector Cushmun,Avenida Los Laureles,BELLO HORIZONTE S.A.,Transporte Público Urbano Trujillo,#ffd966,2
+19972479,route,bus,C-31 P,Avenida Prolongación Santa → Sector Huangabal,Avenida Prolongación Santa,Sector Huangabal,BELLO HORIZONTE S.A.,Transporte Público Urbano Trujillo,#ffd966,2
+19972473,route,bus,C-31 P,Sector Huangabal → Avenida Prolongación Santa,Sector Huangabal,Avenida Prolongación Santa,BELLO HORIZONTE S.A.,Transporte Público Urbano Trujillo,#ffd966,2
+19972496,route,bus,C-32 S,Mucha → Palermo,Mucha,Palermo,BELLO HORIZONTE S.A.,Transporte Público Urbano Trujillo,#ffd966,2
+19972502,route,bus,C-32 S,Palermo → Mucha,Palermo,Mucha,BELLO HORIZONTE S.A.,Transporte Público Urbano Trujillo,#ffd966,2
+19990939,route,bus,C-32 S,Palermo → Sector Collambay,Palermo,Sector Collambay,BELLO HORIZONTE S.A.,Transporte Público Urbano Trujillo,#ffd966,2
+19991778,route,bus,C-32 S,Sector Collambay → Palermo,Sector Collambay,Palermo,BELLO HORIZONTE S.A.,Transporte Público Urbano Trujillo,#ffd966,2
+19988728,route,bus,C-33 P2,Avenida America del Sur → Sector Platanar,Avenida America del Sur,Sector Platanar,POROTO S.A.,Transporte Público Urbano Trujillo,#808080,2
+19972516,route,bus,C-33 P2,Avenida América Sur → Sector Platanar,Avenida América Sur,Sector Platanar,SANTA ROSA S.R.L.,Transporte Público Urbano Trujillo,#c90076,2
+19972515,route,bus,C-33 P2,Sector Platanar → Avenida America del Sur,Sector Platanar,Avenida America del Sur,SANTA ROSA S.R.L.,Transporte Público Urbano Trujillo,#c90076,2
+19988714,route,bus,C-33 P2,Sector Platanar → Avenida America del Sur,Sector Platanar,Avenida America del Sur,POROTO S.A.,Transporte Público Urbano Trujillo,#808080,2
+19972512,route,bus,C-34 G,Virgen del Socorro → Virgen del Socorro,Virgen del Socorro,Virgen del Socorro,LOS GIRASOLES SERVICE S.R.L.,Transporte Público Urbano Trujillo,#FFCC00,2
+19973941,route,bus,C-34 G,Virgen del Socorro → Virgen del Socorro,Virgen del Socorro,Virgen del Socorro,LOS GIRASOLES SERVICE S.R.L.,Transporte Público Urbano Trujillo,#FFCC00,2
+19972509,route,bus,C-35 S3,Buganvillas del Golf → Víctor Raúl Haya de La Torre,Buganvillas del Golf,Víctor Raúl Haya de La Torre,SEÑOR DE LA MISERICORDIA S.A.,Transporte Público Urbano Trujillo,#660066,2
+19972510,route,bus,C-35 S3,Víctor Raúl Haya de La Torre → Buganvillas del Golf,Víctor Raúl Haya de La Torre,Buganvillas del Golf,SEÑOR DE LA MISERICORDIA S.A.,Transporte Público Urbano Trujillo,#660066,2
+19972504,route,bus,C-36 Y,San Andrés 5ta Etapa → Víctor Raúl Haya de La Torre,San Andrés 5ta Etapa,Víctor Raúl Haya de La Torre,SEÑOR DE LA MISERICORDIA S.A.,Transporte Público Urbano Trujillo,#660066,2
+19972505,route,bus,C-36 Y,Víctor Raúl Haya de La Torre → San Andrés 5ta Etapa,Víctor Raúl Haya de La Torre,San Andrés 5ta Etapa,SEÑOR DE LA MISERICORDIA S.A.,Transporte Público Urbano Trujillo,#660066,2
+19972501,route,bus,C-37 R,Avenida Julian Arce → Rosas del Valle 1ra Etapa,Avenida Julian Arce,Rosas del Valle 1ra Etapa,SEÑOR DE LA MISERICORDIA S.A.,Transporte Público Urbano Trujillo,#660066,2
+19972495,route,bus,C-37 R,Rosas del Valle 1ra Etapa → Avenida Julian Arce,Rosas del Valle 1ra Etapa,Avenida Julian Arce,SEÑOR DE LA MISERICORDIA S.A.,Transporte Público Urbano Trujillo,#660066,2
+19972478,route,bus,C-38 S4,Avenida Luis Condemarín → Avenida Luis Condemarín,Avenida Luis Condemarín,Avenida Luis Condemarín,CORAZÓN DE JESÚS S.A.C.,Transporte Público Urbano Trujillo,#FFFFFF,2
+19988589,route,bus,C-38 S4,Avenida Luis Condemarín → Avenida Luis Condemarín,Avenida Luis Condemarín,Avenida Luis Condemarín,CORAZÓN DE JESÚS S.A.C.,Transporte Público Urbano Trujillo,#FFFFFF,2
+19972475,route,bus,C-39 S,Avenida San José → Calle Ascencio Vergara,Avenida San José,Calle Ascencio Vergara,MIRAMAR S.A.,Transporte Público Urbano Trujillo,#3399FF,2
+19968053,route,bus,C-39 S,Calle Inca Roca → Calle Jirón Santa Isabel,Calle Inca Roca,Calle Jirón Santa Isabel,SAN ISIDRO LABRADOR S.A.,Transporte Público Urbano Trujillo,#FF0000,2
+19972474,route,bus,C-39 S,Calle Inca Roca → Calle Jirón Santa Isabel,Calle Inca Roca,Calle Jirón Santa Isabel,MIRAMAR S.A.,Transporte Público Urbano Trujillo,#3399FF,2
+19968040,route,bus,C-39 S,Calle Jirón Santa Isabel → Calle Inca Roca,Calle Jirón Santa Isabel,Calle Inca Roca,SAN ISIDRO LABRADOR S.A.,Transporte Público Urbano Trujillo,#FF0000,2
+19972466,route,bus,C-40 W,Avenida San José → Barrio 1B,Avenida San José,Barrio 1B,MIRAMAR S.A.,Transporte Público Urbano Trujillo,#3399FF,2
+19972458,route,bus,C-40 W,Barrio 1B → Avenida San José,Barrio 1B,Avenida San José,MIRAMAR S.A.,Transporte Público Urbano Trujillo,#3399FF,2
+19972072,route,bus,C-41 Z2,Avenida Dinamarca → Distrito Huanchaco,Avenida Dinamarca,Distrito Huanchaco,ARCO IRIS EXPRESS S.A.,Transporte Público Urbano Trujillo,#3366FF,2
+19967429,route,bus,C-41 Z2,Distrito Huanchaco → Avenida Dinamarca,Distrito Huanchaco,Avenida Dinamarca,ARCO IRIS EXPRESS S.A.,Transporte Público Urbano Trujillo,#3366FF,2
+19973251,route,bus,C-42 B2,Avenida Cesar Vallejo → Avenida Libertad,Avenida Cesar Vallejo,Avenida Libertad,LOS GIRASOLES SERVICE S.R.L.,Transporte Público Urbano Trujillo,#FFCC00,2
+19973922,route,bus,C-42 B2,Avenida Libertad → Avenida Cesar Vallejo,Avenida Libertad,Avenida Cesar Vallejo,LOS GIRASOLES SERVICE S.R.L.,Transporte Público Urbano Trujillo,#FFCC00,2
+19973932,route,bus,C-42 B2,Avenida Libertad → Jirón Venezuela,Avenida Libertad,Jirón Venezuela,LOS GIRASOLES SERVICE S.R.L.,Transporte Público Urbano Trujillo,#FFCC00,2
+19973224,route,bus,C-42 B2,Jirón Venezuela → Avenida Libertad,Jirón Venezuela,Avenida Libertad,LOS GIRASOLES SERVICE S.R.L.,Transporte Público Urbano Trujillo,#FFCC00,2
+19968178,route,bus,C-43 A,Avenida Miguel Grau → Calle Dieciseis,Avenida Miguel Grau,Calle Dieciseis,LOS DIAMANTES S.R.L.,Transporte Público Urbano Trujillo,#cfe2f3,2
+19968174,route,bus,C-43 A,Calle Dieciseis → Avenida Miguel Grau,Calle Dieciseis,Avenida Miguel Grau,LOS DIAMANTES S.R.L.,Transporte Público Urbano Trujillo,#cfe2f3,2
+19972472,route,bus,C-44 T2,Avenida San José → Barrio 1B,Avenida San José,Barrio 1B,MIRAMAR S.A.,Transporte Público Urbano Trujillo,#3399FF,2
+19972467,route,bus,C-44 T2,Barrio 1B → Avenida San José,Barrio 1B,Avenida San José,MIRAMAR S.A.,Transporte Público Urbano Trujillo,#3399FF,2
+19977991,route,bus,C-44 T2,Barrio 1B → Avenida San José,Barrio 1B,Avenida San José,MIRAMAR S.A.,Transporte Público Urbano Trujillo,#3399FF,2
+19968129,route,bus,C-45 C,Avenida 12 de Noviembre → Calle Miguiel Graú,Avenida 12 de Noviembre,Calle Miguiel Graú,MOCHICA S.A.,Transporte Público Urbano Trujillo,#006600,2
+19968140,route,bus,C-45 C,Calle Miguiel Graú → Avenida 12 de Noviembre,Calle Miguiel Graú,Avenida 12 de Noviembre,MOCHICA S.A.,Transporte Público Urbano Trujillo,#006600,2
+19990157,route,bus,C-45 C,Calle Miguiel Graú → Avenida 12 de Noviembre,Calle Miguiel Graú,Avenida 12 de Noviembre,LOS DIAMANTES S.R.L.,Transporte Público Urbano Trujillo,#cfe2f3,2
+19990165,route,bus,C-45 C,Calle Miguiel Graú → Avenida 12 de Noviembre,Calle Miguiel Graú,Avenida 12 de Noviembre,LOS DIAMANTES S.R.L.,Transporte Público Urbano Trujillo,#cfe2f3,2
+19946938,route,bus,M-01 C,Avenida Manuel Seoane → Via Panamericana Norte,Avenida Manuel Seoane,Via Panamericana Norte,CALIFORNIA S.A.,Transporte Público Urbano Trujillo,#006600,2
+19946662,route,bus,M-01 C,Via Panamericana Norte → Avenida Manuel Seoane,Via Panamericana Norte,Avenida Manuel Seoane,CALIFORNIA S.A.,Transporte Público Urbano Trujillo,#006600,2
+19950214,route,bus,M-02 A,Avenida Manuel Seoane → Calle Turquesas,Avenida Manuel Seoane,Calle Turquesas,CALIFORNIA S.A.,Transporte Público Urbano Trujillo,#006600,2
+19950139,route,bus,M-02 A,Calle Turquesas → Avenida Manuel Seoane,Calle Turquesas,Avenida Manuel Seoane,CALIFORNIA S.A.,Transporte Público Urbano Trujillo,#006600,2
+19953369,route,bus,M-03 B,Ciudad de Dios → Ciudad de Dios,Ciudad de Dios,Ciudad de Dios,CALIFORNIA S.A.,Transporte Público Urbano Trujillo,#006600,2
+19953601,route,bus,M-04 A,Cerro La Virgen → Cerro La Virgen,Cerro La Virgen,Cerro La Virgen,HUANCHACO S.A.,Transporte Público Urbano Trujillo,#ff9966,2
+19976312,route,bus,M-04 A,Cerro La Virgen → Cerro La Virgen,Cerro La Virgen,Cerro La Virgen,HUANCHACO S.A.,Transporte Público Urbano Trujillo,#ff9966,2
+19959151,route,bus,M-05 H,Avenida la Paz → Avenida la Paz,Avenida la Paz,Avenida la Paz,HUANCHACO S.A.,Transporte Público Urbano Trujillo,#ff9966,2
+19975974,route,bus,M-05 H,Avenida la Paz → Avenida la Paz,Avenida la Paz,Avenida la Paz,HUANCHACO S.A.,Transporte Público Urbano Trujillo,#ff9966,2
+19959196,route,bus,M-06 B,Avenida Victor Larco Herrera → Avenida la Paz,Avenida Victor Larco Herrera,Avenida la Paz,HUANCHACO S.A.,Transporte Público Urbano Trujillo,#ff9966,2
+19959184,route,bus,M-06 B,Avenida la Paz → Avenida Victor Raul Haya de la Torre,Avenida la Paz,Avenida Victor Raul Haya de la Torre,HUANCHACO S.A.,Transporte Público Urbano Trujillo,#ff9966,2
+19959202,route,bus,M-07 V,Avenida Libertad → Avenida San Pedro,Avenida Libertad,Avenida San Pedro,NUEVO CALIFORNIA S.A.,Transporte Público Urbano Trujillo,#009900,2
+19959207,route,bus,M-07 V,Avenida San Pedro → Avenida Libertad,Avenida San Pedro,Avenida Libertad,NUEVO CALIFORNIA S.A.,Transporte Público Urbano Trujillo,#009900,2
+19959214,route,bus,M-08 A,Avenida Libertad → Via Panamericana Norte,Avenida Libertad,Via Panamericana Norte,NUEVO CALIFORNIA S.A.,Transporte Público Urbano Trujillo,#009900,2
+19959217,route,bus,M-08 A,Via Panamericana Norte → Avenida Libertad,Via Panamericana Norte,Avenida Libertad,NUEVO CALIFORNIA S.A.,Transporte Público Urbano Trujillo,#009900,2
+19959224,route,bus,M-09 BC,Avenida Libertad → Avenida San Pedro,Avenida Libertad,Avenida San Pedro,NUEVO CALIFORNIA S.A.,Transporte Público Urbano Trujillo,#009900,2
+19961769,route,bus,M-09 BC,Avenida San Pedro → Avenida Libertad,Avenida San Pedro,Avenida Libertad,NUEVO CALIFORNIA S.A.,Transporte Público Urbano Trujillo,#009900,2
+19961792,route,bus,M-10 B1,Avenida Libertad → Avenida Los Tulipanes,Avenida Libertad,Avenida Los Tulipanes,NUEVO CALIFORNIA S.A.,Transporte Público Urbano Trujillo,#009900,2
+19966193,route,bus,M-10 B1,Avenida Libertad → Avenida Los Tulipanes,Avenida Libertad,Avenida Los Tulipanes,NUEVO CALIFORNIA S.A.,Transporte Público Urbano Trujillo,#009900,2
+19961795,route,bus,M-10 B1,Avenida Los Tulipanes → Avenida Libertad,Avenida Los Tulipanes,Avenida Libertad,NUEVO CALIFORNIA S.A.,Transporte Público Urbano Trujillo,#009900,2
+19966196,route,bus,M-10 B1,Avenida Los Tulipanes → Avenida Libertad,Avenida Los Tulipanes,Avenida Libertad,NUEVO CALIFORNIA S.A.,Transporte Público Urbano Trujillo,#009900,2
+19961869,route,bus,M-11 D,Avenida San Pedro → Via Panamericana Norte,Avenida San Pedro,Via Panamericana Norte,NUEVO CALIFORNIA S.A.,Transporte Público Urbano Trujillo,#009900,2
+19961898,route,bus,M-11 D,Via Panamericana Norte → Avenida San Pedro,Via Panamericana Norte,Avenida San Pedro,NUEVO CALIFORNIA S.A.,Transporte Público Urbano Trujillo,#009900,2
+19961919,route,bus,M-12 C,Avenida Libertad → Via Panamericana Norte,Avenida Libertad,Via Panamericana Norte,NUEVO CALIFORNIA S.A.,Transporte Público Urbano Trujillo,#009900,2
+19961936,route,bus,M-12 C,Via Panamericana Norte → Avenida Libertad,Via Panamericana Norte,Avenida Libertad,NUEVO CALIFORNIA S.A.,Transporte Público Urbano Trujillo,#009900,2
+19971942,route,bus,M-13 C1,Ciudad de Dios → Ciudad de Dios,Ciudad de Dios,Ciudad de Dios,EL CORTIJO S.A.,Transporte Público Urbano Trujillo,#ffff33,2
+19972938,route,bus,M-13 C1,Ciudad de Dios → Ciudad de Dios,Ciudad de Dios,Ciudad de Dios,EL CORTIJO S.A.,Transporte Público Urbano Trujillo,#ffff33,2
+19961962,route,bus,M-14 C3,Ciudad de Dios → Óvalo Larco,Ciudad de Dios,Óvalo Larco,EL CORTIJO S.A.,Transporte Público Urbano Trujillo,#ffff33,2
+19971967,route,bus,M-14 C3,Óvalo Larco → Ciudad de Dios,Óvalo Larco,Ciudad de Dios,EL CORTIJO S.A.,Transporte Público Urbano Trujillo,#ffff33,2
+19971999,route,bus,M-15 C2,Ciudad de Dios → Sector Santa María Alta,Ciudad de Dios,Sector Santa María Alta,EL CORTIJO S.A.,Transporte Público Urbano Trujillo,#ffff33,2
+19976301,route,bus,M-15 C2,Sector Santa María Alta → Ciudad de Dios,Sector Santa María Alta,Ciudad de Dios,EL CORTIJO S.A.,Transporte Público Urbano Trujillo,#ffff33,2
+19962130,route,bus,M-16 C,Avenida Vallejo → Calle 8,Avenida Vallejo,Calle 8,MODERNO CIELO AZUL S.A.,Transporte Público Urbano Trujillo,#3366FF,2
+19962183,route,bus,M-16 C,Calle 8 → Avenida Vallejo,Calle 8,Avenida Vallejo,MODERNO CIELO AZUL S.A.,Transporte Público Urbano Trujillo,#3366FF,2
+19972901,route,bus,M-17 C2,Avenida Dos → Avenida Dos,Avenida Dos,Avenida Dos,LIBERTAD S.A.,Transporte Público Urbano Trujillo,#009999,2
+19976337,route,bus,M-17 C2,Avenida Dos → Avenida Dos,Avenida Dos,Avenida Dos,LIBERTAD S.A.,Transporte Público Urbano Trujillo,#009999,2
+19962204,route,bus,M-18 C1,Avenida Dos → Avenida Dos,Avenida Dos,Avenida Dos,LIBERTAD S.A.,Transporte Público Urbano Trujillo,#009999,2
+19973156,route,bus,M-18 C1,Avenida Dos → Avenida Dos,Avenida Dos,Avenida Dos,LIBERTAD S.A.,Transporte Público Urbano Trujillo,#009999,2
+19962272,route,bus,M-19 A,Calle 8 → Manzana Ñ,Calle 8,Manzana Ñ,LIBERTAD S.A.,Transporte Público Urbano Trujillo,#009999,2
+19962194,route,bus,M-19 A,Manzana Ñ → Calle 8,Manzana Ñ,Calle 8,LIBERTAD S.A.,Transporte Público Urbano Trujillo,#009999,2
+19962222,route,bus,M-20 C,Avenida 12 de Noviembre → Sector Nuevo Horizonte,Avenida 12 de Noviembre,Sector Nuevo Horizonte,SALAVERRY EXPRESS S.A.,Transporte Público Urbano Trujillo,#3399FF,2
+19962228,route,bus,M-20 C,Avenida 12 de Noviembre → Sector Nuevo Horizonte,Avenida 12 de Noviembre,Sector Nuevo Horizonte,SALAVERRY EXPRESS S.A.,Transporte Público Urbano Trujillo,#3399FF,2
+19962213,route,bus,M-20 C,Sector Nuevo Horizonte → Avenida 12 de Noviembre,Sector Nuevo Horizonte,Avenida 12 de Noviembre,SALAVERRY EXPRESS S.A.,Transporte Público Urbano Trujillo,#3399FF,2
+19962218,route,bus,M-20 C,Sector Nuevo Horizonte → Avenida 12 de Noviembre,Sector Nuevo Horizonte,Avenida 12 de Noviembre,SALAVERRY EXPRESS S.A.,Transporte Público Urbano Trujillo,#3399FF,2
+19962230,route,bus,M-21 A,Avenida 12 de Noviembre → Sector Nuevo Horizonte,Avenida 12 de Noviembre,Sector Nuevo Horizonte,SALAVERRY EXPRESS S.A.,Transporte Público Urbano Trujillo,#3399FF,2
+19976195,route,bus,M-21 A,Avenida 12 de Noviembre → Sector Nuevo Horizonte,Avenida 12 de Noviembre,Sector Nuevo Horizonte,SALAVERRY EXPRESS S.A.,Transporte Público Urbano Trujillo,#3399FF,2
+19962257,route,bus,M-21 A,Sector Nuevo Horizonte → Avenida 12 de Noviembre,Sector Nuevo Horizonte,Avenida 12 de Noviembre,SALAVERRY EXPRESS S.A.,Transporte Público Urbano Trujillo,#3399FF,2
+19962263,route,bus,M-22 F,Avenida 12 de Noviembre → Avenida Juan Pablo II,Avenida 12 de Noviembre,Avenida Juan Pablo II,SALAVERRY EXPRESS S.A.,Transporte Público Urbano Trujillo,#3399FF,2
+19962271,route,bus,M-22 F,Avenida Juan Pablo II → Prolongación Avenida 12 de Noviembre,Avenida Juan Pablo II,Prolongación Avenida 12 de Noviembre,SALAVERRY EXPRESS S.A.,Transporte Público Urbano Trujillo,#3399FF,2
+19962298,route,bus,M-23 B,Calle 7 de Julio → Calle Pedro Ruiz Gallo,Calle 7 de Julio,Calle Pedro Ruiz Gallo,VIRGEN DE LA PUERTA S.A.,Transporte Público Urbano Trujillo,#0066FF,2
+19962287,route,bus,M-23 B,Calle Atahualpa → Calle Pedro Ruiz Gallo,Calle Atahualpa,Calle Pedro Ruiz Gallo,VIRGEN DE LA PUERTA S.A.,Transporte Público Urbano Trujillo,#0066FF,2
+19962294,route,bus,M-23 B,Calle Pedro Ruiz Gallo → Calle 7 de Julio,Calle Pedro Ruiz Gallo,Calle 7 de Julio,VIRGEN DE LA PUERTA S.A.,Transporte Público Urbano Trujillo,#0066FF,2
+19962292,route,bus,M-23 B,Calle Pedro Ruiz Gallo → Calle Atahualpa,Calle Pedro Ruiz Gallo,Calle Atahualpa,VIRGEN DE LA PUERTA S.A.,Transporte Público Urbano Trujillo,#0066FF,2
+19962300,route,bus,M-23 B,Calle Pedro Ruiz Gallo → Via Evitamiento Milagro,Calle Pedro Ruiz Gallo,Via Evitamiento Milagro,VIRGEN DE LA PUERTA S.A.,Transporte Público Urbano Trujillo,#0066FF,2
+19962313,route,bus,M-23 B,Calle Pedro Ruiz Gallo → Via Evitamiento Milagro,Calle Pedro Ruiz Gallo,Via Evitamiento Milagro,VIRGEN DE LA PUERTA S.A.,Transporte Público Urbano Trujillo,#0066FF,2
+19962303,route,bus,M-23 B,Via Evitamiento Milagro → Calle Pedro Ruiz Gallo,Via Evitamiento Milagro,Calle Pedro Ruiz Gallo,VIRGEN DE LA PUERTA S.A.,Transporte Público Urbano Trujillo,#0066FF,2
+19962315,route,bus,M-23 B,Via Evitamiento Milagro → Calle Pedro Ruiz Gallo,Via Evitamiento Milagro,Calle Pedro Ruiz Gallo,VIRGEN DE LA PUERTA S.A.,Transporte Público Urbano Trujillo,#0066FF,2
+19962323,route,bus,M-24 A,Avenida América Sur → Avenida Libertad,Avenida América Sur,Avenida Libertad,VIRGEN DE LA PUERTA S.A.,Transporte Público Urbano Trujillo,#0066FF,2
+19962318,route,bus,M-24 A,Avenida Libertad → Avenida América Sur,Avenida Libertad,Avenida América Sur,VIRGEN DE LA PUERTA S.A.,Transporte Público Urbano Trujillo,#0066FF,2
+19962394,route,bus,M-25 A,Calle F → Calle Liverpool,Calle F,Calle Liverpool,ALTO TRUJILLO S.A.,Transporte Público Urbano Trujillo,#9999FF,2
+19962362,route,bus,M-25 A,Calle Liverpool → Calle F,Calle Liverpool,Calle F,ALTO TRUJILLO S.A.,Transporte Público Urbano Trujillo,#9999FF,2
+19971395,route,bus,M-26 B,Calle Alfonso Ugarte → Futuro Barrio 5C,Calle Alfonso Ugarte,Futuro Barrio 5C,ALTO TRUJILLO S.A.,Transporte Público Urbano Trujillo,#9999FF,2
+19962432,route,bus,M-26 B,Futuro Barrio 5C → Calle Alfonso Ugarte,Futuro Barrio 5C,Calle Alfonso Ugarte,ALTO TRUJILLO S.A.,Transporte Público Urbano Trujillo,#9999FF,2
+19971408,route,bus,M-27 AB,Avenida Libertad → Avenida Libertad,Avenida Libertad,Avenida Libertad,CESAR VALLEJO S.A.,Transporte Público Urbano Trujillo,#674ea7,2
+19971409,route,bus,M-27 AB,Avenida Libertad → Avenida Libertad,Avenida Libertad,Avenida Libertad,CESAR VALLEJO S.A.,Transporte Público Urbano Trujillo,#674ea7,2
+19962320,route,bus,M-28 A,Avenida los Pajuiles → Primavera III,Avenida los Pajuiles,Primavera III,SALAVERRY EXPRESS S.A.,Transporte Público Urbano Trujillo,#3399FF,2
+19971417,route,bus,M-28 A,Avenida los Pajuiles → Primavera III,Avenida los Pajuiles,Primavera III,RAMIRO PRIALE S.A.,Transporte Público Urbano Trujillo,#7f6000,2
+19962280,route,bus,M-28 A,Primavera III → Avenida los Pajuiles,Primavera III,Avenida los Pajuiles,SALAVERRY EXPRESS S.A.,Transporte Público Urbano Trujillo,#3399FF,2
+19971413,route,bus,M-28 A,Primavera III → Avenida los Pajuiles,Primavera III,Avenida los Pajuiles,RAMIRO PRIALE S.A.,Transporte Público Urbano Trujillo,#7f6000,2
+19972008,route,bus,M-29 B,Calle Liverpool → Primavera,Calle Liverpool,Primavera,RAMIRO PRIALE S.A.,Transporte Público Urbano Trujillo,#7f6000,2
+19962502,route,bus,M-29 B,Primavera → Calle Liverpool,Primavera,Calle Liverpool,RAMIRO PRIALE S.A.,Transporte Público Urbano Trujillo,#7f6000,2
+19972010,route,bus,M-30 D,Calle 11 → Calle César Vallejo,Calle 11,Calle César Vallejo,SEÑOR DE LOS MILAGROS S.A,Transporte Público Urbano Trujillo,#660066,2
+19972018,route,bus,M-30 D,Calle César Vallejo → Calle 11,Calle César Vallejo,Calle 11,SEÑOR DE LOS MILAGROS S.A,Transporte Público Urbano Trujillo,#660066,2
+19965057,route,bus,M-31 A,Avenida América Sur → Calle Nuevo Indoamérica,Avenida América Sur,Calle Nuevo Indoamérica,SEÑOR DE LOS MILAGROS S.A,Transporte Público Urbano Trujillo,#660066,2
+19972027,route,bus,M-31 A,Calle Nuevo Indoamérica → Avenida América Sur,Calle Nuevo Indoamérica,Avenida América Sur,SEÑOR DE LOS MILAGROS S.A,Transporte Público Urbano Trujillo,#660066,2
+19972045,route,bus,M-32 A1-B1,Buenos Aires Sur → Sector Nuevo Indoamérica,Buenos Aires Sur,Sector Nuevo Indoamérica,SEÑOR DE LOS MILAGROS S.A,Transporte Público Urbano Trujillo,#660066,2
+19972041,route,bus,M-32 A1-B1,Sector Nuevo Indoamérica → Buenos Aires Sur,Sector Nuevo Indoamérica,Buenos Aires Sur,SEÑOR DE LOS MILAGROS S.A,Transporte Público Urbano Trujillo,#660066,2
+19972051,route,bus,M-33 B,Avenida América Sur → Calle Santa Ana,Avenida América Sur,Calle Santa Ana,ESPERANZA EXPRESS S.A.,Transporte Público Urbano Trujillo,#CC3333,2
+19972046,route,bus,M-33 B,Calle Santa Ana → Avenida América Sur,Calle Santa Ana,Avenida América Sur,ESPERANZA EXPRESS S.A.,Transporte Público Urbano Trujillo,#CC3333,2
+19965745,route,bus,M-34 A,Calle Los Pensamientos → Calle Santa Ana,Calle Los Pensamientos,Calle Santa Ana,ESPERANZA EXPRESS S.A.,Transporte Público Urbano Trujillo,#CC3333,2
+19965773,route,bus,M-34 A,Calle Los Pensamientos → Calle Santa Ana,Calle Los Pensamientos,Calle Santa Ana,ESPERANZA EXPRESS S.A.,Transporte Público Urbano Trujillo,#CC3333,2
+19965743,route,bus,M-34 A,Calle Santa Ana → Calle Los Pensamientos,Calle Santa Ana,Calle Los Pensamientos,ESPERANZA EXPRESS S.A.,Transporte Público Urbano Trujillo,#CC3333,2
+19965750,route,bus,M-34 A,Calle Santa Ana → Calle Los Pensamientos,Calle Santa Ana,Calle Los Pensamientos,ESPERANZA EXPRESS S.A.,Transporte Público Urbano Trujillo,#CC3333,2
+19965776,route,bus,M-35 D,Avenida Del Contador → Vía Panamericana,Avenida Del Contador,Vía Panamericana,EL ICARO INVERSIONISTAS S.A.,Transporte Público Urbano Trujillo,#990000,2
+19965837,route,bus,M-35 D,Avenida Del Contador → Vía Panamericana,Avenida Del Contador,Vía Panamericana,EL ICARO INVERSIONISTAS S.A.,Transporte Público Urbano Trujillo,#990000,2
+19965854,route,bus,M-35 D,Avenida Del Contador → Vía Panamericana,Avenida Del Contador,Vía Panamericana,EL ICARO INVERSIONISTAS S.A.,Transporte Público Urbano Trujillo,#990000,2
+19965775,route,bus,M-35 D,Vía Panamericana → Avenida Del Contador,Vía Panamericana,Avenida Del Contador,EL ICARO INVERSIONISTAS S.A.,Transporte Público Urbano Trujillo,#990000,2
+19965802,route,bus,M-35 D,Vía Panamericana → Avenida Del Contador,Vía Panamericana,Avenida Del Contador,EL ICARO INVERSIONISTAS S.A.,Transporte Público Urbano Trujillo,#990000,2
+19965840,route,bus,M-35 D,Vía Panamericana → Avenida Del Contador,Vía Panamericana,Avenida Del Contador,EL ICARO INVERSIONISTAS S.A.,Transporte Público Urbano Trujillo,#990000,2
+19965847,route,bus,M-35 D,Vía Panamericana → Avenida Del Contador,Vía Panamericana,Avenida Del Contador,EL ICARO INVERSIONISTAS S.A.,Transporte Público Urbano Trujillo,#990000,2
+19965801,route,bus,M-35 D,Vía Panamericana → Jirón Francisco de Zela,Vía Panamericana,Jirón Francisco de Zela,EL ICARO INVERSIONISTAS S.A.,Transporte Público Urbano Trujillo,#990000,2
+19961958,route,bus,M-36 LV,Avenida Libertad → Calle Virgen de la Puerta,Avenida Libertad,Calle Virgen de la Puerta,NUEVO CALIFORNIA S.A.,Transporte Público Urbano Trujillo,#009900,2
+19961948,route,bus,M-36 LV,Calle Virgen de la Puerta → Avenida Libertad,Calle Virgen de la Puerta,Avenida Libertad,NUEVO CALIFORNIA S.A.,Transporte Público Urbano Trujillo,#009900,2
