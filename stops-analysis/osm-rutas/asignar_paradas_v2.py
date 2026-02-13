@@ -34,9 +34,12 @@ GAP_THRESHOLD = 5          # Segmentos de gap para separar "pasos" de una parada
 MIN_SEGMENT_LEN_M = 0.1    # Ignorar segmentos degenerados
 
 # Filtro de falsos positivos (parada más cerca de otra ruta)
-FP_MIN_DIST_M = 15         # Solo revisar asignaciones a >15m
+FP_MIN_DIST_M = 12         # Solo revisar asignaciones a >12m (antes 15m)
 FP_RIVAL_MAX_M = 10        # Rechazar si otra ruta pasa a <10m
 FP_RATIO_MIN = 3.0         # Rechazar si ratio dist/rival > 3
+FP_ABSOLUTE_MAX_M = 17     # Rechazar toda asignación a >17m sin importar rivales
+FP_PARALLEL_DIST_M = 12    # Umbral para detectar calles paralelas
+FP_PARALLEL_RATIO = 0.9    # Si rival_dist >= dist * ratio → calle paralela
 
 OVERPASS_URL = "https://overpass-api.de/api/interpreter"
 CACHE_DIR = "cache_overpass"
@@ -392,10 +395,21 @@ def filter_false_positives(assignments_by_rel, stops):
     """Filtra asignaciones donde otra ruta pasa significativamente más cerca.
 
     Para cada parada, recopila la distancia mínima desde cada ruta.
-    Rechaza una asignación si:
-      - dist > FP_MIN_DIST_M (15m)
+    Aplica 3 reglas de rechazo:
+
+    Regla 1 (original mejorada): rival significativamente más cerca
+      - dist > FP_MIN_DIST_M (12m)
       - otra ruta pasa a < FP_RIVAL_MAX_M (10m)
       - ratio dist/rival_dist > FP_RATIO_MIN (3x)
+
+    Regla 2 (nueva): corte absoluto de distancia
+      - dist > FP_ABSOLUTE_MAX_M (17m) → rechazar siempre
+      - Atrapa paradas sin rival que están claramente fuera de rango
+
+    Regla 3 (nueva): calles paralelas equidistantes
+      - dist > FP_PARALLEL_DIST_M (12m)
+      - rival_dist >= dist * FP_PARALLEL_RATIO (0.9)
+      - La parada está entre dos rutas paralelas, ninguna es correcta
     """
     # Paso 1: para cada stop_idx, recopilar {rel_id: min_dist}
     stop_route_dists = defaultdict(dict)  # stop_idx → {rel_id: dist}
@@ -415,15 +429,34 @@ def filter_false_positives(assignments_by_rel, stops):
 
         for seg_idx, stop_idx, dist in asgn_list:
             reject = False
+            reason = ""
 
-            if dist > FP_MIN_DIST_M:
-                # Buscar si otra ruta pasa más cerca
+            # Regla 2: corte absoluto — demasiado lejos para ser válida
+            if dist > FP_ABSOLUTE_MAX_M:
+                reject = True
+                reason = "absolute_max"
+                removed_details.append({
+                    "stop_idx": stop_idx,
+                    "stop_ref": stops[stop_idx]["ref"],
+                    "rel_id": rel_id,
+                    "dist": dist,
+                    "rival_rel_id": None,
+                    "rival_dist": None,
+                    "ratio": None,
+                    "reason": reason,
+                })
+
+            # Reglas 1 y 3: requieren comparación con rival
+            if not reject and dist > FP_MIN_DIST_M:
                 route_dists = stop_route_dists[stop_idx]
                 for other_rel_id, other_dist in route_dists.items():
                     if other_rel_id == rel_id:
                         continue
+
+                    # Regla 1: rival significativamente más cerca
                     if other_dist < FP_RIVAL_MAX_M and dist / other_dist > FP_RATIO_MIN:
                         reject = True
+                        reason = "rival_closer"
                         removed_details.append({
                             "stop_idx": stop_idx,
                             "stop_ref": stops[stop_idx]["ref"],
@@ -432,6 +465,24 @@ def filter_false_positives(assignments_by_rel, stops):
                             "rival_rel_id": other_rel_id,
                             "rival_dist": other_dist,
                             "ratio": dist / other_dist,
+                            "reason": reason,
+                        })
+                        break
+
+                    # Regla 3: calle paralela — ambas rutas igual de lejos
+                    if (dist > FP_PARALLEL_DIST_M and
+                            other_dist >= dist * FP_PARALLEL_RATIO):
+                        reject = True
+                        reason = "parallel_street"
+                        removed_details.append({
+                            "stop_idx": stop_idx,
+                            "stop_ref": stops[stop_idx]["ref"],
+                            "rel_id": rel_id,
+                            "dist": dist,
+                            "rival_rel_id": other_rel_id,
+                            "rival_dist": other_dist,
+                            "ratio": dist / other_dist if other_dist > 0 else 999,
+                            "reason": reason,
                         })
                         break
 
@@ -449,12 +500,19 @@ def filter_false_positives(assignments_by_rel, stops):
     unique_stops = set(d["stop_ref"] for d in removed_details)
     print(f"  Paradas únicas afectadas: {len(unique_stops)}")
 
+    # Desglose por regla
+    by_reason = defaultdict(int)
+    for d in removed_details:
+        by_reason[d["reason"]] += 1
+    for reason, count in sorted(by_reason.items()):
+        print(f"    {reason}: {count}")
+
     if removed_details:
-        print(f"\n  Detalle (primeras 20):")
-        for d in sorted(removed_details, key=lambda x: -x["ratio"])[:20]:
+        print(f"\n  Detalle (primeras 30):")
+        for d in sorted(removed_details, key=lambda x: -(x["ratio"] or 0))[:30]:
+            rival_str = f"rival={d['rival_dist']:.1f}m  ratio={d['ratio']:.1f}x" if d['rival_dist'] else "sin rival"
             print(f"    {d['stop_ref']:12s} rel={d['rel_id']}  "
-                  f"dist={d['dist']:.1f}m  rival={d['rival_dist']:.1f}m  "
-                  f"ratio={d['ratio']:.1f}x")
+                  f"dist={d['dist']:.1f}m  {rival_str}  [{d['reason']}]")
 
     return total_removed, removed_details
 
