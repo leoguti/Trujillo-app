@@ -1,5 +1,5 @@
 ### Count
-**Total**: 210  **Correct**: 206  **With error**: 4
+**Total**: 210  **Correct**: 210  **With error**: 0
 
 
 | Id | Name | Ref | From | To | State |
@@ -9,7 +9,7 @@
 [19966163](https://www.openstreetmap.org/relation/19966163) | Avenida Alan García → Avenida Federico Villarreal | C-02 H | Avenida Alan García | Avenida Federico Villarreal | ✅
 [19966210](https://www.openstreetmap.org/relation/19966210) | Avenida Federico Villarreal → Avenida Alan García | C-02 H | Avenida Federico Villarreal | Avenida Alan García | ✅
 [19966201](https://www.openstreetmap.org/relation/19966201) | Calle de los Jasmines → Calle Santa Rosa | C-03 JJ | Calle de los Jasmines | Calle Santa Rosa | ✅
-[19966215](https://www.openstreetmap.org/relation/19966215) | Calle Santa Rosa → Calle de los Jasmines | C-03 JJ | Calle Santa Rosa | Calle de los Jasmines | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(19966215);out%20geom;%0Away(1274282518);out%20geom;%0Away(521368521);out%20geom;&R)
+[19966215](https://www.openstreetmap.org/relation/19966215) | Calle Santa Rosa → Calle de los Jasmines | C-03 JJ | Calle Santa Rosa | Calle de los Jasmines | ✅
 [19966218](https://www.openstreetmap.org/relation/19966218) | Calle de los Jasmines → Avenida Federico Villarreal | C-04 XS | Calle de los Jasmines | Avenida Federico Villarreal | ✅
 [19966224](https://www.openstreetmap.org/relation/19966224) | Avenida Federico Villarreal → Calle de los Jasmines | C-04 XS | Avenida Federico Villarreal | Calle de los Jasmines | ✅
 [19966226](https://www.openstreetmap.org/relation/19966226) | Calle Jirón Cuba → Avenida Federico Villarreal | C-05 B1 | Calle Jirón Cuba | Avenida Federico Villarreal | ✅
@@ -19,7 +19,7 @@
 [19966288](https://www.openstreetmap.org/relation/19966288) | El Reposo → Calle 9 de Octubre | C-07 Z1 | El Reposo | Calle 9 de Octubre | ✅
 [19966297](https://www.openstreetmap.org/relation/19966297) | Calle 9 de Octubre → El Reposo | C-07 Z1 | Calle 9 de Octubre | El Reposo | ✅
 [19967351](https://www.openstreetmap.org/relation/19967351) | Calle Jirón los Algarobos → Calle San Martín | C-08 O | Calle Jirón los Algarobos | Calle San Martín | ✅
-[19972065](https://www.openstreetmap.org/relation/19972065) | Calle San Martín → Calle Jirón los Algarobos | C-08 O | Calle San Martín | Calle Jirón los Algarobos | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(19972065);out%20geom;%0Away(1274282518);out%20geom;%0Away(521368521);out%20geom;&R)
+[19972065](https://www.openstreetmap.org/relation/19972065) | Calle San Martín → Calle Jirón los Algarobos | C-08 O | Calle San Martín | Calle Jirón los Algarobos | ✅
 [19967529](https://www.openstreetmap.org/relation/19967529) | Distrito Huanchaco → Calle San Gabriel | C-09 E | Distrito Huanchaco | Calle San Gabriel | ✅
 [19967536](https://www.openstreetmap.org/relation/19967536) | Calle San Gabriel → Distrito Huanchaco | C-09 E | Calle San Gabriel | Distrito Huanchaco | ✅
 [19967551](https://www.openstreetmap.org/relation/19967551) | Campiña de Moche → Avenida Los Incas | C-10 M | Campiña de Moche | Avenida Los Incas | ✅
@@ -135,7 +135,7 @@
 [19975974](https://www.openstreetmap.org/relation/19975974) | Avenida la Paz → Avenida la Paz | M-05 H | Avenida la Paz | Avenida la Paz | ✅
 [19959184](https://www.openstreetmap.org/relation/19959184) | Avenida la Paz → Avenida Victor Raul Haya de la Torre | M-06 B | Avenida la Paz | Avenida Victor Raul Haya de la Torre | ✅
 [19959196](https://www.openstreetmap.org/relation/19959196) | Avenida Victor Larco Herrera → Avenida la Paz | M-06 B | Avenida Victor Larco Herrera | Avenida la Paz | ✅
-[19959202](https://www.openstreetmap.org/relation/19959202) | Avenida Libertad → Avenida San Pedro | M-07 V | Avenida Libertad | Avenida San Pedro | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(19959202);out%20geom;%0Away(1274282518);out%20geom;%0Away(521368521);out%20geom;&R)
+[19959202](https://www.openstreetmap.org/relation/19959202) | Avenida Libertad → Avenida San Pedro | M-07 V | Avenida Libertad | Avenida San Pedro | ✅
 [19959207](https://www.openstreetmap.org/relation/19959207) | Avenida San Pedro → Avenida Libertad | M-07 V | Avenida San Pedro | Avenida Libertad | ✅
 [19959214](https://www.openstreetmap.org/relation/19959214) | Avenida Libertad → Via Panamericana Norte | M-08 A | Avenida Libertad | Via Panamericana Norte | ✅
 [19959217](https://www.openstreetmap.org/relation/19959217) | Via Panamericana Norte → Avenida Libertad | M-08 A | Via Panamericana Norte | Avenida Libertad | ✅
@@ -146,7 +146,7 @@
 [19966193](https://www.openstreetmap.org/relation/19966193) | Avenida Libertad → Avenida Los Tulipanes | M-10 B1 | Avenida Libertad | Avenida Los Tulipanes | ✅
 [19966196](https://www.openstreetmap.org/relation/19966196) | Avenida Los Tulipanes → Avenida Libertad | M-10 B1 | Avenida Los Tulipanes | Avenida Libertad | ✅
 [19961869](https://www.openstreetmap.org/relation/19961869) | Avenida San Pedro → Via Panamericana Norte | M-11 D | Avenida San Pedro | Via Panamericana Norte | ✅
-[19961898](https://www.openstreetmap.org/relation/19961898) | Via Panamericana Norte → Avenida San Pedro | M-11 D | Via Panamericana Norte | Avenida San Pedro | [streets not sequential](https://overpass-turbo.eu/?Q=//streets%20not%20sequential%0Arel(19961898);out%20geom;%0Away(1274282518);out%20geom;%0Away(521368521);out%20geom;&R)
+[19961898](https://www.openstreetmap.org/relation/19961898) | Via Panamericana Norte → Avenida San Pedro | M-11 D | Via Panamericana Norte | Avenida San Pedro | ✅
 [19961919](https://www.openstreetmap.org/relation/19961919) | Avenida Libertad → Via Panamericana Norte | M-12 C | Avenida Libertad | Via Panamericana Norte | ✅
 [19961936](https://www.openstreetmap.org/relation/19961936) | Via Panamericana Norte → Avenida Libertad | M-12 C | Via Panamericana Norte | Avenida Libertad | ✅
 [19971942](https://www.openstreetmap.org/relation/19971942) | Ciudad de Dios → Ciudad de Dios | M-13 C1 | Ciudad de Dios | Ciudad de Dios | ✅
