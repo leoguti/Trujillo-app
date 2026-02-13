@@ -1,0 +1,215 @@
+relation_id,ref,name,n_paradas_v1,n_paradas_v2,paradas_nuevas,paradas_removidas,paradas_repetidas
+19946662,M-01 C,Via Panamericana Norte → Avenida Manuel Seoane,56,58,3,1,0
+19946938,M-01 C,Avenida Manuel Seoane → Via Panamericana Norte,42,42,0,0,0
+19950139,M-02 A,Calle Turquesas → Avenida Manuel Seoane,56,56,0,0,0
+19950214,M-02 A,Avenida Manuel Seoane → Calle Turquesas,49,49,1,1,0
+19953369,M-03 B,Ciudad de Dios → Ciudad de Dios,72,72,0,1,1
+19953601,M-04 A,Cerro La Virgen → Cerro La Virgen,46,46,1,1,0
+19959151,M-05 H,Avenida la Paz → Avenida la Paz,79,84,1,0,4
+19959184,M-06 B,Avenida la Paz → Avenida Victor Raul Haya de la Torre,68,68,0,0,0
+19959196,M-06 B,Avenida Victor Larco Herrera → Avenida la Paz,57,57,1,1,0
+19959202,M-07 V,Avenida Libertad → Avenida San Pedro,31,31,0,0,0
+19959207,M-07 V,Avenida San Pedro → Avenida Libertad,37,37,0,0,0
+19959214,M-08 A,Avenida Libertad → Via Panamericana Norte,45,45,0,0,0
+19959217,M-08 A,Via Panamericana Norte → Avenida Libertad,50,50,2,2,0
+19959224,M-09 BC,Avenida Libertad → Avenida San Pedro,45,45,0,0,0
+19961769,M-09 BC,Avenida San Pedro → Avenida Libertad,44,44,2,2,0
+19961792,M-10 B1,Avenida Libertad → Avenida Los Tulipanes,38,38,0,0,0
+19961795,M-10 B1,Avenida Los Tulipanes → Avenida Libertad,44,43,1,2,0
+19961869,M-11 D,Avenida San Pedro → Via Panamericana Norte,63,63,1,1,0
+19961898,M-11 D,Via Panamericana Norte → Avenida San Pedro,63,64,1,0,0
+19961919,M-12 C,Avenida Libertad → Via Panamericana Norte,38,38,0,0,0
+19961936,M-12 C,Via Panamericana Norte → Avenida Libertad,41,42,1,0,0
+19961948,M-36 LV,Calle Virgen de la Puerta → Avenida Libertad,55,58,3,0,0
+19961958,M-36 LV,Avenida Libertad → Calle Virgen de la Puerta,56,57,2,1,0
+19961962,M-14 C3,Ciudad de Dios → Óvalo Larco,31,30,1,2,0
+19962130,M-16 C,Avenida Vallejo → Calle 8,67,64,0,3,0
+19962183,M-16 C,Calle 8 → Avenida Vallejo,52,54,2,0,0
+19962194,M-19 A,Manzana Ñ → Calle 8,28,28,0,0,0
+19962204,M-18 C1,Avenida Dos → Avenida Dos,67,67,1,1,0
+19962213,M-20 C,Sector Nuevo Horizonte → Avenida 12 de Noviembre,61,64,6,3,0
+19962218,M-20 C,Sector Nuevo Horizonte → Avenida 12 de Noviembre,62,67,8,3,0
+19962222,M-20 C,Avenida 12 de Noviembre → Sector Nuevo Horizonte,61,67,6,0,0
+19962228,M-20 C,Avenida 12 de Noviembre → Sector Nuevo Horizonte,59,66,7,0,0
+19962230,M-21 A,Avenida 12 de Noviembre → Sector Nuevo Horizonte,59,64,6,1,0
+19962257,M-21 A,Sector Nuevo Horizonte → Avenida 12 de Noviembre,59,63,7,3,0
+19962263,M-22 F,Avenida 12 de Noviembre → Avenida Juan Pablo II,39,40,1,0,0
+19962271,M-22 F,Avenida Juan Pablo II → Prolongación Avenida 12 de Noviembre,44,44,1,1,0
+19962272,M-19 A,Calle 8 → Manzana Ñ,31,30,0,1,0
+19962280,M-28 A,Primavera III → Avenida los Pajuiles,47,46,0,1,0
+19962287,M-23 B,Calle Atahualpa → Calle Pedro Ruiz Gallo,31,30,0,1,0
+19962292,M-23 B,Calle Pedro Ruiz Gallo → Calle Atahualpa,39,39,0,0,0
+19962294,M-23 B,Calle Pedro Ruiz Gallo → Calle 7 de Julio,40,39,0,1,0
+19962298,M-23 B,Calle 7 de Julio → Calle Pedro Ruiz Gallo,31,30,0,1,0
+19962300,M-23 B,Calle Pedro Ruiz Gallo → Via Evitamiento Milagro,39,39,0,0,0
+19962303,M-23 B,Via Evitamiento Milagro → Calle Pedro Ruiz Gallo,36,36,0,0,0
+19962313,M-23 B,Calle Pedro Ruiz Gallo → Via Evitamiento Milagro,41,41,0,0,0
+19962315,M-23 B,Via Evitamiento Milagro → Calle Pedro Ruiz Gallo,33,32,0,1,0
+19962318,M-24 A,Avenida Libertad → Avenida América Sur,21,22,1,0,0
+19962320,M-28 A,Avenida los Pajuiles → Primavera III,39,39,2,2,0
+19962323,M-24 A,Avenida América Sur → Avenida Libertad,23,22,0,1,0
+19962362,M-25 A,Calle Liverpool → Calle F,37,38,2,1,0
+19962394,M-25 A,Calle F → Calle Liverpool,42,42,1,1,0
+19962432,M-26 B,Futuro Barrio 5C → Calle Alfonso Ugarte,72,73,0,0,1
+19962502,M-29 B,Primavera → Calle Liverpool,55,53,1,3,0
+19965057,M-31 A,Avenida América Sur → Calle Nuevo Indoamérica,45,47,2,0,0
+19965743,M-34 A,Calle Santa Ana → Calle Los Pensamientos,52,51,0,1,0
+19965745,M-34 A,Calle Los Pensamientos → Calle Santa Ana,50,52,2,0,0
+19965750,M-34 A,Calle Santa Ana → Calle Los Pensamientos,56,55,0,1,0
+19965773,M-34 A,Calle Los Pensamientos → Calle Santa Ana,54,57,3,0,0
+19965775,M-35 D,Vía Panamericana → Avenida Del Contador,51,51,1,1,0
+19965776,M-35 D,Avenida Del Contador → Vía Panamericana,44,44,0,0,0
+19965801,M-35 D,Vía Panamericana → Jirón Francisco de Zela,59,59,1,1,0
+19965802,M-35 D,Vía Panamericana → Avenida Del Contador,49,49,1,1,0
+19965837,M-35 D,Avenida Del Contador → Vía Panamericana,43,43,0,0,0
+19965840,M-35 D,Vía Panamericana → Avenida Del Contador,46,46,1,1,0
+19965847,M-35 D,Vía Panamericana → Avenida Del Contador,48,48,1,1,0
+19965854,M-35 D,Avenida Del Contador → Vía Panamericana,40,40,0,0,0
+19965855,C-01 B,Calle Diego Quispe Tito → Calle José la Rivera,44,44,1,1,0
+19966163,C-02 H,Avenida Alan García → Avenida Federico Villarreal,49,48,0,1,0
+19966193,M-10 B1,Avenida Libertad → Avenida Los Tulipanes,43,43,0,0,0
+19966196,M-10 B1,Avenida Los Tulipanes → Avenida Libertad,43,41,1,3,0
+19966201,C-03 JJ,Calle de los Jasmines → Calle Santa Rosa,51,53,2,0,0
+19966210,C-02 H,Avenida Federico Villarreal → Avenida Alan García,32,33,1,0,0
+19966215,C-03 JJ,Calle Santa Rosa → Calle de los Jasmines,52,53,2,1,0
+19966218,C-04 XS,Calle de los Jasmines → Avenida Federico Villarreal,52,52,1,1,0
+19966224,C-04 XS,Avenida Federico Villarreal → Calle de los Jasmines,35,35,0,0,0
+19966226,C-05 B1,Calle Jirón Cuba → Avenida Federico Villarreal,43,44,2,1,0
+19966253,C-05 B1,Avenida Federico Villarreal → Calle Jirón Cuba,35,35,0,0,0
+19966264,C-06 K,El Reposo → Calle Señor de Los Milagros,60,60,1,1,0
+19966270,C-06 K,Calle Señor de Los Milagros → El Reposo,45,45,1,1,0
+19966288,C-07 Z1,El Reposo → Calle 9 de Octubre,51,51,1,1,0
+19966297,C-07 Z1,Calle 9 de Octubre → El Reposo,45,46,1,0,0
+19967351,C-08 O,Calle Jirón los Algarobos → Calle San Martín,42,42,1,1,0
+19967429,C-41 Z2,Distrito Huanchaco → Avenida Dinamarca,50,50,0,0,0
+19967529,C-09 E,Distrito Huanchaco → Calle San Gabriel,40,39,0,1,0
+19967536,C-09 E,Calle San Gabriel → Distrito Huanchaco,40,40,0,0,0
+19967551,C-10 M,Campiña de Moche → Avenida Los Incas,25,24,0,1,0
+19967562,C-10 M,Avenida Los Incas → Campiña de Moche,0,22,22,0,0
+19967583,C-11 T1,Calle Jirón Santa Isabel → Alto Porvenir,51,51,1,1,0
+19967604,C-11 T1,Alto Porvenir → Calle Jirón Santa Isabel,45,47,1,0,1
+19967639,C-11 T1,Calle Jirón Santa Isabel → Alto Porvenir,51,51,1,1,0
+19967670,C-11 T1,Alto Porvenir → Calle Jirón Santa Isabel,45,47,1,0,1
+19967674,C-11 T1,Panamericana Norte → Alto Porvenir,52,52,1,1,0
+19967678,C-11 T1,Alto Porvenir → Panamericana Norte,45,47,1,0,1
+19967679,C-11 T1,Alto Porvenir → Panamericana Norte,45,47,1,0,1
+19968040,C-39 S,Calle Jirón Santa Isabel → Calle Inca Roca,51,51,1,1,0
+19968053,C-39 S,Calle Inca Roca → Calle Jirón Santa Isabel,45,46,2,1,0
+19968101,C-12 B,Sector Taquila → Carlos García Ronceros,45,45,1,1,0
+19968109,C-12 B,Carlos García Ronceros → Sector Taquila,49,49,0,0,0
+19968121,C-13 D,Avenida 12 de Noviembre → Calle Miguiel Graú,54,53,1,2,0
+19968127,C-13 D,Calle Miguiel Graú → Avenida 12 de Noviembre,53,52,0,1,0
+19968129,C-45 C,Avenida 12 de Noviembre → Calle Miguiel Graú,63,61,1,3,0
+19968140,C-45 C,Calle Miguiel Graú → Avenida 12 de Noviembre,62,60,0,2,0
+19968169,C-14 S,Calle José Galvez → Campiña de Moche,22,21,0,1,0
+19968174,C-43 A,Calle Dieciseis → Avenida Miguel Grau,52,52,0,0,0
+19968178,C-43 A,Avenida Miguel Grau → Calle Dieciseis,51,50,0,1,0
+19968183,C-16 I,Ciudad de Dios → Avenida Antenor Orrego,21,21,0,0,0
+19968195,C-16 I,Avenida Antenor Orrego → Ciudad de Dios,27,27,0,0,0
+19968210,C-17 F,Ciudad de Dios → Avenida Juan Pablo II,36,34,0,2,0
+19968338,C-17 F,Avenida Juan Pablo II → Ciudad de Dios,37,37,0,0,0
+19968352,C-18 P,Cruce Vial S/N → Avenida Cesar Vallejo,23,23,1,1,0
+19968383,C-19 NN,Avenida Victor Raul Haya de la Torre → Barrio 5C,34,34,0,0,0
+19968388,C-19 NN,Barrio 5C → Avenida Victor Raul Haya de la Torre,33,32,0,1,0
+19970882,C-23 S1,Calle Venezuela → Calle José Joaquín Inclán,47,49,3,1,0
+19970891,C-23 S1,Calle José Joaquín Inclán → Calle Venezuela,57,57,2,2,0
+19970967,"C-24 H1, H2",Calle 01 → Avenida Larco,72,85,11,1,3
+19971395,M-26 B,Calle Alfonso Ugarte → Futuro Barrio 5C,64,65,0,0,1
+19971408,M-27 AB,Avenida Libertad → Avenida Libertad,44,43,0,1,0
+19971409,M-27 AB,Avenida Libertad → Avenida Libertad,55,56,0,2,3
+19971413,M-28 A,Primavera III → Avenida los Pajuiles,47,46,0,1,0
+19971417,M-28 A,Avenida los Pajuiles → Primavera III,39,39,2,2,0
+19971427,C-20 UI,Valle Sol → Alto Trujillo,63,62,0,1,0
+19971440,C-20 UI,Alto Trujillo → Valle Sol,64,62,0,2,0
+19971942,M-13 C1,Ciudad de Dios → Ciudad de Dios,55,56,0,0,1
+19971967,M-14 C3,Óvalo Larco → Ciudad de Dios,36,36,0,0,0
+19971999,M-15 C2,Ciudad de Dios → Sector Santa María Alta,69,74,3,1,3
+19972008,M-29 B,Calle Liverpool → Primavera,44,45,1,0,0
+19972010,M-30 D,Calle 11 → Calle César Vallejo,58,78,1,2,21
+19972018,M-30 D,Calle César Vallejo → Calle 11,51,70,0,0,19
+19972027,M-31 A,Calle Nuevo Indoamérica → Avenida América Sur,45,45,0,0,0
+19972041,M-32 A1-B1,Sector Nuevo Indoamérica → Buenos Aires Sur,71,82,1,2,12
+19972045,M-32 A1-B1,Buenos Aires Sur → Sector Nuevo Indoamérica,66,78,1,1,12
+19972046,M-33 B,Calle Santa Ana → Avenida América Sur,86,85,1,2,0
+19972051,M-33 B,Avenida América Sur → Calle Santa Ana,85,85,0,0,0
+19972060,C-01 B,Calle José la Rivera → Calle Diego Quispe Tito,50,49,0,1,0
+19972065,C-08 O,Calle San Martín → Calle Jirón los Algarobos,43,43,0,0,0
+19972072,C-41 Z2,Avenida Dinamarca → Distrito Huanchaco,43,43,0,0,0
+19972081,C-25 S2,Avenida Julian Arce → Calle Manuel Romero,47,50,4,1,0
+19972086,C-25 S2,Calle Manuel Romero → Avenida Julian Arce,45,46,2,1,0
+19972095,C-26 U,Avenida Julian Arce → Óvalo Grau,43,45,3,1,0
+19972103,C-14 S,Campiña de Moche → Calle José Galvez,24,23,0,1,0
+19972121,C-21 R,Valle Sol → Alto Trujillo,63,63,1,1,0
+19972123,C-26 U,Óvalo Grau → Avenida Julian Arce,43,45,2,0,0
+19972128,C-21 R,Alto Trujillo → Valle Sol,64,64,2,2,0
+19972130,C-27 B,Avenida Circunvalación → Avenida José María Eguren,55,55,0,0,0
+19972154,C-27 B,Avenida José María Eguren → Avenida Circunvalación,38,40,2,0,0
+19972155,C-22 M,Valle So → Alto Trujillo,65,63,0,2,0
+19972157,C-22 M,Alto Trujillo → Valle So,67,63,0,4,0
+19972158,"C-24 H1, H2",Avenida Larco → Calle 01,76,88,9,0,3
+19972163,C-28 C,Sector Cerrito La Virgen → Óvalo Los Sauces,60,60,0,0,0
+19972175,C-29 A,Sector Las Lomas → Los Sauces de Barraza,50,50,1,1,0
+19972176,C-28 C,Óvalo Los Sauces → Sector Cerrito La Virgen,48,48,2,2,0
+19972187,C-29 A,Los Sauces de Barraza → Sector Las Lomas,38,39,1,0,0
+19972190,C-28 C,Sector Cerrito La Virgen → Óvalo Los Sauces,58,58,0,0,0
+19972191,C-13 D,Sector Taquila → Alto Trujillo,49,48,0,1,0
+19972195,C-13 D,Alto Trujillo → Sector Taquila,58,57,1,2,0
+19972196,C-28 C,Óvalo Los Sauces → Sector Cerrito La Virgen,46,46,2,2,0
+19972422,C-29 A,Sector Las Lomas → Los Sauces de Barraza,53,54,2,1,0
+19972433,C-29 A,Los Sauces de Barraza → Sector Las Lomas,38,39,1,0,0
+19972458,C-40 W,Barrio 1B → Avenida San José,41,43,2,0,0
+19972461,C-30 C,Sector Cushmun → Avenida Los Laureles,30,32,3,2,1
+19972466,C-40 W,Avenida San José → Barrio 1B,50,49,1,2,0
+19972467,C-44 T2,Barrio 1B → Avenida San José,47,48,1,0,0
+19972470,C-30 C,Avenida Los Laureles → Sector Cushmun,26,28,2,0,0
+19972472,C-44 T2,Avenida San José → Barrio 1B,50,51,2,1,0
+19972473,C-31 P,Sector Huangabal → Avenida Prolongación Santa,26,29,3,1,1
+19972474,C-39 S,Calle Inca Roca → Calle Jirón Santa Isabel,46,47,2,1,0
+19972475,C-39 S,Avenida San José → Calle Ascencio Vergara,52,52,1,1,0
+19972478,C-38 S4,Avenida Luis Condemarín → Avenida Luis Condemarín,48,51,4,1,0
+19972479,C-31 P,Avenida Prolongación Santa → Sector Huangabal,20,22,2,0,0
+19972495,C-37 R,Rosas del Valle 1ra Etapa → Avenida Julian Arce,46,48,3,1,0
+19972496,C-32 S,Mucha → Palermo,27,30,3,1,1
+19972501,C-37 R,Avenida Julian Arce → Rosas del Valle 1ra Etapa,43,46,3,0,0
+19972502,C-32 S,Palermo → Mucha,20,22,2,0,0
+19972504,C-36 Y,San Andrés 5ta Etapa → Víctor Raúl Haya de La Torre,51,52,2,1,0
+19972505,C-36 Y,Víctor Raúl Haya de La Torre → San Andrés 5ta Etapa,45,46,3,2,0
+19972508,C-15 P1,Sector Tres Cruces → Avenida America del Sur,22,25,3,0,0
+19972509,C-35 S3,Buganvillas del Golf → Víctor Raúl Haya de La Torre,49,50,2,1,0
+19972510,C-35 S3,Víctor Raúl Haya de La Torre → Buganvillas del Golf,50,53,4,1,0
+19972512,C-34 G,Virgen del Socorro → Virgen del Socorro,62,62,1,1,0
+19972515,C-33 P2,Sector Platanar → Avenida America del Sur,30,32,3,1,0
+19972516,C-33 P2,Avenida América Sur → Sector Platanar,33,36,2,0,1
+19972901,M-17 C2,Avenida Dos → Avenida Dos,84,82,1,3,0
+19972938,M-13 C1,Ciudad de Dios → Ciudad de Dios,53,53,0,0,0
+19973156,M-18 C1,Avenida Dos → Avenida Dos,70,70,1,1,0
+19973224,C-42 B2,Jirón Venezuela → Avenida Libertad,47,47,1,1,0
+19973251,C-42 B2,Avenida Cesar Vallejo → Avenida Libertad,45,48,4,1,0
+19973922,C-42 B2,Avenida Libertad → Avenida Cesar Vallejo,36,36,0,0,0
+19973932,C-42 B2,Avenida Libertad → Jirón Venezuela,43,43,0,0,0
+19973941,C-34 G,Virgen del Socorro → Virgen del Socorro,68,69,1,0,0
+19973946,C-15 P1,Avenida America del Sur → Sector Tres Cruces,25,28,2,0,1
+19973949,C-15 P1,Sector Huayabito → Avenida America del Sur,22,25,3,0,0
+19973958,C-15 P1,Avenida America del Sur → Sector Huayabito,25,28,2,0,1
+19975974,M-05 H,Avenida la Paz → Avenida la Paz,75,79,2,2,4
+19976195,M-21 A,Avenida 12 de Noviembre → Sector Nuevo Horizonte,59,64,6,1,0
+19976301,M-15 C2,Sector Santa María Alta → Ciudad de Dios,75,77,1,1,2
+19976312,M-04 A,Cerro La Virgen → Cerro La Virgen,35,35,0,0,0
+19976337,M-17 C2,Avenida Dos → Avenida Dos,82,80,1,3,0
+19977991,C-44 T2,Barrio 1B → Avenida San José,47,48,1,0,0
+19988569,C-18 P,Avenida Cesar Vallejo → Cruce Vial S/N,32,31,0,1,0
+19988589,C-38 S4,Avenida Luis Condemarín → Avenida Luis Condemarín,43,45,2,0,0
+19988601,C-15 P1,Sector Tres Cruces → Avenida América Sur,22,25,3,0,0
+19988606,C-15 P1,Avenida America del Sur → Sector Tres Cruces,25,28,2,0,1
+19988678,C-15 P1,Sector Huayabito → Avenida America del Sur,22,25,3,0,0
+19988688,C-15 P1,Avenida America del Sur → Sector Huayabito,25,28,2,0,1
+19988714,C-33 P2,Sector Platanar → Avenida America del Sur,30,32,3,1,0
+19988728,C-33 P2,Avenida America del Sur → Sector Platanar,33,36,2,0,1
+19988797,C-28 C,Sector Cerrito La Virgen → Óvalo Los Sauces,58,59,1,0,0
+19988815,C-28 C,Óvalo Los Sauces → Sector Cerrito La Virgen,48,48,2,2,0
+19990111,C-11 T1,Panamericana Norte → Alto Porvenir,49,50,2,1,0
+19990115,C-11 T1,Alto Porvenir → Panamericana Norte,47,47,1,1,0
+19990157,C-45 C,Calle Miguiel Graú → Avenida 12 de Noviembre,64,62,1,3,0
+19990165,C-45 C,Calle Miguiel Graú → Avenida 12 de Noviembre,58,56,0,2,0
+19990939,C-32 S,Palermo → Sector Collambay,20,22,2,0,0
+19991778,C-32 S,Sector Collambay → Palermo,27,30,3,1,1
