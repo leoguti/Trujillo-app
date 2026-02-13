@@ -14,6 +14,7 @@ walk-and-assign, y genera relaciones_con_paradas_v2.osm + reporte CSV.
 import json
 import csv
 import math
+import os
 import time
 import urllib.request
 import urllib.parse
@@ -32,7 +33,13 @@ SEARCH_EXTRA_M = 25        # Margen adicional para búsqueda cKDTree
 GAP_THRESHOLD = 5          # Segmentos de gap para separar "pasos" de una parada
 MIN_SEGMENT_LEN_M = 0.1    # Ignorar segmentos degenerados
 
+# Filtro de falsos positivos (parada más cerca de otra ruta)
+FP_MIN_DIST_M = 15         # Solo revisar asignaciones a >15m
+FP_RIVAL_MAX_M = 10        # Rechazar si otra ruta pasa a <10m
+FP_RATIO_MIN = 3.0         # Rechazar si ratio dist/rival > 3
+
 OVERPASS_URL = "https://overpass-api.de/api/interpreter"
+CACHE_DIR = "cache_overpass"
 
 OUTPUT_OSM = "relaciones_con_paradas.osm"
 OUTPUT_CSV = "reporte_asignacion_v2.csv"
@@ -80,12 +87,26 @@ def point_to_segment_dist(px, py, ax, ay, bx, by):
 
 # ── Paso 1: Descarga de datos de Overpass ──────────────────────────────────
 
-def overpass_query(query, timeout=300):
-    """Ejecuta una consulta Overpass y retorna el JSON."""
+def overpass_query(query, timeout=300, cache_name=None):
+    """Ejecuta una consulta Overpass y retorna el JSON. Usa caché si existe."""
+    if cache_name:
+        os.makedirs(CACHE_DIR, exist_ok=True)
+        cache_path = os.path.join(CACHE_DIR, f"{cache_name}.json")
+        if os.path.exists(cache_path):
+            print(f"  (usando caché: {cache_path})")
+            with open(cache_path) as f:
+                return json.load(f)
+
     data = urllib.parse.urlencode({"data": query}).encode("utf-8")
     req = urllib.request.Request(OVERPASS_URL, data=data)
     with urllib.request.urlopen(req, timeout=timeout + 60) as resp:
-        return json.loads(resp.read().decode("utf-8"))
+        result = json.loads(resp.read().decode("utf-8"))
+
+    if cache_name:
+        with open(cache_path, "w") as f:
+            json.dump(result, f)
+
+    return result
 
 
 def fetch_relations_and_geometry():
@@ -100,7 +121,7 @@ way(r);
 out body;
 node(w);
 out skel;"""
-    result = overpass_query(query, timeout=300)
+    result = overpass_query(query, timeout=300, cache_name="relations_geometry")
 
     relations = []
     ways_by_id = {}
@@ -126,7 +147,7 @@ def fetch_municipal_stops():
     query = """[out:json][timeout:60];
 node["network"="Transporte Público Urbano Trujillo"]["public_transport"="platform"];
 out meta;"""
-    result = overpass_query(query, timeout=60)
+    result = overpass_query(query, timeout=60, cache_name="municipal_stops")
 
     stops = []
     for elem in result["elements"]:
@@ -363,6 +384,79 @@ def walk_and_assign(polyline_utm, stops, stop_tree, stop_coords):
     assignments.sort(key=lambda a: a[0])
 
     return assignments
+
+
+# ── Paso 4b: Filtro de falsos positivos ─────────────────────────────────
+
+def filter_false_positives(assignments_by_rel, stops):
+    """Filtra asignaciones donde otra ruta pasa significativamente más cerca.
+
+    Para cada parada, recopila la distancia mínima desde cada ruta.
+    Rechaza una asignación si:
+      - dist > FP_MIN_DIST_M (15m)
+      - otra ruta pasa a < FP_RIVAL_MAX_M (10m)
+      - ratio dist/rival_dist > FP_RATIO_MIN (3x)
+    """
+    # Paso 1: para cada stop_idx, recopilar {rel_id: min_dist}
+    stop_route_dists = defaultdict(dict)  # stop_idx → {rel_id: dist}
+    for rel_id, asgn_list in assignments_by_rel.items():
+        for seg_idx, stop_idx, dist in asgn_list:
+            prev = stop_route_dists[stop_idx].get(rel_id, float('inf'))
+            if dist < prev:
+                stop_route_dists[stop_idx][rel_id] = dist
+
+    # Paso 2: filtrar cada ruta
+    total_removed = 0
+    removed_details = []  # para el reporte
+
+    for rel_id in list(assignments_by_rel.keys()):
+        asgn_list = assignments_by_rel[rel_id]
+        filtered = []
+
+        for seg_idx, stop_idx, dist in asgn_list:
+            reject = False
+
+            if dist > FP_MIN_DIST_M:
+                # Buscar si otra ruta pasa más cerca
+                route_dists = stop_route_dists[stop_idx]
+                for other_rel_id, other_dist in route_dists.items():
+                    if other_rel_id == rel_id:
+                        continue
+                    if other_dist < FP_RIVAL_MAX_M and dist / other_dist > FP_RATIO_MIN:
+                        reject = True
+                        removed_details.append({
+                            "stop_idx": stop_idx,
+                            "stop_ref": stops[stop_idx]["ref"],
+                            "rel_id": rel_id,
+                            "dist": dist,
+                            "rival_rel_id": other_rel_id,
+                            "rival_dist": other_dist,
+                            "ratio": dist / other_dist,
+                        })
+                        break
+
+            if not reject:
+                filtered.append((seg_idx, stop_idx, dist))
+
+        removed_count = len(asgn_list) - len(filtered)
+        if removed_count > 0:
+            total_removed += removed_count
+            assignments_by_rel[rel_id] = filtered
+
+    # Resumen
+    print(f"\nFiltro de falsos positivos:")
+    print(f"  Asignaciones removidas: {total_removed}")
+    unique_stops = set(d["stop_ref"] for d in removed_details)
+    print(f"  Paradas únicas afectadas: {len(unique_stops)}")
+
+    if removed_details:
+        print(f"\n  Detalle (primeras 20):")
+        for d in sorted(removed_details, key=lambda x: -x["ratio"])[:20]:
+            print(f"    {d['stop_ref']:12s} rel={d['rel_id']}  "
+                  f"dist={d['dist']:.1f}m  rival={d['rival_dist']:.1f}m  "
+                  f"ratio={d['ratio']:.1f}x")
+
+    return total_removed, removed_details
 
 
 # ── Paso 5: Generar .osm ────────────────────────────────────────────────
@@ -705,24 +799,40 @@ def main():
     print(f"  Rutas sin vías:    {stats['no_ways']}")
     print(f"  Total asignaciones: {total_assignments}")
 
-    # Paradas únicas asignadas
+    # Paradas únicas asignadas (antes de filtro)
     all_stop_ids = set()
     for asgn in assignments_by_rel.values():
         for _, si, _ in asgn:
             all_stop_ids.add(municipal_stops[si]["id"])
     print(f"  Paradas únicas asignadas: {len(all_stop_ids)} de {len(municipal_stops)}")
 
+    # 4b. Filtro de falsos positivos
+    n_removed, fp_details = filter_false_positives(
+        assignments_by_rel, municipal_stops)
+
+    # Recalcular totales post-filtro
+    total_after = sum(len(a) for a in assignments_by_rel.values())
+    all_stop_ids_after = set()
+    for asgn in assignments_by_rel.values():
+        for _, si, _ in asgn:
+            all_stop_ids_after.add(municipal_stops[si]["id"])
+    print(f"\nPost-filtro:")
+    print(f"  Total asignaciones: {total_after} (removidas: {n_removed})")
+    print(f"  Paradas únicas: {len(all_stop_ids_after)}")
+
     # 5. Verificar piloto
     verify_pilot(assignments_by_rel, municipal_stops)
 
-    # 6. Generar archivo .osm
+    # 6. Cargar v1 ANTES de sobreescribir (mismo nombre de archivo)
+    print(f"\nCargando v1 para comparación ({V1_OSM})...")
+    v1_data = load_v1_assignments(V1_OSM)
+
+    # 7. Generar archivo .osm
     print(f"\nGenerando {OUTPUT_OSM}...")
     generate_osm_v2(relations, assignments_by_rel, municipal_stops,
                     ways_by_id, nodes_by_id, OUTPUT_OSM)
 
-    # 7. Cargar v1 y generar reporte comparativo
-    print(f"\nCargando v1 para comparación ({V1_OSM})...")
-    v1_data = load_v1_assignments(V1_OSM)
+    # 8. Reporte comparativo
     if v1_data:
         print(f"  Relaciones v1: {len(v1_data)}")
     else:
