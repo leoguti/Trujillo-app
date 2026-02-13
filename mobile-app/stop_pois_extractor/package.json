@@ -1,0 +1,17 @@
+{
+  "name": "stop-pois-extractor",
+  "version": "1.0.0",
+  "description": "Extract bus stops from GTFS as POIs",
+  "type": "module",
+  "scripts": {
+    "extract": "tsx index.ts"
+  },
+  "dependencies": {
+    "jszip": "^3.10.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  }
+}

@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:latlong2/latlong.dart';
@@ -9,33 +10,215 @@ import 'package:trufi_core_home_screen/trufi_core_home_screen.dart';
 import 'package:trufi_core_maps/trufi_core_maps.dart';
 import 'package:trufi_core_navigation/trufi_core_navigation.dart';
 import 'package:trufi_core_poi_layers/trufi_core_poi_layers.dart';
+import 'package:trufi_core_routing/trufi_core_routing.dart'
+    show
+        RoutingEngineManager,
+        IRoutingProvider,
+        Otp28RoutingProvider,
+        TrufiPlannerProvider,
+        TrufiPlannerConfig;
 import 'package:trufi_core_saved_places/trufi_core_saved_places.dart';
 import 'package:trufi_core_search_locations/trufi_core_search_locations.dart';
 import 'package:trufi_core_settings/trufi_core_settings.dart';
 import 'package:trufi_core_transport_list/trufi_core_transport_list.dart';
 import 'package:trufi_core_ui/trufi_core_ui.dart';
+import 'package:trufi_core_utils/trufi_core_utils.dart' show OverlayManager;
 
-// Trujillo, Peru - City center coordinates (Plaza de Armas)
+// ============ CONFIGURATION ============
+const _photonUrl = 'https://photon.trujillo.trufi.dev';
+const _otpEndpoint = 'https://otp.trujillo.trufi.dev';
+
 const _defaultCenter = LatLng(-8.1116, -79.0288);
+const _appName = 'Trujillo Mobility';
+const _deepLinkScheme = 'trujillomobility';
+const _cityName = 'Trujillo';
+const _countryName = 'Perú';
+const _emailContact = 'info@trufi-association.org';
+const _feedbackUrl = 'https://www.trufi-association.org/feedback/';
+const _facebookUrl = 'https://facebook.com/trufiapp';
+const _xTwitterUrl = 'https://x.com/trufiapp';
+const _instagramUrl = 'https://instagram.com/trufiapp';
+const _mapsBaseUrl = 'https://maps.trujillo.trufi.dev';
+
+// Routing engines
+final List<IRoutingProvider> _routingEngines = [
+  // Offline routing via GTFS (mobile only)
+  if (!kIsWeb)
+    TrufiPlannerProvider(
+      config: const TrufiPlannerConfig.local(
+        gtfsAsset: 'assets/routing/trujillo.gtfs.zip',
+      ),
+    ),
+  // Online routing via OTP 2.8
+  const Otp28RoutingProvider(
+    endpoint: _otpEndpoint,
+    displayName: 'OTP 2.8',
+  ),
+];
+
+// Map engines - offline + online
+final List<ITrufiMapEngine> _mapEngines = [
+  if (!kIsWeb) ...[
+    OfflineMapLibreEngine(
+      engineId: 'offline_osm_liberty',
+      displayName: 'Offline Liberty',
+      displayDescription: 'Mapa offline estándar',
+      config: OfflineMapConfig(
+        mbtilesAsset: 'assets/offline/trujillo.mbtiles',
+        styleAsset: 'assets/offline/styles/osm-liberty/style.json',
+        spritesAssetDir: 'assets/offline/styles/osm-liberty/',
+        fontsAssetDir: 'assets/offline/fonts/',
+        fontMapping: {
+          'RobotoRegular': 'Roboto Regular',
+          'RobotoMedium': 'Roboto Medium',
+          'RobotoCondensedItalic': 'Roboto Condensed Italic',
+        },
+        fontRanges: [
+          '0-255',
+          '256-511',
+          '512-767',
+          '768-1023',
+          '1024-1279',
+          '1280-1535',
+          '8192-8447',
+          '8448-8703',
+        ],
+      ),
+    ),
+    OfflineMapLibreEngine(
+      engineId: 'offline_osm_bright',
+      displayName: 'Offline Bright',
+      displayDescription: 'Mapa offline claro',
+      config: OfflineMapConfig(
+        mbtilesAsset: 'assets/offline/trujillo.mbtiles',
+        styleAsset: 'assets/offline/styles/osm-bright/style.json',
+        spritesAssetDir: 'assets/offline/styles/osm-bright/',
+        fontsAssetDir: 'assets/offline/fonts/',
+        fontMapping: {
+          'OpenSansRegular': 'Open Sans Regular',
+          'OpenSansBold': 'Open Sans Bold',
+          'OpenSansItalic': 'Open Sans Italic',
+        },
+        fontRanges: [
+          '0-255',
+          '256-511',
+          '512-767',
+          '768-1023',
+          '1024-1279',
+          '1280-1535',
+          '8192-8447',
+          '8448-8703',
+        ],
+      ),
+    ),
+    OfflineMapLibreEngine(
+      engineId: 'offline_dark_matter',
+      displayName: 'Offline Dark Matter',
+      displayDescription: 'Mapa offline oscuro',
+      config: OfflineMapConfig(
+        mbtilesAsset: 'assets/offline/trujillo.mbtiles',
+        styleAsset: 'assets/offline/styles/dark-matter/style.json',
+        spritesAssetDir: 'assets/offline/styles/dark-matter/',
+        fontsAssetDir: 'assets/offline/fonts/',
+        fontMapping: {
+          'MetropolisLight': 'Metropolis Light',
+          'MetropolisLightItalic': 'Metropolis Light Italic',
+          'MetropolisRegular': 'Metropolis Regular',
+          'MetropolisMediumItalic': 'Metropolis Medium Italic',
+          'NotoSansRegular': 'Noto Sans Regular',
+          'NotoSansItalic': 'Noto Sans Italic',
+        },
+        fontRanges: [
+          '0-255',
+          '256-511',
+          '512-767',
+          '768-1023',
+          '1024-1279',
+          '1280-1535',
+          '8192-8447',
+          '8448-8703',
+        ],
+      ),
+    ),
+    OfflineMapLibreEngine(
+      engineId: 'offline_fiord_color',
+      displayName: 'Offline Fiord Color',
+      displayDescription: 'Mapa offline colorido',
+      config: OfflineMapConfig(
+        mbtilesAsset: 'assets/offline/trujillo.mbtiles',
+        styleAsset: 'assets/offline/styles/fiord-color/style.json',
+        spritesAssetDir: 'assets/offline/styles/fiord-color/',
+        fontsAssetDir: 'assets/offline/fonts/',
+        fontMapping: {
+          'MetropolisLight': 'Metropolis Light',
+          'MetropolisLightItalic': 'Metropolis Light Italic',
+          'MetropolisRegular': 'Metropolis Regular',
+          'MetropolisMediumItalic': 'Metropolis Medium Italic',
+          'NotoSansRegular': 'Noto Sans Regular',
+          'NotoSansItalic': 'Noto Sans Italic',
+        },
+        fontRanges: [
+          '0-255',
+          '256-511',
+          '512-767',
+          '768-1023',
+          '1024-1279',
+          '1280-1535',
+          '8192-8447',
+          '8448-8703',
+        ],
+      ),
+    ),
+  ],
+  // Online maps
+  MapLibreEngine(
+    engineId: 'osm_bright',
+    styleString: '$_mapsBaseUrl/styles/osm-bright/style.json',
+    displayName: 'OSM Bright',
+    displayDescription: 'Mapa claro online',
+  ),
+  MapLibreEngine(
+    engineId: 'osm_liberty',
+    styleString: '$_mapsBaseUrl/styles/osm-liberty/style.json',
+    displayName: 'OSM Liberty',
+    displayDescription: 'Mapa estándar online',
+  ),
+  MapLibreEngine(
+    engineId: 'dark_matter',
+    styleString: '$_mapsBaseUrl/styles/dark-matter/style.json',
+    displayName: 'Dark Matter',
+    displayDescription: 'Mapa oscuro online',
+  ),
+  MapLibreEngine(
+    engineId: 'fiord_color',
+    styleString: '$_mapsBaseUrl/styles/fiord-color/style.json',
+    displayName: 'Fiord Color',
+    displayDescription: 'Mapa colorido online',
+  ),
+];
+// ========================================
 
 void main() {
   runTrufiApp(
     AppConfiguration(
-      appName: 'Trujillo Mobility',
-      deepLinkScheme: 'trujillomobility',
+      appName: _appName,
+      deepLinkScheme: _deepLinkScheme,
+      defaultLocale: const Locale('es'),
+      themeConfig: TrufiThemeConfig(
+      ),
       socialMediaLinks: const [
         SocialMediaLink(
-          url: 'https://facebook.com/trufiapp',
+          url: _facebookUrl,
           icon: Icons.facebook,
           label: 'Facebook',
         ),
         SocialMediaLink(
-          url: 'https://x.com/trufiapp',
+          url: _xTwitterUrl,
           icon: Icons.close,
           label: 'X (Twitter)',
         ),
         SocialMediaLink(
-          url: 'https://instagram.com/trufiapp',
+          url: _instagramUrl,
           icon: Icons.camera_alt_outlined,
           label: 'Instagram',
         ),
@@ -43,20 +226,33 @@ void main() {
       providers: [
         ChangeNotifierProvider(
           create: (_) => MapEngineManager(
-            engines: [
-              MapLibreEngine(
-                styleString: 'https://maps.trujillo.trufi.dev/styles/osm-bright/style.json',
-                darkStyleString: 'https://maps.trujillo.trufi.dev/styles/fiord-color/style.json',
-              ),
-              FlutterMapEngine(),
-            ],
+            engines: _mapEngines,
             defaultCenter: _defaultCenter,
+          ),
+        ),
+        ChangeNotifierProvider(
+          create: (_) => RoutingEngineManager(engines: _routingEngines),
+        ),
+        ChangeNotifierProvider(
+          create: (_) => OverlayManager(
+            managers: [
+              OnboardingManager(
+                overlayBuilder: (onComplete) =>
+                    OnboardingSheet(onComplete: onComplete),
+              ),
+              PrivacyConsentManager(
+                overlayBuilder: (onAccept, onDecline) => PrivacyConsentSheet(
+                  onAccept: onAccept,
+                  onDecline: onDecline,
+                ),
+              ),
+            ],
           ),
         ),
         BlocProvider(
           create: (_) => SearchLocationsCubit(
             searchLocationService: PhotonSearchService(
-              baseUrl: 'https://photon.trujillo.trufi.dev',
+              baseUrl: _photonUrl,
               biasLatitude: _defaultCenter.latitude,
               biasLongitude: _defaultCenter.longitude,
             ),
@@ -66,17 +262,9 @@ void main() {
       screens: [
         HomeScreenTrufiScreen(
           config: HomeScreenConfig(
-            otpEndpoint: 'https://otp.trujillo.trufi.dev',
-            appName: 'Trujillo Mobility',
-            deepLinkScheme: 'trujillomobility',
-            poiLayersManager: POILayersManager(
-              assetsBasePath: 'assets/pois',
-              defaultEnabledSubcategories: {
-                POICategory.tourism: {'museum', 'attraction', 'viewpoint'},
-                POICategory.food: {'restaurant', 'cafe'},
-                POICategory.transport: {'bus_station', 'bus_stop'},
-              },
-            ),
+            appName: _appName,
+            deepLinkScheme: _deepLinkScheme,
+            poiLayersManager: POILayersManager(assetsBasePath: 'assets/pois'),
           ),
           onStartNavigation: (context, itinerary, locationService) {
             NavigationScreen.showFromItinerary(
@@ -86,13 +274,12 @@ void main() {
               mapEngineManager: MapEngineManager.read(context),
             );
           },
+          onRouteTap: (context, routeCode) {
+            TransportDetailScreen.show(context, routeCode: routeCode);
+          },
         ),
         SavedPlacesTrufiScreen(),
-        TransportListTrufiScreen(
-          config: TransportListOtpConfig(
-            otpEndpoint: 'https://otp.trujillo.trufi.dev',
-          ),
-        ),
+        TransportListTrufiScreen(),
         FaresTrufiScreen(
           config: FaresConfig(
             currency: 'PEN',
@@ -121,17 +308,15 @@ void main() {
           ),
         ),
         FeedbackTrufiScreen(
-          config: FeedbackConfig(
-            feedbackUrl: 'https://www.trufi-association.org/feedback/',
-          ),
+          config: FeedbackConfig(feedbackUrl: _feedbackUrl),
         ),
         SettingsTrufiScreen(),
         AboutTrufiScreen(
           config: AboutScreenConfig(
-            appName: 'Trujillo Mobility',
-            cityName: 'Trujillo',
-            countryName: 'Perú',
-            emailContact: 'info@trufi-association.org',
+            appName: _appName,
+            cityName: _cityName,
+            countryName: _countryName,
+            emailContact: _emailContact,
           ),
         ),
       ],
