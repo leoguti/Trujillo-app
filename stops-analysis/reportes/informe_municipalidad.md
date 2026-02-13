@@ -2,7 +2,7 @@
 
 **Para:** Gerencia de Transporte Metropolitano de Trujillo
 **De:** [Tu nombre / organización]
-**Fecha:** 2026-02-12
+**Fecha:** 2026-02-13 (actualizado)
 **Asunto:** Estado de la carga de paraderos a OpenStreetMap, problemas encontrados y datos requeridos
 
 ---
@@ -50,9 +50,9 @@ Al abrir el enlace, hacer clic en "Ejecutar" (Run) para ver todas las paradas en
 - Cada parada tiene el código de referencia del municipio (tag `ref`) para permitir trazabilidad
 - Las paradas están etiquetadas según el estándar PTv2 (Public Transport Version 2) de OpenStreetMap
 
-### 2.3 Asignación a rutas (en curso)
+### 2.3 Asignación a rutas (completada)
 
-Se está trabajando en agregar las paradas a las relaciones de ruta en OpenStreetMap (214 relaciones de rutas de bus). Esto permitirá que aplicaciones de navegación y transporte muestren qué paradas corresponden a qué ruta.
+Se asignaron las 1,405 paradas a las 214 relaciones de ruta en OpenStreetMap. Esto permite que aplicaciones de navegación y transporte muestren qué paradas corresponden a qué ruta, en el orden correcto del recorrido.
 
 ---
 
@@ -106,7 +106,9 @@ Cuando un pasajero quiere planificar un viaje usando una aplicación de transpor
 
 En los datos proporcionados por la Gerencia, **muchas rutas no tienen paraderos registrados cerca de sus puntos de inicio o de fin**. Esto significa que, para la aplicación, la ruta "aparece" y "desaparece" en medio del camino, sin un punto claro donde el pasajero pueda tomar o dejar el bus.
 
-Para el sistema GTFS (el formato que usan Google Maps y otras aplicaciones), habíamos creado paradas temporales en esos puntos de inicio y fin. Sin embargo, **estas paradas temporales no se pueden publicar en OpenStreetMap** porque OpenStreetMap es un mapa de la realidad — solo se pueden agregar paraderos que existan físicamente.
+Para el sistema GTFS (el formato que usan Google Maps y otras aplicaciones), habíamos creado paradas temporales (con códigos "GT-...") en esos puntos de inicio y fin. Sin embargo, **estas paradas temporales no se pueden publicar en OpenStreetMap** porque OpenStreetMap es un mapa colaborativo mundial que refleja la realidad — solo se pueden agregar paraderos que existan físicamente. Al publicar los paraderos oficiales de la Gerencia en OpenStreetMap, los paraderos ficticios quedaron expuestos como inconsistencias que deben resolverse.
+
+**Esto es especialmente crítico para las rutas que van hacia otros municipios** (Laredo, Moche, Salaverry, zonas rurales), donde los tramos finales de la ruta no tienen ningún paradero registrado y el GTFS dependía enteramente de paradas ficticias.
 
 #### Análisis: ¿qué tan grave es el problema?
 
@@ -231,32 +233,26 @@ Se procesaron las **214 rutas** del sistema, recorriendo cada una de principio a
 |----------|----------|
 | Rutas procesadas | 214 |
 | Rutas con al menos un paradero asignado | **214 (100%)** |
-| Total de asignaciones paradero→ruta | **10,017** |
-| Paraderos únicos asignados a al menos una ruta | **1,368** de 1,405 |
-| Paraderos no asignados a ninguna ruta | 37 |
-| Promedio de paraderos por ruta | 47 |
+| Total de asignaciones paradero→ruta | **10,172** |
+| Paraderos únicos asignados a al menos una ruta | **1,398** de 1,405 |
+| Paraderos no asignados a ninguna ruta | 7 |
+| Promedio de paraderos por ruta | 48 |
 
 ### ¿Qué significa esto?
 
 Cada una de las 214 rutas ahora tiene un listado ordenado de paraderos. Esto permite que las aplicaciones de transporte muestren al pasajero la secuencia completa de paradas de cada ruta.
 
-Un mismo paradero puede pertenecer a varias rutas — por ejemplo, un paradero en la Avenida España puede ser utilizado por 5 o 6 rutas diferentes que pasan por esa avenida. El total de 10,017 asignaciones refleja esto: 1,368 paraderos distribuidos entre 214 rutas.
+Un mismo paradero puede pertenecer a varias rutas — por ejemplo, un paradero en la Avenida España puede ser utilizado por 5 o 6 rutas diferentes que pasan por esa avenida. El total de 10,172 asignaciones refleja esto: 1,398 paraderos distribuidos entre 214 rutas.
 
-Los 37 paraderos que no quedaron asignados a ninguna ruta están en zonas donde la geometría de la ruta pasa a más de 20 metros del paradero. Esto puede deberse a pequeñas imprecisiones en el trazado de la ruta o en la ubicación del paradero, y no es un problema grave.
+Adicionalmente, 29 rutas que realizan bucles o recorridos que pasan dos veces por la misma calle tienen paraderos que aparecen dos veces en la secuencia — una por cada paso del bus. Esto es correcto y necesario para que la aplicación muestre la secuencia real del recorrido.
 
-### Rutas con mayor cantidad de paraderos
+Los 7 paraderos que no quedaron asignados a ninguna ruta están en zonas donde la geometría de la ruta pasa a más de 20 metros del paradero. Esto puede deberse a pequeñas imprecisiones en el trazado de la ruta o en la ubicación del paradero, y no es un problema grave.
 
-Las rutas más largas o con más variantes tienen naturalmente más paraderos:
+### Control de calidad: paradas en calles paralelas
 
-| Ruta | Paraderos asignados | Observación |
-|------|-------------------|-------------|
-| C-11 T1 | 430 | 8 variantes de recorrido |
-| M-35 D | 380 | 8 variantes de recorrido |
-| C-28 C | 318 | 6 variantes de recorrido |
-| M-23 B | 290 | Ruta larga metropolitana |
-| C-45 C | 247 | Ruta larga urbana |
+Se implementó un control de calidad adicional que detecta paradas que, aunque están dentro de los 20 metros de una ruta, están **mucho más cerca de otra vía**. Estas son paradas que geográficamente pertenecen a una calle paralela, no a la ruta en cuestión.
 
-Las rutas simples (solo ida y vuelta, sin variantes) tienen entre 20 y 60 paraderos, lo cual es consistente con recorridos de 10 a 25 km en zona urbana.
+Se detectaron y corrigieron **83 asignaciones incorrectas** (24 paraderos físicos) donde la parada estaba a más de 15 metros de la ruta asignada pero a menos de 10 metros de otra ruta. Ejemplo: un paradero a 19 metros de la ruta M-21 pero a solo 1 metro de la ruta M-02 — claramente pertenece a la calle de la M-02, no de la M-21.
 
 ---
 
@@ -301,11 +297,13 @@ Sin embargo, estos paraderos ficticios no representan la realidad:
 - 1,405 paraderos cargados a OpenStreetMap con código de referencia del municipio
 - Paraderos validados contra geometría de rutas (lado correcto de la vía, dentro de la zona de cobertura)
 - 28 paraderos fusionados con datos existentes en OSM
-- 10,017 asignaciones de paraderos a 214 rutas completadas
+- **10,172 asignaciones** de paraderos a **214 rutas** completadas
+- Control de calidad: 83 asignaciones incorrectas detectadas y corregidas (paradas en calles paralelas)
+- 29 rutas con bucles: paraderos que aparecen dos veces en la secuencia (correcto)
 - 5 rutas con brechas graves identificadas y suspendidas del GTFS como medida preventiva
 
 ### Pendiente (requiere respuesta de la Gerencia)
-- **Urgente:** Paraderos en las 5 rutas rurales suspendidas (C-15, C-30, C-31, C-32, C-33) — necesarios para reactivar estas rutas
+- **Urgente:** Paraderos de inicio y fin de ruta de las 5 rutas rurales suspendidas (C-15, C-30, C-31, C-32, C-33) — sin estos datos, estas rutas no pueden aparecer en aplicaciones de transporte
 - **Urgente:** Paraderos en 5 puntos terminales compartidos (Av. Libertad, Ciudad de Dios, Cerrito La Virgen, Vía Panamericana, Taquila) — un solo paradero en cada punto resuelve hasta 6 rutas
 - **Alta:** Corrección de 11 códigos duplicados
 - **Media:** Confirmación de 2 paraderos "PL-Existente"
