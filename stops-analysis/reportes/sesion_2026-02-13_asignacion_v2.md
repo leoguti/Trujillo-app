@@ -105,6 +105,45 @@ from lxml import etree
 | GAP_THRESHOLD | 5 segmentos | Separación mínima para considerar un nuevo "paso" |
 | MIN_SEGMENT_LEN_M | 0.1m | Ignorar segmentos degenerados |
 
+## Filtro de falsos positivos (agregado en la misma sesión)
+
+### Problema detectado
+En zonas urbanas densas con calles paralelas (ej: Jirón Unión / Av. España), el buffer de 20m atrapa paradas de calles adyacentes. Una parada puede estar a 18m de la ruta asignada pero a solo 1m de otra ruta — claramente pertenece a la otra vía.
+
+### Análisis previo
+Se ejecutó `analisis_falsos_positivos.py` que evaluó las 10,255 asignaciones:
+- 78.5% están a 0-8m (saludable)
+- 7.4% (759) están a 12-20m (zona de riesgo)
+- **122 asignaciones sospechosas** (1.2%) donde otra ruta pasa significativamente más cerca
+- Solo **28 paradas físicas** afectadas, pero se propagan a múltiples rutas
+
+### Solución implementada: filtro relativo
+Criterio de rechazo (las 3 condiciones deben cumplirse):
+1. `dist_a_esta_ruta > 15m`
+2. `dist_a_otra_ruta < 10m`
+3. `ratio dist/rival > 3x`
+
+### Resultado del filtro
+- **83 asignaciones removidas** de 10,255 → quedan **10,172**
+- **24 paradas únicas** afectadas
+- Peores casos eliminados: ABR-365 (ratio 76:1), PL-46 (18:1), PAT-141 (17:1)
+- El piloto C-10 M pasó de 22 a 21 paradas (IN-167 eliminada, estaba a 17.73m de C-10 M pero a 4.81m de M-02 A)
+
+### Parámetros del filtro
+| Parámetro | Valor | Descripción |
+|-----------|-------|-------------|
+| FP_MIN_DIST_M | 15m | Solo revisar asignaciones a más de 15m |
+| FP_RIVAL_MAX_M | 10m | Rechazar si otra ruta pasa a menos de 10m |
+| FP_RATIO_MIN | 3.0 | Rechazar si ratio distancia/rival supera 3x |
+
+### Archivos de análisis
+- `analisis_falsos_positivos.py` — Script de diagnóstico
+- `falsos_positivos.csv` — Todas las 10,255 asignaciones con distancias
+- `falsos_positivos_detalle.csv` — 122 asignaciones sospechosas
+
+## Mejora adicional: caché de Overpass
+El script ahora guarda las respuestas de Overpass en `cache_overpass/` (JSON). En ejecuciones posteriores usa el caché en vez de re-descargar. Para forzar datos frescos, borrar la carpeta `cache_overpass/`.
+
 ## Próximos pasos
 
 - Subir `relaciones_con_paradas.osm` via JOSM (214 relaciones)
