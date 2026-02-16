@@ -96,10 +96,50 @@ Los headers se guardan automaticamente en el servidor de analytics.
 https://analytics.trujillo.trufi.dev/analytics-api/Logs?headerContains=x-origin-district&limit=100&offset=0
 ```
 
-**Parametros:**
-- `headerContains=x-origin-district` — filtra solo los requests que tienen nuestros headers de analytics
-- `limit` — cuantos registros traer
-- `offset` — desde que registro empezar (para paginacion)
+**Con filtro de fechas (ejemplo: ayer y hoy):**
+```
+https://analytics.trujillo.trufi.dev/analytics-api/Logs?headerContains=x-origin-district&from=2026-02-15T00:00:00Z&to=2026-02-16T23:59:59Z&limit=100&offset=0
+```
+
+**Todos los parametros disponibles para `/Logs`:**
+
+| Parametro | Tipo | Descripcion |
+|-----------|------|-------------|
+| `from` | fecha (`2026-02-15T00:00:00Z`) | Desde que fecha filtrar |
+| `to` | fecha (`2026-02-16T23:59:59Z`) | Hasta que fecha filtrar |
+| `headerContains` | texto | Filtrar por contenido en headers (ej: `x-origin-district`) |
+| `bodyContains` | texto | Filtrar por contenido en el body del request |
+| `search` | texto | Busqueda general |
+| `host` | texto | Filtrar por host (ej: `otp.trujillo.trufi.dev`) |
+| `method` | texto | Filtrar por metodo HTTP (ej: `POST`) |
+| `statusCode` | numero | Filtrar por codigo de respuesta (ej: `200`) |
+| `ip` | texto | Filtrar por IP del usuario |
+| `uriContains` | texto | Filtrar por contenido en la URL |
+| `deviceId` | texto | Filtrar por ID de dispositivo |
+| `limit` | numero | Cuantos registros traer (default: 100) |
+| `offset` | numero | Desde que registro empezar, para paginacion (default: 0) |
+
+### Otros endpoints utiles
+
+**Estadisticas generales:**
+```
+https://analytics.trujillo.trufi.dev/analytics-api/Stats?from=2026-02-15T00:00:00Z&to=2026-02-16T23:59:59Z
+```
+
+**Estadisticas por hora (para ver horarios pico):**
+```
+https://analytics.trujillo.trufi.dev/analytics-api/Stats/hourly?from=2026-02-15T00:00:00Z&to=2026-02-16T23:59:59Z
+```
+
+**Endpoints mas usados:**
+```
+https://analytics.trujillo.trufi.dev/analytics-api/Stats/endpoints?from=2026-02-15T00:00:00Z&to=2026-02-16T23:59:59Z&limit=20
+```
+
+**Dispositivos:**
+```
+https://analytics.trujillo.trufi.dev/analytics-api/Stats/devices?from=2026-02-15T00:00:00Z&to=2026-02-16T23:59:59Z&limit=20
+```
 
 **Documentacion Swagger (todos los endpoints disponibles):**
 ```
