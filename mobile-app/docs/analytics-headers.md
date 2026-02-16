@@ -97,7 +97,7 @@ https://analytics.trujillo.trufi.dev/analytics-api/Logs?headerContains=x-origin-
 ```
 
 **Parametros:**
-- `headerContains=x-` — filtra solo los requests que tienen nuestros headers
+- `headerContains=x-origin-district` — filtra solo los requests que tienen nuestros headers de analytics
 - `limit` — cuantos registros traer
 - `offset` — desde que registro empezar (para paginacion)
 
