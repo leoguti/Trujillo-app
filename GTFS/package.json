@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "cross-env": "^10.1.0",
-    "trufi-gtfs-builder": "github:trufi-association/trufi-gtfs-builder#v2.8.0"
+    "trufi-gtfs-builder": "github:trufi-association/trufi-gtfs-builder#v2.9.0"
   },
   "devDependencies": {
     "@types/node": "^20.0.0",
