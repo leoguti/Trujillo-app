@@ -11,22 +11,15 @@ import 'package:trufi_core_maps/trufi_core_maps.dart';
 import 'package:trufi_core_navigation/trufi_core_navigation.dart';
 import 'package:trufi_core_poi_layers/trufi_core_poi_layers.dart';
 import 'package:trufi_core_routing/trufi_core_routing.dart'
-    show
-        RoutingEngineManager,
-        IRoutingProvider,
-        Otp28RoutingProvider,
-        TrufiPlannerProvider,
-        TrufiPlannerConfig;
+    show RoutingEngineManager, IRoutingProvider, Otp28RoutingProvider;
 import 'package:trufi_core_saved_places/trufi_core_saved_places.dart';
+
+import 'services/analytics_header_provider.dart';
 import 'package:trufi_core_search_locations/trufi_core_search_locations.dart';
 import 'package:trufi_core_settings/trufi_core_settings.dart';
 import 'package:trufi_core_transport_list/trufi_core_transport_list.dart';
 import 'package:trufi_core_ui/trufi_core_ui.dart';
 import 'package:trufi_core_utils/trufi_core_utils.dart' show OverlayManager;
-
-// ============ CONFIGURATION ============
-const _photonUrl = 'https://photon.trujillo.trufi.dev';
-const _otpEndpoint = 'https://otp.trujillo.trufi.dev';
 
 const _defaultCenter = LatLng(-8.1116, -79.0288);
 const _appName = 'Trujillo Mobility';
@@ -40,19 +33,14 @@ const _xTwitterUrl = 'https://x.com/trufiapp';
 const _instagramUrl = 'https://instagram.com/trufiapp';
 const _mapsBaseUrl = 'https://maps.trujillo.trufi.dev';
 
+final _analyticsHeader = AnalyticsHeaderProvider();
+
 // Routing engines
 final List<IRoutingProvider> _routingEngines = [
-  // Offline routing via GTFS (mobile only)
-  if (!kIsWeb)
-    TrufiPlannerProvider(
-      config: const TrufiPlannerConfig.local(
-        gtfsAsset: 'assets/routing/trujillo.gtfs.zip',
-      ),
-    ),
-  // Online routing via OTP 2.8
-  const Otp28RoutingProvider(
-    endpoint: _otpEndpoint,
+  Otp28RoutingProvider(
+    endpoint: 'https://otp.trujillo.trufi.dev',
     displayName: 'OTP 2.8',
+    planHeaderProvider: _analyticsHeader.provider,
   ),
 ];
 
@@ -204,8 +192,7 @@ void main() {
       appName: _appName,
       deepLinkScheme: _deepLinkScheme,
       defaultLocale: const Locale('es'),
-      themeConfig: TrufiThemeConfig(
-      ),
+      themeConfig: TrufiThemeConfig(),
       socialMediaLinks: const [
         SocialMediaLink(
           url: _facebookUrl,
@@ -252,7 +239,7 @@ void main() {
         BlocProvider(
           create: (_) => SearchLocationsCubit(
             searchLocationService: PhotonSearchService(
-              baseUrl: _photonUrl,
+              baseUrl: 'https://photon.trujillo.trufi.dev',
               biasLatitude: _defaultCenter.latitude,
               biasLongitude: _defaultCenter.longitude,
             ),
@@ -307,9 +294,7 @@ void main() {
             ],
           ),
         ),
-        FeedbackTrufiScreen(
-          config: FeedbackConfig(feedbackUrl: _feedbackUrl),
-        ),
+        FeedbackTrufiScreen(config: FeedbackConfig(feedbackUrl: _feedbackUrl)),
         SettingsTrufiScreen(),
         AboutTrufiScreen(
           config: AboutScreenConfig(
