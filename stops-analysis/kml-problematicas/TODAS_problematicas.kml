@@ -1,0 +1,1882 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+  <name>TODAS las Paradas Problemáticas (231)</name>
+  <description>124 al lado izquierdo + 33 fuera de ruta + 74 duplicadas = 231 paradas descartadas</description>
+  <Style id="style_orange">
+    <IconStyle><color>ff1673f9</color><scale>1.0</scale>
+      <Icon><href>http://maps.google.com/mapfiles/kml/paddle/orange-blank.png</href></Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style_red">
+    <IconStyle><color>ff2626dc</color><scale>1.0</scale>
+      <Icon><href>http://maps.google.com/mapfiles/kml/paddle/red-blank.png</href></Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style_pink">
+    <IconStyle><color>ff994fec</color><scale>1.0</scale>
+      <Icon><href>http://maps.google.com/mapfiles/kml/paddle/pink-blank.png</href></Icon>
+    </IconStyle>
+  </Style>
+  <Folder>
+    <name>Lado Izquierdo (124)</name>
+    <description>Paradas al lado contrario del sentido de circulación</description>
+    <Placemark>
+      <name>PAT-133</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Consolidado<br/>GTFS cercano: PAT-128<br/>Distancia: 223.2m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.02032910699995,-8.057685056999958,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PAT-65</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Consolidado<br/>GTFS cercano: PAT-79<br/>Distancia: 158.1m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.02160755099999,-8.068996761999927,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PE-1</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Consolidado<br/>GTFS cercano: PE-280<br/>Distancia: 213.0m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.05901765099998,-8.051992577999954,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PE-109</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Consolidado<br/>GTFS cercano: Calle 11 y Calle los Geranios<br/>Distancia: 317.1m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.05011229399997,-8.053120391999926,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PE-152</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Consolidado<br/>GTFS cercano: PE-148<br/>Distancia: 271.0m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.06038561699995,-8.048900183999933,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PE-153</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Consolidado<br/>GTFS cercano: PE-147<br/>Distancia: 274.6m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.06272403599996,-8.047637426999927,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PE-154</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Consolidado<br/>GTFS cercano: PE-4<br/>Distancia: 240.7m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.06487627099995,-8.046516597999926,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PE-174</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Consolidado<br/>GTFS cercano: Avenida Pisacc<br/>Distancia: 137.5m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.07859655999994,-8.063959972999953,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PE-197</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Consolidado<br/>GTFS cercano: PE-44<br/>Distancia: 283.2m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.04913043299996,-8.071951214999956,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PE-199</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Consolidado<br/>GTFS cercano: PE-225<br/>Distancia: 174.8m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.04616247599995,-8.077263364999965,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PE-200</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Consolidado<br/>GTFS cercano: PE-306<br/>Distancia: 205.9m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.04468570199998,-8.079832213999964,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PE-211</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Consolidado<br/>GTFS cercano: PE-97<br/>Distancia: 232.7m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.05933128599997,-8.070973281999954,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PE-212</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Consolidado<br/>GTFS cercano: PE-215<br/>Distancia: 206.3m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.05833971099997,-8.073529833999942,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PE-218</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Consolidado<br/>GTFS cercano: PE-217<br/>Distancia: 286.3m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.05576914299996,-8.078439439999954,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PE-223</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Consolidado<br/>GTFS cercano: PE-44<br/>Distancia: 221.2m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.04912380299999,-8.072578047999968,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PE-224</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Consolidado<br/>GTFS cercano: PE-44<br/>Distancia: 160.0m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.04776460199997,-8.075678170999936,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PE-251</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Consolidado<br/>GTFS cercano: PE-256<br/>Distancia: 203.8m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.06271880599996,-8.071363307999945,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PE-279</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Consolidado<br/>GTFS cercano: PE-280<br/>Distancia: 450.8m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.06004679599994,-8.05711451299993,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PE-340</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Consolidado<br/>GTFS cercano: PAT-142<br/>Distancia: 346.4m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.03457008599997,-8.067949617999943,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PE-342</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Consolidado<br/>GTFS cercano: PAT-142<br/>Distancia: 487.3m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.03573445399996,-8.06668151499997,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PE-350</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Consolidado<br/>GTFS cercano: Calle las Azucenas y Calle los Rosales<br/>Distancia: 147.6m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.04356287299998,-8.06131817499994,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PE-6</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Consolidado<br/>GTFS cercano: Avenida Manuel Scorza y Jirón Álamos<br/>Distancia: 76.7m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.07020991799999,-8.045890141999962,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PE-7</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Consolidado<br/>GTFS cercano: Jirón Brasil<br/>Distancia: 197.8m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.07235953899999,-8.047731780999925,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PE-70</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Consolidado<br/>GTFS cercano: PE-227<br/>Distancia: 178.3m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.04898811099997,-8.057263232999958,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PE-71</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Consolidado<br/>GTFS cercano: PE-231<br/>Distancia: 62.9m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.04799449799998,-8.059992706999935,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PE-8</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Consolidado<br/>GTFS cercano: Jirón Brasil<br/>Distancia: 466.6m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.07440074899995,-8.049481666999952,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PE-93</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Consolidado<br/>GTFS cercano: PE-97<br/>Distancia: 261.0m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.05950457299997,-8.070569901999932,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PFM-1</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Consolidado<br/>GTFS cercano: MRFT-151<br/>Distancia: 320.9m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.01397719899995,-8.083099391999951,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PFM-20</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Consolidado<br/>GTFS cercano: PFM-69<br/>Distancia: 165.7m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.02948341199993,-8.081928967999943,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PFM-21</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Consolidado<br/>GTFS cercano: Calle 5 de Noviembre y Calle 9 de Octubre<br/>Distancia: 198.4m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.02558821399998,-8.081523652999977,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PFM-4</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Consolidado<br/>GTFS cercano: PE-328<br/>Distancia: 251.3m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.02999260499996,-8.08754391399998,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PFM-6</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Consolidado<br/>GTFS cercano: PP-186<br/>Distancia: 581.6m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.02025530699996,-8.076196908999975,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PFM-97</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Consolidado<br/>GTFS cercano: PFM-98<br/>Distancia: 194.2m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.02607201999996,-8.072669937999933,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PH-119</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Consolidado<br/>GTFS cercano: PH-118<br/>Distancia: 186.4m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.07162957899999,-8.017856653999957,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PH-122</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Consolidado<br/>GTFS cercano: Avenida Manuel Scorza y Jirón Álamos<br/>Distancia: 305.7m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.06686885599999,-8.045365467999943,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PH-138</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Consolidado<br/>GTFS cercano: Carretera Panamericana Norte<br/>Distancia: 360.0m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.07188610699995,-8.001605496999957,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PH-139</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Consolidado<br/>GTFS cercano: PH-101<br/>Distancia: 76.6m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.07049089799995,-8.005873313999928,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PH-28</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Consolidado<br/>GTFS cercano: Avenida la Paz<br/>Distancia: 264.2m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.11729523899999,-8.091876965999973,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PH-30</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Consolidado<br/>GTFS cercano: PH-31<br/>Distancia: 280.7m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.12195727399995,-8.086141515999941,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PH-43</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Consolidado<br/>GTFS cercano: PH-44<br/>Distancia: 341.9m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.11506531599997,-8.067293656999937,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PH-47</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Consolidado<br/>GTFS cercano: PH-81<br/>Distancia: 342.2m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.08868325999998,-8.08987160099997,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PH-64</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Consolidado<br/>GTFS cercano: PH-55<br/>Distancia: 385.2m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.06091898099999,-8.100513732999957,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PH-65</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Consolidado<br/>GTFS cercano: PH-55<br/>Distancia: 588.3m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.06271712199998,-8.10009496899994,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PH-67</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Consolidado<br/>GTFS cercano: PH-51<br/>Distancia: 432.2m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.06972717599996,-8.096954636999953,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PH-68</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Consolidado<br/>GTFS cercano: PH-51<br/>Distancia: 402.8m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.07606326199993,-8.09328661099994,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PH-69</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Consolidado<br/>GTFS cercano: PH-51<br/>Distancia: 907.4m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.08055404699996,-8.092357032999928,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PH-84</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Consolidado<br/>GTFS cercano: PH-87<br/>Distancia: 175.6m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.05330211299997,-8.088408752999953,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PH-85</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Consolidado<br/>GTFS cercano: PE-245<br/>Distancia: 407.2m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.05265632199996,-8.085896294999941,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PH-86</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Consolidado<br/>GTFS cercano: PH-87<br/>Distancia: 274.0m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.05317372799993,-8.08751858599993,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PP-10</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Consolidado<br/>GTFS cercano: PP-169<br/>Distancia: 191.5m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-78.99053666999998,-8.071441457999981,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PP-124</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Consolidado<br/>GTFS cercano: PP-128<br/>Distancia: 233.7m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.00772371099998,-8.073916624999981,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PP-136</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Consolidado<br/>GTFS cercano: PP-132<br/>Distancia: 322.1m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.01269691499994,-8.070254399999953,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PP-15</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Consolidado<br/>GTFS cercano: PP-163<br/>Distancia: 271.0m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-78.99151118999998,-8.074067188999948,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PP-162</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Consolidado<br/>GTFS cercano: PP-163<br/>Distancia: 344.3m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-78.99633169699996,-8.07442944199994,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PP-180</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Consolidado<br/>GTFS cercano: PP-186<br/>Distancia: 352.2m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.02081900899998,-8.072919236999951,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PP-188</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Consolidado<br/>GTFS cercano: PP-186<br/>Distancia: 203.4m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.01980277399997,-8.071700605999979,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PP-190</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Consolidado<br/>GTFS cercano: Avenida las Magnolias y Calle San Nicolas<br/>Distancia: 63.1m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.01578522399996,-8.070834642999955,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PP-33</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Consolidado<br/>GTFS cercano: PP-163<br/>Distancia: 335.0m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-78.99599612999998,-8.077214439999977,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PP-38</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Consolidado<br/>GTFS cercano: PP-90<br/>Distancia: 375.5m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-78.99898134799997,-8.07628159099994,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PP-45</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Consolidado<br/>GTFS cercano: PP-49<br/>Distancia: 269.6m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.00106522599998,-8.082941693999942,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PP-8</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Consolidado<br/>GTFS cercano: Calle Villalonga<br/>Distancia: 125.5m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-78.99504549399995,-8.06486450999995,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PVL-18</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: DATA SET Victor Larco.csv Events<br/>GTFS cercano: Avenida Victor Larco Herrera<br/>Distancia: 215.9m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.05454471623757,-8.142711489055353,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PVL-22</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: DATA SET Victor Larco.csv Events<br/>GTFS cercano: RENIEC<br/>Distancia: 284.2m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.04502628757542,-8.134755643569827,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PVL-39</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: DATA SET Victor Larco.csv Events<br/>GTFS cercano: RENIEC<br/>Distancia: 185.0m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.04847993256817,-8.13315308419567,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PL-30</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: LAREDO<br/>GTFS cercano: PL-53<br/>Distancia: 129.7m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-78.95667928984831,-8.084703170378825,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PL-34</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: LAREDO<br/>GTFS cercano: PL-40<br/>Distancia: 169.2m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-78.95296778301514,-8.083145987642427,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PL-54</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: LAREDO<br/>GTFS cercano: Calle Virgen de la Puerta<br/>Distancia: 56.5m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-78.94648935039744,-8.075516218065731,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PL-9</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: LAREDO<br/>GTFS cercano: PL-40<br/>Distancia: 93.2m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-78.95343232899975,-8.082529304375482,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PM-119</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Moche<br/>GTFS cercano: EV-539<br/>Distancia: 141.9m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.00462873651374,-8.121648832400174,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PM-14</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Moche<br/>GTFS cercano: Calle Miguiel Graú<br/>Distancia: 77.6m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.00611340664048,-8.187716020118089,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PM-3</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Moche<br/>GTFS cercano: PM-22<br/>Distancia: 168.8m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.00806065512151,-8.170228997270593,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PS-22</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Paraderos_Salaverry<br/>GTFS cercano: PS-48<br/>Distancia: 440.0m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-78.9791032313949,-8.218379562677615,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PS-24</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Paraderos_Salaverry<br/>GTFS cercano: PS-44<br/>Distancia: 787.8m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-78.97707983961521,-8.223534229371117,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PS-46</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Paraderos_Salaverry<br/>GTFS cercano: PS-48<br/>Distancia: 531.5m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-78.97643107813845,-8.219389662806526,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PS-69</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Paraderos_Salaverry<br/>GTFS cercano: Avenida Abelardo Quiñones y Calle Santa Rosa<br/>Distancia: 186.2m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-78.98511316808431,-8.186467630840797,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>AMA-463</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Puntos_Paraderos<br/>GTFS cercano: AMA-462<br/>Distancia: 209.5m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.02313177192765,-8.10402380297522,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>AMEO-81</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Puntos_Paraderos<br/>GTFS cercano: AMEO-82<br/>Distancia: 110.4m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.04038256799228,-8.095428823935096,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>AMN-24</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Puntos_Paraderos<br/>GTFS cercano: AMN-23<br/>Distancia: 184.4m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.03130974202602,-8.099789055103814,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>AMS-38</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Puntos_Paraderos<br/>GTFS cercano: LAM-414<br/>Distancia: 121.3m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.02394105089095,-8.12430740701776,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>AMS-42</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Puntos_Paraderos<br/>GTFS cercano: JPT-134<br/>Distancia: 154.0m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.0398918129657,-8.120890036957732,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ANBE-376</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Puntos_Paraderos<br/>GTFS cercano: BLPAS-447<br/>Distancia: 442.0m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.00748502101933,-8.108663135777787,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>CAR-533</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Puntos_Paraderos<br/>GTFS cercano: PE-238<br/>Distancia: 130.7m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.021373762107,-8.105069598777952,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>COSR-334</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Puntos_Paraderos<br/>GTFS cercano: JUL-435<br/>Distancia: 347.1m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.0283240896964,-8.122055065882252,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>COVIC-431</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Puntos_Paraderos<br/>GTFS cercano: JEN-148<br/>Distancia: 196.2m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.04559518810602,-8.109099614626327,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>COVIC-432</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Puntos_Paraderos<br/>GTFS cercano: JEN-148<br/>Distancia: 176.7m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.04427289310738,-8.109148135870392,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>CTC-475</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Puntos_Paraderos<br/>GTFS cercano: HOND-314<br/>Distancia: 187.6m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.0041507065269,-8.104700605473532,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>EGR-261</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Puntos_Paraderos<br/>GTFS cercano: AMS-41<br/>Distancia: 180.9m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.01633497278675,-8.11387762994138,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>EGR-264</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Puntos_Paraderos<br/>GTFS cercano: CEV-183<br/>Distancia: 151.1m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.0193179744157,-8.111320100606521,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ESP-7</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Puntos_Paraderos<br/>GTFS cercano: ESP-6<br/>Distancia: 61.1m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.02828991335447,-8.116501781092737,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>FEVI-211</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Puntos_Paraderos<br/>GTFS cercano: CTC-477<br/>Distancia: 100.0m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.00318410545437,-8.10188220032884,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>FEVI-221</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Puntos_Paraderos<br/>GTFS cercano: FEVI-222<br/>Distancia: 122.8m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.01615233314547,-8.093457741615202,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>FEVI-223</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Puntos_Paraderos<br/>GTFS cercano: FEVI-222<br/>Distancia: 184.8m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.01383615890094,-8.094983656785251,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>FRAZ-422</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Puntos_Paraderos<br/>GTFS cercano: Jirón Francisco de Zela<br/>Distancia: 233.4m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.01835802195403,-8.115265679182626,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>JEN-143</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Puntos_Paraderos<br/>GTFS cercano: JEN-144<br/>Distancia: 87.4m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.03890811124936,-8.109528460990777,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>JEN-149</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Puntos_Paraderos<br/>GTFS cercano: JEN-148<br/>Distancia: 167.4m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.04604613355767,-8.107005746551557,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>JOIN-464</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Puntos_Paraderos<br/>GTFS cercano: VF-479<br/>Distancia: 97.0m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.02074988683836,-8.126935204390959,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>JUL-437</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Puntos_Paraderos<br/>GTFS cercano: JUL-435<br/>Distancia: 105.0m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.02562080495754,-8.120033947960323,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>LUSE-500</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Puntos_Paraderos<br/>GTFS cercano: BLPAS-448<br/>Distancia: 118.2m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.00859278092238,-8.103083454400998,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MANT-102</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Puntos_Paraderos<br/>GTFS cercano: MANT-107<br/>Distancia: 237.0m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.03928976296328,-8.102827347563213,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MANT-104</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Puntos_Paraderos<br/>GTFS cercano: MANT-110<br/>Distancia: 101.6m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.0519868773742,-8.100805701888435,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MANT-109</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Puntos_Paraderos<br/>GTFS cercano: MANT-108<br/>Distancia: 56.9m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.04367026945685,-8.101625094399843,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MANT-112</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Puntos_Paraderos<br/>GTFS cercano: MANT-110<br/>Distancia: 272.6m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.05354039418275,-8.100868799383191,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MI-503</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Puntos_Paraderos<br/>GTFS cercano: VF-479<br/>Distancia: 158.2m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.01895179907032,-8.127754960683337,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MRFT-156</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Puntos_Paraderos<br/>GTFS cercano: FEVI-219<br/>Distancia: 201.8m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.01824034363196,-8.09299269071651,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MRFT-164</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Puntos_Paraderos<br/>GTFS cercano: ESP-12<br/>Distancia: 343.9m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.02346199658898,-8.102700375530713,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MRFT-165</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Puntos_Paraderos<br/>GTFS cercano: ESP-13<br/>Distancia: 311.5m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.02373753805652,-8.102952670066784,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PEMU-344</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Puntos_Paraderos<br/>GTFS cercano: PEMU-342<br/>Distancia: 254.2m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.0392155582395,-8.107097443962274,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PLUN-294</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Puntos_Paraderos<br/>GTFS cercano: CEV-189<br/>Distancia: 623.4m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.00535810694137,-8.088212185768073,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PSAN-275</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Puntos_Paraderos<br/>GTFS cercano: MRFT-151<br/>Distancia: 401.7m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.01124545505535,-8.086954105009037,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RASAN-471</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Puntos_Paraderos<br/>GTFS cercano: RIP-324<br/>Distancia: 433.8m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.00628138346849,-8.109230397441308,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RIP-321</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Puntos_Paraderos<br/>GTFS cercano: RIP-319<br/>Distancia: 273.4m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.00564764499032,-8.112227216734075,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RIP-326</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Puntos_Paraderos<br/>GTFS cercano: CARW-307<br/>Distancia: 212.3m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.01076704339654,-8.113020727645344,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RIP-328</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Puntos_Paraderos<br/>GTFS cercano: AMS-61<br/>Distancia: 75.9m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.01368632754348,-8.112703588593256,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ROM-372</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Puntos_Paraderos<br/>GTFS cercano: PEMU-342<br/>Distancia: 128.8m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.03735444303688,-8.108971161763579,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>S-537</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Puntos_Paraderos<br/>GTFS cercano: Jirón Francisco de Zela<br/>Distancia: 263.2m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.01814391307515,-8.114656036734269,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SALV-502</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Puntos_Paraderos<br/>GTFS cercano: ROM-370<br/>Distancia: 103.7m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.03538846686878,-8.10638691804342,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SAN-267</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Puntos_Paraderos<br/>GTFS cercano: Avenida América Norte y Avenida Prolongación Santa<br/>Distancia: 187.5m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.01694522806967,-8.099210232467179,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SAN-272</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Puntos_Paraderos<br/>GTFS cercano: AMA-462<br/>Distancia: 181.3m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.02146033810136,-8.10454125216543,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SOCR-498</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Puntos_Paraderos<br/>GTFS cercano: BLPAS-447<br/>Distancia: 177.0m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.00725703615896,-8.103190003201812,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>TCH-496</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Puntos_Paraderos<br/>GTFS cercano: FERMO-481<br/>Distancia: 145.4m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.01711012972132,-8.120674958151142,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>TCH-497</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Puntos_Paraderos<br/>GTFS cercano: FERMO-481<br/>Distancia: 266.8m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.01840127902189,-8.121714841058532,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>TUPAT-115</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Puntos_Paraderos<br/>GTFS cercano: SALVLA-302<br/>Distancia: 345.6m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.025380042335,-8.101685798685752,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>TUPAT-118</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Puntos_Paraderos<br/>GTFS cercano: AMN-23<br/>Distancia: 339.1m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.02767387265908,-8.099440541775115,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>TUPAT-123</name>
+      <description><![CDATA[PROBLEMA: Lado izquierdo de la vía<br/>Capa: Puntos_Paraderos<br/>GTFS cercano: PACALS-90<br/>Distancia: 110.3m]]></description>
+      <styleUrl>#style_orange</styleUrl>
+      <Point>
+        <coordinates>-79.03541553652646,-8.092055964266027,0</coordinates>
+      </Point>
+    </Placemark>
+  </Folder>
+  <Folder>
+    <name>Fuera de Ruta (33)</name>
+    <description>Paradas a más de 20m de cualquier ruta</description>
+    <Placemark>
+      <name>PE-19</name>
+      <description><![CDATA[PROBLEMA: Fuera de toda ruta<br/>Capa: Consolidado<br/>GTFS cercano: Avenida José Faustino Sánchez Carrión y Jirón Brasil<br/>Distancia: 167.7m]]></description>
+      <styleUrl>#style_red</styleUrl>
+      <Point>
+        <coordinates>-79.06937411599995,-8.051161129999969,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PE-20</name>
+      <description><![CDATA[PROBLEMA: Fuera de toda ruta<br/>Capa: Consolidado<br/>GTFS cercano: Avenida José Faustino Sánchez Carrión<br/>Distancia: 104.2m]]></description>
+      <styleUrl>#style_red</styleUrl>
+      <Point>
+        <coordinates>-79.07079378999998,-8.053801316999966,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PE-21</name>
+      <description><![CDATA[PROBLEMA: Fuera de toda ruta<br/>Capa: Consolidado<br/>GTFS cercano: Avenida José Faustino Sánchez Carrión<br/>Distancia: 419.9m]]></description>
+      <styleUrl>#style_red</styleUrl>
+      <Point>
+        <coordinates>-79.07210802499998,-8.056347961999961,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PE-236</name>
+      <description><![CDATA[PROBLEMA: Fuera de toda ruta<br/>Capa: Consolidado<br/>GTFS cercano: PE-276<br/>Distancia: 392.8m]]></description>
+      <styleUrl>#style_red</styleUrl>
+      <Point>
+        <coordinates>-79.05737732999995,-8.04598928699994,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PH-105</name>
+      <description><![CDATA[PROBLEMA: Fuera de toda ruta<br/>Capa: Consolidado<br/>GTFS cercano: Avenida Miguel Grau<br/>Distancia: 156.0m]]></description>
+      <styleUrl>#style_red</styleUrl>
+      <Point>
+        <coordinates>-79.06882948699996,-8.011867977999941,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PH-134</name>
+      <description><![CDATA[PROBLEMA: Fuera de toda ruta<br/>Capa: Consolidado<br/>GTFS cercano: PH-135<br/>Distancia: 483.8m]]></description>
+      <styleUrl>#style_red</styleUrl>
+      <Point>
+        <coordinates>-79.05996179499994,-8.03799254699993,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PH-16</name>
+      <description><![CDATA[PROBLEMA: Fuera de toda ruta<br/>Capa: Consolidado<br/>GTFS cercano: PH-15<br/>Distancia: 792.9m]]></description>
+      <styleUrl>#style_red</styleUrl>
+      <Point>
+        <coordinates>-79.10534182099997,-8.09273066299994,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PP-160</name>
+      <description><![CDATA[PROBLEMA: Fuera de toda ruta<br/>Capa: Consolidado<br/>GTFS cercano: Calle Andres Razuri y Calle San Martin<br/>Distancia: 193.6m]]></description>
+      <styleUrl>#style_red</styleUrl>
+      <Point>
+        <coordinates>-78.99415213699996,-8.066611829999943,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PL-10</name>
+      <description><![CDATA[PROBLEMA: Fuera de toda ruta<br/>Capa: LAREDO<br/>GTFS cercano: PL-50<br/>Distancia: 309.8m]]></description>
+      <styleUrl>#style_red</styleUrl>
+      <Point>
+        <coordinates>-78.9582071306674,-8.088633871447582,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PL-12</name>
+      <description><![CDATA[PROBLEMA: Fuera de toda ruta<br/>Capa: LAREDO<br/>GTFS cercano: Avenida Luis Condemarín y Avenida Carlos Larco Cox<br/>Distancia: 132.0m]]></description>
+      <styleUrl>#style_red</styleUrl>
+      <Point>
+        <coordinates>-78.96149738284053,-8.084476421071155,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PL-2</name>
+      <description><![CDATA[PROBLEMA: Fuera de toda ruta<br/>Capa: LAREDO<br/>GTFS cercano: PL-47<br/>Distancia: 240.2m]]></description>
+      <styleUrl>#style_red</styleUrl>
+      <Point>
+        <coordinates>-78.95904944597186,-8.090295423802589,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PL-3</name>
+      <description><![CDATA[PROBLEMA: Fuera de toda ruta<br/>Capa: LAREDO<br/>GTFS cercano: PL-24<br/>Distancia: 221.4m]]></description>
+      <styleUrl>#style_red</styleUrl>
+      <Point>
+        <coordinates>-78.9497272738537,-8.077213098483597,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PL-36</name>
+      <description><![CDATA[PROBLEMA: Fuera de toda ruta<br/>Capa: LAREDO<br/>GTFS cercano: PL-47<br/>Distancia: 234.9m]]></description>
+      <styleUrl>#style_red</styleUrl>
+      <Point>
+        <coordinates>-78.95920823445438,-8.09120168764514,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PL-52</name>
+      <description><![CDATA[PROBLEMA: Fuera de toda ruta<br/>Capa: LAREDO<br/>GTFS cercano: PL-67<br/>Distancia: 142.2m]]></description>
+      <styleUrl>#style_red</styleUrl>
+      <Point>
+        <coordinates>-78.95688084924227,-8.081681460594796,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PL-98</name>
+      <description><![CDATA[PROBLEMA: Fuera de toda ruta<br/>Capa: LAREDO<br/>GTFS cercano: PL-106<br/>Distancia: 56.4m]]></description>
+      <styleUrl>#style_red</styleUrl>
+      <Point>
+        <coordinates>-78.9869553761363,-8.107589942228104,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PM-118</name>
+      <description><![CDATA[PROBLEMA: Fuera de toda ruta<br/>Capa: Moche<br/>GTFS cercano: PM-117<br/>Distancia: 94.8m]]></description>
+      <styleUrl>#style_red</styleUrl>
+      <Point>
+        <coordinates>-79.00367298119096,-8.120062145553536,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PM-123</name>
+      <description><![CDATA[PROBLEMA: Fuera de toda ruta<br/>Capa: Moche<br/>GTFS cercano: PM-121<br/>Distancia: 127.2m]]></description>
+      <styleUrl>#style_red</styleUrl>
+      <Point>
+        <coordinates>-79.01915706225888,-8.134886683660813,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PM-13</name>
+      <description><![CDATA[PROBLEMA: Fuera de toda ruta<br/>Capa: Moche<br/>GTFS cercano: PM-86<br/>Distancia: 409.1m]]></description>
+      <styleUrl>#style_red</styleUrl>
+      <Point>
+        <coordinates>-79.01037376730777,-8.184296531788949,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PM-49</name>
+      <description><![CDATA[PROBLEMA: Fuera de toda ruta<br/>Capa: Moche<br/>GTFS cercano: PM-43<br/>Distancia: 125.8m]]></description>
+      <styleUrl>#style_red</styleUrl>
+      <Point>
+        <coordinates>-79.01077500705118,-8.16497026611034,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PM-75</name>
+      <description><![CDATA[PROBLEMA: Fuera de toda ruta<br/>Capa: Moche<br/>GTFS cercano: PM-33<br/>Distancia: 407.4m]]></description>
+      <styleUrl>#style_red</styleUrl>
+      <Point>
+        <coordinates>-78.99801010017882,-8.14069862888839,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PM-79</name>
+      <description><![CDATA[PROBLEMA: Fuera de toda ruta<br/>Capa: Moche<br/>GTFS cercano: PM-78<br/>Distancia: 267.4m]]></description>
+      <styleUrl>#style_red</styleUrl>
+      <Point>
+        <coordinates>-78.9971237696658,-8.131978535680771,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PM-99</name>
+      <description><![CDATA[PROBLEMA: Fuera de toda ruta<br/>Capa: Moche<br/>GTFS cercano: PS-64<br/>Distancia: 90.2m]]></description>
+      <styleUrl>#style_red</styleUrl>
+      <Point>
+        <coordinates>-78.9788048130795,-8.187970604405741,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PM-SC-02</name>
+      <description><![CDATA[PROBLEMA: Fuera de toda ruta<br/>Capa: Moche<br/>GTFS cercano: PM-121<br/>Distancia: 641.5m]]></description>
+      <styleUrl>#style_red</styleUrl>
+      <Point>
+        <coordinates>-79.01432253258189,-8.137453406125088,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PM-SC5</name>
+      <description><![CDATA[PROBLEMA: Fuera de toda ruta<br/>Capa: Moche<br/>GTFS cercano: PM-93<br/>Distancia: 74.2m]]></description>
+      <styleUrl>#style_red</styleUrl>
+      <Point>
+        <coordinates>-78.9859706931058,-8.183088228117057,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PS-16</name>
+      <description><![CDATA[PROBLEMA: Fuera de toda ruta<br/>Capa: Paraderos_Salaverry<br/>GTFS cercano: PS-56<br/>Distancia: 868.8m]]></description>
+      <styleUrl>#style_red</styleUrl>
+      <Point>
+        <coordinates>-78.98674757166434,-8.201101976890724,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PS-17</name>
+      <description><![CDATA[PROBLEMA: Fuera de toda ruta<br/>Capa: Paraderos_Salaverry<br/>GTFS cercano: PS-51<br/>Distancia: 497.5m]]></description>
+      <styleUrl>#style_red</styleUrl>
+      <Point>
+        <coordinates>-78.98474104336047,-8.204651064751591,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PS-30</name>
+      <description><![CDATA[PROBLEMA: Fuera de toda ruta<br/>Capa: Paraderos_Salaverry<br/>GTFS cercano: PS-29<br/>Distancia: 354.6m]]></description>
+      <styleUrl>#style_red</styleUrl>
+      <Point>
+        <coordinates>-78.9764171469118,-8.189927177377594,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PS-5</name>
+      <description><![CDATA[PROBLEMA: Fuera de toda ruta<br/>Capa: Paraderos_Salaverry<br/>GTFS cercano: PM-100<br/>Distancia: 68.2m]]></description>
+      <styleUrl>#style_red</styleUrl>
+      <Point>
+        <coordinates>-78.9816137806032,-8.187065912166437,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PS-62</name>
+      <description><![CDATA[PROBLEMA: Fuera de toda ruta<br/>Capa: Paraderos_Salaverry<br/>GTFS cercano: PS-29<br/>Distancia: 58.4m]]></description>
+      <styleUrl>#style_red</styleUrl>
+      <Point>
+        <coordinates>-78.97460416294365,-8.19239818131062,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PS-63</name>
+      <description><![CDATA[PROBLEMA: Fuera de toda ruta<br/>Capa: Paraderos_Salaverry<br/>GTFS cercano: PS-64<br/>Distancia: 343.2m]]></description>
+      <styleUrl>#style_red</styleUrl>
+      <Point>
+        <coordinates>-78.97734504092816,-8.190383821937157,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PESQT-408</name>
+      <description><![CDATA[PROBLEMA: Fuera de toda ruta<br/>Capa: Puntos_Paraderos<br/>GTFS cercano: PLUN-291<br/>Distancia: 597.5m]]></description>
+      <styleUrl>#style_red</styleUrl>
+      <Point>
+        <coordinates>-79.00585558243753,-8.089985991405921,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PROSAC-441</name>
+      <description><![CDATA[PROBLEMA: Fuera de toda ruta<br/>Capa: Puntos_Paraderos<br/>GTFS cercano: CEV-189<br/>Distancia: 319.5m]]></description>
+      <styleUrl>#style_red</styleUrl>
+      <Point>
+        <coordinates>-79.00228321856864,-8.08763718107549,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PROSAC-442</name>
+      <description><![CDATA[PROBLEMA: Fuera de toda ruta<br/>Capa: Puntos_Paraderos<br/>GTFS cercano: CEV-187<br/>Distancia: 419.5m]]></description>
+      <styleUrl>#style_red</styleUrl>
+      <Point>
+        <coordinates>-79.00316130783946,-8.090827124914474,0</coordinates>
+      </Point>
+    </Placemark>
+  </Folder>
+  <Folder>
+    <name>Duplicadas (74)</name>
+    <description>Paradas a menos de 20m de otra parada sin vía de por medio</description>
+    <Placemark>
+      <name>PE-222</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: Consolidado<br/>Duplicado de: PE-85<br/>Distancia: 12.8m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-79.05265308899999,-8.075489923999953,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>AVOC-452</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: Puntos_Paraderos<br/>Duplicado de: AVOC-453<br/>Distancia: 15.1m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-79.02451931148909,-8.091412945016373,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>AVOC-453</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: Puntos_Paraderos<br/>Duplicado de: AVOC-452<br/>Distancia: 15.1m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-79.0245237537281,-8.09154943008169,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Prolongación Avenida 12 de Noviembre</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: <br/>Duplicado de: Prolongación Avenida 12 de Noviembre<br/>Distancia: 8.6m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-79.0225101,-8.0637021,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PL-40</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: LAREDO<br/>Duplicado de: PL-18<br/>Distancia: 18.3m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-78.95424854395837,-8.082305168143714,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Prolongación Avenida 12 de Noviembre</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: <br/>Duplicado de: Prolongación Avenida 12 de Noviembre<br/>Distancia: 8.6m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-79.0225872,-8.0637159,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PE-245</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: Puntos_Paraderos<br/>Duplicado de: AMN-16<br/>Distancia: 19.5m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-79.01383951712717,-8.099314046910184,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Avenida las Magnolias y Calle San Nicolas</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: <br/>Duplicado de: Avenida las Magnolias y Calle San Nicolas<br/>Distancia: 9.1m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-79.0163343,-8.0710228,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Avenida las Magnolias y Calle San Nicolas</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: <br/>Duplicado de: Avenida las Magnolias y Calle San Nicolas<br/>Distancia: 9.1m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-79.0163485,-8.0709414,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PFM-57</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: Consolidado<br/>Duplicado de: PFM-58<br/>Distancia: 10.0m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-79.01710327899997,-8.076215641999966,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PFM-58</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: Consolidado<br/>Duplicado de: PFM-57<br/>Distancia: 10.0m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-79.01715289099997,-8.076291829999946,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Carretera Panamericana Norte</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: <br/>Duplicado de: Carretera Panamericana Norte<br/>Distancia: 9.7m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-79.0857735,-8.0467316,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Carretera Panamericana Norte</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: <br/>Duplicado de: Carretera Panamericana Norte<br/>Distancia: 9.7m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-79.0856919,-8.0467635,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PAT-78</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: Consolidado<br/>Duplicado de: PAT-79<br/>Distancia: 11.0m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-79.02056861899996,-8.068163847999926,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PAT-79</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: Consolidado<br/>Duplicado de: PAT-78<br/>Distancia: 11.0m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-79.02048376399995,-8.068111690999956,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PFM-74</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: Consolidado<br/>Duplicado de: PFM-75<br/>Distancia: 10.4m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-79.02140653999999,-8.084097458999963,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PFM-75</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: Consolidado<br/>Duplicado de: PFM-74<br/>Distancia: 10.4m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-79.02146749399998,-8.084025973999928,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PH-35</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: Consolidado<br/>Duplicado de: PH-4<br/>Distancia: 12.3m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-79.11495270399996,-8.081667466999932,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PE-287</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: Consolidado<br/>Duplicado de: PE-291<br/>Distancia: 18.4m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-79.03751287599994,-8.08040633099995,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PH-4</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: Consolidado<br/>Duplicado de: PH-35<br/>Distancia: 12.3m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-79.11505339599995,-8.081620313999963,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PE-291</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: Consolidado<br/>Duplicado de: PE-287<br/>Distancia: 18.4m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-79.03738682299996,-8.080297918999975,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PP-31</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: Consolidado<br/>Duplicado de: PP-120<br/>Distancia: 10.5m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-78.99983188099998,-8.077897769999936,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PE-31</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: Consolidado<br/>Duplicado de: PE-157<br/>Distancia: 11.1m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-79.07695485899995,-8.065914603999943,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Jirón las Ficus y Calle los Girasoles</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: <br/>Duplicado de: Calle los Girasoles<br/>Distancia: 11.4m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-79.0530435,-8.1343542,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PE-215</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: Consolidado<br/>Duplicado de: PE-95<br/>Distancia: 12.7m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-79.05984812799994,-8.074630320999972,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PP-116</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: Consolidado<br/>Duplicado de: PP-117<br/>Distancia: 11.8m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-79.00192523499999,-8.078690974999972,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PP-117</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: Consolidado<br/>Duplicado de: PP-116<br/>Distancia: 11.8m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-79.00184221899997,-8.078623138999944,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PP-93</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: Consolidado<br/>Duplicado de: PP-94<br/>Distancia: 11.8m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-79.00397180799996,-8.07921803399995,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PP-121</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: Consolidado<br/>Duplicado de: PP-30<br/>Distancia: 19.8m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-79.00344278299997,-8.07855686299996,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PP-94</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: Consolidado<br/>Duplicado de: PP-93<br/>Distancia: 11.8m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-79.00400245299994,-8.079115893999926,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PH-156</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: Consolidado<br/>Duplicado de: PH-157<br/>Distancia: 11.8m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-79.07295514299994,-8.040465964999953,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PH-157</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: Consolidado<br/>Duplicado de: PH-156<br/>Distancia: 11.8m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-79.07306173499995,-8.04045786699993,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Calle los Girasoles</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: <br/>Duplicado de: Jirón las Ficus y Calle los Girasoles<br/>Distancia: 11.4m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-79.0531214,-8.1342863,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Avenida Libertad</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: <br/>Duplicado de: Avenida Libertad y Calle Chanchani<br/>Distancia: 8.5m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-78.995111,-8.0894982,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PH-160</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: Consolidado<br/>Duplicado de: PH-161<br/>Distancia: 11.7m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-79.06168216199995,-8.03100133199996,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PH-161</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: Consolidado<br/>Duplicado de: PH-160<br/>Distancia: 11.7m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-79.06166362799996,-8.03110513799993,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>EV-539</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: Puntos_Paraderos<br/>Duplicado de: EV-545<br/>Distancia: 14.8m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-79.00579490586895,-8.121105159270424,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>EV-545</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: Puntos_Paraderos<br/>Duplicado de: EV-539<br/>Distancia: 14.8m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-79.00566860242444,-8.12115027454816,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PH-107</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: Consolidado<br/>Duplicado de: PH-142<br/>Distancia: 14.9m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-79.07267767399998,-8.016140201999974,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PH-142</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: Consolidado<br/>Duplicado de: PH-107<br/>Distancia: 14.9m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-79.07279805499996,-8.016078457999981,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PP-21</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: Consolidado<br/>Duplicado de: PP-89<br/>Distancia: 12.2m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-79.00654512999995,-8.079895595999972,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Avenida Libertad y Calle Chanchani</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: <br/>Duplicado de: Avenida Libertad<br/>Distancia: 8.5m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-78.9950362,-8.0895175,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PE-54</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: Consolidado<br/>Duplicado de: PE-183<br/>Distancia: 14.5m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-79.04710101699999,-8.069721492999975,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PP-30</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: Consolidado<br/>Duplicado de: PP-121<br/>Distancia: 19.8m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-79.00326313699998,-8.07855266799993,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PE-157</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: Consolidado<br/>Duplicado de: PE-31<br/>Distancia: 11.1m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-79.07696897899996,-8.06581521499993,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PE-285</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: Consolidado<br/>Duplicado de: PE-289<br/>Distancia: 10.8m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-79.04323741699994,-8.08364611899998,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PE-289</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: Consolidado<br/>Duplicado de: PE-285<br/>Distancia: 10.8m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-79.04315603999999,-8.083591486999978,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PE-210</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: Consolidado<br/>Duplicado de: PE-92<br/>Distancia: 17.9m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-79.06060083599994,-8.067323622999936,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PL-82</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: LAREDO<br/>Duplicado de: PL-83<br/>Distancia: 17.4m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-78.95050352758841,-8.07163010704232,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PVL-4</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: DATA SET Victor Larco.csv Events<br/>Duplicado de: PVL-SC2<br/>Distancia: 15.2m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-79.0572426852635,-8.141083515498957,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PE-63</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: Consolidado<br/>Duplicado de: PE-195<br/>Distancia: 15.8m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-79.04575683199994,-8.070545866999964,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PE-65</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: Consolidado<br/>Duplicado de: PE-178<br/>Distancia: 18.6m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-79.04317728299998,-8.075377535999962,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PM-29</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: Moche<br/>Duplicado de: PM-68<br/>Distancia: 14.7m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-79.01033100592541,-8.149550710080813,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PP-89</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: Consolidado<br/>Duplicado de: PP-21<br/>Distancia: 12.2m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-79.00646339299999,-8.079820696999946,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PVL-SC2</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: DATA SET Victor Larco.csv Events<br/>Duplicado de: PVL-4<br/>Distancia: 15.2m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-79.05714143017637,-8.14117678046526,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PM-68</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: Moche<br/>Duplicado de: PM-29<br/>Distancia: 14.7m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-79.01037665684365,-8.149675951281537,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PE-85</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: Consolidado<br/>Duplicado de: PE-222<br/>Distancia: 12.8m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-79.05267559199996,-8.075376138999957,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>AMN-16</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: Puntos_Paraderos<br/>Duplicado de: PE-245<br/>Distancia: 19.5m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-79.01385795439307,-8.099488975250042,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PL-83</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: LAREDO<br/>Duplicado de: PL-82<br/>Distancia: 17.4m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-78.95036838607054,-8.071549318426008,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PE-92</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: Consolidado<br/>Duplicado de: PE-210<br/>Distancia: 17.9m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-79.06062198299998,-8.067484390999937,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PE-178</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: Consolidado<br/>Duplicado de: PE-65<br/>Distancia: 18.6m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-79.04312774399995,-8.075538562999952,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PE-183</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: Consolidado<br/>Duplicado de: PE-54<br/>Distancia: 14.5m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-79.04719338199999,-8.069628382999952,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Carretera Panamericana Norte</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: <br/>Duplicado de: Carretera Panamericana Norte<br/>Distancia: 19.9m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-79.075065,-7.9920742,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Carretera Panamericana Norte</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: <br/>Duplicado de: Carretera Panamericana Norte<br/>Distancia: 19.9m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-79.0749009,-7.9919999,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PE-95</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: Consolidado<br/>Duplicado de: PE-215<br/>Distancia: 12.7m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-79.05973471899995,-8.074650584999972,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PFM-13</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: Consolidado<br/>Duplicado de: PFM-14<br/>Distancia: 10.4m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-79.02388619299995,-8.08592111799993,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PFM-14</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: Consolidado<br/>Duplicado de: PFM-13<br/>Distancia: 10.4m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-79.02392697199997,-8.085836173999951,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PE-195</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: Consolidado<br/>Duplicado de: PE-63<br/>Distancia: 15.8m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-79.04586833699994,-8.070455967999976,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Avenida Libertad</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: <br/>Duplicado de: Avenida Libertad<br/>Distancia: 7.3m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-79.057299,-8.1385614,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Avenida Libertad</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: <br/>Duplicado de: Avenida Libertad<br/>Distancia: 7.3m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-79.0572438,-8.1385973,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PP-120</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: Consolidado<br/>Duplicado de: PP-31<br/>Distancia: 10.5m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-78.99992555999995,-8.077916579999965,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PL-18</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: LAREDO<br/>Duplicado de: PL-40<br/>Distancia: 18.3m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-78.95438871031446,-8.082394045283031,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PP-130</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: Consolidado<br/>Duplicado de: PP-131<br/>Distancia: 17.2m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-79.01066110499994,-8.07470197799995,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PP-131</name>
+      <description><![CDATA[PROBLEMA: Duplicada<br/>Capa: Consolidado<br/>Duplicado de: PP-130<br/>Distancia: 17.2m]]></description>
+      <styleUrl>#style_pink</styleUrl>
+      <Point>
+        <coordinates>-79.01050869999995,-8.074734576999958,0</coordinates>
+      </Point>
+    </Placemark>
+  </Folder>
+</Document>
+</kml>
