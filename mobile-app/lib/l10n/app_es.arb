@@ -1,29 +1,11 @@
 {
   "@@locale": "es",
 
-  "mapStandardOffline": "Estándar (sin conexión)",
-  "mapStandardOfflineDesc": "Mapa estándar sin conexión",
+  "mapStandard": "Estándar",
+  "mapStandardDesc": "Mapa estándar",
 
-  "mapLightOffline": "Claro (sin conexión)",
-  "mapLightOfflineDesc": "Mapa claro sin conexión",
-
-  "mapDarkOffline": "Oscuro (sin conexión)",
-  "mapDarkOfflineDesc": "Mapa oscuro sin conexión",
-
-  "mapColorfulOffline": "Colorido (sin conexión)",
-  "mapColorfulOfflineDesc": "Mapa colorido sin conexión",
-
-  "mapLightOnline": "Claro (en línea)",
-  "mapLightOnlineDesc": "Mapa claro en línea",
-
-  "mapStandardOnline": "Estándar (en línea)",
-  "mapStandardOnlineDesc": "Mapa estándar en línea",
-
-  "mapDarkOnline": "Oscuro (en línea)",
-  "mapDarkOnlineDesc": "Mapa oscuro en línea",
-
-  "mapColorfulOnline": "Colorido (en línea)",
-  "mapColorfulOnlineDesc": "Mapa colorido en línea",
+  "mapLight": "Claro",
+  "mapLightDesc": "Mapa claro",
 
   "aboutTitle": "Más sobre Trujillo Mi Ruta",
   "aboutDescription": "Mi Ruta Trujillo es una aplicación digital que permite planificar viajes en transporte público en la ciudad de Trujillo, Perú. A través de la plataforma, los usuarios pueden consultar rutas, identificar paraderos y conocer los recorridos de las unidades de transporte para llegar a su destino de manera más rápida y eficiente. La herramienta utiliza información validada por las autoridades de transporte para ofrecer datos confiables que mejoran la experiencia de movilidad urbana.\n\nEsta aplicación fue desarrollada en el marco del proyecto Ciudades en Movimiento (CIMO), implementado por la Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) por encargo del Ministerio Federal de Cooperación Económica y Desarrollo (BMZ) de Alemania, con el cofinanciamiento de la Secretaría de Estado para Asuntos Económicos (SECO) de Suiza. El desarrollo contó con el apoyo del Ministerio de Transportes y Comunicaciones del Perú (MTC), a través del Programa Nacional de Transporte Urbano Sostenible (PROMOVILIDAD), en coordinación con la Municipalidad Provincial de Trujillo.",

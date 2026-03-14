@@ -100,101 +100,29 @@ abstract class AppLocalizations {
     Locale('es'),
   ];
 
-  /// Display name for the standard offline map style
+  /// Display name for the standard map style
   ///
   /// In en, this message translates to:
-  /// **'Standard (offline)'**
-  String get mapStandardOffline;
+  /// **'Standard'**
+  String get mapStandard;
 
-  /// Description for the standard offline map style
+  /// Description for the standard map style
   ///
   /// In en, this message translates to:
-  /// **'Standard offline map'**
-  String get mapStandardOfflineDesc;
+  /// **'Standard map'**
+  String get mapStandardDesc;
 
-  /// Display name for the light offline map style
+  /// Display name for the light map style
   ///
   /// In en, this message translates to:
-  /// **'Light (offline)'**
-  String get mapLightOffline;
+  /// **'Light'**
+  String get mapLight;
 
-  /// Description for the light offline map style
+  /// Description for the light map style
   ///
   /// In en, this message translates to:
-  /// **'Light offline map'**
-  String get mapLightOfflineDesc;
-
-  /// Display name for the dark offline map style
-  ///
-  /// In en, this message translates to:
-  /// **'Dark (offline)'**
-  String get mapDarkOffline;
-
-  /// Description for the dark offline map style
-  ///
-  /// In en, this message translates to:
-  /// **'Dark offline map'**
-  String get mapDarkOfflineDesc;
-
-  /// Display name for the colorful offline map style
-  ///
-  /// In en, this message translates to:
-  /// **'Colorful (offline)'**
-  String get mapColorfulOffline;
-
-  /// Description for the colorful offline map style
-  ///
-  /// In en, this message translates to:
-  /// **'Colorful offline map'**
-  String get mapColorfulOfflineDesc;
-
-  /// Display name for the light online map style
-  ///
-  /// In en, this message translates to:
-  /// **'Light (online)'**
-  String get mapLightOnline;
-
-  /// Description for the light online map style
-  ///
-  /// In en, this message translates to:
-  /// **'Light online map'**
-  String get mapLightOnlineDesc;
-
-  /// Display name for the standard online map style
-  ///
-  /// In en, this message translates to:
-  /// **'Standard (online)'**
-  String get mapStandardOnline;
-
-  /// Description for the standard online map style
-  ///
-  /// In en, this message translates to:
-  /// **'Standard online map'**
-  String get mapStandardOnlineDesc;
-
-  /// Display name for the dark online map style
-  ///
-  /// In en, this message translates to:
-  /// **'Dark (online)'**
-  String get mapDarkOnline;
-
-  /// Description for the dark online map style
-  ///
-  /// In en, this message translates to:
-  /// **'Dark online map'**
-  String get mapDarkOnlineDesc;
-
-  /// Display name for the colorful online map style
-  ///
-  /// In en, this message translates to:
-  /// **'Colorful (online)'**
-  String get mapColorfulOnline;
-
-  /// Description for the colorful online map style
-  ///
-  /// In en, this message translates to:
-  /// **'Colorful online map'**
-  String get mapColorfulOnlineDesc;
+  /// **'Light map'**
+  String get mapLightDesc;
 
   /// Title for the about section in the About screen
   ///

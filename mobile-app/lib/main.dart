@@ -53,8 +53,8 @@ final List<ITrufiMapEngine> _mapEngines = [
   if (!kIsWeb) ...[
     OfflineMapLibreEngine(
       engineId: 'offline_osm_liberty',
-      nameBuilder: (ctx) => AppLocalizations.of(ctx)!.mapStandardOffline,
-      descriptionBuilder: (ctx) => AppLocalizations.of(ctx)!.mapStandardOfflineDesc,
+      nameBuilder: (ctx) => AppLocalizations.of(ctx)!.mapStandard,
+      descriptionBuilder: (ctx) => AppLocalizations.of(ctx)!.mapStandardDesc,
       config: OfflineMapConfig(
         mbtilesAsset: 'assets/offline/trujillo.mbtiles',
         styleAsset: 'assets/offline/styles/osm-liberty/style.json',
@@ -79,8 +79,8 @@ final List<ITrufiMapEngine> _mapEngines = [
     ),
     OfflineMapLibreEngine(
       engineId: 'offline_osm_bright',
-      nameBuilder: (ctx) => AppLocalizations.of(ctx)!.mapLightOffline,
-      descriptionBuilder: (ctx) => AppLocalizations.of(ctx)!.mapLightOfflineDesc,
+      nameBuilder: (ctx) => AppLocalizations.of(ctx)!.mapLight,
+      descriptionBuilder: (ctx) => AppLocalizations.of(ctx)!.mapLightDesc,
       config: OfflineMapConfig(
         mbtilesAsset: 'assets/offline/trujillo.mbtiles',
         styleAsset: 'assets/offline/styles/osm-bright/style.json',
@@ -103,90 +103,7 @@ final List<ITrufiMapEngine> _mapEngines = [
         ],
       ),
     ),
-    OfflineMapLibreEngine(
-      engineId: 'offline_dark_matter',
-      nameBuilder: (ctx) => AppLocalizations.of(ctx)!.mapDarkOffline,
-      descriptionBuilder: (ctx) => AppLocalizations.of(ctx)!.mapDarkOfflineDesc,
-      config: OfflineMapConfig(
-        mbtilesAsset: 'assets/offline/trujillo.mbtiles',
-        styleAsset: 'assets/offline/styles/dark-matter/style.json',
-        spritesAssetDir: 'assets/offline/styles/dark-matter/',
-        fontsAssetDir: 'assets/offline/fonts/',
-        fontMapping: {
-          'MetropolisLight': 'Metropolis Light',
-          'MetropolisLightItalic': 'Metropolis Light Italic',
-          'MetropolisRegular': 'Metropolis Regular',
-          'MetropolisMediumItalic': 'Metropolis Medium Italic',
-          'NotoSansRegular': 'Noto Sans Regular',
-          'NotoSansItalic': 'Noto Sans Italic',
-        },
-        fontRanges: [
-          '0-255',
-          '256-511',
-          '512-767',
-          '768-1023',
-          '1024-1279',
-          '1280-1535',
-          '8192-8447',
-          '8448-8703',
-        ],
-      ),
-    ),
-    OfflineMapLibreEngine(
-      engineId: 'offline_fiord_color',
-      nameBuilder: (ctx) => AppLocalizations.of(ctx)!.mapColorfulOffline,
-      descriptionBuilder: (ctx) => AppLocalizations.of(ctx)!.mapColorfulOfflineDesc,
-      config: OfflineMapConfig(
-        mbtilesAsset: 'assets/offline/trujillo.mbtiles',
-        styleAsset: 'assets/offline/styles/fiord-color/style.json',
-        spritesAssetDir: 'assets/offline/styles/fiord-color/',
-        fontsAssetDir: 'assets/offline/fonts/',
-        fontMapping: {
-          'MetropolisLight': 'Metropolis Light',
-          'MetropolisLightItalic': 'Metropolis Light Italic',
-          'MetropolisRegular': 'Metropolis Regular',
-          'MetropolisMediumItalic': 'Metropolis Medium Italic',
-          'NotoSansRegular': 'Noto Sans Regular',
-          'NotoSansItalic': 'Noto Sans Italic',
-        },
-        fontRanges: [
-          '0-255',
-          '256-511',
-          '512-767',
-          '768-1023',
-          '1024-1279',
-          '1280-1535',
-          '8192-8447',
-          '8448-8703',
-        ],
-      ),
-    ),
   ],
-  // Online maps
-  MapLibreEngine(
-    engineId: 'osm_bright',
-    styleString: '$_mapsBaseUrl/styles/osm-bright/style.json',
-    nameBuilder: (ctx) => AppLocalizations.of(ctx)!.mapLightOnline,
-    descriptionBuilder: (ctx) => AppLocalizations.of(ctx)!.mapLightOnlineDesc,
-  ),
-  MapLibreEngine(
-    engineId: 'osm_liberty',
-    styleString: '$_mapsBaseUrl/styles/osm-liberty/style.json',
-    nameBuilder: (ctx) => AppLocalizations.of(ctx)!.mapStandardOnline,
-    descriptionBuilder: (ctx) => AppLocalizations.of(ctx)!.mapStandardOnlineDesc,
-  ),
-  MapLibreEngine(
-    engineId: 'dark_matter',
-    styleString: '$_mapsBaseUrl/styles/dark-matter/style.json',
-    nameBuilder: (ctx) => AppLocalizations.of(ctx)!.mapDarkOnline,
-    descriptionBuilder: (ctx) => AppLocalizations.of(ctx)!.mapDarkOnlineDesc,
-  ),
-  MapLibreEngine(
-    engineId: 'fiord_color',
-    styleString: '$_mapsBaseUrl/styles/fiord-color/style.json',
-    nameBuilder: (ctx) => AppLocalizations.of(ctx)!.mapColorfulOnline,
-    descriptionBuilder: (ctx) => AppLocalizations.of(ctx)!.mapColorfulOnlineDesc,
-  ),
 ];
 // ========================================
 

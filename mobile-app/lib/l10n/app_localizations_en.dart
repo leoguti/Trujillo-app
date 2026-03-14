@@ -9,52 +9,16 @@ class AppLocalizationsEn extends AppLocalizations {
   AppLocalizationsEn([String locale = 'en']) : super(locale);
 
   @override
-  String get mapStandardOffline => 'Standard (offline)';
+  String get mapStandard => 'Standard';
 
   @override
-  String get mapStandardOfflineDesc => 'Standard offline map';
+  String get mapStandardDesc => 'Standard map';
 
   @override
-  String get mapLightOffline => 'Light (offline)';
+  String get mapLight => 'Light';
 
   @override
-  String get mapLightOfflineDesc => 'Light offline map';
-
-  @override
-  String get mapDarkOffline => 'Dark (offline)';
-
-  @override
-  String get mapDarkOfflineDesc => 'Dark offline map';
-
-  @override
-  String get mapColorfulOffline => 'Colorful (offline)';
-
-  @override
-  String get mapColorfulOfflineDesc => 'Colorful offline map';
-
-  @override
-  String get mapLightOnline => 'Light (online)';
-
-  @override
-  String get mapLightOnlineDesc => 'Light online map';
-
-  @override
-  String get mapStandardOnline => 'Standard (online)';
-
-  @override
-  String get mapStandardOnlineDesc => 'Standard online map';
-
-  @override
-  String get mapDarkOnline => 'Dark (online)';
-
-  @override
-  String get mapDarkOnlineDesc => 'Dark online map';
-
-  @override
-  String get mapColorfulOnline => 'Colorful (online)';
-
-  @override
-  String get mapColorfulOnlineDesc => 'Colorful online map';
+  String get mapLightDesc => 'Light map';
 
   @override
   String get aboutTitle => 'More about Trujillo Mi Ruta';
