@@ -20,6 +20,7 @@ import 'package:trufi_core_settings/trufi_core_settings.dart';
 import 'package:trufi_core_transport_list/trufi_core_transport_list.dart';
 import 'package:trufi_core_ui/trufi_core_ui.dart';
 import 'package:trufi_core_utils/trufi_core_utils.dart' show OverlayManager;
+import 'package:url_launcher/url_launcher.dart';
 
 import 'l10n/app_localizations.dart';
 
@@ -346,6 +347,77 @@ void main() {
             cityName: _cityName,
             countryName: _countryName,
             emailContact: _emailContact,
+            sections: [
+              // CIMO-approved "about" section (replaces default Trufi Association text)
+              Builder(builder: (context) {
+                final l10n = AppLocalizations.of(context)!;
+                final theme = Theme.of(context);
+                return AboutSectionCard(
+                  icon: Icons.info_rounded,
+                  iconColor: const Color(0xFF2F64AD),
+                  title: l10n.aboutTitle,
+                  child: Text(
+                    l10n.aboutDescription,
+                    style: theme.textTheme.bodyMedium?.copyWith(
+                      height: 1.6,
+                      color: theme.colorScheme.onSurface,
+                    ),
+                  ),
+                );
+              }),
+              // Open source section (default)
+              Builder(builder: (context) {
+                final theme = Theme.of(context);
+                final aboutL10n = AboutLocalizations.of(context);
+                return AboutSectionCard(
+                  icon: Icons.code_rounded,
+                  iconColor: Colors.green,
+                  title: 'Open Source',
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        aboutL10n.aboutOpenSource,
+                        style: theme.textTheme.bodyMedium?.copyWith(
+                          height: 1.6,
+                          color: theme.colorScheme.onSurface,
+                        ),
+                      ),
+                      const SizedBox(height: 14),
+                      AboutLinkTile(
+                        icon: Icons.open_in_new_rounded,
+                        iconColor: Colors.deepPurple,
+                        title: 'GitHub',
+                        subtitle: 'trufi-association/trufi-core',
+                        onTap: () => launchUrl(
+                          Uri.parse('https://github.com/trufi-association/trufi-core'),
+                          mode: LaunchMode.externalApplication,
+                        ),
+                      ),
+                    ],
+                  ),
+                );
+              }),
+              // Contact section
+              Builder(builder: (context) {
+                final l10n = AppLocalizations.of(context)!;
+                return AboutSectionCard(
+                  icon: Icons.mail_rounded,
+                  iconColor: Colors.orange,
+                  title: l10n.aboutContactTitle,
+                  child: AboutLinkTile(
+                    icon: Icons.email_rounded,
+                    iconColor: Colors.indigo,
+                    title: _emailContact,
+                    subtitle: l10n.aboutContactSubtitle,
+                    onTap: () => launchUrl(
+                      Uri.parse('mailto:$_emailContact?subject=$_appName Feedback'),
+                      mode: LaunchMode.externalApplication,
+                    ),
+                  ),
+                );
+              }),
+            ],
           ),
         ),
       ],

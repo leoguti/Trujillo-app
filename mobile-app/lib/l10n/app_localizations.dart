@@ -195,6 +195,30 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Colorful online map'**
   String get mapColorfulOnlineDesc;
+
+  /// Title for the about section in the About screen
+  ///
+  /// In en, this message translates to:
+  /// **'More about Trujillo Mi Ruta'**
+  String get aboutTitle;
+
+  /// CIMO-approved description text for the About screen
+  ///
+  /// In en, this message translates to:
+  /// **'Mi Ruta Trujillo is a digital application that allows users to plan public transport trips in the city of Trujillo, Peru. Through the platform, users can look up routes, identify stops, and learn about transport vehicle itineraries to reach their destination more quickly and efficiently. The tool uses information validated by transport authorities to provide reliable data that improves the urban mobility experience.\n\nThis application was developed within the framework of the Cities in Motion (CIMO) project, implemented by the Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) on behalf of the German Federal Ministry for Economic Cooperation and Development (BMZ), with co-financing from the Swiss State Secretariat for Economic Affairs (SECO). Development was supported by the Ministry of Transport and Communications of Peru (MTC), through the National Program for Sustainable Urban Transport (PROMOVILIDAD), in coordination with the Provincial Municipality of Trujillo.'**
+  String get aboutDescription;
+
+  /// Title for the contact section in the About screen
+  ///
+  /// In en, this message translates to:
+  /// **'Contact'**
+  String get aboutContactTitle;
+
+  /// Subtitle for the contact email link
+  ///
+  /// In en, this message translates to:
+  /// **'Send us your feedback'**
+  String get aboutContactSubtitle;
 }
 
 class _AppLocalizationsDelegate
