@@ -197,7 +197,25 @@ void main() {
       deepLinkScheme: _deepLinkScheme,
       defaultLocale: const Locale('es'),
       extraLocalizationsDelegates: [AppLocalizations.delegate],
-      themeConfig: TrufiThemeConfig(),
+      themeConfig: TrufiThemeConfig(
+        theme: ThemeData(
+          colorScheme: ColorScheme.fromSeed(
+            seedColor: const Color(0xFF2F64AD),
+            secondary: const Color(0xFF0098DA),
+            surface: const Color(0xFFF7F7F8),
+            outline: const Color(0xFFD2D3D5),
+          ),
+          useMaterial3: true,
+        ),
+        darkTheme: ThemeData(
+          colorScheme: ColorScheme.fromSeed(
+            seedColor: const Color(0xFF2F64AD),
+            secondary: const Color(0xFF0098DA),
+            brightness: Brightness.dark,
+          ),
+          useMaterial3: true,
+        ),
+      ),
       socialMediaLinks: const [
         SocialMediaLink(
           url: _facebookUrl,
