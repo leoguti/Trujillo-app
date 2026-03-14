@@ -45,6 +45,7 @@ final List<IRoutingProvider> _routingEngines = [
     endpoint: 'https://otp.trujillo.trufi.dev',
     displayName: 'OTP 2.8',
     planHeaderProvider: _analyticsHeader.provider,
+    showWheelchairOption: false,
   ),
 ];
 
