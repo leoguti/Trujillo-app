@@ -194,6 +194,7 @@ void main() {
   runTrufiApp(
     AppConfiguration(
       appName: _appName,
+      appTagline: 'Planificador de viajes',
       deepLinkScheme: _deepLinkScheme,
       defaultLocale: const Locale('es'),
       extraLocalizationsDelegates: [AppLocalizations.delegate],
@@ -201,15 +202,25 @@ void main() {
         theme: ThemeData(
           colorScheme: ColorScheme.fromSeed(
             seedColor: const Color(0xFF2F64AD),
+            primary: const Color(0xFF2F64AD),
+            primaryContainer: const Color(0xFFD8E0ED), // AZUL 15%
+            onPrimaryContainer: const Color(0xFF1A3660),
             secondary: const Color(0xFF0098DA),
+            secondaryContainer: const Color(0xFFE5EAF2), // AZUL 10%
+            onSecondaryContainer: const Color(0xFF1A3660),
+            tertiary: const Color(0xFF2F64AD),
+            tertiaryContainer: const Color(0xFFE5EAF2), // AZUL 10%
             surface: const Color(0xFFF7F7F8),
+            surfaceContainerHighest: const Color(0xFFE9EDF5), // AZUL ~8%
             outline: const Color(0xFFD2D3D5),
+            outlineVariant: const Color(0xFFE0E1E3), // GRIS 70%
           ),
           useMaterial3: true,
         ),
         darkTheme: ThemeData(
           colorScheme: ColorScheme.fromSeed(
             seedColor: const Color(0xFF2F64AD),
+            primary: const Color(0xFF7BA3D4),
             secondary: const Color(0xFF0098DA),
             brightness: Brightness.dark,
           ),
