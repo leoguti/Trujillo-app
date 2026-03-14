@@ -24,8 +24,8 @@ import 'package:trufi_core_utils/trufi_core_utils.dart' show OverlayManager;
 import 'l10n/app_localizations.dart';
 
 const _defaultCenter = LatLng(-8.1116, -79.0288);
-const _appName = 'Trujillo Mobility';
-const _deepLinkScheme = 'trujillomobility';
+const _appName = 'Trujillo MiRuta';
+const _deepLinkScheme = 'trujillomiruta';
 const _cityName = 'Trujillo';
 const _countryName = 'Perú';
 const _emailContact = 'info@munitrujillo.gob.pe';

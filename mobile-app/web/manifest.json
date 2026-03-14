@@ -1,11 +1,11 @@
 {
-    "name": "Trujillo Mobility",
-    "short_name": "Trujillo",
+    "name": "Trujillo MiRuta",
+    "short_name": "MiRuta",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "Trujillo Mobility - Public transport app for Trujillo, Peru",
+    "description": "Trujillo MiRuta - Public transport app for Trujillo, Peru",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
