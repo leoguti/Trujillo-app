@@ -21,6 +21,8 @@ import 'package:trufi_core_transport_list/trufi_core_transport_list.dart';
 import 'package:trufi_core_ui/trufi_core_ui.dart';
 import 'package:trufi_core_utils/trufi_core_utils.dart' show OverlayManager;
 
+import 'l10n/app_localizations.dart';
+
 const _defaultCenter = LatLng(-8.1116, -79.0288);
 const _appName = 'Trujillo Mobility';
 const _deepLinkScheme = 'trujillomobility';
@@ -49,8 +51,8 @@ final List<ITrufiMapEngine> _mapEngines = [
   if (!kIsWeb) ...[
     OfflineMapLibreEngine(
       engineId: 'offline_osm_liberty',
-      displayName: 'Offline Liberty',
-      displayDescription: 'Mapa offline estándar',
+      nameBuilder: (ctx) => AppLocalizations.of(ctx)!.mapStandardOffline,
+      descriptionBuilder: (ctx) => AppLocalizations.of(ctx)!.mapStandardOfflineDesc,
       config: OfflineMapConfig(
         mbtilesAsset: 'assets/offline/trujillo.mbtiles',
         styleAsset: 'assets/offline/styles/osm-liberty/style.json',
@@ -75,8 +77,8 @@ final List<ITrufiMapEngine> _mapEngines = [
     ),
     OfflineMapLibreEngine(
       engineId: 'offline_osm_bright',
-      displayName: 'Offline Bright',
-      displayDescription: 'Mapa offline claro',
+      nameBuilder: (ctx) => AppLocalizations.of(ctx)!.mapLightOffline,
+      descriptionBuilder: (ctx) => AppLocalizations.of(ctx)!.mapLightOfflineDesc,
       config: OfflineMapConfig(
         mbtilesAsset: 'assets/offline/trujillo.mbtiles',
         styleAsset: 'assets/offline/styles/osm-bright/style.json',
@@ -101,8 +103,8 @@ final List<ITrufiMapEngine> _mapEngines = [
     ),
     OfflineMapLibreEngine(
       engineId: 'offline_dark_matter',
-      displayName: 'Offline Dark Matter',
-      displayDescription: 'Mapa offline oscuro',
+      nameBuilder: (ctx) => AppLocalizations.of(ctx)!.mapDarkOffline,
+      descriptionBuilder: (ctx) => AppLocalizations.of(ctx)!.mapDarkOfflineDesc,
       config: OfflineMapConfig(
         mbtilesAsset: 'assets/offline/trujillo.mbtiles',
         styleAsset: 'assets/offline/styles/dark-matter/style.json',
@@ -130,8 +132,8 @@ final List<ITrufiMapEngine> _mapEngines = [
     ),
     OfflineMapLibreEngine(
       engineId: 'offline_fiord_color',
-      displayName: 'Offline Fiord Color',
-      displayDescription: 'Mapa offline colorido',
+      nameBuilder: (ctx) => AppLocalizations.of(ctx)!.mapColorfulOffline,
+      descriptionBuilder: (ctx) => AppLocalizations.of(ctx)!.mapColorfulOfflineDesc,
       config: OfflineMapConfig(
         mbtilesAsset: 'assets/offline/trujillo.mbtiles',
         styleAsset: 'assets/offline/styles/fiord-color/style.json',
@@ -162,26 +164,26 @@ final List<ITrufiMapEngine> _mapEngines = [
   MapLibreEngine(
     engineId: 'osm_bright',
     styleString: '$_mapsBaseUrl/styles/osm-bright/style.json',
-    displayName: 'OSM Bright',
-    displayDescription: 'Mapa claro online',
+    nameBuilder: (ctx) => AppLocalizations.of(ctx)!.mapLightOnline,
+    descriptionBuilder: (ctx) => AppLocalizations.of(ctx)!.mapLightOnlineDesc,
   ),
   MapLibreEngine(
     engineId: 'osm_liberty',
     styleString: '$_mapsBaseUrl/styles/osm-liberty/style.json',
-    displayName: 'OSM Liberty',
-    displayDescription: 'Mapa estándar online',
+    nameBuilder: (ctx) => AppLocalizations.of(ctx)!.mapStandardOnline,
+    descriptionBuilder: (ctx) => AppLocalizations.of(ctx)!.mapStandardOnlineDesc,
   ),
   MapLibreEngine(
     engineId: 'dark_matter',
     styleString: '$_mapsBaseUrl/styles/dark-matter/style.json',
-    displayName: 'Dark Matter',
-    displayDescription: 'Mapa oscuro online',
+    nameBuilder: (ctx) => AppLocalizations.of(ctx)!.mapDarkOnline,
+    descriptionBuilder: (ctx) => AppLocalizations.of(ctx)!.mapDarkOnlineDesc,
   ),
   MapLibreEngine(
     engineId: 'fiord_color',
     styleString: '$_mapsBaseUrl/styles/fiord-color/style.json',
-    displayName: 'Fiord Color',
-    displayDescription: 'Mapa colorido online',
+    nameBuilder: (ctx) => AppLocalizations.of(ctx)!.mapColorfulOnline,
+    descriptionBuilder: (ctx) => AppLocalizations.of(ctx)!.mapColorfulOnlineDesc,
   ),
 ];
 // ========================================
@@ -192,6 +194,7 @@ void main() {
       appName: _appName,
       deepLinkScheme: _deepLinkScheme,
       defaultLocale: const Locale('es'),
+      extraLocalizationsDelegates: [AppLocalizations.delegate],
       themeConfig: TrufiThemeConfig(),
       socialMediaLinks: const [
         SocialMediaLink(
