@@ -28,11 +28,13 @@ const _appName = 'Trujillo Mobility';
 const _deepLinkScheme = 'trujillomobility';
 const _cityName = 'Trujillo';
 const _countryName = 'Perú';
-const _emailContact = 'info@trufi-association.org';
+const _emailContact = 'info@munitrujillo.gob.pe';
 const _feedbackUrl = 'https://www.trufi-association.org/feedback/';
-const _facebookUrl = 'https://facebook.com/trufiapp';
-const _xTwitterUrl = 'https://x.com/trufiapp';
-const _instagramUrl = 'https://instagram.com/trufiapp';
+const _facebookUrl = 'https://www.facebook.com/munitruGMCRR';
+const _instagramUrl = 'https://www.instagram.com/muni.trujillo';
+const _xTwitterUrl = 'https://x.com/MPT_Trujillo';
+const _tiktokUrl = 'https://www.tiktok.com/@munitrujillo';
+const _youtubeUrl = 'https://www.youtube.com/@muniprovincialtrujillo';
 const _mapsBaseUrl = 'https://maps.trujillo.trufi.dev';
 
 final _analyticsHeader = AnalyticsHeaderProvider();
@@ -203,14 +205,24 @@ void main() {
           label: 'Facebook',
         ),
         SocialMediaLink(
+          url: _instagramUrl,
+          icon: Icons.camera_alt_outlined,
+          label: 'Instagram',
+        ),
+        SocialMediaLink(
           url: _xTwitterUrl,
           icon: Icons.close,
           label: 'X (Twitter)',
         ),
         SocialMediaLink(
-          url: _instagramUrl,
-          icon: Icons.camera_alt_outlined,
-          label: 'Instagram',
+          url: _tiktokUrl,
+          icon: Icons.music_note,
+          label: 'TikTok',
+        ),
+        SocialMediaLink(
+          url: _youtubeUrl,
+          icon: Icons.play_circle_outline,
+          label: 'YouTube',
         ),
       ],
       providers: [
