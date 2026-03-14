@@ -4,7 +4,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:latlong2/latlong.dart';
 import 'package:provider/provider.dart';
 import 'package:trufi_core_about/trufi_core_about.dart';
-import 'package:trufi_core_fares/trufi_core_fares.dart';
 import 'package:trufi_core_feedback/trufi_core_feedback.dart';
 import 'package:trufi_core_home_screen/trufi_core_home_screen.dart';
 import 'package:trufi_core_maps/trufi_core_maps.dart';
@@ -312,33 +311,6 @@ void main() {
         ),
         SavedPlacesTrufiScreen(),
         TransportListTrufiScreen(),
-        FaresTrufiScreen(
-          config: FaresConfig(
-            currency: 'PEN',
-            lastUpdated: DateTime(2025, 1, 1),
-            fares: [
-              const FareInfo(
-                transportType: 'Combi',
-                icon: Icons.directions_bus,
-                regularFare: '1.50',
-                studentFare: '0.80',
-                seniorFare: '0.80',
-              ),
-              const FareInfo(
-                transportType: 'Microbús',
-                icon: Icons.directions_bus,
-                regularFare: '1.20',
-                studentFare: '0.60',
-                seniorFare: '0.60',
-              ),
-              const FareInfo(
-                transportType: 'Mototaxi',
-                icon: Icons.two_wheeler,
-                regularFare: '3.00-8.00',
-              ),
-            ],
-          ),
-        ),
         FeedbackTrufiScreen(config: FeedbackConfig(feedbackUrl: _feedbackUrl)),
         SettingsTrufiScreen(),
         AboutTrufiScreen(
