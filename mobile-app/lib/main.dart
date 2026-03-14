@@ -114,7 +114,10 @@ void main() {
       appName: _appName,
       appTagline: 'Planificador de viajes',
       deepLinkScheme: _deepLinkScheme,
-      defaultLocale: const Locale('es'),
+      localeConfig: const TrufiLocaleConfig(
+        supportedLocales: [Locale('en'), Locale('es')],
+        defaultLocaleIndex: 1,
+      ),
       extraLocalizationsDelegates: [AppLocalizations.delegate],
       themeConfig: TrufiThemeConfig(
         theme: ThemeData(
