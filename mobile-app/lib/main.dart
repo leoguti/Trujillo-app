@@ -25,7 +25,6 @@ import 'l10n/app_localizations.dart';
 
 const _defaultCenter = LatLng(-8.1116, -79.0288);
 const _appName = 'Trujillo MiRuta';
-const _deepLinkScheme = 'trujillomiruta';
 const _cityName = 'Trujillo';
 const _countryName = 'Perú';
 const _emailContact = 'info@munitrujillo.gob.pe';
@@ -35,7 +34,7 @@ const _instagramUrl = 'https://www.instagram.com/muni.trujillo';
 const _xTwitterUrl = 'https://x.com/MPT_Trujillo';
 const _tiktokUrl = 'https://www.tiktok.com/@munitrujillo';
 const _youtubeUrl = 'https://www.youtube.com/@muniprovincialtrujillo';
-const _mapsBaseUrl = 'https://maps.trujillo.trufi.dev';
+const _webBaseUrl = 'https://trujillo.trufi.dev';
 
 final _analyticsHeader = AnalyticsHeaderProvider();
 
@@ -142,7 +141,6 @@ void main() {
     AppConfiguration(
       appName: _appName,
       appTagline: 'Planificador de viajes',
-      deepLinkScheme: _deepLinkScheme,
       localeConfig: const TrufiLocaleConfig(
         supportedLocales: [Locale('en'), Locale('es')],
         defaultLocaleIndex: 1,
@@ -247,8 +245,7 @@ void main() {
         HomeScreenTrufiScreen(
           config: HomeScreenConfig(
             appName: _appName,
-            deepLinkScheme: _deepLinkScheme,
-            shareBaseUrl: _mapsBaseUrl,
+            shareBaseUrl: _webBaseUrl,
             poiLayersManager: POILayersManager(assetsBasePath: 'assets/pois'),
           ),
           onStartNavigation: (context, itinerary, locationService) {

@@ -1,0 +1,7 @@
+{
+  "name": "web-landing",
+  "description": "Static landing page for Trujillo MiRuta app",
+  "container": "web-landing",
+  "port": 80,
+  "analytics": false
+}
