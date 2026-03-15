@@ -127,20 +127,11 @@ body{
 }
 
 /* Store buttons */
-.store-buttons{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
-.store-btn{
-  display:flex;align-items:center;gap:0.75rem;
-  padding:0.85rem 1.5rem;border-radius:14px;
-  text-decoration:none;
-  color:var(--store-fg);
-  background:var(--store-bg);
-  transition:transform .2s,box-shadow .2s;
-  min-width:210px;
-}
-.store-btn:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.2)}
-.store-btn svg{flex-shrink:0;width:28px;height:28px}
-.store-label{display:block;font-size:.7rem;opacity:.8;font-weight:400;line-height:1}
-.store-name{display:block;font-weight:700;font-size:1.15rem;line-height:1.2}
+.store-buttons{display:flex;gap:0;justify-content:center;flex-wrap:wrap;align-items:center}
+.store-buttons a{display:block}
+.store-badge{height:54px;width:auto;transition:transform .2s}
+.store-badge:hover{transform:translateY(-2px)}
+.store-buttons a:first-child .store-badge{height:78px}
 
 /* ---------- Alianzas ---------- */
 .partners{
