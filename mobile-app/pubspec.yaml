@@ -189,3 +189,5 @@ flutter:
     - assets/routing/
     # Geo data (district boundaries)
     - assets/geo/
+    # Branding (partner logos)
+    - assets/branding/

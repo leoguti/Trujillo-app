@@ -147,6 +147,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Send us your feedback'**
   String get aboutContactSubtitle;
+
+  /// Title for the partner logos section in the About screen
+  ///
+  /// In en, this message translates to:
+  /// **'Project partners'**
+  String get aboutPartnersTitle;
 }
 
 class _AppLocalizationsDelegate

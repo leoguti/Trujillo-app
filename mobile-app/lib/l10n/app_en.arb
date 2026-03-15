@@ -34,5 +34,9 @@
   "aboutContactSubtitle": "Send us your feedback",
   "@aboutContactSubtitle": {
     "description": "Subtitle for the contact email link"
+  },
+  "aboutPartnersTitle": "Project partners",
+  "@aboutPartnersTitle": {
+    "description": "Title for the partner logos section in the About screen"
   }
 }

@@ -10,5 +10,6 @@
   "aboutTitle": "Mehr über Trujillo Mi Ruta",
   "aboutDescription": "Mi Ruta Trujillo ist eine digitale Anwendung zur Planung von Fahrten im öffentlichen Nahverkehr in der Stadt Trujillo, Peru. Über die Plattform können Nutzer Routen abfragen, Haltestellen identifizieren und die Fahrstrecken der Verkehrsmittel einsehen, um ihr Ziel schneller und effizienter zu erreichen. Das Tool nutzt von den Verkehrsbehörden validierte Informationen, um zuverlässige Daten bereitzustellen, die das städtische Mobilitätserlebnis verbessern.\n\nDiese Anwendung wurde im Rahmen des Projekts Ciudades en Movimiento (CIMO) entwickelt, das von der Deutschen Gesellschaft für Internationale Zusammenarbeit (GIZ) im Auftrag des Bundesministeriums für wirtschaftliche Zusammenarbeit und Entwicklung (BMZ) durchgeführt wird, mit Kofinanzierung des Staatssekretariats für Wirtschaft (SECO) der Schweiz. Die Entwicklung wurde vom Ministerium für Verkehr und Kommunikation von Peru (MTC) über das Nationale Programm für nachhaltige städtische Mobilität (PROMOVILIDAD) in Abstimmung mit der Provinzgemeinde Trujillo unterstützt.",
   "aboutContactTitle": "Kontakt",
-  "aboutContactSubtitle": "Senden Sie uns Ihr Feedback"
+  "aboutContactSubtitle": "Senden Sie uns Ihr Feedback",
+  "aboutPartnersTitle": "Projektpartner"
 }

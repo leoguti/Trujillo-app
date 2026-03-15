@@ -32,4 +32,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get aboutContactSubtitle => 'Senden Sie uns Ihr Feedback';
+
+  @override
+  String get aboutPartnersTitle => 'Projektpartner';
 }
