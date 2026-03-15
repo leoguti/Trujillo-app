@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trujillo MiRuta — Planificador de viajes</title>
+  <meta name="description" content="Planifica tus viajes en transporte público en Trujillo, Perú. Consulta rutas, paraderos y recorridos actualizados." />
+  <link rel="icon" href="app-logo.png" type="image/png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-brand">
+      <img src="app-logo.png" alt="Trujillo MiRuta" class="logo" />
+      <span class="brand-name">MiRuta</span>
+    </div>
+    <nav class="header-nav">
+      <button id="langToggle" class="icon-btn" title="English / Español">ES</button>
+      <button id="themeToggle" class="icon-btn" title="Cambiar tema" aria-label="Toggle theme">
+        <svg id="themeIcon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      </button>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero" aria-labelledby="titulo-hero">
+    <div class="hero-content">
+      <h1 id="titulo-hero" data-i18n-html="heroTitle">
+        Planifica tu viaje. <span class="txt-azul">Llega con confianza.</span>
+      </h1>
+      <p class="sub" data-i18n="heroSub">
+        MiRuta Trujillo te ayuda a encontrar la mejor ruta de transporte público para llegar a tu destino en la ciudad de Trujillo.
+      </p>
+
+      <ul class="bullets">
+        <li data-i18n="bullet1">Consulta rutas y paraderos actualizados.</li>
+        <li data-i18n="bullet2">Planifica viajes con múltiples opciones de transporte.</li>
+        <li data-i18n="bullet3">Funciona sin conexión a internet.</li>
+        <li data-i18n="bullet4">Información validada por las autoridades de transporte.</li>
+      </ul>
+
+      <div class="store-buttons" id="descargar">
+        <a href="#" class="store-btn android" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M3.18 23.54c-.36-.17-.56-.51-.56-.92V1.38c0-.41.2-.75.57-.92l10.62 11.54L3.18 23.54zM14.97 13.12l2.76 2.76-12.11 6.89 9.35-9.65zM19.44 10.79l-2.65 1.51-2.94-3.2 2.94-3.2 2.65 1.51c.89.51 1.34 1.15 1.34 1.69s-.45 1.18-1.34 1.69zM5.62.92l12.11 6.89-2.76 2.76L5.62.92z"/></svg>
+          <div>
+            <span class="store-label" data-i18n="downloadOn">Descargar en</span>
+            <span class="store-name">Google Play</span>
+          </div>
+        </a>
+        <a href="#" class="store-btn ios" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+          <div>
+            <span class="store-label" data-i18n="downloadOn">Descargar en</span>
+            <span class="store-name">App Store</span>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-bg"></div>
+  </section>
+
+  <!-- ALIANZAS -->
+  <section id="alianzas" class="partners">
+    <h2 data-i18n="partnersTitle">Socios del proyecto</h2>
+    <p class="sub" data-i18n="partnersSub">Esta aplicación fue desarrollada en el marco del proyecto Ciudades en Movimiento (CIMO).</p>
+    <div class="partner-logos">
+      <img src="MPT-logo-04.png" alt="Municipalidad Provincial de Trujillo" />
+      <img src="MTC-logo.png" alt="Ministerio de Transportes y Comunicaciones" />
+      <img src="PROMOVILIDAD-logo.png" alt="PROMOVILIDAD" />
+      <img src="GIZ-logo.jpg" alt="GIZ - Cooperación Alemana" />
+      <img src="SECO-logo.jpg" alt="SECO - Suiza" />
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Trujillo MiRuta — Municipalidad Provincial de Trujillo</p>
+    <p class="footer-links">
+      <a href="mailto:info@munitrujillo.gob.pe">info@munitrujillo.gob.pe</a>
+    </p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // ---- Theme ----
+    const themeBtn = document.getElementById('themeToggle');
+    const sunSVG = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>';
+    const moonSVG = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
+
+    function getTheme() {
+      return localStorage.getItem('theme') ||
+        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    }
+    function applyTheme(t) {
+      document.documentElement.setAttribute('data-theme', t);
+      themeBtn.innerHTML = t === 'dark' ? sunSVG : moonSVG;
+    }
+    applyTheme(getTheme());
+    themeBtn.addEventListener('click', () => {
+      const next = getTheme() === 'dark' ? 'light' : 'dark';
+      localStorage.setItem('theme', next);
+      applyTheme(next);
+    });
+
+    // ---- i18n ----
+    const langBtn = document.getElementById('langToggle');
+    const supported = ['es', 'en'];
+    const cache = {};
+
+    function getSavedLang() {
+      return localStorage.getItem('lang') ||
+        (supported.includes((navigator.language || '').slice(0, 2))
+          ? (navigator.language || '').slice(0, 2) : 'es');
+    }
+
+    async function applyLang(lang) {
+      document.documentElement.lang = lang;
+      langBtn.textContent = lang.toUpperCase();
+
+      if (!cache[lang]) {
+        try {
+          const res = await fetch(`l10n/${lang}.json`);
+          cache[lang] = await res.json();
+        } catch (e) { return; }
+      }
+      const strings = cache[lang];
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (strings[key]) el.textContent = strings[key];
+      });
+      document.querySelectorAll('[data-i18n-html]').forEach(el => {
+        const key = el.getAttribute('data-i18n-html');
+        if (strings[key]) el.innerHTML = strings[key];
+      });
+    }
+
+    applyLang(getSavedLang());
+    langBtn.addEventListener('click', () => {
+      const next = getSavedLang() === 'es' ? 'en' : 'es';
+      localStorage.setItem('lang', next);
+      applyLang(next);
+    });
+  </script>
+</body>
+</html>

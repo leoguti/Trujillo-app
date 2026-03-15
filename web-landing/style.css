@@ -1,0 +1,193 @@
+/* ---------- Paleta Trujillo MiRuta ---------- */
+:root,
+[data-theme="light"]{
+  --crema:#F0F3F8;
+  --azul-claro:#D8E0ED;
+  --azul-primario:#2F64AD;
+  --azul-profundo:#1A3660;
+  --azul-oscuro:#0F1E33;
+  --celeste:#0098DA;
+
+  --texto:#1A1A1A;
+  --texto-suave:#555;
+  --blanco:#ffffff;
+  --superficie:#ffffff;
+  --superficie-header:rgba(255,255,255,.92);
+  --borde:rgba(0,0,0,.06);
+
+  --radius:16px;
+  --shadow:0 8px 24px rgba(15,30,51,0.08);
+  --store-bg:#1a1a1a;
+  --store-fg:#ffffff;
+}
+
+[data-theme="dark"]{
+  --crema:#141a24;
+  --azul-claro:#1e2a3d;
+  --azul-primario:#7BA3D4;
+  --azul-profundo:#A0C0E8;
+  --azul-oscuro:#0a0f18;
+
+  --texto:#E4E8EE;
+  --texto-suave:#9AA3B0;
+  --blanco:#1a2030;
+  --superficie:#1a2030;
+  --superficie-header:rgba(26,32,48,.92);
+  --borde:rgba(255,255,255,.08);
+
+  --shadow:0 8px 24px rgba(0,0,0,0.25);
+  --store-bg:#ffffff;
+  --store-fg:#1a1a1a;
+}
+
+/* Reset */
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+html,body{height:100%}
+body{
+  color:var(--texto);
+  font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  background-color:var(--superficie);
+  display:flex;flex-direction:column;
+  transition:background-color .3s,color .3s;
+}
+
+/* ---------- Header ---------- */
+.site-header{
+  padding:0.75rem clamp(1rem,6vw,7rem);
+  display:flex;align-items:center;justify-content:space-between;
+  border-bottom:1px solid var(--borde);
+  position:sticky;top:0;z-index:10;
+  backdrop-filter:blur(8px);
+  background:var(--superficie-header);
+}
+.header-brand{display:flex;align-items:center;gap:0.6rem}
+.logo{height:40px;width:auto;border-radius:8px}
+.brand-name{font-weight:800;font-size:1.15rem;color:var(--azul-profundo)}
+.header-nav{display:flex;gap:1rem;align-items:center}
+.header-nav a{color:var(--texto);text-decoration:none;font-weight:600;font-size:0.95rem}
+.header-nav a:hover{color:var(--azul-primario)}
+.header-nav .cta{
+  padding:.5rem 1rem;border-radius:999px;
+  background:var(--azul-primario);color:#fff;
+}
+.header-nav .cta:hover{opacity:.85}
+
+/* Icon buttons (lang, theme) */
+.icon-btn{
+  display:flex;align-items:center;justify-content:center;
+  width:34px;height:34px;border-radius:8px;
+  border:1px solid var(--borde);
+  background:transparent;color:var(--texto);
+  cursor:pointer;font-weight:700;font-size:.8rem;
+  transition:background .2s,border-color .2s;
+}
+.icon-btn:hover{background:var(--azul-claro);border-color:var(--azul-primario)}
+.icon-btn svg{width:18px;height:18px}
+
+/* ---------- Hero ---------- */
+#hero{
+  position:relative;
+  padding:clamp(2.5rem,8vw,6rem) clamp(1rem,6vw,7rem);
+  text-align:center;
+  flex:1;
+  display:flex;align-items:center;justify-content:center;
+}
+.hero-content{
+  max-width:680px;
+  margin:0 auto;
+  position:relative;z-index:1;
+}
+.hero-bg{
+  position:absolute;inset:0;z-index:0;
+  background:linear-gradient(160deg,var(--crema) 0%,var(--superficie) 60%,rgba(0,152,218,.05) 100%);
+}
+
+#hero h1{
+  font-size:clamp(2rem,4vw,3.2rem);
+  line-height:1.15;font-weight:800;margin-bottom:1.2rem;
+}
+.txt-azul{color:var(--azul-primario)}
+
+.sub{color:var(--texto-suave);font-size:1.1rem;line-height:1.6;margin-bottom:1.5rem}
+
+.bullets{
+  display:grid;gap:.5rem;
+  list-style:none;
+  text-align:left;
+  max-width:440px;
+  margin:0 auto 2rem;
+}
+.bullets li{position:relative;padding-left:1.5rem;color:var(--texto-suave)}
+.bullets li::before{
+  content:"";position:absolute;left:0;top:.5rem;
+  width:.6rem;height:.6rem;border-radius:50%;
+  background:var(--azul-primario);
+  box-shadow:0 0 0 3px var(--azul-claro);
+}
+
+/* Store buttons */
+.store-buttons{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+.store-btn{
+  display:flex;align-items:center;gap:0.75rem;
+  padding:0.85rem 1.5rem;border-radius:14px;
+  text-decoration:none;
+  color:var(--store-fg);
+  background:var(--store-bg);
+  transition:transform .2s,box-shadow .2s;
+  min-width:210px;
+}
+.store-btn:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.2)}
+.store-btn svg{flex-shrink:0;width:28px;height:28px}
+.store-label{display:block;font-size:.7rem;opacity:.8;font-weight:400;line-height:1}
+.store-name{display:block;font-weight:700;font-size:1.15rem;line-height:1.2}
+
+/* ---------- Alianzas ---------- */
+.partners{
+  background:var(--crema);
+  padding:clamp(2.5rem,6vw,4rem) clamp(1rem,6vw,7rem);
+  text-align:center;
+}
+.partners h2{font-size:clamp(1.5rem,2.5vw,2rem);margin-bottom:.5rem}
+.partner-logos{
+  display:flex;flex-wrap:wrap;justify-content:center;align-items:center;
+  gap:2.5rem;margin-top:2rem;
+}
+.partner-logos img{
+  height:60px;max-width:180px;object-fit:contain;
+  filter:drop-shadow(0 2px 8px rgba(0,0,0,.06));
+  transition:transform .2s;
+}
+.partner-logos img:hover{transform:scale(1.05)}
+[data-theme="dark"] .partner-logos img{
+  filter:brightness(1.1) drop-shadow(0 2px 8px rgba(0,0,0,.2));
+}
+
+/* ---------- Footer ---------- */
+.site-footer{
+  background:var(--azul-oscuro);color:#c8d0dc;
+  padding:1.5rem clamp(1rem,6vw,7rem);margin-top:auto;text-align:center;
+  font-size:.9rem;
+}
+.footer-links{margin-top:.4rem}
+.footer-links a{color:#8ba3c4;text-decoration:none}
+.footer-links a:hover{color:#fff}
+
+/* ---------- Responsivo ---------- */
+@media(max-width:768px){
+  .site-header{padding:0.75rem 1.25rem}
+  .brand-name{font-size:1rem}
+  .logo{height:34px}
+  .partner-logos img{height:44px}
+}
+@media(max-width:480px){
+  #hero{padding:clamp(2rem,6vw,4rem) 1.25rem}
+  .bullets{margin:0 0 1.5rem}
+  .store-buttons{flex-direction:column;align-items:stretch}
+  .store-btn{justify-content:center;min-width:0}
+  .partner-logos img{height:36px}
+  .partner-logos{gap:1.5rem}
+  .header-nav{gap:0.5rem}
+  .header-nav a:not(.cta):not(.icon-btn){display:none}
+  .icon-btn{width:30px;height:30px}
+}

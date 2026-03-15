@@ -248,6 +248,7 @@ void main() {
           config: HomeScreenConfig(
             appName: _appName,
             deepLinkScheme: _deepLinkScheme,
+            shareBaseUrl: _mapsBaseUrl,
             poiLayersManager: POILayersManager(assetsBasePath: 'assets/pois'),
           ),
           onStartNavigation: (context, itinerary, locationService) {
