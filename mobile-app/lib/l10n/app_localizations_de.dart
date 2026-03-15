@@ -21,6 +21,12 @@ class AppLocalizationsDe extends AppLocalizations {
   String get mapLightDesc => 'Helle Karte';
 
   @override
+  String get mapFiord => 'Fiord';
+
+  @override
+  String get mapFiordDesc => 'Dunkelblaue Karte';
+
+  @override
   String get aboutTitle => 'Mehr über Trujillo Mi Ruta';
 
   @override

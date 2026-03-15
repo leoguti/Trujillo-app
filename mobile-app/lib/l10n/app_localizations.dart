@@ -124,6 +124,18 @@ abstract class AppLocalizations {
   /// **'Light map'**
   String get mapLightDesc;
 
+  /// Display name for the Fiord Color map style
+  ///
+  /// In en, this message translates to:
+  /// **'Fiord'**
+  String get mapFiord;
+
+  /// Description for the Fiord Color map style
+  ///
+  /// In en, this message translates to:
+  /// **'Dark blue map'**
+  String get mapFiordDesc;
+
   /// Title for the about section in the About screen
   ///
   /// In en, this message translates to:

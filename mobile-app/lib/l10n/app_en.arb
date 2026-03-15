@@ -19,6 +19,15 @@
     "description": "Description for the light map style"
   },
 
+  "mapFiord": "Fiord",
+  "@mapFiord": {
+    "description": "Display name for the Fiord Color map style"
+  },
+  "mapFiordDesc": "Dark blue map",
+  "@mapFiordDesc": {
+    "description": "Description for the Fiord Color map style"
+  },
+
   "aboutTitle": "More about Trujillo Mi Ruta",
   "@aboutTitle": {
     "description": "Title for the about section in the About screen"

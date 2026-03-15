@@ -104,6 +104,35 @@ final List<ITrufiMapEngine> _mapEngines = [
         ],
       ),
     ),
+    OfflineMapLibreEngine(
+      engineId: 'offline_fiord_color',
+      nameBuilder: (ctx) => AppLocalizations.of(ctx)!.mapFiord,
+      descriptionBuilder: (ctx) => AppLocalizations.of(ctx)!.mapFiordDesc,
+      config: OfflineMapConfig(
+        mbtilesAsset: 'assets/offline/trujillo.mbtiles',
+        styleAsset: 'assets/offline/styles/fiord-color/style.json',
+        spritesAssetDir: 'assets/offline/styles/fiord-color/',
+        fontsAssetDir: 'assets/offline/fonts/',
+        fontMapping: {
+          'MetropolisRegular': 'Metropolis Regular',
+          'MetropolisLight': 'Metropolis Light',
+          'MetropolisLightItalic': 'Metropolis Light Italic',
+          'MetropolisMediumItalic': 'Metropolis Medium Italic',
+          'NotoSansRegular': 'Noto Sans Regular',
+          'NotoSansItalic': 'Noto Sans Italic',
+        },
+        fontRanges: [
+          '0-255',
+          '256-511',
+          '512-767',
+          '768-1023',
+          '1024-1279',
+          '1280-1535',
+          '8192-8447',
+          '8448-8703',
+        ],
+      ),
+    ),
   ],
 ];
 // ========================================
