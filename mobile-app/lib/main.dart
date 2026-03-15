@@ -438,6 +438,13 @@ Widget _buildInitScreen(
     currentStep: currentStep,
     errorMessage: errorMessage,
     onRetry: onRetry,
+    stepTextBuilder: (step) => switch (step) {
+      AppInitStep.starting => 'Iniciando',
+      AppInitStep.initializingOverlays => 'Inicializando',
+      AppInitStep.loadingMaps => 'Cargando mapas',
+      AppInitStep.loadingRoutes => 'Cargando rutas',
+      AppInitStep.preparingScreens => 'Casi listo',
+    },
     logo: ClipRRect(
       borderRadius: BorderRadius.circular(20),
       child: Image.asset(
