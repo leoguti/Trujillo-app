@@ -102,15 +102,35 @@ flutter devices
 #          ^^^^^  ^       (name)  (code, debe incrementar siempre)
 ```
 
-## Estructura de builds
+## Generar .zip de entrega
+
+Después de generar los 3 binarios, crear un .zip con los binarios + archivos de firma para entrega:
+
+```bash
+# Obtener version desde pubspec.yaml (ej: 1.0.0+6)
+VERSION=$(grep '^version:' pubspec.yaml | sed 's/version: //')
+
+# Crear carpeta temporal y copiar archivos
+mkdir -p /tmp/trujillo-build
+cp build/app/outputs/flutter-apk/app-release.apk /tmp/trujillo-build/
+cp build/app/outputs/bundle/release/app-release.aab /tmp/trujillo-build/
+cp -R build/ios/iphoneos/Runner.app /tmp/trujillo-build/
+cp android/key.properties /tmp/trujillo-build/
+cp android/upload-keystore.jks /tmp/trujillo-build/
+
+# Crear zip con nombre versionado
+cd /tmp
+zip -r "trujillo-miruta_v${VERSION}.zip" trujillo-build/
+rm -rf /tmp/trujillo-build
+```
+
+El .zip resultante (ej: `trujillo-miruta_v1.0.0+6.zip`) contiene:
 
 ```
-build/
-├── app/outputs/
-│   ├── flutter-apk/
-│   │   └── app-release.apk      ← APK firmado
-│   └── bundle/release/
-│       └── app-release.aab      ← AAB firmado
-└── ios/iphoneos/
-    └── Runner.app                ← iOS app (sin firma)
+trujillo-build/
+├── app-release.apk          ← APK firmado
+├── app-release.aab          ← AAB firmado (Google Play)
+├── Runner.app/               ← iOS app (sin firma)
+├── key.properties            ← Config de firma Android
+└── upload-keystore.jks       ← Keystore de firma Android
 ```
