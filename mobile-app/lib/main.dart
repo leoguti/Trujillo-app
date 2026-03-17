@@ -7,10 +7,11 @@ import 'package:trufi_core_about/trufi_core_about.dart';
 import 'package:trufi_core_feedback/trufi_core_feedback.dart';
 import 'package:trufi_core_home_screen/trufi_core_home_screen.dart';
 import 'package:trufi_core_maps/trufi_core_maps.dart';
-import 'package:trufi_core_navigation/trufi_core_navigation.dart';
+import 'package:trufi_core_navigation/trufi_core_navigation.dart'
+    show NavigationScreen, NavigationLocalizations;
 import 'package:trufi_core_poi_layers/trufi_core_poi_layers.dart';
 import 'package:trufi_core_routing/trufi_core_routing.dart'
-    show RoutingEngineManager, IRoutingProvider, Otp28RoutingProvider;
+    show RoutingEngineManager, IRoutingProvider, Otp28RoutingProvider, RoutingLocalizations;
 import 'package:trufi_core_saved_places/trufi_core_saved_places.dart';
 
 import 'services/analytics_header_provider.dart';
@@ -120,7 +121,7 @@ void main() {
         supportedLocales: [Locale('en'), Locale('es')],
         defaultLocaleIndex: 1,
       ),
-      extraLocalizationsDelegates: [AppLocalizations.delegate],
+      extraLocalizationsDelegates: [AppLocalizations.delegate, RoutingLocalizations.delegate, NavigationLocalizations.delegate],
       initScreenBuilder: _buildInitScreen,
       drawerFooterExtra: const _PartnerLogosRow(),
       logo: const _AppLogo(),
