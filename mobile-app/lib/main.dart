@@ -401,6 +401,47 @@ class _PartnerLogosRow extends StatelessWidget {
   }
 }
 
+/// Splash screen partner logos layout per CIMO branding guidelines.
+class _SplashPartnerLogos extends StatelessWidget {
+  const _SplashPartnerLogos();
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Text(
+          'Con el apoyo de:',
+          style: theme.textTheme.bodySmall?.copyWith(
+            color: theme.colorScheme.onSurface.withValues(alpha: 0.6),
+          ),
+        ),
+        const SizedBox(height: 12),
+        // Fila 1: MTC + PROMOVILIDAD (misma altura)
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Image.asset('assets/branding/MTC-logo.png', height: 32, fit: BoxFit.contain),
+            const SizedBox(width: 24),
+            Image.asset('assets/branding/PROMOVILIDAD-logo.png', height: 32, fit: BoxFit.contain),
+          ],
+        ),
+        const SizedBox(height: 12),
+        // Fila 2: GIZ + SECO (misma altura)
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Image.asset('assets/branding/GIZ-logo.jpg', height: 28, fit: BoxFit.contain),
+            const SizedBox(width: 24),
+            Image.asset('assets/branding/SECO-logo.jpg', height: 28, fit: BoxFit.contain),
+          ],
+        ),
+      ],
+    );
+  }
+}
+
 /// Custom splash screen with app logo and partner logos.
 Widget _buildInitScreen(
   BuildContext context,
@@ -422,15 +463,25 @@ Widget _buildInitScreen(
     logo: ClipRRect(
       borderRadius: BorderRadius.circular(20),
       child: Image.asset(
-        'assets/branding/MPT-logo-04.png',
+        'assets/branding/app-logo.png',
         width: 90,
         height: 90,
         fit: BoxFit.contain,
       ),
     ),
+    topWidget: Padding(
+      padding: const EdgeInsets.only(top: 16, left: 24, right: 24),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Image.asset('assets/branding/MPT-logo-04.png', height: 48, fit: BoxFit.contain),
+          Image.asset('assets/branding/app-logo.png', height: 48, fit: BoxFit.contain),
+        ],
+      ),
+    ),
     bottomWidget: const Padding(
-      padding: EdgeInsets.only(bottom: 24),
-      child: _PartnerLogosRow(),
+      padding: EdgeInsets.only(bottom: 24, left: 24, right: 24),
+      child: _SplashPartnerLogos(),
     ),
   );
 }
