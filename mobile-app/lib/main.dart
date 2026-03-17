@@ -79,32 +79,6 @@ final List<ITrufiMapEngine> _mapEngines = [
       ),
     ),
     OfflineMapLibreEngine(
-      engineId: 'offline_osm_bright',
-      nameBuilder: (ctx) => AppLocalizations.of(ctx)!.mapLight,
-      descriptionBuilder: (ctx) => AppLocalizations.of(ctx)!.mapLightDesc,
-      config: OfflineMapConfig(
-        mbtilesAsset: 'assets/offline/trujillo.mbtiles',
-        styleAsset: 'assets/offline/styles/osm-bright/style.json',
-        spritesAssetDir: 'assets/offline/styles/osm-bright/',
-        fontsAssetDir: 'assets/offline/fonts/',
-        fontMapping: {
-          'OpenSansRegular': 'Open Sans Regular',
-          'OpenSansBold': 'Open Sans Bold',
-          'OpenSansItalic': 'Open Sans Italic',
-        },
-        fontRanges: [
-          '0-255',
-          '256-511',
-          '512-767',
-          '768-1023',
-          '1024-1279',
-          '1280-1535',
-          '8192-8447',
-          '8448-8703',
-        ],
-      ),
-    ),
-    OfflineMapLibreEngine(
       engineId: 'offline_fiord_color',
       nameBuilder: (ctx) => AppLocalizations.of(ctx)!.mapFiord,
       descriptionBuilder: (ctx) => AppLocalizations.of(ctx)!.mapFiordDesc,
