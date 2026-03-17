@@ -45,6 +45,7 @@ final List<IRoutingProvider> _routingEngines = [
     displayName: 'OTP 2.8',
     planHeaderProvider: _analyticsHeader.provider,
     showWheelchairOption: false,
+    showBicycleOption: false,
   ),
 ];
 
