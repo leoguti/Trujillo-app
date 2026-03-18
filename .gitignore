@@ -18,6 +18,9 @@ logs/
 .DS_Store
 Thumbs.db
 
+# FVM
+.fvm/
+
 # IDE
 .vscode/
 .idea/
