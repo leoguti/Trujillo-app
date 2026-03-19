@@ -5926,7 +5926,7 @@
         "type": "bus_stop",
         "category": "transport",
         "subcategory": "bus_stop",
-        "description": "3(19-20-5)"
+        "description": "2(20-5)"
       }
     },
     {
@@ -5945,7 +5945,7 @@
         "type": "bus_stop",
         "category": "transport",
         "subcategory": "bus_stop",
-        "description": "3(19-20-5)"
+        "description": "2(20-5)"
       }
     },
     {
@@ -10106,7 +10106,7 @@
         "type": "bus_stop",
         "category": "transport",
         "subcategory": "bus_stop",
-        "description": "10(13-19-20-21-23-24-33-35-45-57)"
+        "description": "9(13-20-21-23-24-33-35-45-57)"
       }
     },
     {
@@ -11645,7 +11645,7 @@
         "type": "bus_stop",
         "category": "transport",
         "subcategory": "bus_stop",
-        "description": "12(16-19-20-21-35-40-41-42-44-66-80-85)"
+        "description": "11(16-20-21-35-40-41-42-44-66-80-85)"
       }
     },
     {
@@ -11664,7 +11664,7 @@
         "type": "bus_stop",
         "category": "transport",
         "subcategory": "bus_stop",
-        "description": "9(16-19-20-35-41-42-44-66-85)"
+        "description": "8(16-20-35-41-42-44-66-85)"
       }
     },
     {
@@ -12519,7 +12519,7 @@
         "type": "bus_stop",
         "category": "transport",
         "subcategory": "bus_stop",
-        "description": "8(17-19-22-52-57-68-78-84)"
+        "description": "7(17-22-52-57-68-78-84)"
       }
     },
     {
@@ -12747,7 +12747,7 @@
         "type": "bus_stop",
         "category": "transport",
         "subcategory": "bus_stop",
-        "description": "8(17-19-22-52-57-68-78-84)"
+        "description": "7(17-22-52-57-68-78-84)"
       }
     },
     {
@@ -13797,44 +13797,6 @@
     },
     {
       "type": "Feature",
-      "id": "5474060091",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.0611237,
-          -8.1382173
-        ]
-      },
-      "properties": {
-        "id": "5474060091",
-        "name": "Jirón Desamparados",
-        "type": "bus_stop",
-        "category": "transport",
-        "subcategory": "bus_stop",
-        "description": "1(19)"
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "1098630488",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.028446,
-          -8.0666979
-        ]
-      },
-      "properties": {
-        "id": "1098630488",
-        "name": "Prolongación Calle 7 de Julio",
-        "type": "bus_stop",
-        "category": "transport",
-        "subcategory": "bus_stop",
-        "description": "1(19)"
-      }
-    },
-    {
-      "type": "Feature",
       "id": "13546546190",
       "geometry": {
         "type": "Point",
@@ -13849,7 +13811,7 @@
         "type": "bus_stop",
         "category": "transport",
         "subcategory": "bus_stop",
-        "description": "4(19-20-46-74)"
+        "description": "3(20-46-74)"
       }
     },
     {
@@ -13868,7 +13830,7 @@
         "type": "bus_stop",
         "category": "transport",
         "subcategory": "bus_stop",
-        "description": "2(19-20)"
+        "description": "1(20)"
       }
     },
     {
@@ -13887,7 +13849,7 @@
         "type": "bus_stop",
         "category": "transport",
         "subcategory": "bus_stop",
-        "description": "3(19-20-74)"
+        "description": "2(20-74)"
       }
     },
     {
@@ -13906,7 +13868,7 @@
         "type": "bus_stop",
         "category": "transport",
         "subcategory": "bus_stop",
-        "description": "2(19-20)"
+        "description": "1(20)"
       }
     },
     {
@@ -13925,7 +13887,7 @@
         "type": "bus_stop",
         "category": "transport",
         "subcategory": "bus_stop",
-        "description": "2(19-20)"
+        "description": "1(20)"
       }
     },
     {
@@ -13944,7 +13906,7 @@
         "type": "bus_stop",
         "category": "transport",
         "subcategory": "bus_stop",
-        "description": "2(19-20)"
+        "description": "1(20)"
       }
     },
     {
@@ -13963,7 +13925,7 @@
         "type": "bus_stop",
         "category": "transport",
         "subcategory": "bus_stop",
-        "description": "3(19-20-23)"
+        "description": "2(20-23)"
       }
     },
     {
@@ -13982,7 +13944,7 @@
         "type": "bus_stop",
         "category": "transport",
         "subcategory": "bus_stop",
-        "description": "3(19-20-23)"
+        "description": "2(20-23)"
       }
     },
     {
@@ -14001,7 +13963,7 @@
         "type": "bus_stop",
         "category": "transport",
         "subcategory": "bus_stop",
-        "description": "4(19-20-21-23)"
+        "description": "3(20-21-23)"
       }
     },
     {
@@ -14020,7 +13982,7 @@
         "type": "bus_stop",
         "category": "transport",
         "subcategory": "bus_stop",
-        "description": "4(19-20-21-23)"
+        "description": "3(20-21-23)"
       }
     },
     {
@@ -14039,7 +14001,7 @@
         "type": "bus_stop",
         "category": "transport",
         "subcategory": "bus_stop",
-        "description": "4(19-20-21-23)"
+        "description": "3(20-21-23)"
       }
     },
     {
@@ -14058,7 +14020,7 @@
         "type": "bus_stop",
         "category": "transport",
         "subcategory": "bus_stop",
-        "description": "8(19-20-21-22-33-35-42-85)"
+        "description": "7(20-21-22-33-35-42-85)"
       }
     },
     {
@@ -14077,7 +14039,7 @@
         "type": "bus_stop",
         "category": "transport",
         "subcategory": "bus_stop",
-        "description": "7(19-20-21-33-35-42-85)"
+        "description": "6(20-21-33-35-42-85)"
       }
     },
     {
@@ -14096,7 +14058,7 @@
         "type": "bus_stop",
         "category": "transport",
         "subcategory": "bus_stop",
-        "description": "2(19-20)"
+        "description": "1(20)"
       }
     },
     {
@@ -14115,7 +14077,7 @@
         "type": "bus_stop",
         "category": "transport",
         "subcategory": "bus_stop",
-        "description": "2(19-20)"
+        "description": "1(20)"
       }
     },
     {
@@ -14134,7 +14096,7 @@
         "type": "bus_stop",
         "category": "transport",
         "subcategory": "bus_stop",
-        "description": "2(19-20)"
+        "description": "1(20)"
       }
     },
     {
@@ -14153,7 +14115,7 @@
         "type": "bus_stop",
         "category": "transport",
         "subcategory": "bus_stop",
-        "description": "2(19-20)"
+        "description": "1(20)"
       }
     },
     {
@@ -14419,7 +14381,7 @@
         "type": "bus_stop",
         "category": "transport",
         "subcategory": "bus_stop",
-        "description": "2(19-20)"
+        "description": "1(20)"
       }
     },
     {
@@ -14438,26 +14400,7 @@
         "type": "bus_stop",
         "category": "transport",
         "subcategory": "bus_stop",
-        "description": "4(19-20-46-74)"
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "13546545948",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.045632,
-          -8.1257703
-        ]
-      },
-      "properties": {
-        "id": "13546545948",
-        "name": "JPT-136",
-        "type": "bus_stop",
-        "category": "transport",
-        "subcategory": "bus_stop",
-        "description": "3(19-52-74)"
+        "description": "3(20-46-74)"
       }
     },
     {
@@ -23217,6 +23160,25 @@
         "category": "transport",
         "subcategory": "bus_stop",
         "description": "1(52)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "13546545948",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.045632,
+          -8.1257703
+        ]
+      },
+      "properties": {
+        "id": "13546545948",
+        "name": "JPT-136",
+        "type": "bus_stop",
+        "category": "transport",
+        "subcategory": "bus_stop",
+        "description": "2(52-74)"
       }
     },
     {
