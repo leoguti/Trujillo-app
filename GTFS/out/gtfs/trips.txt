@@ -34,12 +34,8 @@ trip_id,route_id,service_id,shape_id,trip_headsign,direction_id
 19962272,14,Mo-Su,19962272,Manzana Ñ,1
 19962287,19,Mo-Su,19962287,Calle Pedro Ruiz Gallo,0
 19962292,19,Mo-Su,19962292,Calle Atahualpa,1
-19962294,19,Mo-Su,19962294,Calle 7 de Julio,0
-19962298,19,Mo-Su,19962298,Calle Pedro Ruiz Gallo,1
 19962300,20,Mo-Su,19962300,Via Evitamiento Milagro,0
 19962303,20,Mo-Su,19962303,Calle Pedro Ruiz Gallo,1
-19962313,19,Mo-Su,19962313,Via Evitamiento Milagro,0
-19962315,19,Mo-Su,19962315,Calle Pedro Ruiz Gallo,1
 19962362,21,Mo-Su,19962362,Calle F,0
 19962394,21,Mo-Su,19962394,Calle Liverpool,1
 19962432,22,Mo-Su,19962432,Calle Alfonso Ugarte,0

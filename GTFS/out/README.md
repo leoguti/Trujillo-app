@@ -1,5 +1,5 @@
 ### Count
-**Total**: 205  **Correct**: 205  **With error**: 0
+**Total**: 201  **Correct**: 201  **With error**: 0
 
 
 | Id | Name | Ref | From | To | State |
@@ -171,10 +171,6 @@
 [19962271](https://www.openstreetmap.org/relation/19962271) | Avenida Juan Pablo II → Prolongación Avenida 12 de Noviembre | M-22 F | Avenida Juan Pablo II | Prolongación Avenida 12 de Noviembre | ✅
 [19962287](https://www.openstreetmap.org/relation/19962287) | Calle Atahualpa → Calle Pedro Ruiz Gallo | M-23 B | Calle Atahualpa | Calle Pedro Ruiz Gallo | ✅
 [19962292](https://www.openstreetmap.org/relation/19962292) | Calle Pedro Ruiz Gallo → Calle Atahualpa | M-23 B | Calle Pedro Ruiz Gallo | Calle Atahualpa | ✅
-[19962294](https://www.openstreetmap.org/relation/19962294) | Calle Pedro Ruiz Gallo → Calle 7 de Julio | M-23 B | Calle Pedro Ruiz Gallo | Calle 7 de Julio | ✅
-[19962298](https://www.openstreetmap.org/relation/19962298) | Calle 7 de Julio → Calle Pedro Ruiz Gallo | M-23 B | Calle 7 de Julio | Calle Pedro Ruiz Gallo | ✅
-[19962313](https://www.openstreetmap.org/relation/19962313) | Calle Pedro Ruiz Gallo → Via Evitamiento Milagro | M-23 B | Calle Pedro Ruiz Gallo | Via Evitamiento Milagro | ✅
-[19962315](https://www.openstreetmap.org/relation/19962315) | Via Evitamiento Milagro → Calle Pedro Ruiz Gallo | M-23 B | Via Evitamiento Milagro | Calle Pedro Ruiz Gallo | ✅
 [19962300](https://www.openstreetmap.org/relation/19962300) | Calle Pedro Ruiz Gallo → Via Evitamiento Milagro | M-23 BC | Calle Pedro Ruiz Gallo | Via Evitamiento Milagro | ✅
 [19962303](https://www.openstreetmap.org/relation/19962303) | Via Evitamiento Milagro → Calle Pedro Ruiz Gallo | M-23 BC | Via Evitamiento Milagro | Calle Pedro Ruiz Gallo | ✅
 [19962362](https://www.openstreetmap.org/relation/19962362) | Calle Liverpool → Calle F | M-25 A | Calle Liverpool | Calle F | ✅
@@ -211,7 +207,7 @@
 [19961958](https://www.openstreetmap.org/relation/19961958) | Avenida Libertad → Calle Virgen de la Puerta | M-36 LV | Avenida Libertad | Calle Virgen de la Puerta | ✅
 
 ### Paradas de extremo generadas artificialmente (forceEndpointStops)
-**Total**: 405
+**Total**: 397
 
 | Ruta | Nombre de ruta | Parada | Posición | Node ID |
 | ---- | -------------- | ------ | -------- | ------- |
@@ -280,18 +276,10 @@
 | M-23 B | Calle Atahualpa → Calle Pedro Ruiz Gallo | Jirón Desamparados | Final | 13654990713 |
 | M-23 B | Calle Pedro Ruiz Gallo → Calle Atahualpa | Jirón Desamparados | Inicio | 13654990713 |
 | M-23 B | Calle Pedro Ruiz Gallo → Calle Atahualpa | Avenida Dinamarca y Prolongación Calle 7 de Julio | Final | 2339884498 |
-| M-23 B | Calle Pedro Ruiz Gallo → Calle 7 de Julio | Jirón Desamparados | Inicio | 5474060091 |
-| M-23 B | Calle Pedro Ruiz Gallo → Calle 7 de Julio | Avenida Dinamarca y Prolongación Calle 7 de Julio | Final | 2339884498 |
-| M-23 B | Calle 7 de Julio → Calle Pedro Ruiz Gallo | Prolongación Calle 7 de Julio | Inicio | 1098630488 |
-| M-23 B | Calle 7 de Julio → Calle Pedro Ruiz Gallo | Jirón Desamparados | Final | 5474060091 |
 | M-23 BC | Calle Pedro Ruiz Gallo → Via Evitamiento Milagro | Jirón Desamparados | Inicio | 13654990713 |
 | M-23 BC | Calle Pedro Ruiz Gallo → Via Evitamiento Milagro | Via Evitamiento Milagro | Final | 2589604594 |
 | M-23 BC | Via Evitamiento Milagro → Calle Pedro Ruiz Gallo | Via Evitamiento Milagro | Inicio | 2589604594 |
 | M-23 BC | Via Evitamiento Milagro → Calle Pedro Ruiz Gallo | Jirón Desamparados | Final | 13654990713 |
-| M-23 B | Calle Pedro Ruiz Gallo → Via Evitamiento Milagro | Jirón Desamparados | Inicio | 5474060091 |
-| M-23 B | Calle Pedro Ruiz Gallo → Via Evitamiento Milagro | Via Evitamiento Milagro | Final | 2589604594 |
-| M-23 B | Via Evitamiento Milagro → Calle Pedro Ruiz Gallo | Prolongación Calle 7 de Julio | Inicio | 1098630488 |
-| M-23 B | Via Evitamiento Milagro → Calle Pedro Ruiz Gallo | Jirón Desamparados | Final | 5474060091 |
 | M-25 A | Calle Liverpool → Calle F | Avenida Mansiche y Calle Liverpool | Inicio | 1098599033 |
 | M-25 A | Calle Liverpool → Calle F | Avenida las Magnolias y Calle San Nicolas | Final | 1098626330 |
 | M-25 A | Calle F → Calle Liverpool | Avenida las Magnolias y Calle San Nicolas | Inicio | 5082107599 |
