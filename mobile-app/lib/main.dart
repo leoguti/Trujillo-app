@@ -124,7 +124,7 @@ void main() {
       extraLocalizationsDelegates: [AppLocalizations.delegate, RoutingLocalizations.delegate, NavigationLocalizations.delegate],
       initScreenBuilder: _buildInitScreen,
       minSplashDuration: const Duration(seconds: 2),
-      drawerFooterExtra: const _PartnerLogosRow(),
+      drawerFooterExtra: null,
       logo: const _AppLogo(),
       themeConfig: TrufiThemeConfig(
         theme: ThemeData(
@@ -322,28 +322,6 @@ void main() {
                   ),
                 );
               }),
-              // Partner logos section
-              Builder(builder: (context) {
-                final l10n = AppLocalizations.of(context)!;
-                return AboutSectionCard(
-                  icon: Icons.handshake_rounded,
-                  iconColor: const Color(0xFF2F64AD),
-                  title: l10n.aboutPartnersTitle,
-                  child: Wrap(
-                    spacing: 20,
-                    runSpacing: 16,
-                    alignment: WrapAlignment.center,
-                    crossAxisAlignment: WrapCrossAlignment.center,
-                    children: const [
-                      _PartnerLogo('assets/branding/MPT-logo-04.png', height: 50),
-                      _PartnerLogo('assets/branding/MTC-logo.png', height: 44),
-                      _PartnerLogo('assets/branding/PROMOVILIDAD-logo.png', height: 44),
-                      _PartnerLogo('assets/branding/GIZ-logo.jpg', height: 40),
-                      _PartnerLogo('assets/branding/SECO-logo.jpg', height: 36),
-                    ],
-                  ),
-                );
-              }),
             ],
           ),
         ),
@@ -358,49 +336,21 @@ class _AppLogo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
-    return Container(
-      decoration: BoxDecoration(
-        color: isDark ? const Color(0xFF1E293B) : Colors.white,
-        borderRadius: BorderRadius.circular(16),
-      ),
-      child: Image.asset('assets/branding/app-logo.png', fit: BoxFit.contain),
-    );
-  }
-}
-
-class _PartnerLogo extends StatelessWidget {
-  const _PartnerLogo(this.asset, {required this.height});
-
-  final String asset;
-  final double height;
-
-  @override
-  Widget build(BuildContext context) {
-    return Image.asset(
-      asset,
-      height: height,
-      fit: BoxFit.contain,
-    );
-  }
-}
-
-/// Partner logos row used in drawer footer and splash screen.
-class _PartnerLogosRow extends StatelessWidget {
-  const _PartnerLogosRow();
-
-  @override
-  Widget build(BuildContext context) {
-    return Wrap(
-      spacing: 14,
-      runSpacing: 10,
-      alignment: WrapAlignment.center,
-      crossAxisAlignment: WrapCrossAlignment.center,
-      children: const [
-        _PartnerLogo('assets/branding/MPT-logo-04.png', height: 30),
-        _PartnerLogo('assets/branding/MTC-logo.png', height: 26),
-        _PartnerLogo('assets/branding/PROMOVILIDAD-logo.png', height: 26),
-        _PartnerLogo('assets/branding/GIZ-logo.jpg', height: 24),
-        _PartnerLogo('assets/branding/SECO-logo.jpg', height: 22),
+    return Row(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Container(
+          decoration: BoxDecoration(
+            color: isDark ? const Color(0xFF1E293B) : Colors.white,
+            borderRadius: BorderRadius.circular(12),
+          ),
+          padding: const EdgeInsets.all(4),
+          child: Image.asset('assets/branding/app-logo.png', fit: BoxFit.contain),
+        ),
+        const SizedBox(width: 12),
+        Flexible(
+          child: Image.asset('assets/branding/MPT-logo-04.png', fit: BoxFit.contain),
+        ),
       ],
     );
   }
