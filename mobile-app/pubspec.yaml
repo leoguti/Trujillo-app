@@ -21,8 +21,6 @@ dependencies:
   latlong2: ^0.9.1
   h3_flutter: ^0.7.1
   maplibre_gl: ^0.25.0
-  flutter_native_splash: ^2.4.6
-
   # Trufi Core packages from git
   trufi_core_interfaces:
     git:
