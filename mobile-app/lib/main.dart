@@ -237,7 +237,11 @@ void main() {
           },
         ),
         SavedPlacesTrufiScreen(),
-        TransportListTrufiScreen(),
+        TransportListTrufiScreen(
+          dataProviderBuilder: (_) => GtfsTransportDataProvider(
+            assetPath: 'assets/routing/trujillo.gtfs.zip',
+          ),
+        ),
         FeedbackTrufiScreen(config: FeedbackConfig(feedbackUrl: _feedbackUrl)),
         SettingsTrufiScreen(),
         AboutTrufiScreen(
