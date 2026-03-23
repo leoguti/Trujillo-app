@@ -8,7 +8,7 @@ import 'package:trufi_core_feedback/trufi_core_feedback.dart';
 import 'package:trufi_core_home_screen/trufi_core_home_screen.dart';
 import 'package:trufi_core_maps/trufi_core_maps.dart';
 import 'package:trufi_core_navigation/trufi_core_navigation.dart'
-    show NavigationScreen, NavigationLocalizations;
+    show NavigationLocalizations;
 import 'package:trufi_core_poi_layers/trufi_core_poi_layers.dart';
 import 'package:trufi_core_routing/trufi_core_routing.dart'
     show RoutingEngineManager, IRoutingProvider, Otp28RoutingProvider, RoutingLocalizations;
@@ -225,14 +225,6 @@ void main() {
             shareBaseUrl: _webBaseUrl,
             poiLayersManager: POILayersManager(assetsBasePath: 'assets/pois'),
           ),
-          onStartNavigation: (context, itinerary, locationService) {
-            NavigationScreen.showFromItinerary(
-              context,
-              itinerary: itinerary,
-              locationService: locationService,
-              mapEngineManager: MapEngineManager.read(context),
-            );
-          },
           onRouteTap: (context, routeCode) {
             TransportDetailScreen.show(context, routeCode: routeCode);
           },
