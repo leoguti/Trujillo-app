@@ -1,7 +1,7 @@
 name: trujillo_mobility
 description: "Trujillo MiRuta - Public transport app for Trujillo, Peru"
 publish_to: 'none'
-version: 1.1.0+7
+version: 1.2.0+8
 
 environment:
   sdk: ^3.10.0
