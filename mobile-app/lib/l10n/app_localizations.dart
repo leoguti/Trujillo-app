@@ -165,6 +165,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Project partners'**
   String get aboutPartnersTitle;
+
+  /// Short open source notice for the About screen
+  ///
+  /// In en, this message translates to:
+  /// **'This application is built with open source software under the GPL-3.0 license.'**
+  String get aboutOpenSourceNotice;
 }
 
 class _AppLocalizationsDelegate

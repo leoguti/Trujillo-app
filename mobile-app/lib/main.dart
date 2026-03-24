@@ -262,39 +262,6 @@ void main() {
                   ),
                 );
               }),
-              // Open source section (default)
-              Builder(builder: (context) {
-                final theme = Theme.of(context);
-                final aboutL10n = AboutLocalizations.of(context);
-                return AboutSectionCard(
-                  icon: Icons.code_rounded,
-                  iconColor: Colors.green,
-                  title: 'Open Source',
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        aboutL10n.aboutOpenSource,
-                        style: theme.textTheme.bodyMedium?.copyWith(
-                          height: 1.6,
-                          color: theme.colorScheme.onSurface,
-                        ),
-                      ),
-                      const SizedBox(height: 14),
-                      AboutLinkTile(
-                        icon: Icons.open_in_new_rounded,
-                        iconColor: Colors.deepPurple,
-                        title: 'GitHub',
-                        subtitle: 'trufi-association/trufi-core',
-                        onTap: () => launchUrl(
-                          Uri.parse('https://github.com/trufi-association/trufi-core'),
-                          mode: LaunchMode.externalApplication,
-                        ),
-                      ),
-                    ],
-                  ),
-                );
-              }),
               // Contact section
               Builder(builder: (context) {
                 final l10n = AppLocalizations.of(context)!;
@@ -311,6 +278,39 @@ void main() {
                       Uri.parse('mailto:$_emailContact?subject=$_appName Feedback'),
                       mode: LaunchMode.externalApplication,
                     ),
+                  ),
+                );
+              }),
+              // Open source section
+              Builder(builder: (context) {
+                final theme = Theme.of(context);
+                final l10n = AppLocalizations.of(context)!;
+                return AboutSectionCard(
+                  icon: Icons.code_rounded,
+                  iconColor: Colors.green,
+                  title: 'Open Source',
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        l10n.aboutOpenSourceNotice,
+                        style: theme.textTheme.bodyMedium?.copyWith(
+                          height: 1.6,
+                          color: theme.colorScheme.onSurface,
+                        ),
+                      ),
+                      const SizedBox(height: 14),
+                      AboutLinkTile(
+                        icon: Icons.open_in_new_rounded,
+                        iconColor: Colors.deepPurple,
+                        title: 'GitHub',
+                        subtitle: 'github.com',
+                        onTap: () => launchUrl(
+                          Uri.parse('https://github.com/trufi-association/trufi-core'),
+                          mode: LaunchMode.externalApplication,
+                        ),
+                      ),
+                    ],
                   ),
                 );
               }),

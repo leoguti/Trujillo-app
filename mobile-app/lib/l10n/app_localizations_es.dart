@@ -41,4 +41,8 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get aboutPartnersTitle => 'Socios del proyecto';
+
+  @override
+  String get aboutOpenSourceNotice =>
+      'Esta aplicación está construida con software de código abierto bajo la licencia GPL-3.0.';
 }

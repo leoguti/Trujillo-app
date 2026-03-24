@@ -14,5 +14,6 @@
   "aboutDescription": "Mi Ruta Trujillo es una aplicación digital que hace más fácil moverse en transporte público por la ciudad. Permite consultar rutas y ubicar paraderos para planificar mejor cada viaje, ahorrar tiempo y llegar al destino con mayor claridad.\n\nEsta aplicación fue desarrollada con apoyo de la cooperación alemana para el desarrollo, implementada por la Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH, y Suiza, a través de su Cooperación Económica, en el marco del proyecto Ciudades en Movimiento (CIMO). Su implementación se llevó adelante con el soporte del Ministerio de Transportes y Comunicaciones del Perú (MTC), mediante PROMOVILIDAD, y en coordinación con la Municipalidad Provincial de Trujillo.",
   "aboutContactTitle": "Contacto",
   "aboutContactSubtitle": "Envíanos tus comentarios",
-  "aboutPartnersTitle": "Socios del proyecto"
+  "aboutPartnersTitle": "Socios del proyecto",
+  "aboutOpenSourceNotice": "Esta aplicación está construida con software de código abierto bajo la licencia GPL-3.0."
 }

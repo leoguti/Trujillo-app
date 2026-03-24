@@ -47,5 +47,9 @@
   "aboutPartnersTitle": "Project partners",
   "@aboutPartnersTitle": {
     "description": "Title for the partner logos section in the About screen"
+  },
+  "aboutOpenSourceNotice": "This application is built with open source software under the GPL-3.0 license.",
+  "@aboutOpenSourceNotice": {
+    "description": "Short open source notice for the About screen"
   }
 }
