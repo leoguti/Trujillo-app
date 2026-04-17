@@ -11,7 +11,11 @@ import 'package:trufi_core_navigation/trufi_core_navigation.dart'
     show NavigationLocalizations;
 import 'package:trufi_core_poi_layers/trufi_core_poi_layers.dart';
 import 'package:trufi_core_routing/trufi_core_routing.dart'
-    show RoutingEngineManager, IRoutingProvider, Otp28RoutingProvider, RoutingLocalizations;
+    show
+        RoutingEngineManager,
+        IRoutingProvider,
+        Otp28RoutingProvider,
+        RoutingLocalizations;
 import 'package:trufi_core_saved_places/trufi_core_saved_places.dart';
 
 import 'services/analytics_header_provider.dart';
@@ -39,7 +43,9 @@ const _webBaseUrl = 'https://trujillo.trufi.dev';
 
 final _analyticsHeader = AnalyticsHeaderProvider();
 
-// Routing engines
+// Routing engines. `liveVehiclesEnabled: true` opts this engine into the
+// GTFS-RT companion provider — trufi_core_home_screen automatically picks it
+// up and renders the "Live buses" toggle + map layer + LIVE badges.
 final List<IRoutingProvider> _routingEngines = [
   Otp28RoutingProvider(
     endpoint: 'https://otp.trujillo.trufi.dev',
@@ -47,6 +53,7 @@ final List<IRoutingProvider> _routingEngines = [
     planHeaderProvider: _analyticsHeader.provider,
     showWheelchairOption: false,
     showBicycleOption: false,
+    liveVehiclesEnabled: true,
   ),
 ];
 
@@ -214,6 +221,7 @@ void main() {
               baseUrl: 'https://photon.trujillo.trufi.dev',
               biasLatitude: _defaultCenter.latitude,
               biasLongitude: _defaultCenter.longitude,
+              boundingBox: const [-79.1233, -8.2240, -78.6850, -7.8528],
             ),
           ),
         ),
