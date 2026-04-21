@@ -1,6 +1,0 @@
-{
-    "requestLogFile": "/app/data/request.log",
-    "routingDefaults": {
-        "transferPenalty": 300
-    }
-}

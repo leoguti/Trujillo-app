@@ -36,3 +36,13 @@ Thumbs.db
 # Temporary files
 *.tmp
 .cache/
+
+# Carpetas / archivos no usados (mantener solo local)
+API-AN/
+GTFSv2/
+backend/
+frontend/
+page/
+stops-analysis/
+RESUMEN.md
+mapa-h3-demo.html
