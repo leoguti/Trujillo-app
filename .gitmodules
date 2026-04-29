@@ -1,8 +1,16 @@
-[submodule "frontend"]
-	path = frontend
-	url = https://github.com/trufi-association/rutometro-app
-	branch = main
-[submodule "backend"]
-	path = backend
+[submodule "server/otp"]
+	path = server/otp
 	url = https://github.com/trufi-association/trufi-server-otp.git
+	branch = main
+[submodule "server/server"]
+	path = server/server
+	url = https://github.com/trufi-association/trufi-server.git
+	branch = main
+[submodule "server/photon"]
+	path = server/photon
+	url = https://github.com/trufi-association/trufi-server-photon.git
+	branch = main
+[submodule "server/tileserver-gl"]
+	path = server/tileserver-gl
+	url = https://github.com/trufi-association/trufi-server-tileserver-gl.git
 	branch = main

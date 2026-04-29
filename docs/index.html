@@ -1,0 +1,3950 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MiRuta Trujillo — Documentación técnica</title>
+  <meta name="description" content="Documentación técnica completa: arquitectura, servicios, código, configuración y operaciones del sistema de transporte de Trujillo." />
+  <meta name="theme-color" content="#07080d" />
+  <link rel="icon" type="image/png" href="assets/brand/app-logo.png" />
+  <meta property="og:title" content="MiRuta Trujillo — Documentación técnica" />
+  <meta property="og:description" content="Arquitectura, servicios, código y operaciones del sistema de transporte de Trujillo." />
+  <meta property="og:image" content="assets/brand/app-logo.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="bg-mesh" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <header class="gov-bar" aria-label="Banda institucional">
+    <div class="gov-bar-inner">
+      <a class="gov-mpt-link" href="#1" aria-label="Inicio">
+        <img class="gov-mpt" src="assets/logos/MPT-logo-04.png" alt="Municipalidad Provincial de Trujillo" />
+      </a>
+      <div class="gov-slogan" aria-label="Trujillo Avanza">
+        <span class="quote-l" aria-hidden="true">&ldquo;</span>&nbsp;Trujillo<br />AVANZA&nbsp;<span class="quote-r" aria-hidden="true">&rdquo;</span>
+      </div>
+    </div>
+  </header>
+
+  <footer class="donors-bar" aria-label="Con el apoyo de">
+    <div class="donors-bar-inner">
+      <span class="donors-label">Con el apoyo de</span>
+      <img class="donors-logo donors-mtc" src="assets/logos/MTC-logo.png" alt="MTC — Ministerio de Transportes y Comunicaciones del Perú" />
+      <img class="donors-logo donors-giz" src="assets/logos/GIZ-logo.jpg" alt="GIZ — Cooperación Alemana" />
+      <img class="donors-logo donors-seco" src="assets/logos/SECO-logo.jpg" alt="SECO — Cooperación Suiza" />
+      <img class="donors-logo donors-project" src="assets/logos/proyecto-icon.png" alt="Trujillo Avanza" />
+    </div>
+  </footer>
+
+  <div class="progress" aria-hidden="true"><div class="progress-bar" id="progressBar"></div></div>
+
+  <main class="deck" id="deck">
+
+    <!-- 1 — Cover (institutional template — matches .pptx exactly) -->
+    <section class="slide slide-cover" data-slide="1">
+      <img class="cover-watermark" src="assets/logos/proyecto-icon.png" alt="" aria-hidden="true" />
+      <div class="cover-body">
+        <h1 class="cover-title">
+          <span class="cover-accent" aria-hidden="true"></span>
+          Soluciones Tecnológicas para el<br />
+          Transporte Público Urbano
+        </h1>
+        <div class="cover-speaker">
+          <p class="cover-speaker-name">Samuel Rioja</p>
+          <p class="cover-speaker-role">CTO &amp; Solution Architect</p>
+          <p class="cover-speaker-org">NEXION S.R.L.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2 — Acceso al servidor -->
+    <section class="slide slide-detail" data-slide="2" data-title="Agenda">
+      <header class="detail-header">
+        <div class="detail-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+        </div>
+        <div>
+          <span class="eyebrow">Agenda</span>
+          <h2>Lo que veremos en esta presentación</h2>
+          <p class="lead-sm">Recorrido completo por la arquitectura del sistema MiRuta Trujillo: los servicios que corren en producción, el pipeline de datos en tiempo real, la app móvil y las operaciones del día a día.</p>
+        </div>
+      </header>
+      <div class="agenda-grid">
+        <article class="agenda-section">
+          <div class="agenda-head">
+            <span class="agenda-num">01</span>
+            <span class="agenda-pages">p. 3 — 8</span>
+          </div>
+          <h3>Conceptos básicos</h3>
+          <ul>
+            <li>Docker & docker-compose</li>
+            <li>SSH y autenticación por llave</li>
+            <li>Reverse proxy</li>
+            <li>Git submodules</li>
+            <li>SSL / Let's Encrypt</li>
+          </ul>
+        </article>
+
+        <article class="agenda-section">
+          <div class="agenda-head">
+            <span class="agenda-num">02</span>
+            <span class="agenda-pages">p. 9 — 14</span>
+          </div>
+          <h3>Datos & formatos</h3>
+          <ul>
+            <li>GTFS estático</li>
+            <li>GTFS-RT (tiempo real)</li>
+            <li><code>trip_id</code> — el problema central</li>
+            <li>OSM — OpenStreetMap</li>
+            <li>Vector tiles & MapLibre</li>
+            <li>GraphQL</li>
+          </ul>
+        </article>
+
+        <article class="agenda-section">
+          <div class="agenda-head">
+            <span class="agenda-num">03</span>
+            <span class="agenda-pages">p. 15 — 21</span>
+          </div>
+          <h3>Arquitectura & OTP</h3>
+          <ul>
+            <li>Diagrama del sistema</li>
+            <li>Stack de servicios</li>
+            <li>Demo: health check global</li>
+            <li>OTP overview, driver app</li>
+            <li>Configuración & GraphQL</li>
+          </ul>
+        </article>
+
+        <article class="agenda-section">
+          <div class="agenda-head">
+            <span class="agenda-num">04</span>
+            <span class="agenda-pages">p. 22 — 33</span>
+          </div>
+          <h3>Pipeline + Servicios</h3>
+          <ul>
+            <li>GTFS-RT proxy, enrich, simulator</li>
+            <li>Photon (geocoding)</li>
+            <li>TileServer GL (mapas)</li>
+            <li>YARP / proxy + analytics</li>
+            <li>web-landing, datos de input</li>
+          </ul>
+        </article>
+
+        <article class="agenda-section">
+          <div class="agenda-head">
+            <span class="agenda-num">05</span>
+            <span class="agenda-pages">p. 34 — 46</span>
+          </div>
+          <h3>App móvil</h3>
+          <ul>
+            <li>Stack: Flutter + trufi-core</li>
+            <li>Build & release</li>
+            <li>Admin: 9 tareas comunes (versión, URLs, branding, idioma, etc.)</li>
+          </ul>
+        </article>
+
+        <article class="agenda-section">
+          <div class="agenda-head">
+            <span class="agenda-num">06</span>
+            <span class="agenda-pages">p. 47 — 75</span>
+          </div>
+          <h3>Operaciones</h3>
+          <ul>
+            <li>Troubleshooting (10 problemas comunes)</li>
+            <li>Cheat sheet (deploy, debug, SQL)</li>
+            <li>Gestión de accesos & SSH</li>
+            <li>Backup & disaster recovery (8 categorías)</li>
+            <li>Cierre & contacto</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- 3 — Concepto: Docker -->
+    <section class="slide slide-detail" data-slide="3" data-title="Docker">
+      <header class="detail-header">
+        <div class="detail-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 17.5C19 19 16 19 13 19c-3.5 0-6-1-9-2 0 0-1-.5-1-1.5 0-1 1-1.5 1-1.5"/><rect x="3" y="11" width="3" height="3"/><rect x="7" y="11" width="3" height="3"/><rect x="11" y="11" width="3" height="3"/><rect x="15" y="11" width="3" height="3"/><rect x="7" y="7" width="3" height="3"/><rect x="11" y="7" width="3" height="3"/><rect x="11" y="3" width="3" height="3"/></svg>
+        </div>
+        <div>
+          <span class="eyebrow">Conceptos básicos · 1 / 6</span>
+          <h2>Docker — cajas aisladas para programas</h2>
+          <p class="lead-sm">Una "caja virtual" que contiene un programa con todo lo que necesita: sistema operativo mínimo, librerías y configs. Cada servicio del stack corre en su propia caja.</p>
+        </div>
+      </header>
+      <div class="detail-grid-2">
+        <div>
+          <h4>¿Por qué importa?</h4>
+          <p>En vez de instalar OTP, Photon, PostgreSQL, etc. directamente en el server, cada uno corre en su propia caja Docker.</p>
+          <ul class="detail-list">
+            <li>Si uno falla, no rompe a los demás</li>
+            <li>Versiones independientes — actualizas OTP sin tocar Photon</li>
+            <li>Reproducible: lo mismo en dev, staging y prod</li>
+            <li>Fácil rollback: <code>docker compose down</code> + redeploy</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Comandos esenciales</h4>
+          <pre class="snippet"># Ver cajas corriendo
+docker ps
+
+# Reiniciar una caja
+docker restart &lt;nombre&gt;
+
+# Ver lo que imprime
+docker logs -f &lt;nombre&gt;
+
+# Logs últimos 100
+docker logs --tail 100 &lt;nombre&gt;
+
+# Entrar a la caja con shell
+docker exec -it &lt;nombre&gt; bash</pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4 — Concepto: docker-compose -->
+    <section class="slide slide-detail" data-slide="4" data-title="docker-compose">
+      <header class="detail-header">
+        <div class="detail-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/></svg>
+        </div>
+        <div>
+          <span class="eyebrow">Conceptos básicos · 2 / 6</span>
+          <h2>docker-compose — orquestar varias cajas juntas</h2>
+          <p class="lead-sm">Un archivo <code>docker-compose.yml</code> describe varios containers Docker como un grupo: qué imagen, qué puertos, qué volúmenes, qué red comparten. Permite levantarlas todas con un solo comando.</p>
+        </div>
+      </header>
+      <div class="detail-grid-2">
+        <div>
+          <h4>Estructura de cada servicio</h4>
+          <p>En el server hay un folder por servicio, cada uno con su propio compose:</p>
+          <pre class="snippet">/root/
+├── otp/             docker-compose.yml
+├── server/          docker-compose.yml
+├── photon/          docker-compose.yml
+├── tileserver-gl/   docker-compose.yml
+├── gtfs-rt-proxy/   docker-compose.yml
+└── web-landing/     docker-compose.yml</pre>
+          <p>Todos comparten la red <code>trufi-server</code> para hablarse entre sí.</p>
+        </div>
+        <div>
+          <h4>Los 3 comandos que usas 99% del tiempo</h4>
+          <pre class="snippet">cd /root/&lt;servicio&gt;
+
+# Levantar (build + start en background)
+docker compose up -d --build
+
+# Reiniciar (sin rebuild)
+docker compose restart
+
+# Bajar
+docker compose down
+
+# Ver el estado
+docker compose ps
+
+# Logs en vivo
+docker compose logs -f</pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5 — Concepto: SSH -->
+    <section class="slide slide-detail" data-slide="5" data-title="SSH">
+      <header class="detail-header">
+        <div class="detail-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        </div>
+        <div>
+          <span class="eyebrow">Conceptos básicos · 3 / 6</span>
+          <h2>SSH — Secure Shell</h2>
+          <p class="lead-sm">Protocolo para ejecutar comandos en una computadora remota desde tu terminal local. Como tener una consola que está físicamente dentro del servidor — pero encriptada y autenticada por llave.</p>
+        </div>
+      </header>
+      <div class="detail-grid-2">
+        <div>
+          <h4>Cómo funciona la autenticación</h4>
+          <p>Generas un <strong>par de llaves</strong>: una pública y una privada. La pública la subes al server (al archivo <code>~/.ssh/authorized_keys</code> del usuario remoto). La privada se queda en tu máquina y nunca sale.</p>
+          <p>Cuando conectas, SSH usa criptografía para demostrar que tienes la llave privada que coincide con esa pública — sin transmitirla.</p>
+          <ul class="detail-list">
+            <li>Sin password — más seguro y más rápido</li>
+            <li>La llave privada está protegida por contraseña local (passphrase)</li>
+            <li>Puedes agregar/quitar accesos editando <code>authorized_keys</code></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Setup y uso</h4>
+          <pre class="snippet"># 1. Generar par de llaves (en tu máquina)
+ssh-keygen -t ed25519 -C "tu-email@ejemplo.com"
+
+# 2. Copiar la pública al portapapeles
+cat ~/.ssh/id_ed25519.pub | pbcopy   # macOS
+cat ~/.ssh/id_ed25519.pub | xclip    # Linux
+
+# 3. (un admin ya autorizado) la agrega:
+echo "ssh-ed25519 AAAA... tu-email" \
+  &gt;&gt; /root/.ssh/authorized_keys
+
+# 4. Conectarte
+ssh root@trujillo.trufi.dev</pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6 — Concepto: Reverse proxy -->
+    <section class="slide slide-detail" data-slide="6" data-title="Reverse proxy">
+      <header class="detail-header">
+        <div class="detail-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/><path d="M3 12h18"/><path d="M12 3a14.5 14.5 0 0 0 0 18"/><path d="M12 3a14.5 14.5 0 0 1 0 18"/></svg>
+        </div>
+        <div>
+          <span class="eyebrow">Conceptos básicos · 4 / 6</span>
+          <h2>Reverse proxy — el guardián de la entrada</h2>
+          <p class="lead-sm">Un programa que recibe TODAS las peticiones públicas (puerto 80/443) y las redirige al servicio interno correcto. En este stack lo cumple <strong>YARP</strong> (.NET 10).</p>
+        </div>
+      </header>
+      <div class="detail-grid-2">
+        <div>
+          <h4>Por qué importa</h4>
+          <p>Solo el reverse proxy escucha públicamente. OTP, Photon, TileServer, etc. están <em>escondidos</em> detrás — no son accesibles directamente desde internet.</p>
+          <p>Si alguien hace <code>GET trujillo.trufi.dev/otp/…</code>, YARP lo manda internamente a <code>http://otp:8080/…</code>. Beneficios:</p>
+          <ul class="detail-list">
+            <li>Un solo certificado SSL/TLS para todo el stack</li>
+            <li>Logs centralizados de todos los requests</li>
+            <li>No exponer servicios sensibles a internet</li>
+            <li>Fácil sumar/quitar backends sin tocar DNS</li>
+            <li>Rate limiting, auth, headers — en un solo lugar</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Routing en este stack</h4>
+          <pre class="snippet">Cliente
+  │  HTTPS (puerto 443)
+  ▼
+trujillo.trufi.dev
+  │
+  ▼
+┌─────────────────────────┐
+│  YARP (reverse proxy)   │
+│  - SSL termination      │
+│  - request logging      │
+└─────────────────────────┘
+  │
+  ├── /otp/* ──▶ http://otp:8080
+  ├── /photon/* ──▶ http://photon:2322
+  ├── /tiles/* ──▶ http://tileserver-gl
+  └── / ──▶ http://web-landing</pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7 — Concepto: Git submodules -->
+    <section class="slide slide-detail" data-slide="7" data-title="Git submodules">
+      <header class="detail-header">
+        <div class="detail-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+        </div>
+        <div>
+          <span class="eyebrow">Conceptos básicos · 5 / 6</span>
+          <h2>Git submodules — incluir otros repos como subcarpetas</h2>
+          <p class="lead-sm">Un repo git puede "incluir" otros repos como subcarpetas, fijando un commit específico de cada uno. Permite versionar qué versión del código externo usas sin duplicarlo en tu propio repo.</p>
+        </div>
+      </header>
+      <div class="detail-grid-2">
+        <div>
+          <h4>Por qué los usamos</h4>
+          <p>OTP, Photon, TileServer GL y YARP/server son repos de <a href="https://github.com/trufi-association" target="_blank" rel="noopener">trufi-association</a> (mantenidos por la comunidad Trufi). No son nuestros, pero los necesitamos en producción.</p>
+          <p>Los traemos como submódulos para:</p>
+          <ul class="detail-list">
+            <li>Versionar exactamente qué commit corre en producción</li>
+            <li>Poder upgradar (o revertir) controladamente</li>
+            <li>No duplicar miles de líneas de código en este repo</li>
+            <li>Mantener attribution clara de upstream</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Comandos comunes</h4>
+          <pre class="snippet"># Clonar este repo CON submódulos
+git clone --recurse-submodules &lt;url&gt;
+
+# Si ya cloneaste sin submódulos
+git submodule update --init --recursive
+
+# Actualizar a últimos commits remotos
+git submodule update --remote --merge
+
+# Ver estado de cada submódulo
+git submodule status
+
+# Cambiar al main de un submódulo específico
+cd server/otp
+git checkout main
+git pull</pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8 — Concepto: SSL / Let's Encrypt -->
+    <section class="slide slide-detail" data-slide="8" data-title="SSL / Let's Encrypt">
+      <header class="detail-header">
+        <div class="detail-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+        </div>
+        <div>
+          <span class="eyebrow">Conceptos básicos · 6 / 6</span>
+          <h2>SSL / TLS y Let's Encrypt</h2>
+          <p class="lead-sm">El candadito verde 🔒 en el browser. Necesario para que la conexión cliente ↔ servidor sea encriptada (HTTPS) y para evitar ataques man-in-the-middle. Sin esto, la app móvil no podría hablar con OTP de manera segura.</p>
+        </div>
+      </header>
+      <div class="detail-grid-2">
+        <div>
+          <h4>Cómo se obtiene un certificado</h4>
+          <p><strong>Let's Encrypt</strong> es una CA (Certificate Authority) gratis y automatizada. En lugar de pagar a Comodo o DigiCert, te da certificados válidos de 90 días, renovables sin límite.</p>
+          <p>El proceso (ACME):</p>
+          <ul class="detail-list">
+            <li>Tu server prueba que controla el dominio (HTTP-01 o DNS-01)</li>
+            <li>Let's Encrypt emite el certificado</li>
+            <li>YARP lo guarda y lo presenta en cada request HTTPS</li>
+            <li>30 días antes de expirar, lo renueva automáticamente</li>
+          </ul>
+        </div>
+        <div>
+          <h4>LettuceEncrypt — la integración con YARP</h4>
+          <p><strong>LettuceEncrypt</strong> es la librería .NET que YARP usa para gestionar el ciclo de vida de certificados Let's Encrypt. Cero config manual.</p>
+          <pre class="snippet">// Program.cs (resumido)
+builder.Services
+  .AddLettuceEncrypt(opts =&gt; {
+    opts.AcceptTermsOfService = true;
+    opts.DomainNames = new[] {
+      "trujillo.trufi.dev"
+    };
+    opts.EmailAddress = "admin@...";
+  })
+  .PersistDataToDirectory(
+    new DirectoryInfo("/data/lettuce"),
+    pfxPassword: null);</pre>
+          <p class="detail-note">Los certificados persisten en <code>/root/server/data/lettuce-encrypt/</code> (backupear si reinstalas).</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9 — GTFS -->
+    <section class="slide slide-detail" data-slide="9" data-title="GTFS">
+      <header class="detail-header">
+        <div class="detail-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6v6"/><path d="M16 6v6"/><path d="M2 12h20"/><path d="M2 16h20"/><path d="M2 20h20"/><path d="M14 4h-4a4 4 0 0 0-4 4v12h12V8a4 4 0 0 0-4-4z"/><circle cx="8" cy="17" r="1"/><circle cx="16" cy="17" r="1"/></svg>
+        </div>
+        <div>
+          <span class="eyebrow">GTFS · datos · 1 / 6</span>
+          <h2>GTFS — General Transit Feed Specification</h2>
+          <p class="lead-sm">Estándar abierto de Google (2006) para describir <strong>transporte público estático</strong>: qué líneas existen, dónde están los paraderos, qué horarios siguen. Formato: un <code>.zip</code> con archivos <code>.txt</code> en CSV.</p>
+        </div>
+      </header>
+      <div class="detail-grid-2">
+        <div>
+          <h4>Tablas principales</h4>
+          <ul class="detail-list">
+            <li><code>routes.txt</code> — qué líneas existen (Línea 19, etc.)</li>
+            <li><code>stops.txt</code> — paraderos (lat/lon, nombre)</li>
+            <li><code>trips.txt</code> — un viaje específico de una línea</li>
+            <li><code>stop_times.txt</code> — horario de cada parada de cada trip</li>
+            <li><code>frequencies.txt</code> — "cada 5 min sale un bus" (frecuencias en lugar de horarios fijos)</li>
+            <li><code>calendar.txt</code> — qué días opera (lun-vie / fines de semana)</li>
+            <li><code>shapes.txt</code> — geometría de las rutas (puntos lat/lon)</li>
+          </ul>
+        </div>
+        <div>
+          <h4>El GTFS de Trujillo</h4>
+          <p>Vive en <code>server/data/trujillo.gtfs.zip</code> (18 MB). Lo consumen <strong>OTP</strong> al levantarse para construir el graph de routing.</p>
+          <p><strong>Particularidad:</strong> usa <code>frequencies.txt</code> con <code>exact_times=1</code>. Eso significa que en lugar de listar cada bus de las 6:00, 6:05, 6:10..., el GTFS define una "plantilla" de trip y dice "se repite cada 5 min entre 5:30 y 22:00".</p>
+          <p class="detail-note">Esa decisión de modelado tiene una consecuencia importante en GTFS-RT — la vemos en la slide del <code>gtfs-rt-proxy</code>.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10 — GTFS-RT -->
+    <section class="slide slide-detail" data-slide="10" data-title="GTFS-RT">
+      <header class="detail-header">
+        <div class="detail-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>
+        </div>
+        <div>
+          <span class="eyebrow">GTFS · datos · 2 / 6</span>
+          <h2>GTFS-RT — GTFS Realtime</h2>
+          <p class="lead-sm">Extensión del estándar GTFS para datos <strong>en vivo</strong>: dónde están los buses en este momento, retrasos en tiempo real, alertas de servicio. Formato: <strong>protobuf</strong> (binario, no texto), llamado típicamente <code>.proto</code>.</p>
+        </div>
+      </header>
+      <div class="detail-grid-2">
+        <div>
+          <h4>3 tipos de mensajes</h4>
+          <ul class="detail-list">
+            <li><strong>Vehicle positions</strong> — bus X está en lat/lon, llamando route_id, direction_id</li>
+            <li><strong>Trip updates</strong> — bus X tendrá 5 min de retraso al llegar a la próxima parada</li>
+            <li><strong>Service alerts</strong> — "ruta 19 cancelada hoy por desfile"</li>
+          </ul>
+          <p>En Trujillo solo tenemos <strong>vehicle positions</strong> — los choferes reportan su ubicación cada pocos segundos.</p>
+        </div>
+        <div>
+          <h4>El feed de Trujillo</h4>
+          <p>El driver app (otra app, no la de pasajeros) publica el feed a S3:</p>
+          <pre class="snippet">https://trujillo-admin-storage.s3...
+   /driver/gtfsrt/pe-trujillo.proto</pre>
+          <p>OTP <strong>no consume directo</strong> ese feed. Pasa primero por el <code>gtfs-rt-proxy</code>, que lo enriquece (le agrega los <code>trip_id</code> que faltan) antes de entregárselo a OTP cada 30s.</p>
+          <p class="detail-note">Por qué hace falta el proxy → ver slide siguiente.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11 — trip_id -->
+    <section class="slide slide-detail" data-slide="11" data-title="trip_id (el problema central)">
+      <header class="detail-header">
+        <div class="detail-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+        </div>
+        <div>
+          <span class="eyebrow">GTFS · datos · 3 / 6</span>
+          <h2><code>trip_id</code> — el problema central que resuelve este sistema</h2>
+          <p class="lead-sm">Cada viaje específico de un bus tiene un <code>trip_id</code> único en el GTFS estático. Pero el driver app de Trujillo reporta solo <code>route_id + direction_id + start_time</code> — no el <code>trip_id</code>. OTP necesita el trip_id para predecir ETAs.</p>
+        </div>
+      </header>
+      <div class="detail-grid-2">
+        <div>
+          <h4>Por qué OTP lo necesita</h4>
+          <p>Cuando OTP recibe una posición de bus, intenta matchear ese bus con un trip específico del GTFS. Si encuentra el trip, puede:</p>
+          <ul class="detail-list">
+            <li>Calcular qué tan adelantado/retrasado va respecto al horario</li>
+            <li>Predecir cuándo llegará a las paradas siguientes</li>
+            <li>Ofrecer ETAs precisos a la app móvil</li>
+          </ul>
+          <p>Sin el <code>trip_id</code>, OTP solo sabe "hay un bus por ahí en la línea 19" — no "el bus que sale a las 14:30 va con 5 min de retraso".</p>
+        </div>
+        <div>
+          <h4>El twist de las frequencies</h4>
+          <p>Como el GTFS de Trujillo usa <code>frequencies.txt</code> con <code>exact_times=1</code>, cada "trip plantilla" representa decenas de buses reales (uno cada 5 min).</p>
+          <p>El proxy resuelve esto <strong>expandiendo</strong> los trips:</p>
+          <pre class="snippet"># Antes (GTFS original):
+trip_id = 19962292   ← plantilla cada 5 min
+
+# Después (expandido):
+19962292000000   ← bus de las 5:30
+19962292000001   ← bus de las 5:35
+19962292000002   ← bus de las 5:40
+...
+19962292000069   ← bus de las 11:15</pre>
+          <p>El proxy infiere a qué slot pertenece cada vehículo cruzando <code>route_id + direction_id + start_time</code> con la tabla de frecuencias.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 12 — OSM -->
+    <section class="slide slide-detail" data-slide="12" data-title="OpenStreetMap">
+      <header class="detail-header">
+        <div class="detail-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        </div>
+        <div>
+          <span class="eyebrow">GTFS · datos · 4 / 6</span>
+          <h2>OSM — OpenStreetMap</h2>
+          <p class="lead-sm">El "Wikipedia de los mapas". Datos cartográficos libres y editables colaborativamente, con licencia ODbL. Cada calle, edificio, parque, río del mundo. La fuente única de geometría que usa todo el stack.</p>
+        </div>
+      </header>
+      <div class="detail-grid-2">
+        <div>
+          <h4>De dónde viene en este proyecto</h4>
+          <p>El extract de Trujillo se genera con <strong><a href="https://github.com/trufi-association/trufi-pbf-extractor" target="_blank" rel="noopener">trufi-pbf-extractor</a></strong>, herramienta de Trufi Association que automatiza el recorte de OSM por ciudad.</p>
+          <h4>Cómo funciona la herramienta</h4>
+          <pre class="snippet"># 1. Configurar .env
+CITY=trujillo
+BBOX=-79.10,-8.20,-78.95,-8.05
+GEOFABRIK_URL=https://download.geofabrik.de/...
+
+# 2. Levantar el container
+docker compose up
+
+# Adentro hace:
+# - download del .pbf país desde Geofabrik
+# - osmium extract con el bbox configurado
+# - escupe trujillo.osm.pbf en data/</pre>
+          <p>El extract final vive en <code>server/data/trujillo.osm.pbf</code> (2.3 MB) — formato <code>.osm.pbf</code> (Protocol Buffer comprimido).</p>
+        </div>
+        <div>
+          <h4>Quién lo consume en el stack</h4>
+          <ul class="detail-list">
+            <li><strong>OTP</strong> — construye el grafo de calles caminables/ciclables (necesario para multi-modal: caminata + bus + caminata)</li>
+            <li><strong>TileServer GL</strong> — los <code>.mbtiles</code> que sirve son tiles vectoriales generados desde el mismo OSM</li>
+            <li><strong>Photon</strong> — indexa los nombres de calles, lugares y POIs para geocoding</li>
+          </ul>
+          <p class="detail-note">Una sola fuente de verdad geográfica: cuando regeneramos el OSM con <code>trufi-pbf-extractor</code>, hay que regenerar los derivados (graph de OTP, mbtiles, índice de Photon) para que el sistema quede consistente.</p>
+          <a class="file-link" href="https://github.com/trufi-association/trufi-pbf-extractor" target="_blank" rel="noopener" style="margin-top:0.6rem">
+            <div class="file-link-icon">📦</div>
+            <div class="file-link-content">
+              <div class="file-link-name">trufi-association/trufi-pbf-extractor</div>
+              <div class="file-link-desc">Docker + osmium-tool · genera el .osm.pbf de cada ciudad</div>
+            </div>
+            <div class="file-link-arrow">↗</div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 13 — Vector tiles -->
+    <section class="slide slide-detail" data-slide="13" data-title="Vector tiles">
+      <header class="detail-header">
+        <div class="detail-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>
+        </div>
+        <div>
+          <span class="eyebrow">GTFS · datos · 5 / 6</span>
+          <h2>Vector tiles + <code>.mbtiles</code></h2>
+          <p class="lead-sm">Los mapas modernos no se sirven como imágenes pre-pintadas (raster), sino como pequeños fragmentos de geometría que el cliente <em>renderiza</em> con código. Más livianos, infinitamente zoomables, retematizables al vuelo.</p>
+        </div>
+      </header>
+      <div class="detail-grid-2">
+        <div>
+          <h4>Vector tiles vs raster</h4>
+          <p><strong>Raster (clásico):</strong> el server pinta una imagen 256×256 PNG y la manda al cliente. Cada zoom requiere un set distinto. Pesado y rígido.</p>
+          <p><strong>Vector tiles:</strong> el server manda solo geometría (líneas, polígonos, puntos) en un formato binario eficiente (Mapbox Vector Tile). El cliente las dibuja con WebGL/MapLibre.</p>
+          <ul class="detail-list">
+            <li>Texto siempre nítido (no pixela al hacer zoom)</li>
+            <li>Cambiar tema (oscuro / claro / satélite) sin descargar tiles nuevos</li>
+            <li>~10× más liviano que raster equivalente</li>
+            <li>Renderizado del lado del cliente — server más liviano</li>
+          </ul>
+          <p>El formato <code>.mbtiles</code> es una base SQLite con TODOS los tiles de una región indexados por (z, x, y). Trujillo entero cabe en <strong>4.7 MB</strong>.</p>
+        </div>
+        <div>
+          <h4>Pipeline en este proyecto</h4>
+          <p>Generación y serving cubiertos por dos repos de Trufi Association, que arriba envuelven herramientas oficiales:</p>
+          <ul class="detail-list">
+            <li><strong><a href="https://github.com/trufi-association/trufi-mbtiles-generator" target="_blank" rel="noopener">trufi-mbtiles-generator</a></strong> — wrapper Docker Compose sobre <a href="https://github.com/onthegomap/planetiler" target="_blank" rel="noopener">Planetiler</a> con perfil <a href="https://github.com/openmaptiles/openmaptiles" target="_blank" rel="noopener">OpenMapTiles</a> (imagen oficial <code>openmaptiles/planetiler-openmaptiles</code>)</li>
+            <li><strong><a href="https://github.com/trufi-association/trufi-server-tileserver-gl" target="_blank" rel="noopener">trufi-server-tileserver-gl</a></strong> — empaqueta <a href="https://github.com/maptiler/tileserver-gl" target="_blank" rel="noopener">TileServer GL</a> como container del stack</li>
+          </ul>
+          <pre class="snippet"># Flujo end-to-end:
+trujillo.osm.pbf
+  ↓ trufi-mbtiles-generator
+  ↓   (Planetiler + OpenMapTiles)
+trujillo.mbtiles  (4.7 MB)
+  ↓ trufi-server-tileserver-gl
+  ↓   (TileServer GL)
+GET /tiles/{z}/{x}/{y}.pbf  ← MapLibre</pre>
+          <p><strong>MapLibre GL</strong> es la librería que la app móvil usa para renderizar — fork open-source de Mapbox GL (que se cerró en 2020).</p>
+          <div class="file-links-stack" style="margin-top:0.6rem">
+            <a class="file-link" href="https://github.com/openmaptiles/openmaptiles" target="_blank" rel="noopener">
+              <div class="file-link-icon">🗂️</div>
+              <div class="file-link-content">
+                <div class="file-link-name">openmaptiles/openmaptiles</div>
+                <div class="file-link-desc">Schema oficial · define las capas y atributos del <code>.mbtiles</code></div>
+              </div>
+              <div class="file-link-arrow">↗</div>
+            </a>
+            <a class="file-link" href="https://github.com/trufi-association/trufi-mbtiles-generator" target="_blank" rel="noopener">
+              <div class="file-link-icon">📦</div>
+              <div class="file-link-content">
+                <div class="file-link-name">trufi-association/trufi-mbtiles-generator</div>
+                <div class="file-link-desc">Wrapper Docker Compose sobre Planetiler + OpenMapTiles</div>
+              </div>
+              <div class="file-link-arrow">↗</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 14 — GraphQL -->
+    <section class="slide slide-detail" data-slide="14" data-title="GraphQL">
+      <header class="detail-header">
+        <div class="detail-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        </div>
+        <div>
+          <span class="eyebrow">GTFS · datos · 6 / 6</span>
+          <h2>GraphQL — cómo la app habla con OTP</h2>
+          <p class="lead-sm">Lenguaje de consulta para APIs (Facebook, 2015). En vez de muchos endpoints REST, hay un <strong>solo endpoint</strong> que recibe queries donde el cliente pide exactamente los campos que necesita — ni más, ni menos.</p>
+        </div>
+      </header>
+      <div class="detail-grid-2">
+        <div>
+          <h4>Por qué GraphQL y no REST</h4>
+          <ul class="detail-list">
+            <li>El cliente decide qué campos quiere — la app móvil ahorra ancho de banda pidiendo solo lo necesario</li>
+            <li>Una versión nueva de la app puede pedir más campos sin romper la API ni necesitar versionado de endpoints</li>
+            <li>OTP no necesita <code>/v1/</code>, <code>/v2/</code>, etc.</li>
+            <li>Schema fuertemente tipado y auto-documentado — IDE autocomplete</li>
+            <li>Una sola request puede traer datos de varias entidades relacionadas (no más N+1)</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ejemplo de query a OTP</h4>
+          <pre class="snippet">POST /otp/routers/default/index/graphql
+Content-Type: application/json
+
+{
+  "query": "{
+    plan(
+      from: { lat: -8.11, lon: -79.03 },
+      to:   { lat: -8.10, lon: -79.05 },
+      transportModes: [
+        { mode: TRANSIT },
+        { mode: WALK }
+      ],
+      numItineraries: 3
+    ) {
+      itineraries {
+        duration
+        walkDistance
+        legs {
+          mode
+          startTime
+          from { name }
+          to   { name }
+          route { shortName longName }
+        }
+      }
+    }
+  }"
+}</pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- 15 — Arquitectura -->
+    <section class="slide" data-slide="15" data-title="Arquitectura">
+      <span class="eyebrow center">Arquitectura del sistema</span>
+      <h2 class="center">Cómo se conectan las piezas</h2>
+      <p class="lead center">
+        Todo corre en un único servidor con Docker. YARP enruta el tráfico HTTPS hacia los servicios internos. OTP es el cerebro; el <code>gtfs-rt-proxy</code> lo alimenta con datos en tiempo real ya enriquecidos.
+      </p>
+      <div class="arch2">
+        <!-- Layer 1: Clients -->
+        <div class="arch2-row">
+          <span class="arch2-label">Clientes</span>
+          <div class="arch2-nodes arch2-nodes-2">
+            <div class="arch2-node arch2-node-client">
+              <div class="arch2-node-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+              </div>
+              <div class="arch2-node-body">
+                <h4>App móvil</h4>
+                <p>Flutter · MapLibre · trufi-core</p>
+              </div>
+            </div>
+            <div class="arch2-node arch2-node-client">
+              <div class="arch2-node-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              </div>
+              <div class="arch2-node-body">
+                <h4>Landing web</h4>
+                <p>HTML + CSS + JS · i18n ES/EN</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Connector: clients → edge -->
+        <div class="arch2-flow">
+          <span class="arch2-flow-pipe"></span>
+          <span class="arch2-flow-label">HTTPS · puerto 443</span>
+          <span class="arch2-flow-pipe"></span>
+        </div>
+
+        <!-- Layer 2: Edge -->
+        <div class="arch2-row">
+          <span class="arch2-label">Edge · trujillo.trufi.dev</span>
+          <div class="arch2-nodes arch2-nodes-edge">
+            <div class="arch2-node arch2-node-edge arch2-node-wide">
+              <div class="arch2-node-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              </div>
+              <div class="arch2-node-body">
+                <h4>YARP — reverse proxy</h4>
+                <p>.NET 10 · routing · request logging · :80 :443</p>
+              </div>
+              <span class="arch2-tag">healthy</span>
+            </div>
+            <div class="arch2-node arch2-node-side">
+              <div class="arch2-node-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              </div>
+              <div class="arch2-node-body">
+                <h4>Let's Encrypt</h4>
+                <p>SSL · LettuceEncrypt</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Connector: edge → services -->
+        <div class="arch2-flow arch2-flow-fan">
+          <span class="arch2-flow-pipe"></span>
+          <span class="arch2-flow-label">routing por path</span>
+          <span class="arch2-flow-pipe"></span>
+        </div>
+
+        <!-- Layer 3: Core services -->
+        <div class="arch2-row">
+          <span class="arch2-label">Core services</span>
+          <div class="arch2-nodes arch2-nodes-4">
+            <div class="arch2-node arch2-node-core">
+              <div class="arch2-node-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="8 12 11 15 16 9"/></svg>
+              </div>
+              <div class="arch2-node-body">
+                <h4>OTP</h4>
+                <p>OpenTripPlanner · :8080</p>
+              </div>
+            </div>
+            <div class="arch2-node arch2-node-core">
+              <div class="arch2-node-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              </div>
+              <div class="arch2-node-body">
+                <h4>Photon</h4>
+                <p>Geocoding · :2322</p>
+              </div>
+            </div>
+            <div class="arch2-node arch2-node-core">
+              <div class="arch2-node-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>
+              </div>
+              <div class="arch2-node-body">
+                <h4>TileServer GL</h4>
+                <p>Vector tiles · interno</p>
+              </div>
+            </div>
+            <div class="arch2-node arch2-node-core">
+              <div class="arch2-node-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              </div>
+              <div class="arch2-node-body">
+                <h4>web-landing</h4>
+                <p>nginx · estático</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Connector: OTP → proxy -->
+        <div class="arch2-flow arch2-flow-side">
+          <span class="arch2-flow-pipe"></span>
+          <span class="arch2-flow-label">OTP polls · cada 30s</span>
+          <span class="arch2-flow-pipe"></span>
+        </div>
+
+        <!-- Layer 4: Data pipeline -->
+        <div class="arch2-row">
+          <span class="arch2-label">Data pipeline · tiempo real</span>
+          <div class="arch2-nodes arch2-nodes-3">
+            <div class="arch2-node arch2-node-data">
+              <div class="arch2-node-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></svg>
+              </div>
+              <div class="arch2-node-body">
+                <h4>gtfs-rt-proxy</h4>
+                <p>Python + Flask · enriquece <code>trip_id</code> · :8001</p>
+              </div>
+              <span class="arch2-tag">crítico</span>
+            </div>
+            <div class="arch2-node arch2-node-data arch2-node-aux">
+              <div class="arch2-node-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              </div>
+              <div class="arch2-node-body">
+                <h4>gtfs-rt-simulator</h4>
+                <p>Fallback dev / demos · :9000</p>
+              </div>
+            </div>
+            <div class="arch2-node arch2-node-data arch2-node-aux">
+              <div class="arch2-node-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3"/></svg>
+              </div>
+              <div class="arch2-node-body">
+                <h4>PostgreSQL</h4>
+                <p>Analytics — request logs</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Connector: proxy → S3 -->
+        <div class="arch2-flow">
+          <span class="arch2-flow-pipe"></span>
+          <span class="arch2-flow-label">poll · cache 5s</span>
+          <span class="arch2-flow-pipe"></span>
+        </div>
+
+        <!-- Layer 5: External -->
+        <div class="arch2-row">
+          <span class="arch2-label">External · driver app</span>
+          <div class="arch2-nodes arch2-nodes-1">
+            <div class="arch2-node arch2-node-ext arch2-node-wide">
+              <div class="arch2-node-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+              </div>
+              <div class="arch2-node-body">
+                <h4>Amazon S3</h4>
+                <p><code>trujillo-admin-storage/driver/gtfsrt/pe-trujillo.proto</code> · vehicle positions</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4 — Servicios overview -->
+    <section class="slide" data-slide="16" data-title="Servicios">
+      <span class="eyebrow center">6 servicios + 1 simulador</span>
+      <h2 class="center">Lo que corre en el servidor</h2>
+      <p class="lead center">Cada uno en su container Docker, con su healthcheck, su repo y su rol específico en el pipeline. Vamos a verlos uno por uno.</p>
+      <div class="svc-grid">
+        <article class="svc-card">
+          <div class="svc-card-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="8 12 11 15 16 9"/></svg>
+          </div>
+          <div class="svc-card-body">
+            <div class="svc-card-head">
+              <h3>OpenTripPlanner</h3>
+              <span class="svc-card-port">:8080</span>
+            </div>
+            <p>El cerebro del sistema. Java 21. Ruteo multimodal con tiempo real. Consume GTFS estático + GTFS-RT enriquecido del proxy.</p>
+            <div class="svc-card-meta">
+              <span class="svc-tag svc-tag-ok">healthy</span>
+              <span class="svc-tag">v 2.8.1</span>
+              <span class="svc-tag">submódulo</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="svc-card">
+          <div class="svc-card-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></svg>
+          </div>
+          <div class="svc-card-body">
+            <div class="svc-card-head">
+              <h3>gtfs-rt-proxy</h3>
+              <span class="svc-card-port">:8001</span>
+            </div>
+            <p>Servicio crítico custom. Python + Flask. Inyecta el <code>trip_id</code> que falta en el feed GTFS-RT del driver app antes de entregárselo a OTP.</p>
+            <div class="svc-card-meta">
+              <span class="svc-tag svc-tag-ok">healthy</span>
+              <span class="svc-tag svc-tag-warn">crítico</span>
+              <span class="svc-tag">en este repo</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="svc-card">
+          <div class="svc-card-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </div>
+          <div class="svc-card-body">
+            <div class="svc-card-head">
+              <h3>Photon</h3>
+              <span class="svc-card-port">:2322</span>
+            </div>
+            <p>Geocoding ("dónde está…"). Java. Indexa OSM para resolver direcciones a lat/lon. Índice de Perú completo.</p>
+            <div class="svc-card-meta">
+              <span class="svc-tag svc-tag-ok">healthy</span>
+              <span class="svc-tag">v 0.4.2</span>
+              <span class="svc-tag">submódulo</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="svc-card">
+          <div class="svc-card-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>
+          </div>
+          <div class="svc-card-body">
+            <div class="svc-card-head">
+              <h3>TileServer GL</h3>
+              <span class="svc-card-port">interno</span>
+            </div>
+            <p>Sirve los vector tiles que renderiza la app móvil con MapLibre. Lee de <code>trujillo.mbtiles</code>. 6 estilos disponibles.</p>
+            <div class="svc-card-meta">
+              <span class="svc-tag svc-tag-ok">healthy</span>
+              <span class="svc-tag">node</span>
+              <span class="svc-tag">submódulo</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="svc-card">
+          <div class="svc-card-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <div class="svc-card-body">
+            <div class="svc-card-head">
+              <h3>YARP / trufi-server</h3>
+              <span class="svc-card-port">:80 :443</span>
+            </div>
+            <p>Reverse proxy edge. .NET 10. TLS automático con Let's Encrypt, routing por path, request logging a PostgreSQL para analytics.</p>
+            <div class="svc-card-meta">
+              <span class="svc-tag svc-tag-ok">healthy</span>
+              <span class="svc-tag">.NET 10</span>
+              <span class="svc-tag">submódulo</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="svc-card">
+          <div class="svc-card-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <div class="svc-card-body">
+            <div class="svc-card-head">
+              <h3>web-landing</h3>
+              <span class="svc-card-port">público</span>
+            </div>
+            <p>Página estática que se sirve en <code>trujillo.trufi.dev/</code>. nginx + HTML/CSS/JS vanilla, i18n ES/EN.</p>
+            <div class="svc-card-meta">
+              <span class="svc-tag svc-tag-ok">healthy</span>
+              <span class="svc-tag">nginx:alpine</span>
+              <span class="svc-tag">en este repo</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 5 — OTP overview -->
+    <!-- Demo: SSH + health check -->
+    <section class="slide slide-demo" data-slide="17" data-title="Demo: health check global">
+      <div class="demo-marker">Demo en vivo · ~15 min</div>
+      <h2>Conectémonos al servidor y veamos el estado real</h2>
+      <p class="lead">Antes de meternos en cada servicio uno por uno, abramos una terminal y mostremos cómo se ve la cosa "ahora mismo": qué corre, cómo se siente la máquina, qué dicen los logs.</p>
+      <div class="demo-agenda">
+        <ol>
+          <li>Conectar: <code>ssh root@trujillo.trufi.dev</code></li>
+          <li>Listar containers: <code>docker ps --format "table {{.Names}}\t{{.Status}}"</code></li>
+          <li>Recursos del host: <code>df -h</code> · <code>free -h</code> · <code>uptime</code></li>
+          <li>Logs en vivo del proxy: <code>docker logs -f gtfs-rt-proxy</code> (~30s)</li>
+          <li>Health endpoint: <code>curl http://127.0.0.1:8001/healthz | jq</code></li>
+          <li>Identificar los <em>healthchecks "falsos negativos"</em> (server-server-1, tileserver)</li>
+          <li>Layout en disco: <code>ls /root/</code> — un folder por servicio</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- OTP overview -->
+    <section class="slide slide-detail" data-slide="18" data-title="OTP — overview">
+      <header class="detail-header" style="--accent:#0ea5e9">
+        <div class="detail-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+        </div>
+        <div>
+          <span class="eyebrow">Servicio · OTP <code>:8080</code></span>
+          <h2>OpenTripPlanner 2.8.1 — el cerebro del ruteo</h2>
+          <p class="lead-sm">Construye un grafo de la ciudad combinando OSM + GTFS, y resuelve viajes multimodales (transporte + caminata + bici). Java 21 sobre <code>eclipse-temurin:21-jre-jammy</code>. Memoria por defecto 2 GB.</p>
+        </div>
+      </header>
+      <div class="detail-grid">
+        <div class="detail-col">
+          <h4>📥 Inputs canónicos</h4>
+          <ul class="detail-list">
+            <li><code>trujillo.gtfs.zip</code> — GTFS estático (18 MB)</li>
+            <li><code>trujillo.osm.pbf</code> — OSM extract (2.3 MB)</li>
+            <li>GTFS-RT vía <code>gtfs-rt-proxy</code> (poll 30s)</li>
+          </ul>
+          <h4>📤 Output regenerable</h4>
+          <ul class="detail-list">
+            <li><code>graph.obj</code> — grafo serializado (~20 MB)</li>
+            <li>Se construye en primer arranque (~2-3 min)</li>
+            <li>Subsecuentes arranques: <code>--load</code> (≪segundos)</li>
+          </ul>
+        </div>
+        <div class="detail-col">
+          <h4>🔌 API GraphQL</h4>
+          <pre class="snippet">POST /otp/routers/default/index/graphql
+POST /otp/gtfs/v1   (alias OTP 2.x)
+
+# Ejemplo
+{ "query": "{ routes { gtfsId shortName longName } }" }
+</pre>
+          <h4>🩺 Healthcheck</h4>
+          <pre class="snippet">GET /otp/
+
+# Configurado en compose
+wget --spider http://localhost:8080/otp/
+interval: 30s · start_period: 120s
+retries: 3</pre>
+        </div>
+        <div class="detail-col">
+          <h4>⚡ Versiones soportadas</h4>
+          <ul class="detail-list">
+            <li><strong>2.8.1</strong> ← actual (recomendada)</li>
+            <li>2.7.0, 2.4.0, 2.2.0, 2.0.0</li>
+            <li>1.5.0 (legacy, no GraphQL)</li>
+          </ul>
+          <p class="detail-note">Cambiar versión: <code>otpversion=2.7.0 docker compose up -d --build</code></p>
+          <h4>🌐 Networking</h4>
+          <p class="detail-note">Red Docker <code>trufi-server</code>. OTP es alcanzable desde otros containers como <code>http://otp:8080</code>.</p>
+        </div>
+      </div>
+      <a class="detail-link" href="https://github.com/leoguti/GTFS-Trujillo/blob/master/server/docs/services/otp.md">Doc completa: server/docs/services/otp.md →</a>
+    </section>
+
+    <!-- 6 — OTP config -->
+    <!-- La driver app — el upstream -->
+    <section class="slide slide-detail" data-slide="19" data-title="La driver app">
+      <header class="detail-header" style="--accent:#fbbf24">
+        <div class="detail-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"/><polyline points="9 14 12 17 15 14"/><line x1="12" y1="12" x2="12" y2="21"/></svg>
+        </div>
+        <div>
+          <span class="eyebrow">El origen de los datos en vivo</span>
+          <h2>La driver app — la app que usan los conductores</h2>
+          <p class="lead-sm">Toda la información en tiempo real (¿dónde está cada bus ahora mismo?) viene de una <strong>app móvil distinta</strong>: la que llevan los conductores. Es el "upstream" de nuestro pipeline. No la mantenemos nosotros — pero entender qué publica es esencial para diagnosticar el sistema.</p>
+        </div>
+      </header>
+      <div class="detail-grid">
+        <div class="detail-col">
+          <h4>📲 Qué hace</h4>
+          <ul class="detail-list">
+            <li>Cada conductor abre la app antes de iniciar su recorrido</li>
+            <li>Selecciona la línea + dirección (ej. "19" → "Centro")</li>
+            <li>Reporta posición GPS cada pocos segundos</li>
+            <li>Cierra la app al terminar el recorrido</li>
+          </ul>
+        </div>
+        <div class="detail-col">
+          <h4>☁️ Cómo publica</h4>
+          <ul class="detail-list">
+            <li>API que persiste en S3</li>
+            <li>Bucket: <code>trujillo-admin-storage</code></li>
+            <li>Archivo: <code>driver/gtfsrt/pe-trujillo.proto</code></li>
+            <li>Formato: GTFS-Realtime protobuf binario</li>
+            <li>Mensaje: <em>vehicle positions</em> con <code>route_id</code> + <code>direction_id</code> + <code>start_time</code> + lat/lon</li>
+          </ul>
+        </div>
+        <div class="detail-col">
+          <h4>⚠️ Lo que NO trae</h4>
+          <ul class="detail-list">
+            <li><strong>No</strong> trae <code>trip_id</code> (el viaje específico)</li>
+            <li><strong>No</strong> trae predicciones de tiempo</li>
+            <li><strong>No</strong> trae alertas de servicio</li>
+          </ul>
+          <p class="detail-note">Por eso necesitamos el <code>gtfs-rt-proxy</code>: para enriquecer el feed antes de que OTP lo consuma.</p>
+        </div>
+      </div>
+      <div class="takeaway">
+        <div class="takeaway-label">¿Quién la mantiene?</div>
+        <p class="takeaway-text">La driver app es de un equipo distinto (típicamente la autoridad de transporte o un contratista). Si los datos en tiempo real fallan en la app de usuario, el primer chequeo es <code>/healthz</code> del proxy: si <code>entities=0</code>, el problema está aguas arriba — en la driver app o en S3.</p>
+      </div>
+    </section>
+
+    <!-- OTP configuración -->
+    <section class="slide slide-detail" data-slide="20" data-title="OTP — configuración">
+      <header class="detail-header" style="--accent:#0ea5e9">
+        <div class="detail-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+        </div>
+        <div>
+          <span class="eyebrow">OTP · configuración</span>
+          <h2>Los 2 archivos JSON que definen el comportamiento</h2>
+          <p class="lead-sm">OTP lee dos configs al arrancar. Pequeñas, pero deciden cómo se comporta el ruteo: penalidades de caminata, transferencias máximas, velocidades, timeout de la API.</p>
+        </div>
+      </header>
+      <div class="detail-grid-2">
+        <div class="detail-col">
+          <h4>🟦 otp-config.json</h4>
+          <p>Activa <strong>features</strong> opcionales del motor. Hoy solo
+          tenemos uno: el endpoint GraphQL (que la app móvil consume).</p>
+          <ul class="detail-list">
+            <li><code>GtfsGraphQlApi</code> · ✅ activo</li>
+          </ul>
+          <p class="detail-note">Sin esta flag, la API legacy <code>/plan</code> sigue funcionando — pero la app móvil deja de andar.</p>
+        </div>
+        <div class="detail-col">
+          <h4>🟪 router-config.json</h4>
+          <p>Define <strong>cómo</strong> OTP planifica rutas. Las defaults
+          actuales están afinadas para el caso peruano:</p>
+          <ul class="detail-list">
+            <li><code>numItineraries: 12</code> · alternativas máx</li>
+            <li><code>transferPenalty: 1800s</code> · castigo por trasbordo</li>
+            <li><code>walkSpeed: 1.3 m/s</code> · velocidad caminata</li>
+            <li><code>boardCost: 600s</code> · costo de subir al bus</li>
+            <li><code>maxNumberOfTransfers: 4</code></li>
+          </ul>
+        </div>
+      </div>
+      <div class="takeaway">
+        <div class="takeaway-label">Brecha conocida — pendiente</div>
+        <p class="takeaway-text">El <code>router-config.json</code> aún <strong>no</strong> declara <code>gtfsRealtimeFeeds[]</code> apuntando al gtfs-rt-proxy. La integración existe (el proxy responde) pero falta cablear el polling oficial en la config de OTP.</p>
+      </div>
+      <div class="file-links-stack" style="max-width:800px;margin:1.4rem auto 0;">
+        <a class="file-link" href="https://github.com/trufi-association/trufi-server-otp/blob/main/Dockerfiles/2.8.1/config/otp-config.json" target="_blank" rel="noopener">
+          <div class="file-link-icon">📄</div>
+          <div class="file-link-content">
+            <div class="file-link-name">trufi-server-otp/Dockerfiles/2.8.1/config/otp-config.json</div>
+            <div class="file-link-desc">Config completa en el repo upstream</div>
+          </div>
+          <div class="file-link-arrow">↗</div>
+        </a>
+        <a class="file-link" href="https://github.com/trufi-association/trufi-server-otp/blob/main/Dockerfiles/2.8.1/config/router-config.json" target="_blank" rel="noopener">
+          <div class="file-link-icon">📄</div>
+          <div class="file-link-content">
+            <div class="file-link-name">trufi-server-otp/Dockerfiles/2.8.1/config/router-config.json</div>
+            <div class="file-link-desc">Todos los parámetros de routing</div>
+          </div>
+          <div class="file-link-arrow">↗</div>
+        </a>
+      </div>
+    </section>
+
+    <!-- 7 — gtfs-rt-proxy overview -->
+    <!-- OTP GraphQL en acción -->
+    <section class="slide slide-detail" data-slide="21" data-title="OTP — GraphQL en acción">
+      <header class="detail-header" style="--accent:#0ea5e9">
+        <div class="detail-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        </div>
+        <div>
+          <span class="eyebrow">Cómo se le pregunta a OTP</span>
+          <h2>Una consulta GraphQL paso a paso</h2>
+          <p class="lead-sm">Toda la app móvil habla con OTP por <strong>una sola URL</strong> POST con un body GraphQL. El cliente pide exactamente los campos que necesita y OTP responde solo con esos. Esto es lo que se ve cada vez que un usuario planifica un viaje.</p>
+        </div>
+      </header>
+      <div class="detail-grid-2">
+        <div class="code-block">
+          <div class="code-header">
+            <span>📤 Request — POST /otp/routers/default/index/graphql</span>
+            <span class="code-lang">GraphQL</span>
+          </div>
+          <pre><code>{
+  plan(
+    from: { lat: -8.1116, lon: -79.0288 },
+    to:   { lat: -8.0900, lon: -79.0500 },
+    transportModes: [
+      { mode: TRANSIT },
+      { mode: WALK }
+    ],
+    numItineraries: 3
+  ) {
+    itineraries {
+      duration
+      walkDistance
+      legs {
+        mode
+        startTime
+        from { name }
+        to   { name }
+        route { shortName longName }
+      }
+    }
+  }
+}</code></pre>
+        </div>
+        <div class="code-block">
+          <div class="code-header">
+            <span>📥 Response (recortada)</span>
+            <span class="code-lang">JSON</span>
+          </div>
+          <pre><code>{
+  "data": {
+    "plan": {
+      "itineraries": [{
+        "duration": 1830,
+        "walkDistance": 412.5,
+        "legs": [
+          {
+            "mode": "WALK",
+            "from": { "name": "Origin" },
+            "to":   { "name": "Av. España" }
+          },
+          {
+            "mode": "BUS",
+            "startTime": 1714312800000,
+            "route": {
+              "shortName": "19",
+              "longName": "Centro - El Porvenir"
+            },
+            "from": { "name": "Av. España" },
+            "to":   { "name": "Av. Larco" }
+          }
+        ]
+      }, ...]
+    }
+  }
+}</code></pre>
+        </div>
+      </div>
+      <div class="takeaway">
+        <div class="takeaway-label">Por qué GraphQL y no REST</div>
+        <p class="takeaway-text">El cliente decide qué campos quiere — la app móvil ahorra ancho de banda pidiendo solo lo que necesita. Una versión nueva de la app puede pedir más campos sin romper la API. OTP no necesita versionado de endpoints.</p>
+      </div>
+      <div class="file-links-stack" style="max-width:800px;margin:1.4rem auto 0;">
+        <a class="file-link" href="https://docs.opentripplanner.org/en/latest/apis/Apis/" target="_blank" rel="noopener">
+          <div class="file-link-icon">📚</div>
+          <div class="file-link-content">
+            <div class="file-link-name">OpenTripPlanner — APIs</div>
+            <div class="file-link-desc">Documentación oficial del esquema GraphQL</div>
+          </div>
+          <div class="file-link-arrow">↗</div>
+        </a>
+      </div>
+    </section>
+
+    <!-- gtfs-rt-proxy -->
+    <section class="slide slide-detail" data-slide="22" data-title="gtfs-rt-proxy">
+      <header class="detail-header" style="--accent:#6366f1">
+        <div class="detail-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <div>
+          <span class="eyebrow">Servicio · gtfs-rt-proxy <code>:8001</code></span>
+          <h2>El puente entre el driver app y OTP</h2>
+          <p class="lead-sm">Python 3.11 + Flask + Gunicorn. Lee el feed protobuf que el driver app publica a S3, le inyecta el <code>trip_id</code> faltante, y lo entrega listo para OTP. Cache 5s. Polling cada 30s desde OTP. 2 workers. ~75 LOC en <code>app.py</code>.</p>
+        </div>
+      </header>
+      <div class="detail-grid">
+        <div class="detail-col">
+          <h4>🔌 Endpoints</h4>
+          <ul class="detail-list">
+            <li><code>GET /</code> — modo (sim/prod), upstream URL</li>
+            <li><code>GET /gtfsrt.proto</code> — feed enriquecido (binario)</li>
+            <li><code>GET /healthz</code> — JSON con stats del último ciclo</li>
+          </ul>
+          <h4>📊 Stats devueltas en /healthz</h4>
+          <pre class="snippet">{
+  "status": "ok",
+  "schedules_loaded": 247,
+  "last_cache_age_s": 2.34,
+  "last_stats": {
+    "entities": 3,
+    "rewritten": 3,
+    "skipped_no_schedule": 0,
+    "skipped_already_has_trip_id": 0,
+    "entities_without_trip": 0
+  }
+}</pre>
+        </div>
+        <div class="detail-col">
+          <h4>⚙️ Variables de entorno</h4>
+          <pre class="snippet">SIMULATED=false
+UPSTREAM_URL_PROD=https://trujillo-admin-storage
+                  .s3.us-east-1.amazonaws.com/
+                  driver/gtfsrt/pe-trujillo.proto
+UPSTREAM_URL_SIM=http://gtfs-rt-simulator:9000
+                  /pe-trujillo.proto
+GTFS_PATH=/app/data/trujillo.gtfs.zip
+CACHE_TTL=5
+UPSTREAM_TIMEOUT=10</pre>
+          <h4>🛡️ Cache busting</h4>
+          <p class="detail-note">El proxy fuerza <code>Cache-Control: no-cache</code> + un parámetro <code>?_=&lt;ms&gt;</code> al fetchear S3, para evitar leer un proto rancio del CDN.</p>
+        </div>
+        <div class="detail-col">
+          <h4>📦 Stack</h4>
+          <pre class="snippet"># requirements.txt
+flask==3.0.3
+gunicorn==22.0.0
+requests==2.32.3
+gtfs-realtime-bindings==1.0.0
+protobuf>=4.21,&lt;5
+
+# Dockerfile
+python:3.11-slim
+gunicorn --workers 2 --timeout 30
+         --bind 0.0.0.0:8000
+         --access-logfile -</pre>
+          <h4>⚠️ Nota</h4>
+          <p class="detail-note">Si <code>fetch + enrich</code> &gt; 25s, el worker timeout (30s) lo mata. En condiciones normales son ~50ms.</p>
+        </div>
+      </div>
+      <a class="detail-link" href="https://github.com/leoguti/GTFS-Trujillo/blob/master/server/gtfs-rt-proxy/README.md">Doc completa: server/gtfs-rt-proxy/README.md →</a>
+    </section>
+
+    <!-- 8 — gtfs-rt-proxy: enrich() walkthrough -->
+    <section class="slide slide-detail" data-slide="23" data-title="enrich() — el algoritmo">
+      <header class="detail-header" style="--accent:#6366f1">
+        <div class="detail-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg>
+        </div>
+        <div>
+          <span class="eyebrow">Cómo funciona el proxy por dentro</span>
+          <h2><code>enrich()</code> — qué pasa cuando llega un feed</h2>
+          <p class="lead-sm">Para cada vehículo en el feed, el proxy decide qué hacer. La mayoría de las veces, le inyecta el <code>trip_id</code> que falta. Cinco pasos.</p>
+        </div>
+      </header>
+      <div class="flow-steps">
+        <div class="flow-step">
+          <div class="flow-step-num">1</div>
+          <h4>¿Es un vehículo?</h4>
+          <p>El feed puede tener entidades de varios tipos. Si no es vehículo, lo ignora.</p>
+        </div>
+        <div class="flow-step">
+          <div class="flow-step-num">2</div>
+          <h4>¿Ya tiene trip_id?</h4>
+          <p>Si sí, no hay nada que enriquecer — pasa de largo.</p>
+        </div>
+        <div class="flow-step">
+          <div class="flow-step-num">3</div>
+          <h4>¿Tiene los datos para matchear?</h4>
+          <p>Necesita <code>route_id</code> + <code>direction_id</code> + <code>start_time</code>. Sin alguno, no se puede.</p>
+        </div>
+        <div class="flow-step">
+          <div class="flow-step-num">4</div>
+          <h4>Buscar en el GTFS</h4>
+          <p>Llama a <code>schedule.match()</code> que cruza con el GTFS estático y devuelve el mejor candidato.</p>
+        </div>
+        <div class="flow-step">
+          <div class="flow-step-num">5</div>
+          <h4>Reescribir + backfill</h4>
+          <p>Inyecta el <code>trip_id</code>, alinea <code>start_time</code>, y completa el id del vehículo con la placa si faltaba.</p>
+        </div>
+      </div>
+      <div class="takeaway">
+        <div class="takeaway-label">Lo que tienes que recordar</div>
+        <p class="takeaway-text">Los <strong>stats</strong> que devuelve <code>/healthz</code> te dicen cómo está yendo el match: si <code>skipped_no_schedule</code> sube, hay desfase entre el feed del driver y el GTFS estático.</p>
+      </div>
+      <div style="display:flex;justify-content:center;margin-top:1.4rem;gap:0.8rem;flex-wrap:wrap;">
+        <a class="file-link" href="https://github.com/leoguti/GTFS-Trujillo/blob/master/server/gtfs-rt-proxy/app.py" target="_blank" rel="noopener">
+          <div class="file-link-icon">📄</div>
+          <div class="file-link-content">
+            <div class="file-link-name">server/gtfs-rt-proxy/app.py</div>
+            <div class="file-link-desc">Código completo · ~75 líneas</div>
+          </div>
+          <div class="file-link-arrow">↗</div>
+        </a>
+      </div>
+    </section>
+
+    <!-- 13 — schedule.match() -->
+    <section class="slide slide-detail" data-slide="24" data-title="schedule.match() — el lookup">
+      <header class="detail-header" style="--accent:#6366f1">
+        <div class="detail-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <div>
+          <span class="eyebrow">Cómo se encuentra el trip_id correcto</span>
+          <h2>El GTFS declara frecuencias. El proxy busca el slot más cercano.</h2>
+          <p class="lead-sm">El GTFS estático dice "cada 5 minutos sale un bus en la línea 19". El driver app reporta una hora aproximada de salida. La función <code>match()</code> encuentra el slot de frecuencia más cercano y devuelve el <code>trip_id</code> exacto.</p>
+        </div>
+      </header>
+      <div class="flow-steps">
+        <div class="flow-step">
+          <div class="flow-step-num">1</div>
+          <h4>Indexar al arrancar</h4>
+          <p>Lee <code>trips.txt</code> + <code>frequencies.txt</code> del GTFS y construye una tabla <code>(route_id, direction) → lista de slots</code>.</p>
+        </div>
+        <div class="flow-step">
+          <div class="flow-step-num">2</div>
+          <h4>Buscar candidatos</h4>
+          <p>Para cada vehículo, usa <strong>bisect</strong> (búsqueda binaria, <code>O(log n)</code>) sobre los slots del día.</p>
+        </div>
+        <div class="flow-step">
+          <div class="flow-step-num">3</div>
+          <h4>Elegir el más cercano</h4>
+          <p>Compara el slot anterior y el siguiente al driver-time, elige el de menor diferencia absoluta.</p>
+        </div>
+        <div class="flow-step">
+          <div class="flow-step-num">4</div>
+          <h4>Devolver trip_id expandido</h4>
+          <p>Concatena <code>base_trip_id</code> + índice del slot a 6 dígitos. Ejemplo: <code>"trip_19_1" + "000037"</code>.</p>
+        </div>
+      </div>
+      <div class="takeaway">
+        <div class="takeaway-label">Requisito crítico del GTFS</div>
+        <p class="takeaway-text">El GTFS del proxy <strong>debe</strong> tener <code>frequencies.txt</code>. Si está expandido a <code>stop_times.txt</code>, el constructor lanza <code>RuntimeError</code>. Por eso hay <strong>dos</strong> GTFS distintos: el del proxy (1 MB, con frequencies) y el de OTP (18 MB, expandido).</p>
+      </div>
+      <div style="display:flex;justify-content:center;margin-top:1.4rem;gap:0.8rem;flex-wrap:wrap;">
+        <a class="file-link" href="https://github.com/leoguti/GTFS-Trujillo/blob/master/server/gtfs-rt-proxy/schedule.py" target="_blank" rel="noopener">
+          <div class="file-link-icon">📄</div>
+          <div class="file-link-content">
+            <div class="file-link-name">server/gtfs-rt-proxy/schedule.py</div>
+            <div class="file-link-desc">Implementación del lookup · ~80 líneas</div>
+          </div>
+          <div class="file-link-arrow">↗</div>
+        </a>
+      </div>
+    </section>
+
+    <!-- 10 — gtfs-rt-proxy: simulator -->
+    <section class="slide slide-detail" data-slide="25" data-title="gtfs-rt-simulator">
+      <header class="detail-header" style="--accent:#6366f1">
+        <div class="detail-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a15 15 0 0 1 0 20M2 12h20"/></svg>
+        </div>
+        <div>
+          <span class="eyebrow">Servicio · gtfs-rt-simulator <code>:9000</code></span>
+          <h2>Cuando no hay conductores, este genera un feed sintético</h2>
+          <p class="lead-sm">Threading HTTP server en Python que reproduce <strong>trayectorias reales recordadas</strong>, en loop, con interpolación lineal entre puntos. Útil para dev, presentaciones, fines de semana sin actividad real.</p>
+        </div>
+      </header>
+      <div class="detail-grid">
+        <div class="detail-col">
+          <h4>🔄 Pipeline</h4>
+          <pre class="snippet"># ONE-TIME (cuando se grabó historia):
+GTFS-RT/history/*.proto
+  → analyze.py
+  → patterns.json (~260 KB, commiteado)
+
+# RUNTIME (en el container):
+patterns.json
+  → server.py
+  → build_pool(clone_factor)
+  → build_feed(now)
+  → /pe-trujillo.proto</pre>
+          <h4>📐 Datos que tiene patterns.json</h4>
+          <pre class="snippet">{
+  "trajectories_kept": 18,
+  "trajectories": [
+    {
+      "route_id": "19",
+      "direction_id": 1,
+      "duration_seconds": 1125,
+      "sample_plate": "PUN-7170",
+      "points": [
+        {"t":0,"lat":-8.139,"lon":-79.06,"heading":127.5},
+        {"t":5,"lat":-8.139,"lon":-79.06,"heading":127.5},
+        ...
+      ]
+    }
+  ]
+}</pre>
+        </div>
+        <div class="detail-col">
+          <h4>⚙️ Variables del simulador</h4>
+          <ul class="detail-list">
+            <li><code>CLONE_FACTOR=3</code> — clones por trayectoria</li>
+            <li><code>MAX_VEHICLES=0</code> — 0 = sin tope</li>
+            <li><code>PATTERNS_PATH=/app/patterns.json</code></li>
+            <li><code>PORT=9000</code></li>
+          </ul>
+          <h4>🎲 Stagger de clones</h4>
+          <p class="detail-note">Cada clon arranca con un offset aleatorio dentro de su <code>duration_seconds</code> — así no aparecen todos juntos en el mismo punto. Seed fija: <code>42</code>.</p>
+          <h4>🔁 Loop infinito</h4>
+          <pre class="snippet">elapsed = now - spawn_ts
+loop_idx = int(elapsed // duration)
+t_in_traj = elapsed - loop_idx * duration
+<span class="cm"># entity_id = "PUN-7170-3"  (loop 3)</span></pre>
+        </div>
+        <div class="detail-col">
+          <h4>🔌 Endpoints</h4>
+          <ul class="detail-list">
+            <li><code>GET /pe-trujillo.proto</code> — feed</li>
+            <li><code>GET /gtfsrt.proto</code> — alias</li>
+            <li><code>GET /healthz</code> — pool size, start time</li>
+          </ul>
+          <h4>📤 Activar el simulador</h4>
+          <pre class="snippet"># En server/gtfs-rt-proxy/.env:
+SIMULATED=true
+CLONE_FACTOR=3
+MAX_VEHICLES=10
+
+docker compose restart proxy</pre>
+          <h4>📝 Regenerar patterns.json</h4>
+          <pre class="snippet">cd server/gtfs-rt-proxy/simulator
+python analyze.py \
+  --history ../../GTFS-RT/history \
+  --out patterns.json \
+  --min-duration 60 \
+  --sample-interval 5</pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11 — Photon -->
+    <section class="slide slide-detail" data-slide="26" data-title="Photon">
+      <header class="detail-header" style="--accent:#a855f7">
+        <div class="detail-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </div>
+        <div>
+          <span class="eyebrow">Servicio · Photon <code>:2322</code></span>
+          <h2>Geocoder de direcciones (Komoot Photon 0.4.2)</h2>
+          <p class="lead-sm">Convierte texto libre como <em>"av. España 1234"</em> en coordenadas. Backend: Java 21 sobre Alpine + ElasticSearch interno. Índice precomputado de Perú descargado de GraphHopper. <strong>Sin gpu, sin training</strong> — solo búsqueda full-text sobre OSM.</p>
+        </div>
+      </header>
+      <div class="detail-grid-2">
+        <div>
+          <h4>🔌 API — ejemplos reales</h4>
+          <pre class="snippet"># Búsqueda
+curl 'http://localhost:2322/api?q=plaza+armas+trujillo&amp;limit=5'
+
+{
+  "features": [{
+    "geometry": {
+      "coordinates": [-79.0287, -8.1118],
+      "type": "Point"
+    },
+    "properties": {
+      "name": "Plaza de Armas",
+      "city": "Trujillo",
+      "country": "Peru",
+      "type": "tourism"
+    }
+  }, ...]
+}
+
+# Reverse (coords → dirección)
+curl 'http://localhost:2322/reverse?lat=-8.11&amp;lon=-79.03'</pre>
+          <h4>🌍 Países disponibles (ISO-2)</h4>
+          <p class="detail-note">El <code>init.sh</code> descarga la lista de países desde <code>download1.graphhopper.com/public/extracts/by-country-code/</code> y deja elegir. Para Trujillo: <code>pe</code>. Otros usados en el ecosistema Trufi: <code>bo</code>, <code>ec</code>, <code>rw</code>, <code>us</code>, <code>br</code>.</p>
+        </div>
+        <div>
+          <h4>📦 Datos — qué baja init.sh</h4>
+          <pre class="snippet">URL: https://download1.graphhopper.com/public/
+     extracts/by-country-code/pe/
+     photon-db-pe-latest.tar.bz2
+
+# Tamaño aprox: ~varios GB (no commiteable)
+# Se extrae a: /app/photon_data/elasticsearch/
+
+# Estructura interna:
+photon_data/
+└── elasticsearch/
+    ├── nodes/
+    └── indices/</pre>
+          <h4>💾 Memoria</h4>
+          <table class="mini-table">
+            <tr><th>Tamaño país</th><th>RAM sugerida</th></tr>
+            <tr><td>Perú, Bolivia, Ecuador</td><td>1–2 GB</td></tr>
+            <tr><td>Brasil, EEUU</td><td>4–8 GB</td></tr>
+          </table>
+          <h4>🩺 Healthcheck</h4>
+          <pre class="snippet">test: ["CMD", "wget", "--spider",
+       "http://localhost:2322/api?q=test"]
+interval: 30s · start_period: 60s</pre>
+        </div>
+      </div>
+      <a class="detail-link" href="https://github.com/leoguti/GTFS-Trujillo/blob/master/server/docs/services/photon.md">Doc completa →</a>
+    </section>
+
+    <!-- 12 — TileServer GL -->
+    <section class="slide slide-detail" data-slide="27" data-title="TileServer GL">
+      <header class="detail-header" style="--accent:#10b981">
+        <div class="detail-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>
+        </div>
+        <div>
+          <span class="eyebrow">Servicio · TileServer GL</span>
+          <h2>Mapas vectoriales con 6 estilos listos</h2>
+          <p class="lead-sm">Imagen <code>maptiler/tileserver-gl:latest</code>. Sirve <strong>vector tiles</strong> (Mapbox Vector Tiles dentro de un .mbtiles, que es SQLite). La app móvil los renderiza con MapLibre GL en cliente — el servidor solo entrega trozos.</p>
+        </div>
+      </header>
+      <div class="detail-grid">
+        <div class="detail-col">
+          <h4>🎨 Estilos disponibles</h4>
+          <ul class="detail-list">
+            <li><code>osm-bright</code> — default · claro y detallado</li>
+            <li><code>osm-liberty</code> — Mapbox-like libre</li>
+            <li><code>maptiler-basic</code> — minimalista</li>
+            <li><code>positron</code> — gris claro para data viz</li>
+            <li><code>dark-matter</code> — noche / dashboards</li>
+            <li><code>fiord-color</code> — azul oscuro elegante</li>
+          </ul>
+          <p class="detail-note">Cada estilo es un folder con <code>style.json</code> (Mapbox Style Spec v8) + sprites + glyphs.</p>
+        </div>
+        <div class="detail-col">
+          <h4>🔌 API — patrones de URL</h4>
+          <pre class="snippet"># Tiles vectoriales
+GET /data/{source}/{z}/{x}/{y}.pbf
+
+# Style JSON (lo que carga MapLibre)
+GET /styles/osm-bright/style.json
+
+# Tiles raster (fallback)
+GET /styles/osm-bright/{z}/{x}/{y}.png
+
+# TileJSON
+GET /data/openmaptiles.json
+
+# Health
+GET /health</pre>
+        </div>
+        <div class="detail-col">
+          <h4>📐 config.json (generado por init.sh)</h4>
+          <pre class="snippet">{
+  "options": {
+    "paths": {
+      "root": "/data",
+      "fonts": "fonts",
+      "styles": "styles",
+      "mbtiles": ""
+    }
+  },
+  "data": {
+    "openmaptiles": {
+      "mbtiles": "/data/trujillo.mbtiles"
+    }
+  },
+  "styles": {
+    "osm-bright": {
+      "style": "osm-bright/style.json",
+      "tilejson": {
+        "type": "overlay",
+        "bounds": [-79.10, -8.20,
+                   -78.96, -8.05]
+      }
+    }
+  }
+}</pre>
+        </div>
+      </div>
+      <div class="callout callout-info">
+        <strong>BBOX de Trujillo:</strong> <code>-79.10,-8.20,-78.96,-8.05</code> · <strong>Cómo se genera el .mbtiles:</strong> con <a href="https://github.com/trufi-association/trufi-mbtiles-generator" target="_blank" rel="noopener">trufi-mbtiles-generator</a> desde el OSM extract de Perú.
+      </div>
+    </section>
+
+    <!-- 13 — YARP arquitectura -->
+    <section class="slide slide-detail" data-slide="28" data-title="YARP / server">
+      <header class="detail-header" style="--accent:#f59e0b">
+        <div class="detail-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        </div>
+        <div>
+          <span class="eyebrow">Servicio · trufi-server / YARP <code>:80 :443</code></span>
+          <h2>El frente: TLS + routing + analytics</h2>
+          <p class="lead-sm">.NET 10 (preview) + YARP 2.2.0 + LettuceEncrypt 1.3.3. Termina TLS automático con Let's Encrypt, enruta requests a los containers internos, y registra <strong>cada</strong> request en PostgreSQL para analítica posterior.</p>
+        </div>
+      </header>
+      <div class="detail-grid">
+        <div class="detail-col">
+          <h4>📦 Stack interno</h4>
+          <ul class="detail-list">
+            <li>Imagen base: <code>aspnet:10.0-preview</code></li>
+            <li><code>Yarp.ReverseProxy</code> 2.2.0</li>
+            <li><code>LettuceEncrypt</code> 1.3.3</li>
+            <li><code>EntityFrameworkCore</code> 10 + <code>Npgsql</code></li>
+            <li>PostgreSQL 16-alpine</li>
+            <li>Channels para queue async</li>
+          </ul>
+        </div>
+        <div class="detail-col">
+          <h4>🔐 SSL automático</h4>
+          <p>El proxy llama <code>AddLettuceEncrypt()</code> y la librería se encarga del resto: HTTP-01 challenge, emisión, renovación, persistencia.</p>
+          <ul class="detail-list">
+            <li>Configuración en <code>appsettings.json</code>: dominios + email</li>
+            <li>Persistencia de certs en <code>/etc/lettuce-encrypt</code></li>
+            <li>Renovación automática 30 días antes</li>
+          </ul>
+        </div>
+        <div class="detail-col">
+          <h4>🚀 Routing 100% config-driven</h4>
+          <p>Una sola línea en <code>Program.cs</code>:
+          <code>AddReverseProxy().LoadFromConfig(...)</code>. Toda la lógica vive en
+          <code>appsettings.json</code>, que <code>setup.sh</code> modifica.</p>
+          <p class="detail-note">El mount es <code>:ro</code>: editar el JSON requiere <code>docker compose restart</code>.</p>
+        </div>
+      </div>
+      <div class="takeaway">
+        <div class="takeaway-label">Lo que hay que recordar</div>
+        <p class="takeaway-text">Para agregar un nuevo servicio detrás del proxy, no se toca código — solo se corre <code>setup.sh</code> que muta el <code>appsettings.json</code> y se reinicia el contenedor.</p>
+      </div>
+      <div class="file-links-stack" style="max-width:800px;margin:1.4rem auto 0;">
+        <a class="file-link" href="https://github.com/trufi-association/trufi-server" target="_blank" rel="noopener">
+          <div class="file-link-icon">📂</div>
+          <div class="file-link-content">
+            <div class="file-link-name">trufi-association/trufi-server</div>
+            <div class="file-link-desc">Repo del proxy + analytics</div>
+          </div>
+          <div class="file-link-arrow">↗</div>
+        </a>
+        <a class="file-link" href="https://github.com/leoguti/GTFS-Trujillo/blob/master/server/docs/services/yarp.md" target="_blank" rel="noopener">
+          <div class="file-link-icon">📄</div>
+          <div class="file-link-content">
+            <div class="file-link-name">server/docs/services/yarp.md</div>
+            <div class="file-link-desc">Doc operativa local</div>
+          </div>
+          <div class="file-link-arrow">↗</div>
+        </a>
+      </div>
+    </section>
+
+    <!-- 14 — YARP analytics -->
+    <section class="slide slide-detail" data-slide="29" data-title="YARP — analytics">
+      <header class="detail-header" style="--accent:#f59e0b">
+        <div class="detail-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+        </div>
+        <div>
+          <span class="eyebrow">YARP · analytics</span>
+          <h2>Cada request queda registrada en PostgreSQL</h2>
+          <p class="lead-sm">Middleware que <strong>no bloquea</strong>: encola la request en un <code>Channel</code> de System.Threading; un worker en background hace batches de 100 (o cada 1s) e inserta. Compresión auto-decodificada. Payload &gt;1 MB: stub. Bytes nulos sanitizados (compatibilidad UTF-8 PostgreSQL).</p>
+        </div>
+      </header>
+      <div class="detail-grid-2">
+        <div>
+          <h4>📋 Esquema de la tabla <code>requests</code></h4>
+          <table class="db-table">
+            <thead><tr><th>Columna</th><th>Tipo</th></tr></thead>
+            <tbody>
+              <tr><td><code>id</code></td><td>bigint PK</td></tr>
+              <tr><td><code>method</code></td><td>varchar(10)</td></tr>
+              <tr><td><code>uri</code></td><td>text</td></tr>
+              <tr><td><code>host</code></td><td>varchar(255) <small>(idx)</small></td></tr>
+              <tr><td><code>ip</code></td><td>varchar(45)</td></tr>
+              <tr><td><code>device_id</code></td><td>varchar(255) <small>(idx)</small></td></tr>
+              <tr><td><code>user_agent</code></td><td>text</td></tr>
+              <tr><td><code>request_content_type</code></td><td>varchar(255) <small>(idx)</small></td></tr>
+              <tr><td><code>request_headers</code></td><td>text (JSON)</td></tr>
+              <tr><td><code>body</code></td><td>text</td></tr>
+              <tr><td><code>status_code</code></td><td>int</td></tr>
+              <tr><td><code>response_content_type</code></td><td>varchar(255)</td></tr>
+              <tr><td><code>response_headers</code></td><td>text (JSON)</td></tr>
+              <tr><td><code>response_body</code></td><td>text</td></tr>
+              <tr><td><code>received_at</code></td><td>timestamp <small>(idx)</small></td></tr>
+              <tr><td><code>created_at</code></td><td>timestamp</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div>
+          <h4>📊 Analytics API expuesta en <code>/analytics-api/*</code></h4>
+          <ul class="detail-list">
+            <li><code>GET /logs</code> — listado con filtros (host, método, status, IP, fechas, búsqueda)</li>
+            <li><code>GET /stats</code> — totales: requests, dispositivos únicos, hosts únicos</li>
+            <li><code>GET /stats/hourly</code> — buckets por hora UTC</li>
+            <li><code>GET /stats/endpoints</code> — top URIs por volumen</li>
+            <li><code>GET /stats/devices</code> — top dispositivos</li>
+            <li><code>GET /swagger</code> — UI interactiva para probar</li>
+          </ul>
+          <h4>🛡️ Robustez del middleware</h4>
+          <ul class="detail-list">
+            <li>Async vía <code>Channel&lt;T&gt;</code> — nunca bloquea la request</li>
+            <li>Batch de 100 inserts o flush cada 1s</li>
+            <li>Auto-decompresión de gzip / deflate / brotli</li>
+            <li>Payloads &gt; 1 MB: solo se guarda metadata</li>
+            <li>Bytes nulos sanitizados (PostgreSQL UTF-8)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="takeaway">
+        <div class="takeaway-label">Para el día a día del admin</div>
+        <p class="takeaway-text">Las queries SQL más usadas (top hosts, errores 5xx, dispositivos únicos) están en el <strong>cheat sheet</strong>. Para investigaciones puntuales, abrir Swagger en el browser y filtrar visualmente.</p>
+      </div>
+      <div class="file-links-stack" style="max-width:800px;margin:1.4rem auto 0;">
+        <a class="file-link" href="https://github.com/trufi-association/trufi-server/tree/main/server/src/Gateway.Analytics" target="_blank" rel="noopener">
+          <div class="file-link-icon">📂</div>
+          <div class="file-link-content">
+            <div class="file-link-name">Gateway.Analytics</div>
+            <div class="file-link-desc">Middleware + controllers + payload helpers</div>
+          </div>
+          <div class="file-link-arrow">↗</div>
+        </a>
+        <a class="file-link" href="https://github.com/trufi-association/trufi-server/blob/main/server/src/Gateway.Shared/Models/Request.cs" target="_blank" rel="noopener">
+          <div class="file-link-icon">📄</div>
+          <div class="file-link-content">
+            <div class="file-link-name">Gateway.Shared/Models/Request.cs</div>
+            <div class="file-link-desc">El modelo EF que define la tabla</div>
+          </div>
+          <div class="file-link-arrow">↗</div>
+        </a>
+      </div>
+    </section>
+
+    <!-- 15 — YARP setup -->
+    <section class="slide slide-detail" data-slide="30" data-title="YARP — setup">
+      <header class="detail-header" style="--accent:#f59e0b">
+        <div class="detail-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <div>
+          <span class="eyebrow">YARP · setup.sh</span>
+          <h2>Cómo se agrega un servicio nuevo al proxy</h2>
+          <p class="lead-sm">El script lee <code>trufi-proxy.json</code> del nuevo servicio, pide el dominio público, y muta <code>data/config/appsettings.json</code> con <code>jq</code>: agrega cluster YARP, ruta con match por hostname, y dominio a LettuceEncrypt para que renueve cert automáticamente.</p>
+        </div>
+      </header>
+      <div class="flow-steps">
+        <div class="flow-step">
+          <div class="flow-step-num">1</div>
+          <h4>El servicio define <code>trufi-proxy.json</code></h4>
+          <p>Con <code>name</code>, <code>container</code>, <code>port</code> y si quiere o no analytics.</p>
+        </div>
+        <div class="flow-step">
+          <div class="flow-step-num">2</div>
+          <h4>Se ejecuta <code>./setup.sh</code></h4>
+          <p>Menú interactivo. Opción 1 pide la ruta del repo y el dominio público.</p>
+        </div>
+        <div class="flow-step">
+          <div class="flow-step-num">3</div>
+          <h4>El script muta el JSON con <code>jq</code></h4>
+          <p>Agrega el dominio a LettuceEncrypt, define la ruta YARP, define el cluster con la dirección interna.</p>
+        </div>
+        <div class="flow-step">
+          <div class="flow-step-num">4</div>
+          <h4>Reiniciar el contenedor</h4>
+          <p><code>docker compose restart server</code> recarga la config. La DB no se toca.</p>
+        </div>
+      </div>
+      <div class="detail-grid" style="margin-top:1.5rem;">
+        <div class="detail-col">
+          <h4>📋 Menú de setup.sh</h4>
+          <ul class="detail-list">
+            <li>[1] Agregar servicio externo</li>
+            <li>[2] Exponer Analytics API</li>
+            <li>[3] Listar servicios</li>
+            <li>[4] Remover servicio</li>
+            <li>[5] Cambiar email</li>
+          </ul>
+        </div>
+        <div class="detail-col">
+          <h4>📂 Volumes persistentes</h4>
+          <ul class="detail-list">
+            <li><code>data/config/</code> — appsettings.json</li>
+            <li><code>data/lettuce-encrypt/</code> — certs</li>
+            <li><code>data/postgres/</code> — DB</li>
+          </ul>
+        </div>
+        <div class="detail-col">
+          <h4>🔑 Schema de trufi-proxy.json</h4>
+          <ul class="detail-list">
+            <li><code>name</code>, <code>description</code></li>
+            <li><code>container</code>, <code>port</code></li>
+            <li><code>analytics</code> (bool)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="file-links-stack" style="max-width:800px;margin:1.4rem auto 0;">
+        <a class="file-link" href="https://github.com/trufi-association/trufi-server/blob/main/setup.sh" target="_blank" rel="noopener">
+          <div class="file-link-icon">📄</div>
+          <div class="file-link-content">
+            <div class="file-link-name">trufi-server/setup.sh</div>
+            <div class="file-link-desc">Script completo, ~430 líneas</div>
+          </div>
+          <div class="file-link-arrow">↗</div>
+        </a>
+        <a class="file-link" href="https://github.com/trufi-association/trufi-server/blob/main/trufi-proxy.example.json" target="_blank" rel="noopener">
+          <div class="file-link-icon">📄</div>
+          <div class="file-link-content">
+            <div class="file-link-name">trufi-proxy.example.json</div>
+            <div class="file-link-desc">Plantilla del schema</div>
+          </div>
+          <div class="file-link-arrow">↗</div>
+        </a>
+      </div>
+    </section>
+
+    <!-- 16 — web-landing -->
+    <!-- Demo: probar Swagger de analytics -->
+    <section class="slide slide-demo" data-slide="31" data-title="Demo: Swagger de analytics">
+      <div class="demo-marker">Demo en vivo · ~12 min</div>
+      <h2>Inspeccionemos el tráfico real con Swagger</h2>
+      <p class="lead">YARP loggea todas las peticiones. Vamos a abrir el Swagger UI de la Analytics API y a explorar la data en producción: top hosts, errores recientes, dispositivos únicos.</p>
+      <div class="demo-agenda">
+        <ol>
+          <li>Abrir <code>https://trujillo.trufi.dev/analytics-api/swagger</code> en el browser</li>
+          <li>Probar <code>GET /stats</code> — total requests / dispositivos / hosts</li>
+          <li>Probar <code>GET /stats/hourly</code> — distribución por hora</li>
+          <li>Probar <code>GET /stats/endpoints?limit=10</code> — top URIs</li>
+          <li>Filtrar logs por errores: <code>GET /logs?statusCode=500</code></li>
+          <li>Filtrar por dispositivo: <code>GET /logs?deviceId=...</code></li>
+          <li>Comparar con SQL directo en la DB</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- web-landing -->
+    <section class="slide slide-detail" data-slide="32" data-title="web-landing">
+      <header class="detail-header" style="--accent:#ec4899">
+        <div class="detail-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        </div>
+        <div>
+          <span class="eyebrow">Servicio · web-landing</span>
+          <h2>La cara pública en trujillo.trufi.dev</h2>
+          <p class="lead-sm">Página estática con HTML + CSS + JS vanilla. Sin frameworks. nginx:alpine la sirve directo. i18n con JSON + <code>data-i18n</code>, theme toggle persistente, accesibilidad básica.</p>
+        </div>
+      </header>
+      <div class="detail-grid">
+        <div class="detail-col">
+          <h4>📄 Estructura del HTML</h4>
+          <pre class="snippet">&lt;header&gt;
+  logo + brand
+  + langToggle (ES/EN)
+  + themeToggle (sun/moon)
+
+&lt;section id="hero"&gt;
+  h1 (con grad text)
+  + 4 bullet features
+  + store badges
+    (Google Play / App Store)
+
+&lt;section id="alianzas"&gt;
+  5 logos de socios
+
+&lt;footer&gt;
+  copyright + email + Trufi link</pre>
+        </div>
+        <div class="detail-col">
+          <h4>🌐 i18n — 14 keys</h4>
+          <pre class="snippet">&lt;!-- HTML --&gt;
+&lt;p data-i18n="heroSub"&gt;...&lt;/p&gt;
+&lt;span data-i18n-html="heroTitle"&gt;...&lt;/span&gt;
+
+// JS vanilla (140 LOC)
+const lang = navigator.language.slice(0,2);
+const dict = await fetch(`l10n/${lang}.json`)
+                  .then(r =&gt; r.json());
+document.querySelectorAll('[data-i18n]')
+  .forEach(el =&gt; el.textContent = dict[
+    el.dataset.i18n
+  ]);
+
+// localStorage para persistir</pre>
+        </div>
+        <div class="detail-col">
+          <h4>🎨 Theme toggle</h4>
+          <pre class="snippet">// 18 CSS vars en :root
+// + override en [data-theme="dark"]
+
+// JS:
+const saved = localStorage.getItem('theme');
+const auto = matchMedia(
+  '(prefers-color-scheme: dark)'
+).matches ? 'dark' : 'light';
+document.documentElement
+  .dataset.theme = saved || auto;</pre>
+          <h4>🛠️ nginx.conf</h4>
+          <pre class="snippet">server {
+  listen 80;
+  root /usr/share/nginx/html;
+  index index.html;
+  location / {
+    try_files $uri $uri/ /index.html;
+  }
+}</pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- 17 — Datos -->
+    <section class="slide slide-detail" data-slide="33" data-title="Datos de input">
+      <header class="detail-header" style="--accent:#fbbf24">
+        <div class="detail-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/></svg>
+        </div>
+        <div>
+          <span class="eyebrow">Datos · server/data/</span>
+          <h2>Inputs canónicos del sistema</h2>
+          <p class="lead-sm">Solo los archivos críticos viven en el repo (~26 MB). Los derivados (graph de OTP, índice de Photon) los regeneran los servicios al arrancar.</p>
+        </div>
+      </header>
+      <div class="data-grid">
+        <table class="data-table">
+          <thead>
+            <tr><th>Archivo</th><th>Tamaño</th><th>Servicio</th><th>Función</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><code>trujillo.gtfs.zip</code></td><td>18 MB</td><td>OTP</td><td>Schedule completo expandido</td></tr>
+            <tr><td><code>trujillo.osm.pbf</code></td><td>2.3 MB</td><td>OTP</td><td>Extract OSM (red vial)</td></tr>
+            <tr><td><code>trujillo.mbtiles</code></td><td>4.7 MB</td><td>tileserver-gl</td><td>Vector tiles para la app</td></tr>
+            <tr><td><code>trujillo.gtfs.zip</code> <small>(small)</small></td><td>1 MB</td><td>gtfs-rt-proxy</td><td>GTFS con frequencies (lookup)</td></tr>
+            <tr><td><code>patterns.json</code></td><td>260 KB</td><td>simulator</td><td>18 trayectorias recordadas</td></tr>
+          </tbody>
+        </table>
+        <div class="data-side">
+          <h4>🔄 Sincronizar con el server</h4>
+          <pre class="snippet">SERVER=root@trujillo.trufi.dev
+
+# pull (server → repo)
+scp $SERVER:/root/otp/data/trujillo.gtfs.zip \
+  server/data/
+
+# push (repo → server, destructivo)
+scp server/data/trujillo.gtfs.zip \
+  $SERVER:/root/otp/data/</pre>
+          <h4>🚫 Lo que NO se commitea</h4>
+          <ul class="detail-list">
+            <li><code>graph.obj</code> (~20 MB) — OTP regenera</li>
+            <li><code>photon_data/</code> (varios GB) — GraphHopper</li>
+            <li>Backups <code>.bak</code></li>
+            <li>Archivos kigali (legacy)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 18 — App móvil -->
+    <section class="slide" data-slide="34" data-title="App móvil">
+      <span class="eyebrow center">Cliente</span>
+      <h2 class="center">App móvil MiRuta</h2>
+      <p class="lead center">
+        Construida con <strong>Flutter</strong> sobre rutometro-app · iOS + Android · open source
+      </p>
+      <div class="screens-row">
+        <figure class="screen"><img src="assets/screenshots/01-onboarding.png" alt="" /><figcaption>Onboarding</figcaption></figure>
+        <figure class="screen"><img src="assets/screenshots/02-map.png" alt="" /><figcaption>Mapa</figcaption></figure>
+        <figure class="screen"><img src="assets/screenshots/04-route-results.png" alt="" /><figcaption>Resultados</figcaption></figure>
+        <figure class="screen"><img src="assets/screenshots/05-route-settings.png" alt="" /><figcaption>Configuración</figcaption></figure>
+        <figure class="screen"><img src="assets/screenshots/07-routes-list.png" alt="" /><figcaption>Rutas</figcaption></figure>
+      </div>
+    </section>
+
+    <!-- 23 — App móvil — stack -->
+    <section class="slide slide-detail" data-slide="35" data-title="App móvil — stack">
+      <header class="detail-header" style="--accent:#22d3ee">
+        <div class="detail-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+        </div>
+        <div>
+          <span class="eyebrow">Mobile · stack y configuración</span>
+          <h2>Cómo está construida la app</h2>
+          <p class="lead-sm">
+            <strong>Flutter 3.41.0</strong> (locked vía FVM) sobre el framework
+            <strong>Trufi Core v5.8.0</strong>. Estado con BLoC, navegación
+            con go_router, mapas con MapLibre GL. Sin tracking de terceros, sin
+            Google Maps. Versión actual: <code>1.3.0+9</code>.
+          </p>
+        </div>
+      </header>
+      <div class="detail-grid">
+        <div class="detail-col">
+          <h4>📦 Dependencias clave</h4>
+          <ul class="detail-list">
+            <li><code>flutter_bloc</code> 9.1 — state management</li>
+            <li><code>provider</code> 6.1 — inyección de dependencias</li>
+            <li><code>go_router</code> 17 — navegación</li>
+            <li><code>maplibre_gl</code> 0.25 — mapas</li>
+            <li><code>h3_flutter</code> 0.7 — H3 para analytics</li>
+            <li><code>Trufi Core</code> 5.8 — framework base</li>
+          </ul>
+          <p class="detail-note">Trufi Core viene de GitHub packages, no de pub.dev.</p>
+        </div>
+        <div class="detail-col">
+          <h4>🔌 A qué se conecta</h4>
+          <ul class="detail-list">
+            <li><code>otp.trujillo.trufi.dev</code> — GraphQL routing</li>
+            <li><code>photon.trujillo.trufi.dev</code> — geocoding</li>
+            <li><code>analytics.trujillo.trufi.dev</code> — request logs</li>
+            <li>Tiles: assets offline incluidos en el bundle</li>
+          </ul>
+          <h4>📦 Assets bundleados</h4>
+          <ul class="detail-list">
+            <li><code>assets/routing/trujillo.gtfs.zip</code></li>
+            <li><code>assets/offline/trujillo.mbtiles</code></li>
+            <li><code>assets/branding/*.png</code></li>
+          </ul>
+        </div>
+        <div class="detail-col">
+          <h4>🌐 Localización</h4>
+          <ul class="detail-list">
+            <li><code>app_es.arb</code> — Español (default)</li>
+            <li><code>app_en.arb</code> — English</li>
+            <li><code>app_de.arb</code> — Deutsch (fallback)</li>
+            <li>~50 strings por idioma</li>
+          </ul>
+          <h4>📱 Versión</h4>
+          <p class="detail-note"><code>1.3.0+9</code> · iOS + Android · open source</p>
+        </div>
+      </div>
+      <div class="takeaway">
+        <div class="takeaway-label">⚠️ Importante para el admin</div>
+        <p class="takeaway-text">Toda la configuración (URLs del backend, ciudad, coordenadas, colores, contacto) está <strong>hardcodeada</strong> en <code>lib/main.dart</code>. No hay <code>.env</code>. Cambiar cualquier cosa implica editar el archivo y compilar una nueva versión.</p>
+      </div>
+      <div class="file-links-stack" style="max-width:800px;margin:1.4rem auto 0;">
+        <a class="file-link" href="https://github.com/trufi-association/rutometro-app" target="_blank" rel="noopener">
+          <div class="file-link-icon">📂</div>
+          <div class="file-link-content">
+            <div class="file-link-name">trufi-association/rutometro-app</div>
+            <div class="file-link-desc">Repo upstream de la app</div>
+          </div>
+          <div class="file-link-arrow">↗</div>
+        </a>
+        <a class="file-link" href="https://github.com/leoguti/GTFS-Trujillo/blob/master/mobile-app/lib/main.dart" target="_blank" rel="noopener">
+          <div class="file-link-icon">📄</div>
+          <div class="file-link-content">
+            <div class="file-link-name">mobile-app/lib/main.dart</div>
+            <div class="file-link-desc">Toda la configuración del cliente</div>
+          </div>
+          <div class="file-link-arrow">↗</div>
+        </a>
+      </div>
+    </section>
+
+    <!-- 24 — App móvil — build & release -->
+    <section class="slide slide-detail" data-slide="36" data-title="App móvil — build & release">
+      <header class="detail-header" style="--accent:#22d3ee">
+        <div class="detail-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        </div>
+        <div>
+          <span class="eyebrow">Mobile · build & release</span>
+          <h2>Cómo se compila y publica una nueva versión</h2>
+          <p class="lead-sm">No hay CI configurado — los builds son manuales.
+          FVM es obligatorio (Flutter 3.41.0 está pineado). Detalle completo en
+          <code>mobile-app/docs/BUILD_GUIDE.md</code> y
+          <code>mobile-app/docs/RELEASE_GUIDE.md</code>.</p>
+        </div>
+      </header>
+      <div class="flow-steps">
+        <div class="flow-step">
+          <div class="flow-step-num">1</div>
+          <h4>Setup local (una vez)</h4>
+          <p>Instalar FVM, instalar Flutter 3.41.0, ejecutar <code>fvm flutter pub get</code>. Sin FVM las dependencias rompen.</p>
+        </div>
+        <div class="flow-step">
+          <div class="flow-step-num">2</div>
+          <h4>Subir versión</h4>
+          <p>Editar <code>pubspec.yaml</code> incrementando el build number (después del <code>+</code>).</p>
+        </div>
+        <div class="flow-step">
+          <div class="flow-step-num">3</div>
+          <h4>Compilar</h4>
+          <p>Android: <code>build appbundle</code> (.aab para Play Store). iOS: <code>build ios --no-codesign</code>.</p>
+        </div>
+        <div class="flow-step">
+          <div class="flow-step-num">4</div>
+          <h4>Firmar (Android)</h4>
+          <p>Requiere <code>android/key.properties</code> + <code>upload-keystore.jks</code> (no se commitean).</p>
+        </div>
+        <div class="flow-step">
+          <div class="flow-step-num">5</div>
+          <h4>Firmar (iOS)</h4>
+          <p>Abrir <code>Runner.xcworkspace</code>, configurar Team, <code>Product → Archive → Distribute</code>.</p>
+        </div>
+        <div class="flow-step">
+          <div class="flow-step-num">6</div>
+          <h4>Publicar</h4>
+          <p>Google Play Console (subir <code>.aab</code>) · App Store Connect (subir desde Xcode).</p>
+        </div>
+      </div>
+      <div class="takeaway">
+        <div class="takeaway-label">Lo que vas a olvidar y va a doler</div>
+        <p class="takeaway-text">Si compilas con <code>flutter</code> directo en lugar de <code>fvm flutter</code>, las dependencias de Trufi Core se rompen silenciosamente. Si <code>android/key.properties</code> está mal configurado, el build falla silencioso — siempre usar <code>--verbose</code> ante dudas.</p>
+      </div>
+      <div class="file-links-stack" style="max-width:800px;margin:1.4rem auto 0;">
+        <a class="file-link" href="https://github.com/leoguti/GTFS-Trujillo/blob/master/mobile-app/docs/BUILD_GUIDE.md" target="_blank" rel="noopener">
+          <div class="file-link-icon">📄</div>
+          <div class="file-link-content">
+            <div class="file-link-name">mobile-app/docs/BUILD_GUIDE.md</div>
+            <div class="file-link-desc">Guía de compilación paso a paso</div>
+          </div>
+          <div class="file-link-arrow">↗</div>
+        </a>
+        <a class="file-link" href="https://github.com/leoguti/GTFS-Trujillo/blob/master/mobile-app/docs/RELEASE_GUIDE.md" target="_blank" rel="noopener">
+          <div class="file-link-icon">📄</div>
+          <div class="file-link-content">
+            <div class="file-link-name">mobile-app/docs/RELEASE_GUIDE.md</div>
+            <div class="file-link-desc">Proceso completo de release</div>
+          </div>
+          <div class="file-link-arrow">↗</div>
+        </a>
+      </div>
+      <div class="callout callout-info">
+        <strong>📋 Checklist antes de publicar:</strong> subir versión <code>version</code>
+        en <code>pubspec.yaml</code> (siempre incrementar el build number
+        después del <code>+</code>), commit + tag, build, smoke test en device
+        real, upload, llenar release notes en la consola.
+      </div>
+    </section>
+
+    <!-- 25 — App móvil — admin tasks -->
+    <!-- ADMIN — overview -->
+    <section class="slide slide-detail" data-slide="37" data-title="Admin app · overview">
+      <header class="detail-header">
+        <div class="detail-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+        </div>
+        <div>
+          <span class="eyebrow">Mobile · tareas comunes</span>
+          <h2>Lo que vas a tener que hacer en la app</h2>
+          <p class="lead-sm">Las 9 tareas más frecuentes que un admin ejecuta sobre la app móvil. Cada una es un cambio + rebuild + release. Detalle en las próximas slides.</p>
+        </div>
+      </header>
+      <div class="detail-grid">
+        <div class="detail-col">
+          <h4>🚀 Releases</h4>
+          <ul class="detail-list">
+            <li>Subir versión (build number / semver)</li>
+            <li>Hotfix urgente — fast publish</li>
+          </ul>
+        </div>
+        <div class="detail-col">
+          <h4>🔧 Configuración</h4>
+          <ul class="detail-list">
+            <li>Cambiar URL del backend</li>
+            <li>Cambiar ciudad / coordenadas</li>
+            <li>Actualizar GTFS / mapas offline</li>
+          </ul>
+        </div>
+        <div class="detail-col">
+          <h4>🎨 UI / contenido</h4>
+          <ul class="detail-list">
+            <li>Logos / branding</li>
+            <li>Agregar idioma nuevo</li>
+            <li>Deep links (pendiente)</li>
+            <li>Cosas que vas a olvidar</li>
+          </ul>
+        </div>
+      </div>
+      <div class="file-links-stack" style="max-width:800px;margin:1.4rem auto 0;">
+        <a class="file-link" href="https://github.com/leoguti/GTFS-Trujillo/blob/master/mobile-app/lib/main.dart" target="_blank" rel="noopener">
+          <div class="file-link-icon">📄</div>
+          <div class="file-link-content">
+            <div class="file-link-name">mobile-app/lib/main.dart</div>
+            <div class="file-link-desc">Toda la configuración hardcodeada</div>
+          </div>
+          <div class="file-link-arrow">↗</div>
+        </a>
+      </div>
+    </section>
+
+    <!-- ADMIN 1: subir versión -->
+    <section class="slide slide-detail" data-slide="38" data-title="Admin · subir versión">
+      <header class="detail-header">
+        <div class="detail-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+        </div>
+        <div>
+          <span class="eyebrow">Admin · 1 / 9</span>
+          <h2>Subir versión de la app</h2>
+          <p class="lead-sm">Cada vez que quieres publicar cambios, hay que incrementar el build number (siempre) y opcionalmente el semver (para features visibles).</p>
+        </div>
+      </header>
+      <div class="detail-grid-2">
+        <div>
+          <h4>Editar <code>pubspec.yaml</code></h4>
+          <pre class="snippet">version: 1.3.0+10
+#         ^^^^^ ^^
+#         semver build_number
+
+# Solo bump de build (parche interno)
+1.3.0+9 → 1.3.0+10
+
+# Bump de patch (bug fix usuarios)
+1.3.0+10 → 1.3.1+11
+
+# Bump de minor (feature nueva)
+1.3.0+10 → 1.4.0+11</pre>
+        </div>
+        <div>
+          <h4>Tag y push</h4>
+          <pre class="snippet">git add pubspec.yaml
+git commit -m "Bump 1.3.0+10 → 1.3.0+11"
+git tag v1.3.0+11
+git push --tags</pre>
+          <p class="detail-note">El tag es importante para correlacionar crashes/issues con la versión exacta del binario.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ADMIN 2: cambiar URL backend -->
+    <section class="slide slide-detail" data-slide="39" data-title="Admin · cambiar URL backend">
+      <header class="detail-header">
+        <div class="detail-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+        </div>
+        <div>
+          <span class="eyebrow">Admin · 2 / 9</span>
+          <h2>Cambiar la URL del backend</h2>
+          <p class="lead-sm">Las URLs de OTP y Photon están hardcodeadas en <code>lib/main.dart</code>. Cambiarlas requiere recompilar y publicar nueva versión.</p>
+        </div>
+      </header>
+      <div class="detail-grid-2">
+        <div>
+          <h4>Líneas a editar</h4>
+          <pre class="snippet">// lib/main.dart
+
+// línea 51 — URL de OTP
+otpEndpoint:
+  'https://trujillo.trufi.dev/otp/...',
+
+// línea 221 — URL de Photon
+photonEndpoint:
+  'https://trujillo.trufi.dev/photon/...',</pre>
+        </div>
+        <div>
+          <h4>Consideraciones</h4>
+          <ul class="detail-list">
+            <li>Los usuarios <strong>actuales</strong> seguirán usando la URL vieja hasta que actualicen la app</li>
+            <li>Si la URL vieja deja de funcionar, los usuarios sin actualizar quedan sin servicio</li>
+            <li>Considerar mantener un redirect en YARP por unas semanas</li>
+            <li>Forzar update vía Play Store / App Store si el cambio es breaking</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ADMIN 3: GTFS offline -->
+    <section class="slide slide-detail" data-slide="40" data-title="Admin · GTFS / mapas offline">
+      <header class="detail-header">
+        <div class="detail-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+        </div>
+        <div>
+          <span class="eyebrow">Admin · 3 / 9</span>
+          <h2>Actualizar GTFS o mapas offline en la app</h2>
+          <p class="lead-sm">La app embebe el GTFS y los vector tiles para funcionar sin conexión. Cuando cambia la red de transporte o el mapa, hay que reemplazar los assets y rebuildear.</p>
+        </div>
+      </header>
+      <div class="detail-grid-2">
+        <div>
+          <h4>Archivos a reemplazar</h4>
+          <pre class="snippet">mobile-app/
+├── assets/
+│   ├── routing/
+│   │   └── trujillo.gtfs.zip   ← GTFS
+│   └── offline/
+│       └── trujillo.mbtiles    ← mapa</pre>
+          <p>Sin código que tocar — solo reemplazar los archivos y recompilar.</p>
+        </div>
+        <div>
+          <h4>⚠️ Cuidado</h4>
+          <ul class="detail-list">
+            <li>Si <code>trujillo.gtfs.zip</code> falta, la app <strong>crashea</strong> al abrir <code>TransportListScreen</code></li>
+            <li>El zip debe ser válido — verificar con <code>unzip -t trujillo.gtfs.zip</code></li>
+            <li>El mbtiles puede subir el tamaño del binario rápido — comprimirlo con tilemaker si pasa los 10 MB</li>
+            <li>Probar en device real antes de publicar — el emulador a veces tolera assets corruptos</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ADMIN 4: branding -->
+    <section class="slide slide-detail" data-slide="41" data-title="Admin · branding">
+      <header class="detail-header">
+        <div class="detail-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r=".5"/><circle cx="17.5" cy="10.5" r=".5"/><circle cx="8.5" cy="7.5" r=".5"/><circle cx="6.5" cy="12.5" r=".5"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></svg>
+        </div>
+        <div>
+          <span class="eyebrow">Admin · 4 / 9</span>
+          <h2>Cambiar logos y branding</h2>
+          <p class="lead-sm">El branding visible al usuario está repartido entre los assets de la app y los iconos del launcher de cada plataforma.</p>
+        </div>
+      </header>
+      <div class="detail-grid-2">
+        <div>
+          <h4>Logos en pantalla</h4>
+          <pre class="snippet">mobile-app/assets/branding/
+├── app-logo.png       ← splash, drawer
+├── miruta-icon.png    ← header
+└── partners/          ← logos de socios
+    ├── MPT-logo.png
+    ├── MTC-logo.png
+    └── ...</pre>
+          <p>Reemplazar el archivo (mismo nombre y dimensiones).</p>
+        </div>
+        <div>
+          <h4>Icono del launcher</h4>
+          <pre class="snippet"># Android (varios tamaños)
+android/app/src/main/res/
+├── mipmap-mdpi/    ic_launcher.png  (48px)
+├── mipmap-hdpi/    ic_launcher.png  (72px)
+├── mipmap-xhdpi/   ic_launcher.png  (96px)
+├── mipmap-xxhdpi/  ic_launcher.png  (144px)
+└── mipmap-xxxhdpi/ ic_launcher.png  (192px)
+
+# iOS (set completo)
+ios/Runner/Assets.xcassets/
+└── AppIcon.appiconset/  (varios PNG)</pre>
+          <p class="detail-note">Usar <code>flutter_launcher_icons</code> para generar todos los tamaños desde un único PNG fuente.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ADMIN 5: cambiar ciudad -->
+    <section class="slide slide-detail" data-slide="42" data-title="Admin · cambiar ciudad">
+      <header class="detail-header">
+        <div class="detail-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <div>
+          <span class="eyebrow">Admin · 5 / 9</span>
+          <h2>Cambiar ciudad / coordenadas</h2>
+          <p class="lead-sm">Si la app va a desplegarse en otra ciudad, hay que cambiar el centro del mapa, el nombre y — crítico — el bounding box que Photon usa para el geocoding.</p>
+        </div>
+      </header>
+      <div class="detail-grid-2">
+        <div>
+          <h4>Centro y metadata</h4>
+          <pre class="snippet">// lib/main.dart líneas 31-34
+
+defaultLatLng: LatLng(-8.108, -79.029),
+defaultZoom: 13.0,
+city: 'Trujillo',
+countryCode: 'PE',</pre>
+        </div>
+        <div>
+          <h4>BBox de Photon (crítico)</h4>
+          <pre class="snippet">// lib/main.dart línea 224
+
+photonBbox: '-79.10,-8.20,-78.95,-8.05',
+//          ^min_lon ^min_lat ^max_lon ^max_lat
+
+// Photon devuelve 0 resultados FUERA de
+// este bbox — si está mal el geocoding
+// "no encuentra nada"</pre>
+          <p class="detail-note">Sacar el bbox correcto desde <a href="https://bboxfinder.com" target="_blank" rel="noopener">bboxfinder.com</a> dibujando un polígono sobre la ciudad.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ADMIN 6: idioma nuevo -->
+    <section class="slide slide-detail" data-slide="43" data-title="Admin · agregar idioma">
+      <header class="detail-header">
+        <div class="detail-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        </div>
+        <div>
+          <span class="eyebrow">Admin · 6 / 9</span>
+          <h2>Agregar un idioma nuevo a la app</h2>
+          <p class="lead-sm">La i18n usa archivos ARB (Application Resource Bundle, formato Flutter). Hay ~50 keys que traducir. Añadir un idioma toma ~30 min de copiar/traducir/regenerar.</p>
+        </div>
+      </header>
+      <div class="detail-grid-2">
+        <div>
+          <h4>Pasos</h4>
+          <pre class="snippet"># 1. Crear el ARB del idioma nuevo
+cp lib/l10n/app_es.arb \
+   lib/l10n/app_qu.arb     # quechua
+
+# 2. Traducir las ~50 keys (cambiar @@locale)
+
+# 3. Regenerar las clases Dart
+fvm flutter gen-l10n
+
+# 4. Recompilar
+fvm flutter run</pre>
+        </div>
+        <div>
+          <h4>Registrar el locale</h4>
+          <pre class="snippet">// lib/main.dart
+
+supportedLocales: [
+  Locale('es'),
+  Locale('en'),
+  Locale('qu'),    // ← nuevo
+],</pre>
+          <p class="detail-note">El idioma del sistema del usuario manda — si no hay match exacto, cae al primero soportado (<code>es</code>).</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ADMIN 7: hotfix -->
+    <section class="slide slide-detail" data-slide="44" data-title="Admin · hotfix urgente">
+      <header class="detail-header">
+        <div class="detail-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        </div>
+        <div>
+          <span class="eyebrow">Admin · 7 / 9</span>
+          <h2>Hotfix urgente en producción</h2>
+          <p class="lead-sm">Cuando la app está caída para usuarios reales y necesitas publicar una corrección lo más rápido posible. Tanto Play como App Store tienen mecanismos para acelerar.</p>
+        </div>
+      </header>
+      <div class="detail-grid-2">
+        <div>
+          <h4>Flujo</h4>
+          <pre class="snippet"># 1. Pull, fix, bump del patch
+git pull
+# (hacer el fix mínimo)
+# pubspec.yaml: 1.3.0 → 1.3.1
+
+# 2. Build release
+fvm flutter build appbundle --release
+
+# 3. Build iOS
+fvm flutter build ipa --release</pre>
+        </div>
+        <div>
+          <h4>Publicar rápido</h4>
+          <ul class="detail-list">
+            <li><strong>Android — Play Console</strong>: usar "Production · Fast publish" (review acelerado, 2-4 hs)</li>
+            <li><strong>iOS — App Store Connect</strong>: Archive + "Expedited review" (justificar el motivo). Aprueban en ~24 hs</li>
+            <li>Mientras esperas revisión, considerar bajar la versión rota con "halt rollout" para evitar más users afectados</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ADMIN 8: deep links -->
+    <section class="slide slide-detail" data-slide="45" data-title="Admin · deep links (pendiente)">
+      <header class="detail-header">
+        <div class="detail-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+        </div>
+        <div>
+          <span class="eyebrow">Admin · 8 / 9 · pendiente</span>
+          <h2>Deep links — para que las URLs del sitio abran la app</h2>
+          <p class="lead-sm">Cuando un usuario clicka <code>trujillo.trufi.dev/route/19</code> en su browser, lo ideal es que se abra la app si la tiene instalada (con el contexto), en lugar del browser. Hoy esto NO está activo — falta publicar 2 archivos en la web.</p>
+        </div>
+      </header>
+      <div class="detail-grid-2">
+        <div>
+          <h4>Android — assetlinks.json</h4>
+          <pre class="snippet"># Publicar en:
+trujillo.trufi.dev/.well-known/assetlinks.json
+
+# Contenido:
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "pe.trujillo.miruta",
+    "sha256_cert_fingerprints": [
+      "&lt;SHA-256 del cert release&gt;"
+    ]
+  }
+}]</pre>
+        </div>
+        <div>
+          <h4>iOS — apple-app-site-association</h4>
+          <pre class="snippet"># Publicar en:
+trujillo.trufi.dev/.well-known/apple-app-site-association
+
+# Contenido (sin extensión .json):
+{
+  "applinks": {
+    "apps": [],
+    "details": [{
+      "appID": "&lt;TEAM_ID&gt;.pe.trujillo.miruta",
+      "paths": ["*"]
+    }]
+  }
+}</pre>
+          <p class="detail-note">El web-landing nginx debe servir estos paths con <code>Content-Type: application/json</code> y sin redirects.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ADMIN 9: gotchas -->
+    <section class="slide slide-detail" data-slide="46" data-title="Admin · cosas que vas a olvidar">
+      <header class="detail-header">
+        <div class="detail-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        </div>
+        <div>
+          <span class="eyebrow">Admin · 9 / 9 · gotchas</span>
+          <h2>Cosas que vas a olvidar</h2>
+          <p class="lead-sm">Detalles no obvios que cuestan tiempo cuando los descubrís en producción. Memorizar antes de necesitarlos.</p>
+        </div>
+      </header>
+      <div class="detail-grid-2">
+        <div>
+          <h4>FVM es obligatorio</h4>
+          <p>Sin <strong>FVM</strong> (Flutter Version Manager) <code>trufi-core</code> rompe en build. Si llegas a un repo limpio, instala FVM antes de cualquier <code>flutter pub get</code>.</p>
+          <pre class="snippet">brew tap leoafarias/fvm
+brew install fvm
+fvm install
+fvm use   # respeta .fvmrc</pre>
+
+          <h4>Mapas offline no se auto-actualizan</h4>
+          <p>El <code>.mbtiles</code> queda fijo en el binario. Si actualizas el mapa upstream, los usuarios no lo ven hasta el siguiente release.</p>
+        </div>
+        <div>
+          <h4>Sin retry si OTP cae</h4>
+          <p>El cliente HTTP de la app no reintenta. Si OTP devuelve un error, el usuario ve "no se encontraron rutas". Considerar agregar retry con backoff en algún momento.</p>
+
+          <h4>Headers de analytics</h4>
+          <p>Cada request a OTP/Photon manda headers <code>X-Origin-*</code> custom (device_id, app_version, locale). YARP los loggea a la DB para los reportes.</p>
+          <pre class="snippet">X-Origin-DeviceId: a1b2c3...
+X-Origin-AppVersion: 1.3.0+10
+X-Origin-Locale: es</pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- 26 — Operaciones -->
+    <section class="slide slide-detail" data-slide="47" data-title="Operaciones">
+      <header class="detail-header" style="--accent:#34d399">
+        <div class="detail-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        </div>
+        <div>
+          <span class="eyebrow">Operaciones · runbook</span>
+          <h2>Cómo se opera el sistema día a día</h2>
+          <p class="lead-sm">Ubuntu 22.04 + Docker. 4 GB RAM (ojo: sin swap). Health check global, deploy por servicio, backups, troubleshooting común.</p>
+        </div>
+      </header>
+      <div class="detail-grid-2">
+        <div>
+          <h4>🩺 Health check global</h4>
+          <pre class="snippet">ssh root@trujillo.trufi.dev '
+  docker ps --format "table {{.Names}}\t{{.Status}}"
+  echo
+  df -h | grep -v overlay
+  free -h
+  uptime
+'</pre>
+          <h4>🐛 Healthchecks "falsos negativos"</h4>
+          <table class="mini-table">
+            <tr><th>Container</th><th>Estado</th></tr>
+            <tr><td><code>server-server-1</code></td><td><code>/dev/tcp</code> no existe en /bin/sh</td></tr>
+            <tr><td><code>trufi-tileserver-gl</code></td><td>healthcheck.js falla, GET / responde 200</td></tr>
+          </table>
+          <h4>📋 Logs</h4>
+          <pre class="snippet">docker logs -f &lt;container&gt;
+docker logs --tail 100 &lt;container&gt;
+docker logs --since 30m &lt;container&gt;
+docker logs -t &lt;container&gt;   # timestamps</pre>
+        </div>
+        <div>
+          <h4>🚀 Despliegue de cambios</h4>
+          <pre class="snippet"># Servicio local (proxy, web-landing):
+git push  # this repo
+rsync -avz --exclude='.git' \
+  ./server/&lt;svc&gt;/ \
+  root@trujillo.trufi.dev:/root/&lt;svc&gt;/
+ssh root@trujillo.trufi.dev \
+  "cd /root/&lt;svc&gt; && docker compose up -d --build"
+
+# Servicio submódulo (otp, photon, etc.):
+ssh root@trujillo.trufi.dev "
+  cd /root/&lt;svc&gt;
+  git pull
+  docker compose up -d --build
+"</pre>
+          <h4>♻️ Refrescar GTFS</h4>
+          <pre class="snippet">scp server/data/trujillo.gtfs.zip \
+  root@trujillo.trufi.dev:/root/otp/data/
+ssh root@trujillo.trufi.dev '
+  rm /root/otp/data/graph.obj
+  cd /root/otp && docker compose restart
+'
+docker logs -f otp   # ~2-3 min</pre>
+          <h4>💾 Backups</h4>
+          <pre class="snippet">docker exec server-db-1 \
+  pg_dump -U analytics analytics \
+  &gt; backups/analytics-$(date +%F).sql</pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- 21 — Troubleshooting -->
+    <!-- TROUBLESHOOTING — overview -->
+    <section class="slide slide-detail" data-slide="48" data-title="Troubleshooting · overview">
+      <header class="detail-header">
+        <div class="detail-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+        </div>
+        <div>
+          <span class="eyebrow">Cuando algo falla</span>
+          <h2>Troubleshooting — qué hacer y por dónde empezar</h2>
+          <p class="lead-sm">Síntomas comunes con su diagnóstico y solución. Si ningún caso acá resuelve tu problema, los logs (<code>docker logs &lt;container&gt;</code>) casi siempre dan la pista. También ver los docs específicos de cada servicio en <code>server/docs/services/</code>.</p>
+        </div>
+      </header>
+      <div class="detail-grid">
+        <div class="detail-col">
+          <h4>🔴 Críticos (servicio caído)</h4>
+          <ul class="detail-list">
+            <li>502 Bad Gateway en algún subdominio</li>
+            <li>App no muestra ETAs / posiciones</li>
+            <li>OTP no levanta / colgado en build</li>
+            <li>No puedo conectarme por SSH</li>
+          </ul>
+        </div>
+        <div class="detail-col">
+          <h4>🟡 Degradación / capacidad</h4>
+          <ul class="detail-list">
+            <li>Container <code>unhealthy</code> pero funciona</li>
+            <li>Memoria al límite (&lt;200 MB free)</li>
+            <li>Disco lleno (&gt;90%)</li>
+            <li>SSL no se renueva</li>
+            <li>DB de analytics se pone lenta</li>
+          </ul>
+        </div>
+        <div class="detail-col">
+          <h4>📋 Para reportar incidentes</h4>
+          <p>Recolectar contexto en un solo comando para pegar en un ticket — slide siguiente al final de la sección.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TROUBLE 1: unhealthy -->
+    <section class="slide slide-detail" data-slide="49" data-title="Trouble · unhealthy">
+      <header class="detail-header">
+        <div class="detail-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        </div>
+        <div>
+          <span class="eyebrow">Troubleshooting · 1 / 10 · 🟡 degradación</span>
+          <h2>Container marcado <code>unhealthy</code> pero el servicio funciona</h2>
+          <p class="lead-sm">Healthchecks mal configurados que dan falsos negativos. El servicio responde pero Docker lo marca como roto.</p>
+        </div>
+      </header>
+      <div class="detail-grid-2">
+        <div>
+          <h4>Casos conocidos</h4>
+          <ul class="detail-list">
+            <li><code>server-server-1</code> — usa <code>/dev/tcp</code> que no existe en su shell</li>
+            <li><code>trufi-tileserver-gl</code> — <code>node healthcheck.js</code> falla pero <code>GET /</code> responde 200</li>
+          </ul>
+          <h4>Verificar que sí funciona</h4>
+          <pre class="snippet">docker logs --tail 20 &lt;container&gt;
+# si hay 200s saliendo, el servicio está bien</pre>
+        </div>
+        <div>
+          <h4>Solución</h4>
+          <p>Dos opciones:</p>
+          <ol class="detail-list">
+            <li><strong>Ignorarlo</strong> — si está documentado como falso negativo, no es prioridad</li>
+            <li><strong>Arreglar el healthcheck</strong> en el <code>docker-compose.yml</code> del servicio</li>
+          </ol>
+          <pre class="snippet"># Ejemplo: cambiar el healthcheck
+services:
+  servicio:
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3</pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- TROUBLE 2: 502 -->
+    <section class="slide slide-detail" data-slide="50" data-title="Trouble · 502 Bad Gateway">
+      <header class="detail-header">
+        <div class="detail-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+        </div>
+        <div>
+          <span class="eyebrow">Troubleshooting · 2 / 10 · 🔴 crítico</span>
+          <h2>502 Bad Gateway en algún subdominio</h2>
+          <p class="lead-sm">YARP recibió la request, intentó proxearla al backend interno (OTP, Photon, etc.) y el backend no respondió. Casi siempre el backend está caído o reiniciando.</p>
+        </div>
+      </header>
+      <div class="detail-grid-2">
+        <div>
+          <h4>Diagnóstico</h4>
+          <pre class="snippet"># 1. ¿Qué container falta o está reiniciando?
+docker ps -a
+
+# 2. Ver logs del culpable
+docker logs --tail 50 &lt;container&gt;
+
+# 3. Verificar la red trufi-server
+docker network inspect trufi-server</pre>
+        </div>
+        <div>
+          <h4>Solución</h4>
+          <pre class="snippet"># Restart simple
+docker restart &lt;container&gt;
+
+# Si está realmente roto, recrear
+cd /root/&lt;svc&gt;
+docker compose down
+docker compose up -d --build
+
+# Verificar que YARP lo ve de nuevo
+curl -I https://trujillo.trufi.dev/&lt;path&gt;</pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- TROUBLE 3: ETAs -->
+    <section class="slide slide-detail" data-slide="51" data-title="Trouble · sin ETAs">
+      <header class="detail-header">
+        <div class="detail-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <div>
+          <span class="eyebrow">Troubleshooting · 3 / 10 · 🔴 crítico</span>
+          <h2>La app no muestra ETAs ni posiciones de buses</h2>
+          <p class="lead-sm">El feed GTFS-RT no está llegando a OTP, o llega pero los <code>trip_id</code> no matchean. Síntoma típico: el mapa carga, las rutas existen, pero los buses están "congelados" o no aparecen.</p>
+        </div>
+      </header>
+      <div class="detail-grid-2">
+        <div>
+          <h4>Verificar el proxy</h4>
+          <pre class="snippet">curl http://127.0.0.1:8001/healthz | jq
+
+# Mirar last_stats:
+# - rewritten alto → todo bien
+# - skipped_no_schedule alto
+#     → GTFS desactualizado
+# - skipped_already_has_trip_id alto
+#     → driver app cambió formato
+# - HTTP error → S3 no responde</pre>
+        </div>
+        <div>
+          <h4>Causas y soluciones</h4>
+          <ul class="detail-list">
+            <li><strong>GTFS desactualizado</strong>: subir nuevo <code>trujillo.gtfs.zip</code> + restart proxy + restart OTP (regenerar graph)</li>
+            <li><strong>S3 no responde</strong>: verificar que <code>trujillo-admin-storage</code> esté accesible</li>
+            <li><strong>Driver app caído</strong>: contactar al equipo de driver</li>
+            <li><strong>OTP no consume el feed</strong>: revisar <code>otp-config.json</code> updaters</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- TROUBLE 4: memoria -->
+    <section class="slide slide-detail" data-slide="52" data-title="Trouble · memoria al límite">
+      <header class="detail-header">
+        <div class="detail-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="9" width="20" height="6" rx="1"/><line x1="6" y1="9" x2="6" y2="15"/><line x1="10" y1="9" x2="10" y2="15"/><line x1="14" y1="9" x2="14" y2="15"/><line x1="18" y1="9" x2="18" y2="15"/></svg>
+        </div>
+        <div>
+          <span class="eyebrow">Troubleshooting · 4 / 10 · 🟡 capacidad</span>
+          <h2>Memoria al límite — <code>free -h</code> muestra &lt; 200 MB libre</h2>
+          <p class="lead-sm">El droplet tiene 4 GB de RAM y <strong>sin swap por defecto</strong>. OTP rebuild + Photon corriendo + analytics DB se acercan al techo. Cualquier pico mata containers con OOM.</p>
+        </div>
+      </header>
+      <div class="detail-grid-2">
+        <div>
+          <h4>Diagnóstico</h4>
+          <pre class="snippet"># Ver memoria total y swap
+free -h
+
+# Ver swap activo (si lo hay)
+swapon --show
+
+# Ver uso por container
+docker stats --no-stream
+
+# Procesos top por consumo de RAM
+ps aux --sort=-%mem | head -10</pre>
+          <h4>Crear swap por primera vez (4 GB)</h4>
+          <pre class="snippet"># 1. Crear el archivo (4 GB)
+fallocate -l 4G /swapfile
+
+# 2. Permisos solo root
+chmod 600 /swapfile
+
+# 3. Formatear como swap
+mkswap /swapfile
+
+# 4. Activar
+swapon /swapfile
+
+# 5. Verificar
+free -h
+swapon --show</pre>
+        </div>
+        <div>
+          <h4>Hacer el swap permanente</h4>
+          <pre class="snippet"># Agregar a fstab para que monte al reboot
+echo '/swapfile none swap sw 0 0' \
+  &gt;&gt; /etc/fstab
+
+# Bajar swappiness (default 60 → 10)
+# para que el kernel use swap solo
+# cuando RAM se agota, no antes
+echo 'vm.swappiness=10' \
+  &gt;&gt; /etc/sysctl.conf
+sysctl -p</pre>
+          <h4>Aumentar swap existente</h4>
+          <pre class="snippet"># 1. Desactivar el actual
+swapoff /swapfile
+
+# 2. Recrear con tamaño nuevo (8 GB)
+rm /swapfile
+fallocate -l 8G /swapfile
+chmod 600 /swapfile
+mkswap /swapfile
+swapon /swapfile
+
+# fstab no se toca: la entrada
+# es agnóstica al tamaño</pre>
+          <p class="detail-note">A largo plazo: subir el droplet a 8 GB de RAM, o mover Photon a otra instancia (es el que más memoria consume).</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TROUBLE 5: disco -->
+    <section class="slide slide-detail" data-slide="53" data-title="Trouble · disco lleno">
+      <header class="detail-header">
+        <div class="detail-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3"/></svg>
+        </div>
+        <div>
+          <span class="eyebrow">Troubleshooting · 5 / 10 · 🟡 capacidad</span>
+          <h2>Disco lleno — <code>df -h</code> muestra &gt; 90%</h2>
+          <p class="lead-sm">El droplet tiene 78 GB. Lo que más crece: imágenes Docker viejas, logs de containers, backups <code>.bak</code> sin rotación, y <code>photon_data/</code> (varios GB legítimos).</p>
+        </div>
+      </header>
+      <div class="detail-grid-2">
+        <div>
+          <h4>Identificar culpables</h4>
+          <pre class="snippet"># Ver disco general
+df -h | grep -v overlay
+
+# Top 10 directorios más grandes
+du -h /root/* | sort -hr | head -10
+
+# Tamaño de imágenes Docker
+docker images --format \
+  "table {{.Repository}}\t{{.Size}}"</pre>
+        </div>
+        <div>
+          <h4>Limpieza segura</h4>
+          <pre class="snippet"># Docker cleanup (imágenes y volúmenes)
+docker system prune -a --volumes
+
+# Backups viejos de OTP
+rm /root/otp/*.bak.*
+rm -rf /root/otp/old_data/
+
+# Logs gigantes (con cuidado)
+truncate -s 0 \
+  $(docker inspect &lt;container&gt; \
+    --format='{{.LogPath}}')</pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- TROUBLE 6: OTP -->
+    <section class="slide slide-detail" data-slide="54" data-title="Trouble · OTP no levanta">
+      <header class="detail-header">
+        <div class="detail-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        </div>
+        <div>
+          <span class="eyebrow">Troubleshooting · 6 / 10 · 🔴 crítico</span>
+          <h2>OTP no levanta o queda colgado en build del graph</h2>
+          <p class="lead-sm">OTP construye un graph en memoria desde GTFS + OSM al primer arranque. El proceso toma 2-3 minutos. Si tarda más o falla, los logs dicen exactamente por qué.</p>
+        </div>
+      </header>
+      <div class="detail-grid-2">
+        <div>
+          <h4>Diagnóstico — leer logs</h4>
+          <pre class="snippet">docker logs -f otp
+
+# Errores típicos:
+# "Could not find GTFS data"
+#   → GTFS no está en /app/data/
+# "OutOfMemoryError: Java heap space"
+#   → subir JAVA_MAX_MEMORY o mem_limit
+# "Building graph" + 5 min → normal, esperar
+# "Loaded N stop times" → ya está casi listo</pre>
+        </div>
+        <div>
+          <h4>Forzar rebuild limpio</h4>
+          <pre class="snippet">cd /root/otp
+
+# Borrar el graph viejo
+rm data/graph.obj
+
+# Reiniciar (regenera todo)
+docker compose restart
+
+# Mirar el progreso (~2-3 min)
+docker logs -f otp</pre>
+          <p class="detail-note">Si el OOM persiste, editá <code>JAVA_MAX_MEMORY=2g</code> en el compose.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TROUBLE 7: SSL -->
+    <section class="slide slide-detail" data-slide="55" data-title="Trouble · SSL no se renueva">
+      <header class="detail-header">
+        <div class="detail-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        </div>
+        <div>
+          <span class="eyebrow">Troubleshooting · 7 / 10 · 🟡 capacidad</span>
+          <h2>SSL no se renueva — el candado en el browser desaparece</h2>
+          <p class="lead-sm">LettuceEncrypt renueva certificados 30 días antes de expirar. Si no pudo validar el dominio (HTTP-01 challenge), el certificado expira y los clientes ven advertencias de seguridad.</p>
+        </div>
+      </header>
+      <div class="detail-grid-2">
+        <div>
+          <h4>Diagnóstico</h4>
+          <pre class="snippet">docker logs server-server-1 \
+  | grep -i "lettuce\|encrypt\|cert"
+
+# Ver fecha de expiración
+echo | openssl s_client \
+  -servername trujillo.trufi.dev \
+  -connect trujillo.trufi.dev:443 2&gt;/dev/null \
+  | openssl x509 -noout -dates</pre>
+        </div>
+        <div>
+          <h4>Causas comunes</h4>
+          <ul class="detail-list">
+            <li><strong>Puerto 80 bloqueado</strong> — LettuceEncrypt valida vía HTTP-01, necesita el :80 abierto</li>
+            <li><strong>DNS no apunta al server</strong> — verificar A record</li>
+            <li><strong>Email mal configurado</strong> en <code>appsettings.json</code> de YARP</li>
+            <li><strong>Rate limit de Let's Encrypt</strong> — esperar 1h o usar staging</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- TROUBLE 8: SSH -->
+    <section class="slide slide-detail" data-slide="56" data-title="Trouble · no puedo SSH">
+      <header class="detail-header">
+        <div class="detail-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+        </div>
+        <div>
+          <span class="eyebrow">Troubleshooting · 8 / 10 · 🔴 crítico</span>
+          <h2>No puedo conectarme por SSH</h2>
+          <p class="lead-sm">Si no puedes entrar al server, no puedes diagnosticar nada más. Hay 3 causas típicas para descartar antes de pánico.</p>
+        </div>
+      </header>
+      <div class="detail-grid-2">
+        <div>
+          <h4>Checklist</h4>
+          <ul class="detail-list">
+            <li>¿Tu llave pública está en <code>/root/.ssh/authorized_keys</code>? Pedir a otro admin que verifique</li>
+            <li>¿El droplet está arriba? — entrar al dashboard de DigitalOcean</li>
+            <li>¿El servicio SSH está corriendo? — desde la consola web del droplet</li>
+            <li>¿Cambió la huella del host? (ssh muestra warning) — revisar <code>~/.ssh/known_hosts</code></li>
+          </ul>
+          <p class="detail-note">El servidor actualmente <strong>no tiene fail2ban</strong>, así que el banneo automático por intentos fallidos no aplica.</p>
+        </div>
+        <div>
+          <h4>Comandos útiles</h4>
+          <pre class="snippet"># Verbose mode — muestra qué llave intenta
+ssh -v root@trujillo.trufi.dev
+
+# Si tienes acceso por consola web (DO):
+systemctl status ssh
+journalctl -u ssh --since "1 hour ago"
+
+# Listar llaves activas en el server
+cat /root/.ssh/authorized_keys
+
+# Si la huella del host cambió:
+ssh-keygen -R trujillo.trufi.dev</pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- TROUBLE 9: DB lenta -->
+    <section class="slide slide-detail" data-slide="57" data-title="Trouble · DB analytics lenta">
+      <header class="detail-header">
+        <div class="detail-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3"/></svg>
+        </div>
+        <div>
+          <span class="eyebrow">Troubleshooting · 9 / 10 · 🟡 capacidad</span>
+          <h2>La DB de analytics se pone lenta</h2>
+          <p class="lead-sm">YARP loggea cada request a la tabla <code>requests</code> de PostgreSQL. Sin rotación, en pocos meses pasa los 100M de filas y las queries se vuelven lentas.</p>
+        </div>
+      </header>
+      <div class="detail-grid-2">
+        <div>
+          <h4>Verificar tamaño</h4>
+          <pre class="snippet">docker exec -it server-db-1 \
+  psql -U analytics -d analytics
+
+-- Tamaño total de la tabla
+SELECT pg_size_pretty(
+  pg_total_relation_size('requests'));
+
+-- Cantidad de filas
+SELECT count(*) FROM requests;
+
+-- Top device_ids
+SELECT device_id, count(*)
+  FROM requests
+ GROUP BY device_id
+ ORDER BY 2 DESC LIMIT 10;</pre>
+        </div>
+        <div>
+          <h4>Limpieza periódica</h4>
+          <pre class="snippet">-- Borrar requests &gt; 30 días
+DELETE FROM requests
+ WHERE received_at
+       &lt; now() - interval '30 days';
+
+-- Recuperar espacio físico
+VACUUM ANALYZE requests;
+
+-- Si quedó muy fragmentada (último recurso)
+VACUUM FULL requests;
+-- ↑ bloquea la tabla, hacerlo en hora baja</pre>
+          <p class="detail-note">A largo plazo: agregar un cronjob diario que borre &gt; N días.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TROUBLE 10: contexto -->
+    <section class="slide slide-detail" data-slide="58" data-title="Trouble · recolectar contexto">
+      <header class="detail-header">
+        <div class="detail-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+        </div>
+        <div>
+          <span class="eyebrow">Troubleshooting · 10 / 10 · 📋 reportes</span>
+          <h2>Recolectar contexto en un solo comando</h2>
+          <p class="lead-sm">Cuando vas a reportar un incidente (a Trufi, al equipo, a un ticket), conviene incluir un snapshot del estado del server. Este one-liner trae todo lo importante en formato copiable.</p>
+        </div>
+      </header>
+      <div class="detail-grid-2">
+        <div>
+          <h4>Snapshot completo</h4>
+          <pre class="snippet">ssh root@trujillo.trufi.dev '
+  echo "===== CONTAINERS ====="
+  docker ps --format \
+    "table {{.Names}}\t{{.Status}}"
+
+  echo
+  echo "===== DISK ====="
+  df -h | grep -v overlay
+
+  echo
+  echo "===== MEMORY ====="
+  free -h
+
+  echo
+  echo "===== UPTIME ====="
+  uptime
+
+  echo
+  echo "===== PROXY HEALTH ====="
+  curl -s http://127.0.0.1:8001/healthz \
+    | head -30
+'</pre>
+        </div>
+        <div>
+          <h4>Cómo usarlo</h4>
+          <p>Copia la salida y pégala en:</p>
+          <ul class="detail-list">
+            <li>El issue/ticket donde reportas el problema</li>
+            <li>El canal Slack/Telegram del equipo</li>
+            <li>Un mensaje al mantenedor de Trufi si es algo upstream</li>
+          </ul>
+          <p class="detail-note">El comando es read-only — no modifica nada del server, puedes ejecutarlo siempre.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 28 — Cheat sheet -->
+    <!-- CHEAT SHEET 1: conectarse y observar -->
+    <section class="slide slide-detail" data-slide="59" data-title="Cheat · conectarse + logs">
+      <header class="detail-header">
+        <div class="detail-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+        </div>
+        <div>
+          <span class="eyebrow">Cheat sheet · 1 / 5 · día a día</span>
+          <h2>Conectarse, panorama y logs</h2>
+          <p class="lead-sm">Lo primero que vas a escribir cada vez que abres una sesión. Después de SSH, este es el bloque que te dice "¿el sistema está vivo?" y "¿qué dijo X servicio?".</p>
+        </div>
+      </header>
+      <div class="detail-grid-2">
+        <div>
+          <h4>Conectarse + panorama</h4>
+          <pre class="snippet">ssh root@trujillo.trufi.dev
+
+# Health check completo en una línea:
+docker ps --format \
+  "table {{.Names}}\t{{.Status}}"
+df -h | grep -v overlay
+free -h && uptime</pre>
+        </div>
+        <div>
+          <h4>Ver logs de un servicio</h4>
+          <pre class="snippet">docker logs &lt;container&gt;            # ver
+docker logs -f &lt;container&gt;         # tail -f
+docker logs --tail 100 &lt;container&gt; # últimos N
+docker logs --since 30m &lt;container&gt;
+docker logs -t &lt;container&gt;         # timestamps
+
+# Logs filtrados
+docker logs &lt;c&gt; 2&gt;&amp;1 | grep -i error</pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHEAT SHEET 2: reiniciar y submódulos -->
+    <section class="slide slide-detail" data-slide="60" data-title="Cheat · reiniciar + submódulos">
+      <header class="detail-header">
+        <div class="detail-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+        </div>
+        <div>
+          <span class="eyebrow">Cheat sheet · 2 / 5 · deploy</span>
+          <h2>Reiniciar / actualizar servicios + submódulos</h2>
+          <p class="lead-sm">El loop de cambios pequeños: editar config, reiniciar el servicio. Y para servicios upstream (OTP, Photon, etc.), pull del submódulo y rebuild.</p>
+        </div>
+      </header>
+      <div class="detail-grid-2">
+        <div>
+          <h4>Reiniciar / actualizar un servicio</h4>
+          <pre class="snippet">cd /root/&lt;servicio&gt;
+
+# Reiniciar (sin tocar imagen)
+docker compose restart
+
+# Actualizar (rebuild de imagen)
+docker compose up -d --build
+
+# Bajar
+docker compose down
+
+# Ver compose actual con env resuelto
+docker compose config</pre>
+        </div>
+        <div>
+          <h4>Submódulos (otp, photon, ...)</h4>
+          <pre class="snippet"># Update a último main de un solo svc
+cd /root/otp
+git pull origin main
+docker compose up -d --build
+
+# Update todos los submódulos (en local)
+cd ~/workspace/trujillo
+git submodule update --remote --merge
+git commit -am "bump submodules"
+git push</pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHEAT SHEET 3: data y backup -->
+    <section class="slide slide-detail" data-slide="61" data-title="Cheat · data + backup">
+      <header class="detail-header">
+        <div class="detail-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3"/></svg>
+        </div>
+        <div>
+          <span class="eyebrow">Cheat sheet · 3 / 5 · data</span>
+          <h2>Refrescar data + backup de la DB</h2>
+          <p class="lead-sm">Subir/bajar GTFS y mapas entre tu repo local y el server, y dump/restore de la base de analytics.</p>
+        </div>
+      </header>
+      <div class="detail-grid-2">
+        <div>
+          <h4>Refrescar data del server</h4>
+          <pre class="snippet">SERVER=root@trujillo.trufi.dev
+
+# Bajar al repo (después de cambios en server)
+scp $SERVER:/root/otp/data/trujillo.gtfs.zip \
+  server/data/
+
+# Subir al server (destructivo)
+scp server/data/trujillo.gtfs.zip \
+  $SERVER:/root/otp/data/
+
+# Si subiste GTFS: regenerar graph en OTP
+ssh $SERVER 'rm /root/otp/data/graph.obj && \
+  cd /root/otp && docker compose restart'</pre>
+        </div>
+        <div>
+          <h4>Backup de la DB</h4>
+          <pre class="snippet"># Dump
+docker exec server-db-1 \
+  pg_dump -U analytics analytics \
+  &gt; backups/db-$(date +%F).sql
+
+# Restaurar
+cat backups/db-X.sql | docker exec -i \
+  server-db-1 psql -U analytics -d analytics
+
+# Sincronizar a tu máquina (rsync)
+rsync -avz $SERVER:backups/ ./backups/</pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHEAT SHEET 4: probar APIs y limpieza -->
+    <section class="slide slide-detail" data-slide="62" data-title="Cheat · probar APIs + cleanup">
+      <header class="detail-header">
+        <div class="detail-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </div>
+        <div>
+          <span class="eyebrow">Cheat sheet · 4 / 5 · debugging</span>
+          <h2>Probar APIs desde el server + limpieza</h2>
+          <p class="lead-sm">Cuando algo no funciona desde afuera, primero verificar si funciona desde adentro. Y cuando el disco se queja, comandos de limpieza seguros.</p>
+        </div>
+      </header>
+      <div class="detail-grid-2">
+        <div>
+          <h4>Probar APIs desde el server</h4>
+          <pre class="snippet"># Health del proxy
+curl http://127.0.0.1:8001/healthz | jq
+
+# OTP responde?
+curl -I http://127.0.0.1:8080/otp/
+
+# Photon (geocoding test)
+curl 'http://localhost:2322/api?q=trujillo'
+
+# YARP / sitio público (desde fuera)
+curl -I https://trujillo.trufi.dev
+
+# Headers de respuesta de YARP
+curl -sI https://trujillo.trufi.dev/otp/</pre>
+        </div>
+        <div>
+          <h4>Limpieza periódica</h4>
+          <pre class="snippet"># Imágenes Docker viejas
+docker image prune -a
+
+# Containers, redes, volumes huérfanos
+docker system prune --volumes
+
+# Logs viejos de un container
+truncate -s 0 \
+  $(docker inspect &lt;c&gt; \
+    --format='{{.LogPath}}')
+
+# Backups con &gt; 30 días
+find backups/ -mtime +30 -delete</pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHEAT SHEET 5: deploy + SQL -->
+    <section class="slide slide-detail" data-slide="63" data-title="Cheat · deploy + SQL">
+      <header class="detail-header">
+        <div class="detail-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        </div>
+        <div>
+          <span class="eyebrow">Cheat sheet · 5 / 5 · deploy & queries</span>
+          <h2>Despliegue full + SQL útil sobre analytics</h2>
+          <p class="lead-sm">El flujo de despliegue de un cambio (de tu máquina al server), y queries que vas a usar para revisar tráfico y errores en la DB.</p>
+        </div>
+      </header>
+      <div class="detail-grid-2">
+        <div>
+          <h4>Despliegue full</h4>
+          <pre class="snippet"># 1. desde tu repo local
+git push
+
+# 2. en server: pull + rebuild
+ssh root@trujillo.trufi.dev '
+  cd /root/&lt;svc&gt;
+  git pull
+  docker compose up -d --build
+'
+
+# 3. verificar
+docker logs -f &lt;svc&gt;
+
+# 4. test desde fuera
+curl -I https://trujillo.trufi.dev/&lt;path&gt;</pre>
+        </div>
+        <div>
+          <h4>SQL útil sobre analytics</h4>
+          <pre class="snippet">docker exec -it server-db-1 \
+  psql -U analytics -d analytics
+
+-- Top hosts última hora
+SELECT host, COUNT(*) FROM requests
+ WHERE created_at &gt; now() - interval '1 hour'
+ GROUP BY host ORDER BY 2 DESC LIMIT 10;
+
+-- Errores 5xx recientes
+SELECT uri FROM requests
+ WHERE status_code &gt;= 500
+ ORDER BY received_at DESC LIMIT 20;
+
+-- Top devices únicos hoy
+SELECT COUNT(DISTINCT device_id)
+  FROM requests
+ WHERE received_at &gt; CURRENT_DATE;</pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- 29 — Gestión de accesos -->
+    <section class="slide slide-detail" data-slide="64" data-title="Gestión de accesos">
+      <header class="detail-header" style="--accent:#a78bfa">
+        <div class="detail-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><line x1="20" y1="8" x2="20" y2="14"/><line x1="23" y1="11" x2="17" y2="11"/></svg>
+        </div>
+        <div>
+          <span class="eyebrow">Onboarding · seguridad</span>
+          <h2>Cómo agregar y remover admins del sistema</h2>
+          <p class="lead-sm">Cuando entra alguien nuevo al equipo, o sale,
+          tienes que actualizar las llaves SSH. <strong>Nunca compartas tu llave
+          privada</strong> — cada persona usa la suya.</p>
+        </div>
+      </header>
+      <div class="detail-grid">
+        <div class="detail-col">
+          <h4>➕ Agregar un nuevo admin</h4>
+          <p>El nuevo admin te manda su clave <strong>pública</strong> (el archivo <code>.pub</code>):</p>
+          <pre class="snippet"># En el server (tú, admin actual):
+ssh root@trujillo.trufi.dev
+
+# Editar authorized_keys
+nano /root/.ssh/authorized_keys
+
+# Pegar la línea que te mandó al final:
+ssh-ed25519 AAAA... usuario@laptop
+
+# Guardar (Ctrl+O, Enter, Ctrl+X)
+
+# Verificar permisos correctos:
+chmod 600 /root/.ssh/authorized_keys</pre>
+          <p class="detail-note">Pedile que pruebe inmediatamente después.</p>
+        </div>
+        <div class="detail-col">
+          <h4>➖ Remover un admin</h4>
+          <p>Identifica la línea con el comentario al final (email/usuario):</p>
+          <pre class="snippet"># Ver llaves actuales con info
+cat /root/.ssh/authorized_keys
+
+# Cada línea termina con un comentario tipo:
+# ssh-ed25519 AAAA... pepe@laptop-vieja
+
+# Borrar la línea con el editor
+nano /root/.ssh/authorized_keys
+# (borrar la línea entera)</pre>
+          <h4>🔒 Buenas prácticas</h4>
+          <ul class="detail-list">
+            <li>Cada admin tiene <strong>su</strong> par de llaves</li>
+            <li>El comentario debe identificar a la persona (email)</li>
+            <li>Rotar llaves anualmente o ante incidente</li>
+            <li>Backup de <code>authorized_keys</code> en lugar seguro</li>
+            <li><strong>Nunca</strong> commitear llaves privadas en git</li>
+          </ul>
+        </div>
+        <div class="detail-col">
+          <h4>📋 Auditar quién tiene acceso</h4>
+          <pre class="snippet"># Listar todas las llaves activas
+cat /root/.ssh/authorized_keys
+
+# Contar cuántas hay
+wc -l /root/.ssh/authorized_keys
+
+# Ver últimos logins
+last -F | head -20
+
+# Logs de SSH (intentos fallidos)
+journalctl -u ssh --since "1 day ago" \
+  | grep "Accepted\|Failed"</pre>
+          <h4>🚨 Si una llave se filtró</h4>
+          <ol style="font-size:0.85rem;color:var(--text-dim);padding-left:1.2rem;margin:0;">
+            <li>Borrar la línea de inmediato</li>
+            <li>Pedirle a la persona que regenere su par</li>
+            <li>Revisar logs de SSH (cualquier login sospechoso)</li>
+            <li>Si hubo acceso indebido: rotar todas las llaves</li>
+          </ol>
+        </div>
+      </div>
+      <div class="callout callout-info">
+        <strong>💡 Tip pro:</strong> mantenete una nota en el repo o en un
+        documento compartido con la lista de admins activos y sus emails.
+        Cada vez que agregas o remueves alguien, actualiza esa lista.
+      </div>
+    </section>
+
+    <!-- Demo: agregar admin SSH -->
+    <section class="slide slide-demo" data-slide="65" data-title="Demo: agregar admin SSH">
+      <div class="demo-marker">Demo en vivo · ~10 min</div>
+      <h2>Vamos a darle acceso a un nuevo admin</h2>
+      <p class="lead">Generamos un par de llaves SSH desde una máquina nueva, agregamos la pública al servidor, y validamos que la persona puede entrar. Después la quitamos para no dejar accesos abiertos.</p>
+      <div class="demo-agenda">
+        <ol>
+          <li>Crear par de llaves: <code>ssh-keygen -t ed25519 -C "demo@test"</code></li>
+          <li>Copiar la pública: <code>cat ~/.ssh/id_ed25519.pub</code></li>
+          <li>Conectarse al server y editar <code>/root/.ssh/authorized_keys</code></li>
+          <li>Validar el login desde la máquina del nuevo admin</li>
+          <li>Auditar: <code>last -F</code> para ver el acceso recién registrado</li>
+          <li>Limpiar: borrar la línea agregada y verificar que ya no entra</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Backup & DR -->
+    <!-- BACKUP — overview -->
+    <section class="slide slide-detail" data-slide="66" data-title="Backup · overview">
+      <header class="detail-header">
+        <div class="detail-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+        </div>
+        <div>
+          <span class="eyebrow">Continuidad del servicio</span>
+          <h2>Backup &amp; disaster recovery</h2>
+          <p class="lead-sm">Si el droplet se pierde mañana, ¿qué necesitas para volver a tener todo funcionando? 5 cosas para backupear, 1 lista de lo que NO hace falta, plan de DR completo y dónde guardar los backups.</p>
+        </div>
+      </header>
+      <div class="detail-grid">
+        <div class="detail-col">
+          <h4>5 cosas a backupear</h4>
+          <ul class="detail-list">
+            <li>1. DB de analytics (diaria)</li>
+            <li>2. Certificados SSL (mensual)</li>
+            <li>3. Configs de servicios (cada cambio)</li>
+            <li>4. Datos GTFS / OSM / mbtiles (al actualizar)</li>
+            <li>5. <code>authorized_keys</code> (cada cambio)</li>
+          </ul>
+        </div>
+        <div class="detail-col">
+          <h4>Lo que NO hace falta</h4>
+          <ul class="detail-list">
+            <li><code>graph.obj</code> — se regenera</li>
+            <li><code>photon_data/</code> — se descarga</li>
+            <li>Imágenes Docker — se rebuildean</li>
+            <li>Logs de containers — efímeros</li>
+            <li>Cache del proxy — 5s</li>
+          </ul>
+        </div>
+        <div class="detail-col">
+          <h4>Resto de la sección</h4>
+          <ul class="detail-list">
+            <li>Plan completo de DR (server perdido)</li>
+            <li>Dónde guardar los backups</li>
+            <li>Estrategia 3-2-1</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- BACKUP 1: DB analytics -->
+    <section class="slide slide-detail" data-slide="67" data-title="Backup · DB analytics">
+      <header class="detail-header">
+        <div class="detail-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3"/></svg>
+        </div>
+        <div>
+          <span class="eyebrow">Backup · 1 / 8 · alta · diaria</span>
+          <h2>1. Base de datos de analytics</h2>
+          <p class="lead-sm">PostgreSQL con la tabla <code>requests</code> que YARP loggea. Si se pierde, se pierde todo el histórico de tráfico — no se puede recuperar de otra fuente. Backup diario obligatorio.</p>
+        </div>
+      </header>
+      <div class="detail-grid-2">
+        <div>
+          <h4>Dump manual</h4>
+          <pre class="snippet">docker exec server-db-1 \
+  pg_dump -U analytics analytics \
+  | gzip &gt; backups/db-$(date +%F).sql.gz</pre>
+        </div>
+        <div>
+          <h4>Cron diario (3 AM)</h4>
+          <pre class="snippet"># /etc/crontab
+0 3 * * * root cd /root && \
+  docker exec server-db-1 \
+    pg_dump -U analytics analytics \
+  | gzip \
+  &gt; /root/backups/db-$(date +\%F).sql.gz
+
+# Rotar: borrar &gt; 30 días
+5 3 * * * root \
+  find /root/backups -name 'db-*.sql.gz' \
+       -mtime +30 -delete</pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- BACKUP 2: SSL -->
+    <section class="slide slide-detail" data-slide="68" data-title="Backup · SSL">
+      <header class="detail-header">
+        <div class="detail-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        </div>
+        <div>
+          <span class="eyebrow">Backup · 2 / 8 · media · mensual</span>
+          <h2>2. Certificados SSL</h2>
+          <p class="lead-sm">LettuceEncrypt los re-emite automáticamente, así que técnicamente no son críticos. Pero un backup evita golpear los <strong>rate limits</strong> de Let's Encrypt si reinstalas todo y necesitas emitir muchos certs juntos.</p>
+        </div>
+      </header>
+      <div class="detail-grid-2">
+        <div>
+          <h4>Backup</h4>
+          <pre class="snippet">tar czf backups/lettuce-$(date +%F).tar.gz \
+  /root/server/data/lettuce-encrypt/</pre>
+        </div>
+        <div>
+          <h4>Restore</h4>
+          <pre class="snippet"># Antes de levantar YARP:
+tar xzf backups/lettuce-2026-04-29.tar.gz \
+  -C /
+
+# YARP los detecta automáticamente al levantar
+cd /root/server
+docker compose up -d</pre>
+          <p class="detail-note">Si el backup tiene certs vigentes (no expirados), YARP los usa hasta su renovación natural — no llama a Let's Encrypt.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- BACKUP 3: configs -->
+    <section class="slide slide-detail" data-slide="69" data-title="Backup · configs">
+      <header class="detail-header">
+        <div class="detail-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+        </div>
+        <div>
+          <span class="eyebrow">Backup · 3 / 8 · alta · cada cambio</span>
+          <h2>3. Configs de servicios</h2>
+          <p class="lead-sm">Los <code>docker-compose.yml</code> y <code>.env</code> de cada servicio + el <code>appsettings.json</code> de YARP. Sin esto, levantar todo de nuevo es un ejercicio de prueba y error.</p>
+        </div>
+      </header>
+      <div class="detail-grid-2">
+        <div>
+          <h4>Lo que hay que guardar</h4>
+          <pre class="snippet">backups/server-config/
+├── appsettings.json   ← YARP
+└── docker-compose.yml ← YARP
+
+# Cada servicio: su .env + docker-compose
+/root/otp/.env
+/root/otp/docker-compose.yml
+/root/photon/.env
+/root/photon/docker-compose.yml
+... (repetir para cada svc)</pre>
+        </div>
+        <div>
+          <h4>Backup completo</h4>
+          <pre class="snippet">tar czf backups/configs-$(date +%F).tar.gz \
+  /root/*/docker-compose.yml \
+  /root/*/.env \
+  /root/server/data/config/
+
+# Estos archivos también deberían estar
+# versionados en git si son razonables
+# (ojo con secretos en .env)</pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- BACKUP 4: data -->
+    <section class="slide slide-detail" data-slide="70" data-title="Backup · GTFS/OSM/mbtiles">
+      <header class="detail-header">
+        <div class="detail-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>
+        </div>
+        <div>
+          <span class="eyebrow">Backup · 4 / 8 · alta · al actualizar</span>
+          <h2>4. Datos GTFS / OSM / mbtiles</h2>
+          <p class="lead-sm">Los inputs canónicos del sistema. Buena noticia: ya están en el repo (<code>server/data/</code>). Backupear es <code>git push</code>. Cada vez que se actualizan en el server, sincronizar al repo.</p>
+        </div>
+      </header>
+      <div class="detail-grid-2">
+        <div>
+          <h4>Sincronizar al repo</h4>
+          <pre class="snippet">SERVER=root@trujillo.trufi.dev
+
+# Bajar todos los inputs canónicos
+scp $SERVER:/root/otp/data/trujillo.gtfs.zip \
+  server/data/
+scp $SERVER:/root/otp/data/trujillo.osm.pbf \
+  server/data/
+scp $SERVER:/root/tileserver-gl/data/trujillo.mbtiles \
+  server/data/</pre>
+        </div>
+        <div>
+          <h4>Commit y push</h4>
+          <pre class="snippet">git add server/data/
+git commit -m "Snapshot data $(date +%F)"
+git push</pre>
+          <p class="detail-note">Total ~26 MB. Considerar Git LFS si crece mucho. Mientras estos archivos vivan en git, el repo es el backup.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- BACKUP 5: ssh keys -->
+    <section class="slide slide-detail" data-slide="71" data-title="Backup · authorized_keys">
+      <header class="detail-header">
+        <div class="detail-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/></svg>
+        </div>
+        <div>
+          <span class="eyebrow">Backup · 5 / 8 · alta · cada cambio</span>
+          <h2>5. <code>authorized_keys</code> + lista de admins</h2>
+          <p class="lead-sm">El <code>/root/.ssh/authorized_keys</code> tiene las llaves SSH de todos los que pueden entrar. Si alguien renuncia o entra al equipo, hay que actualizarlo. Backupear cada vez que cambia.</p>
+        </div>
+      </header>
+      <div class="detail-grid-2">
+        <div>
+          <h4>Backup</h4>
+          <pre class="snippet"># Local
+cp /root/.ssh/authorized_keys \
+   backups/authorized_keys-$(date +%F)
+
+# A tu máquina
+scp root@trujillo.trufi.dev:/root/.ssh/authorized_keys \
+  ./backups/authorized_keys-$(date +%F)</pre>
+        </div>
+        <div>
+          <h4>Lista de admins</h4>
+          <p>Mantener una lista <strong>fuera del repo</strong> con quién es quién:</p>
+          <pre class="snippet"># lista-admins.md (en doc compartido)
+
+| Email             | SSH key (comment)  | Activo |
+|-------------------|--------------------|--------|
+| sam@nexion.com    | sam@laptop         | sí     |
+| carlos@mpt.gob.pe | carlos@cipriano    | sí     |
+| ana@trufi.org     | ana-2023-laptop    | NO     |</pre>
+          <p class="detail-note">Importante: NO commitear esto al repo público. Privacidad + seguridad.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- BACKUP 6: lo que NO -->
+    <section class="slide slide-detail" data-slide="72" data-title="Backup · NO hace falta">
+      <header class="detail-header">
+        <div class="detail-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg>
+        </div>
+        <div>
+          <span class="eyebrow">Backup · 6 / 8 · qué evitar</span>
+          <h2>Lo que NO hace falta backupear</h2>
+          <p class="lead-sm">Errores comunes: backupear archivos enormes que el sistema regenera solo. Ocupas espacio sin valor. Estos 5 archivos/folders son derivados — no source — y volverán a aparecer al levantar los servicios.</p>
+        </div>
+      </header>
+      <div class="detail-grid-2">
+        <div>
+          <h4>Archivos derivados</h4>
+          <ul class="detail-list">
+            <li><code>graph.obj</code> de OTP (~20 MB) — se regenera del GTFS + OSM al primer arranque</li>
+            <li><code>photon_data/</code> (varios GB) — se descarga desde GraphHopper la primera vez</li>
+            <li>Imágenes Docker (~2 GB) — se rebuildean del compose</li>
+            <li>Logs de containers — efímeros, no críticos</li>
+            <li>Cache del proxy GTFS-RT — se reconstruye en 5s</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Por qué importa</h4>
+          <p>Si por error haces backup de <code>photon_data/</code> diariamente:</p>
+          <ul class="detail-list">
+            <li>Cada backup pesa varios GB</li>
+            <li>El backup tarda mucho más</li>
+            <li>El destino (S3, etc.) cobra por GB</li>
+            <li>El restore es más lento</li>
+            <li>Y al final, lo único que quieres es la lista de inputs — no el índice derivado</li>
+          </ul>
+          <p class="detail-note">Regla simple: si se puede regenerar sin pérdida desde otros archivos, no lo backupees.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- BACKUP 7: DR -->
+    <section class="slide slide-detail" data-slide="73" data-title="Backup · disaster recovery">
+      <header class="detail-header">
+        <div class="detail-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+        </div>
+        <div>
+          <span class="eyebrow">Backup · 7 / 8 · 🚨 disaster recovery</span>
+          <h2>Server perdido — el plan de 10 pasos</h2>
+          <p class="lead-sm">Si el droplet se pierde por completo (hardware, hack, error humano), este es el playbook para volver a producción. Con todos los backups en mano, ~1 hora si tienes el flujo automatizado, ~3 horas a mano.</p>
+        </div>
+      </header>
+      <div class="detail-grid-2">
+        <div>
+          <h4>Pasos 1-5: nuevo server</h4>
+          <ol class="detail-list">
+            <li>Crear nuevo droplet (Ubuntu 22.04, ≥4 GB RAM, idealmente igual al anterior)</li>
+            <li>Apuntar el A record DNS al nuevo IP</li>
+            <li>Instalar Docker + docker-compose</li>
+            <li><code>git clone --recurse-submodules</code> el repo en <code>/root/</code></li>
+            <li>Mover los folders del repo a <code>/root/&lt;svc&gt;/</code> según convención</li>
+          </ol>
+        </div>
+        <div>
+          <h4>Pasos 6-10: data y arranque</h4>
+          <ol class="detail-list" start="6">
+            <li>Subir data: <code>scp server/data/* root@host:/root/&lt;svc&gt;/data/</code></li>
+            <li>Restaurar DB: <code>gunzip -c db-backup.sql.gz | psql ...</code></li>
+            <li>Restaurar certs: <code>tar xzf lettuce-encrypt.tar.gz -C /</code></li>
+            <li>Levantar todo: <code>docker compose up -d</code> en cada folder</li>
+            <li>Re-agregar <code>authorized_keys</code> de los admins</li>
+          </ol>
+          <p class="detail-note">Tiempo estimado: ~1h con runbook scripteado, ~3h a mano. La graph.obj de OTP toma 2-3 min adicionales en regenerarse.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- BACKUP 8: dónde guardar -->
+    <section class="slide slide-detail" data-slide="74" data-title="Backup · DB analytics a local">
+      <header class="detail-header">
+        <div class="detail-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3"/></svg>
+        </div>
+        <div>
+          <span class="eyebrow">Backup · 8 / 8 · analytics DB</span>
+          <h2>Backup de la DB de analytics — dump y restore en local</h2>
+          <p class="lead-sm">El backup que más vas a hacer. Dos formas de obtenerlo: bajar un dump ya generado del server, o hacer un <code>pg_dump</code> live en el momento. Después lo restaurás en una Postgres local para hacer queries de análisis sin tocar producción.</p>
+        </div>
+      </header>
+      <div class="detail-grid-2">
+        <div>
+          <h4>1️⃣ Hacer el dump y bajarlo</h4>
+          <p>Una sola línea: corre <code>pg_dump</code> dentro del container <code>server-db-1</code>, lo comprime y lo descarga directo a tu máquina (sin escribir nada en el server).</p>
+          <pre class="snippet">SERVER=root@trujillo.trufi.dev
+
+ssh $SERVER \
+  'docker exec server-db-1 \
+     pg_dump -U analytics analytics | gzip' \
+  &gt; analytics-$(date +%F).sql.gz
+
+# Verificar
+ls -lh analytics-*.sql.gz</pre>
+        </div>
+        <div>
+          <h4>2️⃣ Restaurar en Postgres local</h4>
+          <pre class="snippet"># Levantar Postgres en local
+# (misma imagen que producción)
+docker run -d --name analytics-local \
+  -e POSTGRES_USER=analytics \
+  -e POSTGRES_PASSWORD=analytics \
+  -e POSTGRES_DB=analytics \
+  -p 5432:5432 \
+  postgres:16-alpine
+
+# Restaurar el dump
+gunzip -c analytics-2026-04-29.sql.gz \
+  | docker exec -i analytics-local \
+    psql -U analytics -d analytics
+
+# Conectarte para hacer queries
+docker exec -it analytics-local \
+  psql -U analytics -d analytics
+
+# o desde tu cliente favorito (DBeaver,
+# TablePlus, etc.) en localhost:5432
+# user: analytics · pass: analytics</pre>
+          <p class="detail-note">Trabajar sobre la copia local: rápido, sin riesgo de romper producción, y puedes probar queries pesadas sin afectar a YARP.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cierre -->
+    <section class="slide slide-cover" data-slide="75" data-title="Gracias">
+      <div class="cover-inner closing">
+        <img class="cover-logo" src="assets/brand/app-logo.png" alt="" />
+        <div class="cover-text">
+          <h1>Gracias</h1>
+          <p class="cover-tag">¿Preguntas?</p>
+          <div class="closing-links">
+            <a href="https://github.com/leoguti/GTFS-Trujillo" target="_blank" rel="noopener" class="closing-link">
+              <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+              github.com/leoguti/GTFS-Trujillo
+            </a>
+            <a href="https://www.linkedin.com/in/samuel-rioja/" target="_blank" rel="noopener" class="closing-link">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+              linkedin.com/in/samuel-rioja
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <nav class="controls" aria-label="Navegación de slides">
+    <button class="nav-btn nav-prev" id="prevBtn" aria-label="Slide anterior" title="←">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+    </button>
+    <span class="counter" id="counter">1 / 35</span>
+    <button class="nav-btn nav-next" id="nextBtn" aria-label="Slide siguiente" title="→">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg>
+    </button>
+    <span class="nav-sep" aria-hidden="true"></span>
+    <button class="nav-btn" id="fullscreenBtn" aria-label="Pantalla completa" title="Pantalla completa (F)">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M3 7V3h4M21 7V3h-4M3 17v4h4M21 17v4h-4"/></svg>
+    </button>
+  </nav>
+
+  <div class="hint" id="hint" aria-hidden="true">
+    <kbd>←</kbd> <kbd>→</kbd> navegar · <kbd>Esc</kbd> vista general · <kbd>F</kbd> pantalla completa
+  </div>
+
+  <div class="overview" id="overview" hidden>
+    <div class="overview-header">
+      <h3>Vista general</h3>
+      <button class="btn-icon" id="overviewClose" aria-label="Cerrar">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="overview-grid" id="overviewGrid"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+services:
+  proxy:
+    build: .
+    container_name: gtfs-rt-proxy
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8001:8000"
+    volumes:
+      - ./data:/app/data:ro
+    environment:
+      SIMULATED: "${SIMULATED:-false}"
+      UPSTREAM_URL_PROD: "https://trujillo-admin-storage.s3.us-east-1.amazonaws.com/driver/gtfsrt/pe-trujillo.proto"
+      UPSTREAM_URL_SIM: "http://gtfs-rt-simulator:9000/pe-trujillo.proto"
+      GTFS_PATH: /app/data/trujillo.gtfs.zip
+      CACHE_TTL: "5"
+    depends_on:
+      - simulator
+
+  simulator:
+    build: ./simulator
+    container_name: gtfs-rt-simulator
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:9000:9000"
+    environment:
+      PATTERNS_PATH: /app/patterns.json
+      CLONE_FACTOR: "${CLONE_FACTOR:-3}"
+      MAX_VEHICLES: "${MAX_VEHICLES:-0}"
+      PORT: "9000"
+
+networks:
+  default:
+    name: trufi-server
+    external: true
