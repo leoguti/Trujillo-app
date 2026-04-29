@@ -1,0 +1,13 @@
+{
+  "name": "miruta-docs-pdf",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Genera MiRuta-Trujillo.pdf renderizando cada slide del index.html como una página de 2048×1280.",
+  "scripts": {
+    "pdf": "node render-pdf.mjs"
+  },
+  "dependencies": {
+    "puppeteer": "^24.0.0"
+  }
+}

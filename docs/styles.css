@@ -171,7 +171,7 @@ code {
   height: 78px; width: auto; max-width: 280px;
   object-fit: contain;
 }
-.donors-mtc     { height: 78px; }
+.donors-mtc     { height: 78px; max-width: 380px; }
 .donors-giz     { height: 84px; }
 .donors-seco    { height: 88px; }
 .donors-project { height: 88px; }
@@ -2054,7 +2054,7 @@ body.is-idle .hint { opacity: 0; }
   .donors-bar-inner { padding: 0 1.2rem; gap: 1.1rem; }
   .donors-label { font-size: 0.84rem; }
   .donors-logo { height: 64px; }
-  .donors-mtc { height: 64px; }
+  .donors-mtc { height: 64px; max-width: 320px; }
   .donors-giz { height: 70px; }
   .donors-seco { height: 76px; }
   .donors-project { height: 76px; }
@@ -2095,7 +2095,7 @@ body.is-idle .hint { opacity: 0; }
   .donors-bar-inner { gap: 0.8rem; padding: 0 0.8rem; }
   .donors-label { font-size: 0.72rem; }
   .donors-logo { height: 50px; }
-  .donors-mtc { height: 50px; }
+  .donors-mtc { height: 50px; max-width: 240px; }
   .donors-giz { height: 54px; }
   .donors-seco { height: 58px; }
   .donors-project { height: 58px; }
@@ -2153,7 +2153,7 @@ body.is-idle .hint { opacity: 0; }
   .donors-bar-inner { gap: 0.5rem; padding: 0 0.55rem; }
   .donors-label { display: none; }
   .donors-logo { height: 28px; }
-  .donors-mtc { height: 28px; }
+  .donors-mtc { height: 28px; max-width: 140px; }
   .donors-giz { height: 32px; }
   .donors-seco { height: 36px; }
   .donors-project { height: 36px; }
