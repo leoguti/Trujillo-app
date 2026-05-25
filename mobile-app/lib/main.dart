@@ -165,27 +165,27 @@ void main() {
       socialMediaLinks: const [
         SocialMediaLink(
           url: _facebookUrl,
-          icon: Icons.facebook,
+          icon: Icon(Icons.facebook),
           label: 'Facebook',
         ),
         SocialMediaLink(
           url: _instagramUrl,
-          icon: Icons.camera_alt_outlined,
+          icon: Icon(Icons.camera_alt_outlined),
           label: 'Instagram',
         ),
         SocialMediaLink(
           url: _xTwitterUrl,
-          icon: Icons.close,
+          icon: Icon(Icons.close),
           label: 'X (Twitter)',
         ),
         SocialMediaLink(
           url: _tiktokUrl,
-          icon: Icons.music_note,
+          icon: Icon(Icons.music_note),
           label: 'TikTok',
         ),
         SocialMediaLink(
           url: _youtubeUrl,
-          icon: Icons.play_circle_outline,
+          icon: Icon(Icons.play_circle_outline),
           label: 'YouTube',
         ),
       ],
@@ -238,11 +238,7 @@ void main() {
           },
         ),
         SavedPlacesTrufiScreen(),
-        TransportListTrufiScreen(
-          dataProviderBuilder: (_) => GtfsTransportDataProvider(
-            assetPath: 'assets/routing/trujillo.gtfs.zip',
-          ),
-        ),
+        TransportListTrufiScreen(),
         FeedbackTrufiScreen(config: FeedbackConfig(feedbackUrl: _feedbackUrl)),
         SettingsTrufiScreen(),
         AboutTrufiScreen(
