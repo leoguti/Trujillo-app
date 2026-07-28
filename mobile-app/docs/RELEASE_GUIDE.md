@@ -58,31 +58,54 @@ jarsigner -verbose -sigalg SHA256withRSA -digestalg SHA-256 \
 
 ## iOS
 
-### El cliente firma por su cuenta
+### Estado actual (jul 2026)
 
-El build con `--no-codesign` genera un `.app` sin firma. El cliente necesita:
+La app iOS se publica desde la cuenta personal de Samuel Rioja (Team ID `K45698KZ4W`)
+y luego se transferira a la cuenta del cliente via **App Store Connect > App Transfer**.
 
-1. **Cuenta de Apple Developer** ($99/anio)
-2. Recibir el proyecto completo (repositorio o zip)
-3. Abrir `ios/Runner.xcworkspace` en Xcode
-4. Configurar:
-   - **Signing & Capabilities > Team**: seleccionar su equipo
-   - **Bundle Identifier**: `dev.trufi.trujillo` (ya configurado)
-5. **Product > Archive**
-6. En el **Organizer**, seleccionar el archive y **Distribute App**
-7. Elegir **App Store Connect** para subir a la tienda
+- **Bundle ID iOS**: `app.trufi.trujillo` (registro N8YJ83T63C, App Store Apple ID `6795452859`)
+- **IMPORTANTE**: el bundle ID de iOS es DISTINTO al de Android (`dev.trufi.trujillo`).
+  El identificador `dev.trufi.trujillo` ya estaba registrado en otro team de Apple
+  (no en Trufi Association ni en Yapa IT, que tiene la membresia vencida) y Apple
+  exige unicidad global, asi que se uso `app.trufi.trujillo` siguiendo la convencion
+  de las demas apps Trufi (`app.trufi.navigator`, `app.trufi.konstanz`).
+- **Entitlements**: `ios/Runner/Runner.entitlements` incluye Associated Domains
+  (`applinks:trujillo.trufi.dev`) para universal links.
 
-### Subir a App Store
+### Build y subida (desde la cuenta actual)
 
-1. Desde Xcode Organizer: **Distribute App > App Store Connect**
-2. O usar **Transporter** (app de Apple) para subir el `.ipa`
-3. En [App Store Connect](https://appstoreconnect.apple.com), crear la ficha del app y enviar a revision
+```bash
+cd mobile-app/ios
+xcodebuild -workspace Runner.xcworkspace -scheme Runner -configuration Release \
+  archive -archivePath ../build/ios/archive/Runner.xcarchive \
+  -destination 'generic/platform=iOS' -allowProvisioningUpdates
+
+xcodebuild -exportArchive -archivePath ../build/ios/archive/Runner.xcarchive \
+  -exportPath ../build/ios/ipa -exportOptionsPlist <ExportOptions con method app-store-connect> \
+  -allowProvisioningUpdates
+
+xcrun altool --upload-app -f "../build/ios/ipa/Trujillo MiRuta.ipa" -t ios \
+  --apiKey <KEY_ID> --apiIssuer <ISSUER_ID>
+```
+
+> La API key (.p8) vive en `~/.appstoreconnect/private_keys/`. `flutter build ipa`
+> falla en el paso de export porque no pasa `-allowProvisioningUpdates`; usar los
+> comandos de arriba.
+
+### Transferencia al cliente (pendiente)
+
+1. El cliente necesita su propia cuenta Apple Developer activa ($99/anio; cuenta
+   **Organization** con DUNS si quieren que el vendedor visible sea la institucion).
+2. Sin builds en revision al momento de transferir. Ratings y resenas se transfieren;
+   testers de TestFlight NO.
+3. Tras la transferencia, actualizar el `apple-app-site-association` con el Team ID
+   del cliente (ver seccion Deep Links).
 
 ### Observaciones iOS
 
-- **Bundle ID**: `dev.trufi.trujillo`
-- **Deep Linking**: `FlutterDeepLinkingEnabled` esta activo. Cuando el app se publique, se debe configurar el archivo `apple-app-site-association` en el servidor (ver seccion Deep Links)
-- **El cliente NO necesita compartir su cuenta**: solo necesita el codigo fuente y hacer el Archive desde su Xcode con su Team configurado
+- **Deep Linking**: `FlutterDeepLinkingEnabled` esta activo y el entitlement de
+  Associated Domains ya esta en el proyecto. Falta el archivo
+  `apple-app-site-association` en el servidor (ver seccion Deep Links).
 
 ---
 
@@ -114,7 +137,9 @@ Cuando el app este publicado en Google Play:
 
 Cuando el app este publicado en App Store:
 
-1. Obtener el **Team ID** de la cuenta del cliente (en Apple Developer > Membership)
+1. Mientras la app este en la cuenta de Samuel, el Team ID es `K45698KZ4W`.
+   Tras la transferencia, reemplazarlo por el Team ID del cliente
+   (Apple Developer > Membership).
 
 2. Crear `.well-known/apple-app-site-association` en el servidor:
    ```json
@@ -122,12 +147,14 @@ Cuando el app este publicado en App Store:
      "applinks": {
        "apps": [],
        "details": [{
-         "appID": "TEAM_ID.dev.trufi.trujillo",
+         "appID": "K45698KZ4W.app.trufi.trujillo",
          "paths": ["*"]
        }]
      }
    }
    ```
+   > Ojo: el bundle ID de iOS es `app.trufi.trujillo` (no `dev.trufi.trujillo`,
+   > que es solo el de Android).
 
 3. El archivo debe servirse con `Content-Type: application/json` (nginx lo hace por defecto)
 

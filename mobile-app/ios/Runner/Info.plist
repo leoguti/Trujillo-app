@@ -7,13 +7,19 @@
 		<key>CFBundleDevelopmentRegion</key>
 		<string>$(DEVELOPMENT_LANGUAGE)</string>
 		<key>CFBundleDisplayName</key>
-		<string>Trujillo MiRuta</string>
+		<string>Trujillo Mi Ruta</string>
 		<key>CFBundleExecutable</key>
 		<string>$(EXECUTABLE_NAME)</string>
 		<key>CFBundleIdentifier</key>
 		<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 		<key>CFBundleInfoDictionaryVersion</key>
 		<string>6.0</string>
+		<key>CFBundleLocalizations</key>
+		<array>
+			<string>es</string>
+			<string>en</string>
+			<string>de</string>
+		</array>
 		<key>CFBundleName</key>
 		<string>Trujillo MiRuta</string>
 		<key>CFBundlePackageType</key>
@@ -26,12 +32,14 @@
 		<string>$(FLUTTER_BUILD_NUMBER)</string>
 		<key>FlutterDeepLinkingEnabled</key>
 		<true/>
+		<key>ITSAppUsesNonExemptEncryption</key>
+		<false/>
 		<key>LSRequiresIPhoneOS</key>
 		<true/>
 		<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-		<string>This app needs access to your location to show your position on the map and find routes near you.</string>
+		<string>Esta app necesita acceso a tu ubicación para mostrar tu posición en el mapa y encontrar rutas cercanas.</string>
 		<key>NSLocationWhenInUseUsageDescription</key>
-		<string>This app needs access to your location to show your position on the map and find routes near you.</string>
+		<string>Esta app necesita acceso a tu ubicación para mostrar tu posición en el mapa y encontrar rutas cercanas.</string>
 		<key>UIApplicationSceneManifest</key>
 		<dict>
 			<key>UIApplicationSupportsMultipleScenes</key>
