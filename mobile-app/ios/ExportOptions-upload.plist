@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- destination=upload sube directo a App Store Connect usando la sesión
+	     de Xcode (Apple ID logueado en Xcode, team NNB9PHQ49J). Se usa esta vía
+	     porque la API de ASC del team de Trufi no está habilitada (solo el
+	     Account Holder puede pedirla) — ver docs/RELEASE_GUIDE.md. -->
+	<key>method</key>
+	<string>app-store-connect</string>
+	<key>destination</key>
+	<string>upload</string>
+	<key>teamID</key>
+	<string>NNB9PHQ49J</string>
+	<key>signingStyle</key>
+	<string>automatic</string>
+	<key>uploadSymbols</key>
+	<true/>
+	<key>manageAppVersionAndBuildNumber</key>
+	<false/>
+</dict>
+</plist>
