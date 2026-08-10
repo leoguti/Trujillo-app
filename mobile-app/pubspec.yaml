@@ -114,6 +114,13 @@ dependencies:
       path: packages/screens/trufi_core_about
 
 dependency_overrides:
+  # maplibre_gl 0.25.0 crashes on iOS with SIGABRT (std::domain_error from
+  # mbgl::LatLng) whenever a camera operation reaches a map whose native
+  # frame is still zero-sized — exactly what happens when the route detail
+  # screen creates its map and fits the camera to the route. Fixed upstream
+  # in 0.26.2 (maplibre/flutter-maplibre-gl#819, fix #841), but trufi_core
+  # v5.14.3 pins ^0.25.0, so the fixed version has to be forced here.
+  maplibre_gl: 0.26.2
   # All trufi_core packages forced to the git tag so both direct deps and
   # transitive ones (e.g. trufi_core_routing_ui → trufi_core_routing) resolve
   # to the same git source instead of pub.dev. Needed until the packages are
